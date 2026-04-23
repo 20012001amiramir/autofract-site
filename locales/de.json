@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Companions, not tools",
+    "description": "Autofract ist ein Studio, das Software mit Charakter baut — Begleiter, die bei dir bleiben, keine Dashboards, die dich anstarren."
+  },
+  "hero": {
+    "kicker": "Autofract — ein Studio",
+    "line1": "Companions,",
+    "line2": "not tools.",
+    "sub": "Wir bauen Software mit einem Charakter, der bei dir bleibt."
+  },
+  "manifesto": {
+    "body": "Die meiste Software ist ein Dashboard. Sie wartet auf dich, starrt dich an, will konfiguriert werden. Wir bauen das Gegenteil: Software mit Persönlichkeit, die leise arbeitet und zu etwas wird, das du tatsächlich vermisst, wenn sie offline ist. Wir nennen es Companion-Software."
+  },
+  "bashka": {
+    "label": "Bashka",
+    "headline": "Dein Posteingang, beantwortet.",
+    "body": "Bashka antwortet deinen Kunden in Telegram, während du arbeitest. Sie lernt deine Sprache, kennt deine Leistungen, nennt deine Preise und übergibt dir den fertigen Deal. Solo-Gründer, Freelancer und kleine Teams nutzen Bashka für 24/7 Kundenbetreuung — ohne jemanden einzustellen.",
+    "cta": "Bashka entdecken"
+  },
+  "oyka": {
+    "label": "Oyka",
+    "headline": "Ein Haustier, das mit deinen Gewohnheiten wächst.",
+    "body": "Oyka ist ein kleines, verschlafenes Wesen, das sich dafür interessiert, ob du heute Wasser getrunken hast. Schau bei deinen Gewohnheiten vorbei — und es wächst, zieht sich an und merkt sich deine Serie. Ein Tag verpasst — okay. Zwei — fällt auf.",
+    "cta": "Oyka entdecken"
+  },
+  "studio": {
+    "headline": "Ein Studio von einem, vorerst.",
+    "p1": "Autofract ist ein Ein-Personen-Studio. Der aktuelle Katalog besteht aus zwei Produkten mit gemeinsamer Infrastruktur und einer einheitlichen redaktionellen Stimme.",
+    "p2": "Wir sind weder VC-finanziert noch stellen wir ein. Wir bauen langsam, absichtlich, auf lange Sicht."
+  },
+  "log": {
+    "heading": "Letzte Releases"
+  },
+  "footer": {
+    "tagline": "Companions, not tools."
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "meta": {
+    "title": "Companions, not tools",
+    "description": "Autofract est un studio qui construit des logiciels avec du caractère — des compagnons qui restent avec toi, pas des tableaux de bord qui te regardent."
+  },
+  "hero": {
+    "kicker": "Autofract — un studio",
+    "line1": "Companions,",
+    "line2": "not tools.",
+    "sub": "Nous construisons des logiciels avec un caractère qui reste avec toi."
+  },
+  "manifesto": {
+    "body": "La plupart des logiciels sont un tableau de bord. Ils t'attendent, te fixent, demandent à être configurés. Nous construisons l'opposé : des logiciels avec une personnalité, qui font le travail en silence et deviennent quelque chose qui te manque vraiment quand c'est hors ligne. Nous appelons cela le companion-software."
+  },
+  "bashka": {
+    "label": "Bashka",
+    "headline": "Ta boîte de réception, répondue.",
+    "body": "Bashka répond à tes clients sur Telegram pendant que tu travailles. Elle apprend ta voix, connaît tes services, cite tes prix et te remet l'affaire conclue. Les fondateurs solo, freelances et petites équipes utilisent Bashka pour une réponse client 24/7 — sans embaucher.",
+    "cta": "Découvrir Bashka"
+  },
+  "oyka": {
+    "label": "Oyka",
+    "headline": "Un compagnon qui grandit avec tes habitudes.",
+    "body": "Oyka est une petite créature endormie qui se soucie de savoir si tu as bu de l'eau aujourd'hui. Enregistre tes habitudes — elle grandit, s'habille et se souvient de ta série. Un jour manqué, ça va. Deux, elle remarque.",
+    "cta": "Découvrir Oyka"
+  },
+  "studio": {
+    "headline": "Un studio d'une personne, pour l'instant.",
+    "p1": "Autofract est un studio d'une personne. Le catalogue actuel est de deux produits avec une infrastructure partagée et une voix éditoriale unique.",
+    "p2": "Nous ne sommes pas financés par des VC et nous ne recrutons pas. Nous construisons lentement, intentionnellement, sur le long terme."
+  },
+  "log": {
+    "heading": "Sorties récentes"
+  },
+  "footer": {
+    "tagline": "Companions, not tools."
+  }
+}

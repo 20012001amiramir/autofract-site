@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Oyka sleepy creature placeholder">
+  <defs>
+    <radialGradient id="body" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#e6d9f2"/>
+      <stop offset="100%" stop-color="#d4c5e8"/>
+    </radialGradient>
+  </defs>
+  <ellipse cx="200" cy="230" rx="110" ry="100" fill="url(#body)"/>
+  <ellipse cx="200" cy="265" rx="80" ry="50" fill="#f5e6c8"/>
+  <circle cx="170" cy="215" r="6" fill="#3a2a4a"/>
+  <circle cx="230" cy="215" r="6" fill="#3a2a4a"/>
+  <ellipse cx="158" cy="245" rx="14" ry="8" fill="#ffb8a8" opacity="0.7"/>
+  <ellipse cx="242" cy="245" rx="14" ry="8" fill="#ffb8a8" opacity="0.7"/>
+  <path d="M 185 245 Q 200 255 215 245" stroke="#3a2a4a" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 140 140 Q 145 115 165 120 Q 170 135 160 150 Z" fill="url(#body)"/>
+  <path d="M 260 140 Q 255 115 235 120 Q 230 135 240 150 Z" fill="url(#body)"/>
+</svg>
