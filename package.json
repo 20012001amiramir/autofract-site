@@ -1,0 +1,22 @@
+{
+  "name": "autofract-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Autofract studio landing — companions, not tools.",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "nuxt": "^3.16.0",
+    "vue": "^3.5.0",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.0"
+  }
+}
