@@ -1,0 +1,14 @@
+[Unit]
+Description=Autofract git-push webhook listener
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/autofract-site
+ExecStart=/usr/bin/webhook -hooks /root/autofract-site/deploy/hooks.json -port 9010 -verbose
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

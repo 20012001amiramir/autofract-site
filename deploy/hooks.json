@@ -1,0 +1,18 @@
+[
+  {
+    "id": "autofract-deploy",
+    "execute-command": "/root/autofract-site/deploy/deploy.sh",
+    "command-working-directory": "/root/autofract-site",
+    "response-message": "deploying",
+    "trigger-rule": {
+      "match": {
+        "type": "payload-hash-sha256",
+        "secret": "REPLACE_WITH_GITHUB_WEBHOOK_SECRET",
+        "parameter": {
+          "source": "header",
+          "name": "X-Hub-Signature-256"
+        }
+      }
+    }
+  }
+]

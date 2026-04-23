@@ -1,0 +1,21 @@
+autofract.com {
+    tls {
+        issuer acme
+    }
+    reverse_proxy autofract-site:3000
+    encode gzip
+
+    header {
+        X-Content-Type-Options nosniff
+        X-Frame-Options DENY
+        Referrer-Policy strict-origin-when-cross-origin
+        Strict-Transport-Security "max-age=31536000; includeSubDomains"
+    }
+}
+
+www.autofract.com {
+    tls {
+        issuer acme
+    }
+    redir https://autofract.com{uri} permanent
+}

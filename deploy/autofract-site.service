@@ -1,0 +1,15 @@
+[Unit]
+Description=Autofract studio site (docker)
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+WorkingDirectory=/root/autofract-site
+ExecStartPre=-/usr/bin/docker rm -f autofract-site
+ExecStart=/usr/bin/docker run -d --name autofract-site --network caddy --restart unless-stopped -e NODE_ENV=production autofract-site:latest
+ExecStop=/usr/bin/docker rm -f autofract-site
+
+[Install]
+WantedBy=multi-user.target
