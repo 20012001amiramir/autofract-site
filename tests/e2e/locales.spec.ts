@@ -15,7 +15,7 @@ for (const l of LOCALES) {
     await expect(page.getByText(l.manifesto).first()).toBeVisible()
     await expect(page.locator('a[href="https://ai.autofract.com"]')).toBeVisible()
     await expect(page.locator('a[href="https://oyka.app"]')).toBeVisible()
-    await expect(page.getByRole('link', { name: 'studio@autofract.com' })).toBeVisible()
+    await expect(page.getByRole('link', { name: 'info@autofract.com' })).toBeVisible()
   })
 }
 

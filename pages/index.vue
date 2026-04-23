@@ -33,7 +33,7 @@ useHead({
         '@type': 'Organization',
         name: 'Autofract',
         url: 'https://autofract.com',
-        email: 'studio@autofract.com',
+        email: 'info@autofract.com',
         slogan: 'Companions, not tools.',
         sameAs: [
           'https://x.com/autofract',

@@ -15,7 +15,7 @@ const year = new Date().getFullYear()
       <LangSwitcher />
     </div>
     <div class="flex gap-4 text-sm md:justify-end">
-      <a href="mailto:studio@autofract.com" class="text-ink hover:text-accent transition-colors">studio@autofract.com</a>
+      <a href="mailto:info@autofract.com" class="text-ink hover:text-accent transition-colors">info@autofract.com</a>
       <span class="text-muted">© {{ year }}</span>
     </div>
   </footer>
