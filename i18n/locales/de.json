@@ -1,22 +1,40 @@
 {
   "meta": {
-    "title": "Companions, not tools",
-    "description": "Autofract ist ein Studio, das Software mit Charakter baut — Begleiter, die bei dir bleiben, keine Dashboards, die dich anstarren."
+    "title": "Software, die sich selbst betreibt",
+    "description": "Autofract ist ein Studio, das antifragile KI-Systeme baut — für deinen Posteingang, deine Infrastruktur, deine Gewohnheiten. Software, die heilt, lernt und mit jeder Nutzung stärker wird."
   },
   "hero": {
     "kicker": "Autofract — ein Studio",
-    "line1": "Companions,",
-    "line2": "not tools.",
-    "sub": "Wir bauen Software mit einem Charakter, der bei dir bleibt."
+    "line1": "Software, die sich",
+    "line2": "selbst betreibt",
+    "sub": "Autofract baut antifragile KI-Systeme — für deinen Posteingang, deine Infrastruktur, deine Gewohnheiten."
   },
   "manifesto": {
-    "body": "Die meiste Software ist ein Dashboard. Sie wartet auf dich, starrt dich an, will konfiguriert werden. Wir bauen das Gegenteil: Software mit Persönlichkeit, die leise arbeitet und zu etwas wird, das du tatsächlich vermisst, wenn sie offline ist. Wir nennen es Companion-Software."
+    "body": "Die meiste Software ist ein Dashboard. Sie wartet auf dich, starrt dich an, verlangt Konfiguration. Wir bauen das Gegenteil: Systeme, die sich selbst heilen, aus Fehlern lernen und mit jeder Nutzung stärker werden. Antifragil im Design, mit einem Charakter, der bleibt."
+  },
+  "pathcore": {
+    "label": "PathCore",
+    "headline": "Antifragile Infrastruktur.",
+    "body": "PathCore ist eine selbstheilende Microservices-Plattform mit kognitiven KI-Workern, Chaos Engineering und Echtzeit-Systemvisualisierung durch MindView. Hexagonale Architektur mit strikter Schichtentrennung: Core, Uncore, Un-uncore. Systeme, die mit jedem Ausfall stärker werden.",
+    "cta": "PathCore entdecken"
   },
   "bashka": {
     "label": "Bashka",
     "headline": "Dein Posteingang, beantwortet.",
     "body": "Bashka antwortet deinen Kunden in Telegram, während du arbeitest. Sie lernt deine Sprache, kennt deine Leistungen, nennt deine Preise und übergibt dir den fertigen Deal. Solo-Gründer, Freelancer und kleine Teams nutzen Bashka für 24/7 Kundenbetreuung — ohne jemanden einzustellen.",
     "cta": "Bashka entdecken"
+  },
+  "videolinker": {
+    "label": "VideoLinker",
+    "headline": "Video, das sich selbst rendert.",
+    "body": "VideoLinker ist eine KI-orchestrierte Videoproduktionsplattform. 64 Services, 12 Worker, 11 MCP-Tool-Server. Skript rein, fertige Episode raus — Bildgenerierung, Videogenerierung, TTS, Untertitel, QA-Scoring nach 52 Regeln, FFmpeg-Komposition. Ein API-Call, sendefertiges Video.",
+    "cta": "VideoLinker ansehen"
+  },
+  "link19": {
+    "label": "Link19",
+    "headline": "Links, direkt aus Telegram.",
+    "body": "Link19 ist ein Telegram-first URL-Kürzer mit Echtzeit-Analytics, Phishing-Schutz und Smart Routing. Erstelle und verwalte Short Links aus einem Bot. Sicherheits-Scans via PhishTank, URLhaus, Google Safe Browsing. Smart Links mit A/B-Tests, Geo-Routing, Device-Targeting.",
+    "cta": "Link19 öffnen"
   },
   "oyka": {
     "label": "Oyka",
@@ -26,13 +44,13 @@
   },
   "studio": {
     "headline": "Ein Studio von einem, vorerst.",
-    "p1": "Autofract ist ein Ein-Personen-Studio. Der aktuelle Katalog besteht aus zwei Produkten mit gemeinsamer Infrastruktur und einer einheitlichen redaktionellen Stimme.",
-    "p2": "Wir sind weder VC-finanziert noch stellen wir ein. Wir bauen langsam, absichtlich, auf lange Sicht."
+    "p1": "Autofract ist ein Ein-Personen-Studio. Fünf live Produkte teilen eine einheitliche technische Stimme: antifragile Infrastruktur, eine KI für deine Kunden, eine Videoproduktions-Engine, ein Telegram-first Link-Kürzer, ein Begleiter für deine Gewohnheiten.",
+    "p2": "Weder VC-finanziert noch auf der Suche. Wir bauen langsam, absichtlich, auf lange Sicht."
   },
   "log": {
     "heading": "Letzte Releases"
   },
   "footer": {
-    "tagline": "Companions, not tools."
+    "tagline": "Software, die sich selbst betreibt."
   }
 }

@@ -1,22 +1,40 @@
 {
   "meta": {
-    "title": "Companions, not tools",
-    "description": "Autofract is a studio building software with a character — companions that stay with you, not dashboards that stare at you."
+    "title": "Software that runs itself",
+    "description": "Autofract is a studio building antifragile AI systems — for your inbox, your infrastructure, your habits. Software that heals, learns, and grows stronger with use."
   },
   "hero": {
     "kicker": "Autofract — a studio",
-    "line1": "Companions,",
-    "line2": "not tools.",
-    "sub": "We build software with a character that stays with you."
+    "line1": "Software that",
+    "line2": "runs itself",
+    "sub": "Autofract builds antifragile AI systems — for your inbox, your infrastructure, your habits."
   },
   "manifesto": {
-    "body": "Most software is a dashboard. It waits for you, stares at you, asks you to configure it. We build the opposite: software that has a personality, does the work quietly, and grows into something you actually miss when it's offline. We call it companion-software."
+    "body": "Most software is a dashboard. It waits for you, stares at you, asks you to configure it. We build the opposite: systems that heal themselves, learn from failure, and grow stronger with every use. Antifragile by design, with a character that stays."
+  },
+  "pathcore": {
+    "label": "PathCore",
+    "headline": "Antifragile infrastructure.",
+    "body": "PathCore is a self-healing microservices platform with cognitive AI workers, chaos engineering, and real-time system visualization through MindView. Hexagonal architecture with strict layer separation: Core, Uncore, Un-uncore. Systems that get stronger every time they break.",
+    "cta": "Explore PathCore"
   },
   "bashka": {
     "label": "Bashka",
     "headline": "Your inbox, answered.",
-    "body": "Bashka replies to your clients in Telegram while you work. It learns your voice, knows your services, quotes your prices, and hands you the deal done. Solo founders, freelancers, and small teams use Bashka to get 24/7 client response without hiring a human.",
+    "body": "Bashka replies to your clients in Telegram while you work. It learns your voice, knows your services, quotes your prices, and hands you the deal done. Solo founders, freelancers, and small teams use Bashka for 24/7 client response without hiring a human.",
     "cta": "Meet Bashka"
+  },
+  "videolinker": {
+    "label": "VideoLinker",
+    "headline": "Video that renders itself.",
+    "body": "VideoLinker is an AI-orchestrated video production platform. 64 services, 12 workers, 11 MCP tool servers. Script in, finished episode out — image-gen, video-gen, TTS, captions, QA scoring against 52 rules, FFmpeg composition. One API call, broadcast-quality video.",
+    "cta": "See VideoLinker"
+  },
+  "link19": {
+    "label": "Link19",
+    "headline": "Links, through Telegram.",
+    "body": "Link19 is a Telegram-first URL shortener with real-time analytics, phishing protection, and smart routing. Create and manage short links from a bot. Security scans via PhishTank, URLhaus, Google Safe Browsing. Smart links with A/B testing, geo-routing, device targeting.",
+    "cta": "Open Link19"
   },
   "oyka": {
     "label": "Oyka",
@@ -26,13 +44,13 @@
   },
   "studio": {
     "headline": "A studio of one, for now.",
-    "p1": "Autofract is a one-person studio. The current catalogue is two products with shared infrastructure and a single editorial voice.",
-    "p2": "We are not VC-funded and we are not hiring. We build slowly, on purpose, for the long run."
+    "p1": "Autofract is a one-person studio. Five live products share a single engineering voice: antifragile infrastructure, an AI for your clients, a video production engine, a Telegram-first link shortener, and a companion for your habits.",
+    "p2": "Not VC-funded, not hiring. We build slowly, on purpose, for the long run."
   },
   "log": {
     "heading": "Recent shipments"
   },
   "footer": {
-    "tagline": "Companions, not tools."
+    "tagline": "Software that runs itself."
   }
 }

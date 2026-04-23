@@ -2,8 +2,11 @@
 import { useI18n } from 'vue-i18n'
 import TheHero from '~/components/TheHero.vue'
 import TheManifesto from '~/components/TheManifesto.vue'
+import PathCoreChapter from '~/components/PathCoreChapter.vue'
 import BashkaChapter from '~/components/BashkaChapter.vue'
 import OykaChapter from '~/components/OykaChapter.vue'
+import VideoLinkerChapter from '~/components/VideoLinkerChapter.vue'
+import Link19Chapter from '~/components/Link19Chapter.vue'
 import TheStudio from '~/components/TheStudio.vue'
 import TheBuildLog from '~/components/TheBuildLog.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
@@ -47,7 +50,10 @@ useHead({
   <div>
     <TheHero />
     <TheManifesto />
+    <PathCoreChapter />
     <BashkaChapter />
+    <VideoLinkerChapter />
+    <Link19Chapter />
     <OykaChapter />
     <TheStudio />
     <TheBuildLog />

@@ -2,42 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Default theme: paper + ink, no accent */
+/*
+ * Autofract palette — dark graphite throughout, per-chapter ACCENT only.
+ * No light/dark flip. Product chapters shift accent + muted, never bg.
+ * Inspired by Vercel, Linear, Supabase, Anthropic, Perplexity, Railway.
+ */
 :root {
-  --color-paper: 250 248 243;
-  --color-ink: 10 10 10;
-  --color-muted: 107 101 96;
-  --color-accent: 10 10 10;
-  --color-accent-secondary: 10 10 10;
+  --color-paper: 12 12 16;       /* #0c0c10 graphite */
+  --color-ink: 245 241 234;      /* #f5f1ea bone */
+  --color-muted: 140 134 128;    /* #8c8680 */
+  --color-accent: 94 234 212;    /* #5eead4 signal cyan — default studio accent */
+  --color-accent-secondary: 94 234 212;
 }
 
-:root.dark {
-  --color-paper: 10 10 10;
-  --color-ink: 245 241 234;
-  --color-muted: 140 134 128;
-  --color-accent: 245 241 234;
-  --color-accent-secondary: 245 241 234;
+:root.chapter-pathcore {
+  --color-accent: 94 234 212;    /* cyan — clinical/technical */
+  --color-accent-secondary: 94 234 212;
 }
 
-/* Bashka chapter accent takeover */
 :root.chapter-bashka {
-  --color-paper: 10 10 10;
-  --color-ink: 245 241 234;
-  --color-accent: 174 255 0;
+  --color-accent: 174 255 0;     /* #aeff00 Bashka lime */
   --color-accent-secondary: 174 255 0;
 }
 
-/* Oyka chapter accent takeover */
 :root.chapter-oyka {
-  --color-paper: 245 230 200;
-  --color-ink: 40 30 60;
-  --color-accent: 212 197 232;
-  --color-accent-secondary: 255 184 168;
+  --color-accent: 196 167 231;   /* #c4a7e7 lavender (tuned for dark bg) */
+  --color-accent-secondary: 255 184 168; /* #ffb8a8 coral */
+}
+
+:root.chapter-videolinker {
+  --color-accent: 255 107 53;    /* #ff6b35 warm orange — creative tool */
+  --color-accent-secondary: 255 107 53;
+}
+
+:root.chapter-link19 {
+  --color-accent: 62 207 142;    /* #3ecf8e emerald — clean, trustworthy */
+  --color-accent-secondary: 62 207 142;
 }
 
 html {
-  transition: background-color 800ms cubic-bezier(0.2, 0.8, 0.2, 1),
-              color 800ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.2, 0.8, 0.2, 1);
+  /* Background never changes — only accent does */
 }
 
 body {
@@ -52,6 +57,18 @@ body {
   outline: 2px solid rgb(var(--color-accent));
   outline-offset: 3px;
   border-radius: 2px;
+}
+
+/* Faint grid/noise texture option via radial for tech feel — kept subtle */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at top, rgba(94, 234, 212, 0.03), transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(174, 255, 0, 0.02), transparent 60%);
+  z-index: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {

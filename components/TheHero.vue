@@ -34,7 +34,7 @@ onMounted(() => {
           class="inline-block transition-transform duration-800 ease-editorial delay-150"
           :class="reveal ? 'translate-y-0' : 'translate-y-full'"
         >
-          {{ $t('hero.line2') }}<span class="text-accent animate-blink">_</span>
+          {{ $t('hero.line2') }}<span class="text-accent animate-blink">.</span>
         </span>
       </span>
     </h1>
