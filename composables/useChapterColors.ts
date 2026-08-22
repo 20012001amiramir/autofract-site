@@ -1,6 +1,6 @@
-export type Chapter = 'pathcore' | 'bashka' | 'oyka' | 'videolinker' | 'link19'
+export type Chapter = 'pathcore' | 'videolinker'
 
-const CHAPTER_CLASSES = ['chapter-pathcore', 'chapter-bashka', 'chapter-oyka', 'chapter-videolinker', 'chapter-link19']
+const CHAPTER_CLASSES = ['chapter-pathcore', 'chapter-videolinker']
 
 export function setChapter(chapter: Chapter): void {
   if (typeof document === 'undefined') return

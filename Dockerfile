@@ -8,7 +8,6 @@ COPY . .
 
 ARG BUILD_ID
 ENV NUXT_PUBLIC_BUILD_ID=${BUILD_ID}
-RUN npm run generate:build-log || true
 RUN npm run generate:og || true
 RUN npm run build
 

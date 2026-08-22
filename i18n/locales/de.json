@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Software, die sich selbst betreibt",
-    "description": "Autofract ist ein Studio, das antifragile KI-Systeme baut — für deinen Posteingang, deine Infrastruktur, deine Gewohnheiten. Software, die heilt, lernt und mit jeder Nutzung stärker wird."
+    "description": "Autofract ist ein unabhängiges Studio, das antifragile KI-Systeme baut — selbstheilende Infrastruktur und autonome Videoproduktion. Software, die heilt, lernt und mit jeder Nutzung stärker wird."
   },
   "hero": {
     "kicker": "Autofract — ein Studio",
     "line1": "Software, die sich",
     "line2": "selbst betreibt",
-    "sub": "Autofract baut antifragile KI-Systeme — für deinen Posteingang, deine Infrastruktur, deine Gewohnheiten."
+    "sub": "Autofract baut antifragile KI-Systeme — Infrastruktur, die sich selbst heilt, Video, das sich selbst rendert."
   },
   "manifesto": {
     "body": "Die meiste Software ist ein Dashboard. Sie wartet auf dich, starrt dich an, verlangt Konfiguration. Wir bauen das Gegenteil: Systeme, die sich selbst heilen, aus Fehlern lernen und mit jeder Nutzung stärker werden. Antifragil im Design, mit einem Charakter, der bleibt."
@@ -18,37 +18,16 @@
     "body": "PathCore ist eine selbstheilende Microservices-Plattform mit kognitiven KI-Workern, Chaos Engineering und Echtzeit-Systemvisualisierung durch MindView. Hexagonale Architektur mit strikter Schichtentrennung: Core, Uncore, Un-uncore. Systeme, die mit jedem Ausfall stärker werden.",
     "cta": "PathCore entdecken"
   },
-  "bashka": {
-    "label": "Bashka",
-    "headline": "Dein Posteingang, beantwortet.",
-    "body": "Bashka antwortet deinen Kunden in Telegram, während du arbeitest. Sie lernt deine Sprache, kennt deine Leistungen, nennt deine Preise und übergibt dir den fertigen Deal. Solo-Gründer, Freelancer und kleine Teams nutzen Bashka für 24/7 Kundenbetreuung — ohne jemanden einzustellen.",
-    "cta": "Bashka entdecken"
-  },
   "videolinker": {
     "label": "VideoLinker",
     "headline": "Video, das sich selbst rendert.",
     "body": "VideoLinker ist eine KI-orchestrierte Videoproduktionsplattform. 64 Services, 12 Worker, 11 MCP-Tool-Server. Skript rein, fertige Episode raus — Bildgenerierung, Videogenerierung, TTS, Untertitel, QA-Scoring nach 52 Regeln, FFmpeg-Komposition. Ein API-Call, sendefertiges Video.",
     "cta": "VideoLinker ansehen"
   },
-  "link19": {
-    "label": "Link19",
-    "headline": "Links, direkt aus Telegram.",
-    "body": "Link19 ist ein Telegram-first URL-Kürzer mit Echtzeit-Analytics, Phishing-Schutz und Smart Routing. Erstelle und verwalte Short Links aus einem Bot. Sicherheits-Scans via PhishTank, URLhaus, Google Safe Browsing. Smart Links mit A/B-Tests, Geo-Routing, Device-Targeting.",
-    "cta": "Link19 öffnen"
-  },
-  "oyka": {
-    "label": "Oyka",
-    "headline": "Ein Haustier, das mit deinen Gewohnheiten wächst.",
-    "body": "Oyka ist ein kleines, verschlafenes Wesen, das sich dafür interessiert, ob du heute Wasser getrunken hast. Schau bei deinen Gewohnheiten vorbei — und es wächst, zieht sich an und merkt sich deine Serie. Ein Tag verpasst — okay. Zwei — fällt auf.",
-    "cta": "Oyka entdecken"
-  },
   "studio": {
-    "headline": "Ein Studio von einem, vorerst.",
-    "p1": "Autofract ist ein Ein-Personen-Studio. Fünf live Produkte teilen eine einheitliche technische Stimme: antifragile Infrastruktur, eine KI für deine Kunden, eine Videoproduktions-Engine, ein Telegram-first Link-Kürzer, ein Begleiter für deine Gewohnheiten.",
+    "headline": "Ein unabhängiges Studio.",
+    "p1": "Autofract ist ein unabhängiges Software-Studio. Zwei Produkte teilen eine einheitliche technische Stimme: antifragile Infrastruktur und eine KI-orchestrierte Videoproduktions-Engine.",
     "p2": "Weder VC-finanziert noch auf der Suche. Wir bauen langsam, absichtlich, auf lange Sicht."
-  },
-  "log": {
-    "heading": "Letzte Releases"
   },
   "footer": {
     "tagline": "Software, die sich selbst betreibt."

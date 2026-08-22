@@ -1,13 +1,13 @@
 {
   "meta": {
     "title": "Un logiciel qui fonctionne seul",
-    "description": "Autofract est un studio qui construit des systèmes d'IA antifragiles — pour ta boîte de réception, ton infrastructure, tes habitudes. Un logiciel qui se répare, apprend et se renforce à chaque utilisation."
+    "description": "Autofract est un studio indépendant qui construit des systèmes d'IA antifragiles — infrastructure auto-réparatrice et production vidéo autonome. Un logiciel qui se répare, apprend et se renforce à chaque utilisation."
   },
   "hero": {
     "kicker": "Autofract — un studio",
     "line1": "Un logiciel qui",
     "line2": "fonctionne seul",
-    "sub": "Autofract construit des systèmes d'IA antifragiles — pour ta boîte de réception, ton infrastructure, tes habitudes."
+    "sub": "Autofract construit des systèmes d'IA antifragiles — une infrastructure qui se répare seule, une vidéo qui se rend seule."
   },
   "manifesto": {
     "body": "La plupart des logiciels sont un tableau de bord. Ils t'attendent, te fixent, demandent à être configurés. Nous construisons l'opposé : des systèmes qui se réparent, apprennent de leurs erreurs et se renforcent à chaque utilisation. Antifragiles par conception, avec un caractère qui reste."
@@ -18,37 +18,16 @@
     "body": "PathCore est une plateforme de microservices auto-réparatrice avec des workers IA cognitifs, du chaos engineering et une visualisation système en temps réel via MindView. Architecture hexagonale à séparation stricte des couches : Core, Uncore, Un-uncore. Des systèmes qui se renforcent chaque fois qu'ils cassent.",
     "cta": "Explorer PathCore"
   },
-  "bashka": {
-    "label": "Bashka",
-    "headline": "Ta boîte de réception, répondue.",
-    "body": "Bashka répond à tes clients sur Telegram pendant que tu travailles. Elle apprend ta voix, connaît tes services, cite tes prix et te remet l'affaire conclue. Les fondateurs solo, freelances et petites équipes utilisent Bashka pour une réponse client 24/7 — sans embaucher.",
-    "cta": "Découvrir Bashka"
-  },
   "videolinker": {
     "label": "VideoLinker",
     "headline": "La vidéo qui se rend elle-même.",
     "body": "VideoLinker est une plateforme de production vidéo orchestrée par IA. 64 services, 12 workers, 11 serveurs MCP. Un script en entrée, un épisode fini en sortie — image-gen, video-gen, TTS, sous-titres, QA selon 52 règles, composition FFmpeg. Un appel API, une vidéo de qualité broadcast.",
     "cta": "Voir VideoLinker"
   },
-  "link19": {
-    "label": "Link19",
-    "headline": "Des liens, depuis Telegram.",
-    "body": "Link19 est un raccourcisseur d'URL Telegram-first avec analytics en temps réel, protection anti-phishing et smart routing. Crée et gère tes liens courts depuis un bot. Scans de sécurité via PhishTank, URLhaus, Google Safe Browsing. Smart links avec A/B testing, geo-routing, targeting par device.",
-    "cta": "Ouvrir Link19"
-  },
-  "oyka": {
-    "label": "Oyka",
-    "headline": "Un compagnon qui grandit avec tes habitudes.",
-    "body": "Oyka est une petite créature endormie qui se soucie de savoir si tu as bu de l'eau aujourd'hui. Enregistre tes habitudes — elle grandit, s'habille et se souvient de ta série. Un jour manqué, ça va. Deux, elle remarque.",
-    "cta": "Découvrir Oyka"
-  },
   "studio": {
-    "headline": "Un studio d'une personne, pour l'instant.",
-    "p1": "Autofract est un studio d'une personne. Cinq produits live partagent une voix technique unique : infrastructure antifragile, une IA pour tes clients, un moteur de production vidéo, un raccourcisseur de liens Telegram-first, un compagnon pour tes habitudes.",
+    "headline": "Un studio indépendant.",
+    "p1": "Autofract est un studio de logiciels indépendant. Deux produits partagent une voix technique unique : infrastructure antifragile et un moteur de production vidéo orchestré par IA.",
     "p2": "Pas de financement VC, pas de recrutement. Nous construisons lentement, intentionnellement, sur le long terme."
-  },
-  "log": {
-    "heading": "Sorties récentes"
   },
   "footer": {
     "tagline": "Un logiciel qui fonctionne seul."

@@ -1,4 +1,6 @@
-# Autofract site — Deploy Runbook
+# Autofract site — Deploy Runbook (LEGACY)
+
+> **Current deploy path (2026-08):** push to `main` → Coolify on OVH auto-builds the Dockerfile and deploys. The apps-server Caddy block for `autofract.com` is a thin reverse proxy to OVH. Everything below documents the old apps-server systemd/webhook setup and is kept for reference only.
 
 ## BLOCKER — PathCore migration (decide before first deploy)
 
@@ -90,6 +92,3 @@ curl -I https://autofract.com/sitemap.xml  # 200, application/xml
 ## Known gotchas
 
 - **Caddy network:** Container MUST be on `caddy` docker network — else `reverse_proxy` fails with `dial tcp: lookup autofract-site on 127.0.0.11: no such host`. The systemd unit uses `--network caddy` explicitly.
-- **Build log:** `generate-build-log.ts` expects `HOT_PATH` env pointing to Obsidian vault `00-hot.md`. Inside container, vault is not mounted → falls back to hardcoded EN entries (`scripts/generate-build-log.ts` fallback). This is intentional.
-- **Rive for Oyka:** Not yet bundled. Chapter uses inline SVG placeholder at `assets/images/oyka-placeholder.svg`. Swap to real `.riv` when shipped.
-- **Bashka mockup:** Currently a copy of the Bashka landing's OG image. Replace with a proper product mockup render for v1.1.

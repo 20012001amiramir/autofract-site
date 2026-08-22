@@ -20,24 +20,9 @@
   --color-accent-secondary: 94 234 212;
 }
 
-:root.chapter-bashka {
-  --color-accent: 174 255 0;     /* #aeff00 Bashka lime */
-  --color-accent-secondary: 174 255 0;
-}
-
-:root.chapter-oyka {
-  --color-accent: 196 167 231;   /* #c4a7e7 lavender (tuned for dark bg) */
-  --color-accent-secondary: 255 184 168; /* #ffb8a8 coral */
-}
-
 :root.chapter-videolinker {
   --color-accent: 255 107 53;    /* #ff6b35 warm orange — creative tool */
   --color-accent-secondary: 255 107 53;
-}
-
-:root.chapter-link19 {
-  --color-accent: 62 207 142;    /* #3ecf8e emerald — clean, trustworthy */
-  --color-accent-secondary: 62 207 142;
 }
 
 html {

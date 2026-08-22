@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Autofract studio landing — companions, not tools.",
+  "description": "Autofract studio landing — software that runs itself.",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -13,7 +13,6 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:e2e": "playwright test",
-    "generate:build-log": "tsx scripts/generate-build-log.ts",
     "generate:og": "tsx scripts/generate-og.ts"
   },
   "dependencies": {

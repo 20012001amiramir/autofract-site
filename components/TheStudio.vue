@@ -14,7 +14,6 @@ const { t } = useI18n()
     </div>
     <div class="mt-12 flex gap-8 text-base">
       <a href="https://x.com/autofract" class="text-ink hover:text-accent transition-colors" rel="noopener noreferrer" target="_blank">X</a>
-      <a href="https://github.com/20012001amiramir" class="text-ink hover:text-accent transition-colors" rel="noopener noreferrer" target="_blank">GitHub</a>
       <a href="https://t.me/autofract" class="text-ink hover:text-accent transition-colors" rel="noopener noreferrer" target="_blank">Telegram</a>
     </div>
   </section>
