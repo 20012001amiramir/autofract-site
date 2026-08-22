@@ -7,7 +7,9 @@
     "kicker": "Autofract — a studio",
     "line1": "Software that",
     "line2": "runs itself",
-    "sub": "An independent studio building antifragile AI systems. Four production platforms. 100+ services. Zero dashboards to babysit."
+    "sub": "An independent studio building antifragile AI systems. Four production platforms. 100+ services. Zero dashboards to babysit.",
+    "hireCta": "Hire the studio",
+    "workCta": "See the systems"
   },
   "manifesto": {
     "body": "Most software is a dashboard. It waits for you, stares at you, asks to be configured. We build the opposite: systems that watch themselves, heal themselves, and come back stronger every time something breaks. Chaos is scheduled. Verification is adversarial. Every fact ships with a receipt. Antifragile by design — with a character that stays."
@@ -89,7 +91,105 @@
     "hint": "Live simulation — hover the nodes, drag them around.",
     "inside": "Inside the system",
     "visit": "Visit",
-    "next": "Next system"
+    "next": "Next system",
+    "hireTitle": "Want a system like this?",
+    "hireBody": "This case was designed, built and operated by the studio, end to end. Yours can be next — fixed quote, production from week one.",
+    "hireCta": "Hire the studio"
+  },
+  "hire": {
+    "metaTitle": "Hire the studio",
+    "metaDesc": "We design and build antifragile AI systems to order — agents, pipelines, self-healing platforms. Fixed quote, production from week one, from $4,000.",
+    "kicker": "Hire the studio",
+    "headline": "We build systems that run themselves — for you.",
+    "sub": "The four platforms on this site were designed, built and operated by this studio. The same doctrine — chaos-tested, adversarially verified, receipts for everything — is for hire.",
+    "cta": "Get a fixed quote in 48 hours",
+    "offersHeading": "Three ways to work with us",
+    "offers": {
+      "build": {
+        "label": "Build",
+        "title": "A system, end to end",
+        "desc": "A fixed-scope system designed, built and shipped to production: an AI agent, an autonomous pipeline, a data product — anything that should run itself.",
+        "b1": "Fixed quote after a 48-hour scoping pass — no surprises",
+        "b2": "Weekly demos on production infrastructure, not slides",
+        "b3": "Handoff with docs, tests and a 30-day fix window"
+      },
+      "run": {
+        "label": "Run",
+        "title": "We keep it alive",
+        "desc": "Your system, operated the way we run our own: monitored, self-healing, improved every month. You read a report; nobody babysits a dashboard.",
+        "b1": "Monitoring, incident response and recovery included",
+        "b2": "A monthly improvement budget spent on your priorities",
+        "b3": "Cancel monthly — the system stays yours"
+      },
+      "rescue": {
+        "label": "Rescue",
+        "title": "Fix what's failing",
+        "desc": "An AI project that stalled, an unstable pipeline, an agent that misbehaves in production. We audit it, then harden it to antifragile standards.",
+        "b1": "Written audit with a severity-ranked findings list",
+        "b2": "Hardening: gates, retries, circuit breakers, adversarial QA",
+        "b3": "Before/after evidence — measured, not claimed"
+      }
+    },
+    "offersNote": "Prices are starting points for the smallest useful scope. The 48-hour scoping pass turns your brief into a fixed quote.",
+    "capsHeading": "What we take on",
+    "capsTitle": "Anything that should run itself.",
+    "caps": {
+      "c1": { "t": "AI agents & multi-agent platforms", "b": "Autonomous agents that plan, call tools and finish jobs — with budget caps and human gates exactly where you want them." },
+      "c2": { "t": "Content & media pipelines", "b": "Script-to-video factories, generation pipelines, publishing automation — whole productions one API call wide." },
+      "c3": { "t": "Self-healing backends", "b": "Services that detect failure, isolate it and recover on their own — chaos-tested before it happens for real." },
+      "c4": { "t": "Verified data products", "b": "Registries and datasets where every fact carries a source, a date and a tamper-evident history." },
+      "c5": { "t": "Multilingual data platforms", "b": "Open-data products mirrored across languages by their own pipelines — static, fast, no server to crash." },
+      "c6": { "t": "AI safety & QA gates", "b": "Moderation layers, adversarial verification, rule engines that score every artifact before it ships." }
+    },
+    "proven": "proven in",
+    "processHeading": "The process",
+    "process": {
+      "s1t": "Scope",
+      "s1b": "You send the brief. Within 48 hours you get a fixed quote, a clear cut-line of what's in and out, and the first architecture sketch.",
+      "s2t": "Build",
+      "s2b": "Short weekly cycles, each ending in a demo on production infrastructure. You watch the system come alive — not a slide deck.",
+      "s3t": "Harden",
+      "s3b": "Before handoff we attack our own work: chaos runs, adversarial QA, failure drills. What survives is what ships.",
+      "s4t": "Run or hand off",
+      "s4b": "Take the keys — docs, tests and receipts included — or put it on a Run retainer and never think about it again."
+    },
+    "gHeading": "Guarantees",
+    "g1": "Fixed quote before we start — the number doesn't move",
+    "g2": "You own everything: code, IP, infrastructure, data",
+    "g3": "Production from week one — no throwaway prototypes",
+    "g4": "Async-first, straight talk — English or Russian",
+    "faqHeading": "Questions we get",
+    "faq": {
+      "f1q": "How fast can you ship?",
+      "f1a": "A first working slice runs in production within 1–2 weeks; a full system in 3–6, depending on scope. The 48-hour scoping pass gives you the real number before you commit.",
+      "f2q": "What stack do you use?",
+      "f2a": "TypeScript, Go and Python — self-hosted or in your cloud. We stay vendor-neutral about models and providers; systems are built so components can be swapped without a rewrite.",
+      "f3q": "Who owns the result?",
+      "f3a": "You do. Full transfer of code, infrastructure and IP on final payment. We keep only the right to describe the work anonymously as a case study.",
+      "f4q": "What happens after handoff?",
+      "f4a": "Every Build includes a 30-day fix window. After that, your team runs it with our docs — or we keep it alive on a Run retainer."
+    },
+    "form": {
+      "heading": "Tell us what should run itself.",
+      "sub": "Three sentences are enough. We reply within 24 hours with questions or a scoping proposal.",
+      "name": "Name",
+      "company": "Company (optional)",
+      "interest": "What do you need?",
+      "budget": "Budget",
+      "message": "What should we build?",
+      "placeholder": "What it should do, who uses it, what exists today…",
+      "submit": "Send the brief",
+      "sending": "Sending…",
+      "sentTitle": "Got it.",
+      "sentBody": "Your brief is in. We reply within 24 hours — check your inbox (and spam, once).",
+      "err429": "Too many requests from this network — try again in an hour or write to",
+      "errGeneric": "Sending failed — write to us directly:",
+      "i_build": "Build — a new system",
+      "i_run": "Run — operate mine",
+      "i_rescue": "Rescue — fix a project",
+      "i_other": "Something else",
+      "b_unsure": "not sure yet"
+    }
   },
   "studio": {
     "headline": "An independent studio.",
@@ -97,6 +197,7 @@
     "p2": "Not VC-funded, not hiring. We build slowly, on purpose, for the long run."
   },
   "footer": {
-    "tagline": "Software that runs itself."
+    "tagline": "Software that runs itself.",
+    "hire": "Hire us"
   }
 }

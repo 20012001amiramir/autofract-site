@@ -14,7 +14,7 @@ const cards = CASES.map((slug, i) => ({
 </script>
 
 <template>
-  <section class="px-6 md:px-16 py-32 md:py-44" :aria-label="t('work.heading')">
+  <section id="work" class="px-6 md:px-16 py-32 md:py-44 scroll-mt-8" :aria-label="t('work.heading')">
     <p class="text-sm uppercase tracking-widest text-muted mb-4">{{ t('work.kicker') }}</p>
     <h2 class="font-display font-black text-chapter text-ink mb-6 max-w-4xl">{{ t('work.heading') }}</h2>
     <p class="text-lg md:text-xl text-muted max-w-2xl mb-16">{{ t('work.sub') }}</p>

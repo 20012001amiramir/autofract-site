@@ -7,7 +7,9 @@
     "kicker": "Autofract — un studio",
     "line1": "Un logiciel qui",
     "line2": "fonctionne seul",
-    "sub": "Un studio indépendant de systèmes d'IA antifragiles. Quatre plateformes en production. 100+ services. Zéro dashboard à surveiller."
+    "sub": "Un studio indépendant de systèmes d'IA antifragiles. Quatre plateformes en production. 100+ services. Zéro dashboard à surveiller.",
+    "hireCta": "Engager le studio",
+    "workCta": "Voir les systèmes"
   },
   "manifesto": {
     "body": "La plupart des logiciels sont un tableau de bord. Ils t'attendent, te fixent, demandent à être configurés. Nous construisons l'opposé : des systèmes qui se surveillent, se réparent et reviennent plus forts après chaque casse. Le chaos est planifié. La vérification est adversariale. Chaque fait est livré avec son reçu. Antifragiles par conception — avec un caractère qui reste."
@@ -89,7 +91,105 @@
     "hint": "Simulation vivante — survole les nœuds, déplace-les.",
     "inside": "À l'intérieur du système",
     "visit": "Visiter",
-    "next": "Système suivant"
+    "next": "Système suivant",
+    "hireTitle": "Un système comme celui-ci ?",
+    "hireBody": "Ce cas a été conçu, construit et opéré par le studio, de bout en bout. Le tien peut être le prochain — devis fixe, production dès la première semaine.",
+    "hireCta": "Engager le studio"
+  },
+  "hire": {
+    "metaTitle": "Engager le studio",
+    "metaDesc": "Nous concevons et construisons des systèmes d'IA antifragiles sur commande — agents, pipelines, plateformes auto-réparatrices. Devis fixe, production dès la première semaine, à partir de $4 000.",
+    "kicker": "Engager le studio",
+    "headline": "Nous construisons des systèmes qui fonctionnent seuls — pour toi.",
+    "sub": "Les quatre plateformes de ce site ont été conçues, construites et opérées par ce studio. La même doctrine — testée au chaos, vérifiée de façon adversariale, des reçus pour tout — est disponible sur commande.",
+    "cta": "Dis-nous quoi construire",
+    "offersHeading": "Trois façons de travailler ensemble",
+    "offers": {
+      "build": {
+        "label": "Build",
+        "title": "Un système, de bout en bout",
+        "desc": "Un système à périmètre fixe, conçu, construit et livré en production : un agent IA, un pipeline autonome, un produit data — tout ce qui doit fonctionner seul.",
+        "b1": "Devis fixe après un scoping de 48 heures — zéro surprise",
+        "b2": "Démos hebdomadaires sur infrastructure de production, pas des slides",
+        "b3": "Livraison avec docs, tests et fenêtre de correctifs de 30 jours"
+      },
+      "run": {
+        "label": "Run",
+        "title": "Nous le gardons en vie",
+        "desc": "Ton système, opéré comme nous opérons les nôtres : surveillé, auto-réparateur, amélioré chaque mois. Tu lis un rapport — personne ne surveille un dashboard.",
+        "b1": "Monitoring, réponse aux incidents et récupération inclus",
+        "b2": "Un budget d'amélioration mensuel dépensé sur tes priorités",
+        "b3": "Résiliable au mois — le système reste le tien"
+      },
+      "rescue": {
+        "label": "Rescue",
+        "title": "Réparer ce qui casse",
+        "desc": "Un projet IA au point mort, un pipeline instable, un agent qui déraille en production. Nous auditons, puis durcissons au standard antifragile.",
+        "b1": "Audit écrit avec constats classés par gravité",
+        "b2": "Durcissement : gates, retries, circuit breakers, QA adversariale",
+        "b3": "Preuves avant/après — mesurées, pas affirmées"
+      }
+    },
+    "offersNote": "Les prix sont des points de départ pour le plus petit périmètre utile. Le scoping de 48 heures transforme ton brief en devis fixe.",
+    "capsHeading": "Ce que nous prenons en charge",
+    "capsTitle": "Tout ce qui doit fonctionner seul.",
+    "caps": {
+      "c1": { "t": "Agents IA & plateformes multi-agents", "b": "Des agents autonomes qui planifient, appellent des outils et finissent le travail — avec plafonds de budget et validations humaines exactement où tu les veux." },
+      "c2": { "t": "Pipelines de contenu & médias", "b": "Usines script-vers-vidéo, pipelines de génération, automatisation de publication — des productions entières déclenchées par un seul appel d'API." },
+      "c3": { "t": "Backends auto-réparateurs", "b": "Des services qui détectent la panne, l'isolent et récupèrent seuls — testés au chaos avant que ça n'arrive pour de vrai." },
+      "c4": { "t": "Produits data vérifiés", "b": "Des registres et datasets où chaque fait porte une source, une date et un historique infalsifiable." },
+      "c5": { "t": "Plateformes data multilingues", "b": "Des produits open-data répliqués en dizaines de langues par leurs propres pipelines — statiques, rapides, aucun serveur qui puisse tomber." },
+      "c6": { "t": "Sécurité IA & gates QA", "b": "Couches de modération, vérification adversariale, moteurs de règles qui notent chaque artefact avant sa sortie." }
+    },
+    "proven": "prouvé dans",
+    "processHeading": "Le processus",
+    "process": {
+      "s1t": "Scope",
+      "s1b": "Tu envoies le brief. Sous 48 heures tu reçois un devis fixe, une ligne claire de ce qui est inclus ou non, et la première esquisse d'architecture.",
+      "s2t": "Build",
+      "s2b": "Des cycles hebdomadaires courts, chacun terminé par une démo sur infrastructure de production. Tu regardes le système prendre vie — pas des slides.",
+      "s3t": "Durcir",
+      "s3b": "Avant la livraison, nous attaquons notre propre travail : runs de chaos, QA adversariale, exercices de panne. Ce qui survit est ce qui sort.",
+      "s4t": "Run ou livraison",
+      "s4b": "Prends les clés — docs, tests et reçus inclus — ou mets-le sous retainer Run et n'y pense plus jamais."
+    },
+    "gHeading": "Garanties",
+    "g1": "Devis fixe avant de commencer — le chiffre ne bouge pas",
+    "g2": "Tout t'appartient : code, IP, infrastructure, données",
+    "g3": "Production dès la première semaine — pas de prototypes jetables",
+    "g4": "Async-first, parler vrai — anglais ou russe",
+    "faqHeading": "Questions fréquentes",
+    "faq": {
+      "f1q": "En combien de temps ?",
+      "f1a": "Un prototype fonctionnel arrive typiquement en 1–2 semaines ; un système de production en 3–6, selon le périmètre. Le scoping de 48 heures donne le vrai chiffre avant tout engagement.",
+      "f2q": "Quel stack ?",
+      "f2a": "TypeScript, Go et Python — auto-hébergé ou dans ton cloud. Neutres sur les modèles et fournisseurs : les systèmes sont construits pour que les composants se remplacent sans réécriture.",
+      "f3q": "À qui appartient le résultat ?",
+      "f3a": "À toi. Transfert complet du code, de l'infrastructure et de la propriété intellectuelle au paiement final. Nous gardons seulement le droit de décrire le travail anonymement comme un cas.",
+      "f4q": "Et après la livraison ?",
+      "f4a": "Chaque Build inclut une fenêtre de correctifs de 30 jours. Ensuite, ton équipe l'opère avec nos docs — ou nous le gardons en vie sous retainer Run."
+    },
+    "form": {
+      "heading": "Dis-nous ce qui doit fonctionner seul.",
+      "sub": "Trois phrases suffisent. Nous répondons sous 24 heures — avec des questions ou une proposition de scoping.",
+      "name": "Nom",
+      "company": "Société (optionnel)",
+      "interest": "De quoi as-tu besoin ?",
+      "budget": "Budget",
+      "message": "Que construire ?",
+      "placeholder": "Ce que ça doit faire, qui l'utilise, ce qui existe déjà…",
+      "submit": "Envoyer le brief",
+      "sending": "Envoi…",
+      "sentTitle": "Bien reçu.",
+      "sentBody": "Ton brief est arrivé. Nous répondons sous 24 heures — vérifie ta boîte (et le spam, une fois).",
+      "err429": "Trop de requêtes depuis ce réseau — réessaie dans une heure ou écris à",
+      "errGeneric": "Échec de l'envoi — écris-nous directement :",
+      "i_build": "Build — un nouveau système",
+      "i_run": "Run — opérer le mien",
+      "i_rescue": "Rescue — réparer un projet",
+      "i_other": "Autre chose",
+      "b_unsure": "pas encore sûr"
+    }
   },
   "studio": {
     "headline": "Un studio indépendant.",
@@ -97,6 +197,7 @@
     "p2": "Pas de financement VC, pas de recrutement. Nous construisons lentement, intentionnellement, sur le long terme."
   },
   "footer": {
-    "tagline": "Un logiciel qui fonctionne seul."
+    "tagline": "Un logiciel qui fonctionne seul.",
+    "hire": "Nous engager"
   }
 }

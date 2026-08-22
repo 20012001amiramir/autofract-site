@@ -125,7 +125,18 @@ useHead({
         </a>
       </div>
 
-      <div class="mt-32 border-t border-ink/10 py-16">
+      <div class="mt-28 rounded-lg border border-accent/25 bg-accent/5 px-8 py-12 md:px-12 max-w-6xl">
+        <p class="font-display font-black text-3xl md:text-4xl text-ink mb-3">{{ t('casepage.hireTitle') }}</p>
+        <p class="text-ink/75 mb-8 max-w-xl">{{ t('casepage.hireBody') }}</p>
+        <NuxtLink
+          :to="localePath('/hire')"
+          class="inline-flex items-center gap-3 rounded border border-accent/60 px-6 py-3 text-lg font-medium text-ink hover:bg-accent/10 transition-colors"
+        >
+          {{ t('casepage.hireCta') }} <span aria-hidden="true">&rarr;</span>
+        </NuxtLink>
+      </div>
+
+      <div class="mt-24 border-t border-ink/10 py-16">
         <p class="text-sm uppercase tracking-widest text-muted mb-4">{{ t('casepage.next') }}</p>
         <NuxtLink
           :to="localePath(`/work/${nextSlug}`)"

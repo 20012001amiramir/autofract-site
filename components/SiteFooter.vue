@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n'
 import LangSwitcher from './LangSwitcher.vue'
 const { t } = useI18n()
+const localePath = useLocalePath()
 const year = new Date().getFullYear()
 </script>
 
@@ -14,7 +15,8 @@ const year = new Date().getFullYear()
     <div class="flex justify-start md:justify-center">
       <LangSwitcher />
     </div>
-    <div class="flex gap-4 text-sm md:justify-end">
+    <div class="flex gap-4 text-sm md:justify-end items-center">
+      <NuxtLink :to="localePath('/hire')" class="text-ink hover:text-accent transition-colors">{{ t('footer.hire') }}</NuxtLink>
       <a href="mailto:info@autofract.com" class="text-ink hover:text-accent transition-colors">info@autofract.com</a>
       <span class="text-muted">© {{ year }}</span>
     </div>

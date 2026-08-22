@@ -209,8 +209,12 @@ onMounted(() => {
     last = now
     if (!reduced || settled < 240) { step(dt); settled++ }
     draw(now)
-    if (reduced && settled >= 240 && !hovered && !dragged) return // статичный кадр
+    if (reduced && settled >= 240 && !hovered && !dragged) { raf = 0; return } // статичный кадр — цикл усыпляем
     raf = requestAnimationFrame(loop)
+  }
+
+  function wake() {
+    if (raf === 0) { last = performance.now(); raf = requestAnimationFrame(loop) }
   }
 
   function nodeAt(px: number, py: number): SimNode | null {
@@ -238,12 +242,12 @@ onMounted(() => {
     tooltip.value = hovered && hovered.desc
       ? { x: Math.min(x, W - 240), y: Math.max(hovered.y * H - hovered.radius - 14, 12), node: hovered }
       : null
-    if (reduced && raf === 0) raf = requestAnimationFrame(loop)
+    wake()
   }
   const onDown = (ev: PointerEvent) => {
     const { x, y } = toLocal(ev)
     const n = nodeAt(x, y)
-    if (n) { dragged = n; n.fixed = true; el.setPointerCapture(ev.pointerId); el.style.cursor = 'grabbing' }
+    if (n) { dragged = n; n.fixed = true; el.setPointerCapture(ev.pointerId); el.style.cursor = 'grabbing'; wake() }
   }
   const onUp = () => {
     if (dragged) { dragged.fixed = false; dragged = null; el.style.cursor = hovered ? 'grab' : 'default' }
