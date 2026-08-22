@@ -5,9 +5,10 @@ import SystemGraph from '~/components/graph/SystemGraph.vue'
 import GraphLegend from '~/components/graph/GraphLegend.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 import { CASES, CASE_META, SYSTEMS, TYPE_COLORS, type CaseSlug } from '~/data/systems'
+import { useJsonLd, SITE_URL, ORG_ID } from '~/composables/useJsonLd'
 
 const route = useRoute()
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const localePath = useLocalePath()
 
 const slug = route.params.slug as CaseSlug
@@ -39,16 +40,38 @@ function nodeColor(type: string): string {
   return type === 'core' ? meta.accent : TYPE_COLORS[type as keyof typeof TYPE_COLORS]
 }
 
-useHead({
-  htmlAttrs: { lang: locale.value },
+useSeoMeta({
   title: () => `${t(`work.${slug}.name`)} — Autofract`,
-  meta: [
-    { name: 'description', content: t(`work.${slug}.tagline`) },
-    { property: 'og:title', content: `${t(`work.${slug}.name`)} — Autofract` },
-    { property: 'og:description', content: t(`work.${slug}.tagline`) },
-    { property: 'og:image', content: 'https://autofract.com/og-image.png' },
-  ],
+  description: () => t(`work.${slug}.tagline`),
+  ogTitle: () => `${t(`work.${slug}.name`)} — Autofract`,
+  ogDescription: () => t(`work.${slug}.tagline`),
+  ogType: 'article',
+  ogSiteName: 'Autofract',
+  ogImage: { url: `https://autofract.com/og/${slug}.png`, width: 1200, height: 630, type: 'image/png', alt: () => `${t(`work.${slug}.name`)} — a system by Autofract` },
+  twitterCard: 'summary_large_image',
+  twitterSite: '@autofract',
+  twitterTitle: () => `${t(`work.${slug}.name`)} — Autofract`,
+  twitterDescription: () => t(`work.${slug}.tagline`),
 })
+
+useJsonLd('case', [
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Autofract', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: t(`work.${slug}.name`) },
+    ],
+  },
+  {
+    '@type': 'CreativeWork',
+    '@id': `${SITE_URL}/work/${slug}#case`,
+    name: t(`work.${slug}.name`),
+    headline: t(`work.${slug}.headline`),
+    description: t(`work.${slug}.tagline`),
+    creator: { '@id': ORG_ID },
+    ...(meta.link ? { about: { '@type': 'SoftwareApplication', name: t(`work.${slug}.name`), applicationCategory: 'BusinessApplication', url: meta.link } } : {}),
+  },
+])
 </script>
 
 <template>

@@ -7,37 +7,20 @@ import TheApproach from '~/components/TheApproach.vue'
 import TheStudio from '~/components/TheStudio.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 
-useHead({
-  htmlAttrs: { lang: locale.value },
+useSeoMeta({
   title: () => `${t('meta.title')} — Autofract`,
-  meta: [
-    { name: 'description', content: t('meta.description') },
-    { property: 'og:title', content: t('meta.title') },
-    { property: 'og:description', content: t('meta.description') },
-    { property: 'og:image', content: 'https://autofract.com/og-image.png' },
-    { property: 'og:url', content: 'https://autofract.com' },
-    { property: 'og:type', content: 'website' },
-    { name: 'twitter:card', content: 'summary_large_image' },
-  ],
-  script: [
-    {
-      type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'Organization',
-        name: 'Autofract',
-        url: 'https://autofract.com',
-        email: 'info@autofract.com',
-        slogan: 'Software that runs itself.',
-        sameAs: [
-          'https://x.com/autofract',
-          'https://t.me/autofract',
-        ],
-      }),
-    },
-  ],
+  description: () => t('meta.description'),
+  ogTitle: () => t('meta.title'),
+  ogDescription: () => t('meta.description'),
+  ogType: 'website',
+  ogSiteName: 'Autofract',
+  ogImage: { url: 'https://autofract.com/og-image.png', width: 1200, height: 630, type: 'image/png', alt: 'Autofract — software that runs itself' },
+  twitterCard: 'summary_large_image',
+  twitterSite: '@autofract',
+  twitterTitle: () => t('meta.title'),
+  twitterDescription: () => t('meta.description'),
 })
 </script>
 

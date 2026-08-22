@@ -2,14 +2,15 @@
 import { ref, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SiteFooter from '~/components/SiteFooter.vue'
+import { useJsonLd, SITE_URL, ORG_ID } from '~/composables/useJsonLd'
 
-const { t, locale } = useI18n()
+const { t } = useI18n()
 const localePath = useLocalePath()
 
 const OFFERS = [
-  { key: 'build', price: 'from $4,000', accent: '#5eead4' },
-  { key: 'run', price: 'from $1,500/mo', accent: '#ff6b35' },
-  { key: 'rescue', price: 'from $2,000', accent: '#f38ba8' },
+  { key: 'build', price: 'from $4,000', accent: '#5eead4', minPrice: 4000, recurring: false },
+  { key: 'run', price: 'from $1,500/mo', accent: '#ff6b35', minPrice: 1500, recurring: true },
+  { key: 'rescue', price: 'from $2,000', accent: '#f38ba8', minPrice: 2000, recurring: false },
 ] as const
 
 const CAPS = [
@@ -74,16 +75,59 @@ async function submit() {
   }
 }
 
-useHead({
-  htmlAttrs: { lang: locale.value },
+useSeoMeta({
   title: () => `${t('hire.metaTitle')} — Autofract`,
-  meta: [
-    { name: 'description', content: t('hire.metaDesc') },
-    { property: 'og:title', content: `${t('hire.metaTitle')} — Autofract` },
-    { property: 'og:description', content: t('hire.metaDesc') },
-    { property: 'og:image', content: 'https://autofract.com/og-image.png' },
-  ],
+  description: () => t('hire.metaDesc'),
+  ogTitle: () => `${t('hire.metaTitle')} — Autofract`,
+  ogDescription: () => t('hire.metaDesc'),
+  ogType: 'website',
+  ogSiteName: 'Autofract',
+  ogImage: { url: 'https://autofract.com/og/hire.png', width: 1200, height: 630, type: 'image/png', alt: 'Autofract — hire the studio' },
+  twitterCard: 'summary_large_image',
+  twitterSite: '@autofract',
+  twitterTitle: () => `${t('hire.metaTitle')} — Autofract`,
+  twitterDescription: () => t('hire.metaDesc'),
 })
+
+// Entity graph: breadcrumb (still a visible SERP enhancement in 2026),
+// one Service+Offer per priced tier, and FAQPage (AI-ingestion value; Google
+// retired FAQ rich results May 2026, so no stars expected).
+useJsonLd('hire', [
+  {
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Autofract', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: t('hire.metaTitle') },
+    ],
+  },
+  ...OFFERS.map(o => ({
+    '@type': 'Service',
+    '@id': `${SITE_URL}/hire#service-${o.key}`,
+    name: `${t(`hire.offers.${o.key}.title`)} — Autofract`,
+    serviceType: t(`hire.offers.${o.key}.label`),
+    description: t(`hire.offers.${o.key}.desc`),
+    provider: { '@id': ORG_ID },
+    areaServed: { '@type': 'Country', name: 'Worldwide' },
+    offers: {
+      '@type': 'Offer',
+      priceSpecification: {
+        '@type': o.recurring ? 'UnitPriceSpecification' : 'PriceSpecification',
+        priceCurrency: 'USD',
+        minPrice: o.minPrice,
+        ...(o.recurring ? { unitCode: 'MON' } : {}),
+      },
+    },
+  })),
+  {
+    '@type': 'FAQPage',
+    '@id': `${SITE_URL}/hire#faq`,
+    mainEntity: FAQS.map(f => ({
+      '@type': 'Question',
+      name: t(`hire.faq.${f}q`),
+      acceptedAnswer: { '@type': 'Answer', text: t(`hire.faq.${f}a`) },
+    })),
+  },
+])
 </script>
 
 <template>

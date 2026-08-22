@@ -20,13 +20,17 @@ export default defineNuxtConfig({
   },
 
   i18n: {
+    // baseUrl feeds useLocaleHead(seo) — absolute canonical + hreflang alternates.
+    // Must match site.url host exactly (no trailing slash).
+    baseUrl: 'https://autofract.com',
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
+    // Bare language codes (not region subtags): the site targets languages, not countries.
     locales: [
-      { code: 'en', language: 'en-US', file: 'en.json', name: 'English' },
-      { code: 'de', language: 'de-DE', file: 'de.json', name: 'Deutsch' },
-      { code: 'ru', language: 'ru-RU', file: 'ru.json', name: 'Русский' },
-      { code: 'fr', language: 'fr-FR', file: 'fr.json', name: 'Français' },
+      { code: 'en', language: 'en', file: 'en.json', name: 'English' },
+      { code: 'de', language: 'de', file: 'de.json', name: 'Deutsch' },
+      { code: 'ru', language: 'ru', file: 'ru.json', name: 'Русский' },
+      { code: 'fr', language: 'fr', file: 'fr.json', name: 'Français' },
     ],
     detectBrowserLanguage: {
       useCookie: true,
@@ -65,12 +69,11 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      htmlAttrs: { lang: 'en' },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'theme-color', media: '(prefers-color-scheme: light)', content: '#faf8f3' },
-        { name: 'theme-color', media: '(prefers-color-scheme: dark)', content: '#0a0a0a' },
+        // Site is always dark graphite — one theme-color, no light variant.
+        { name: 'theme-color', content: '#0c0c10' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
