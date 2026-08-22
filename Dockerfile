@@ -8,7 +8,8 @@ COPY . .
 
 ARG BUILD_ID
 ENV NUXT_PUBLIC_BUILD_ID=${BUILD_ID}
-RUN npm run generate:og || true
+# OG images are committed as brand assets (generated locally where fonts exist).
+# Do NOT regenerate here — alpine has no fonts and would render tofu glyphs.
 RUN npm run build
 
 FROM node:22-alpine
