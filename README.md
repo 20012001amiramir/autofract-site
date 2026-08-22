@@ -22,10 +22,11 @@ Push to `main` → Coolify (OVH) auto-builds and deploys. `autofract.com` DNS po
 
 ## Structure
 
-- `pages/index.vue` — composes all sections
-- `components/` — one file per section (Hero, Manifesto, ProductChapter base + PathCore/VideoLinker, Studio, Footer, LangSwitcher)
-- `composables/` — `useChapterColors` (CSS var swap) + `useScrollChapter` (IntersectionObserver wrapper)
-- `i18n/locales/` — EN/DE/RU/FR
-- `assets/css/main.css` — paper+ink tokens + chapter accent classes
+- `pages/index.vue` — studio home (hero + ambient graph, manifesto, work grid, approach, studio, footer)
+- `pages/work/[slug].vue` — case pages: pathcore / videolinker / frontdesk / relocating
+- `components/graph/SystemGraph.vue` — dependency-free canvas force-graph (glow nodes, flowing particles, hover, drag)
+- `data/systems.ts` — curated system maps per case (logical architecture only, no infra details)
+- `i18n/locales/` — EN/DE/RU/FR, full case copy in each
+- `assets/css/main.css` — paper+ink tokens; per-case accents are scoped inline on case pages
 - `scripts/` — build-time generators (OG image)
 - `deploy/` — legacy systemd/Caddy configs (pre-Coolify), kept for reference

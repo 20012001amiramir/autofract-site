@@ -8,12 +8,14 @@ const LOCALES = [
 ]
 
 for (const l of LOCALES) {
+  const prefix = l.path === '/' ? '' : l.path
   test(`locale ${l.code} renders all sections`, async ({ page }) => {
     await page.goto(l.path)
     await expect(page.locator('html')).toHaveAttribute('lang', l.code)
     await expect(page.getByRole('heading', { level: 1 })).toContainText(l.hero)
-    await expect(page.locator('a[href="https://pathcore.autofract.com"]')).toBeVisible()
-    await expect(page.locator('a[href="https://video.autofract.com"]')).toBeVisible()
+    for (const slug of ['pathcore', 'videolinker', 'frontdesk', 'relocating']) {
+      await expect(page.locator(`a[href="${prefix}/work/${slug}"]`)).toBeVisible()
+    }
     await expect(page.getByRole('link', { name: 'info@autofract.com' })).toBeVisible()
   })
 }
@@ -26,12 +28,15 @@ test('lang switcher navigates between locales', async ({ page }) => {
   await expect(page.locator('html')).toHaveAttribute('lang', 'de')
 })
 
-test('chapter color swap triggers on scroll', async ({ page }) => {
-  await page.goto('/')
-  await page.locator('section[aria-label="VideoLinker"]').scrollIntoViewIfNeeded()
-  await page.waitForTimeout(900)
-  const hasVideolinkerClass = await page.evaluate(() =>
-    document.documentElement.classList.contains('chapter-videolinker'),
-  )
-  expect(hasVideolinkerClass).toBe(true)
+test('case page renders headline, stats and graph canvas', async ({ page }) => {
+  await page.goto('/work/frontdesk')
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('receipt')
+  await expect(page.locator('canvas')).toBeVisible()
+  await expect(page.getByText('SHA-256').first()).toBeVisible()
+  await expect(page.locator('a[href="https://frontdeskreview.com"]')).toBeVisible()
+})
+
+test('unknown case slug 404s', async ({ page }) => {
+  const resp = await page.goto('/work/nope')
+  expect(resp?.status()).toBe(404)
 })

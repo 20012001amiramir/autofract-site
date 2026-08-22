@@ -15,15 +15,7 @@
   --color-accent-secondary: 94 234 212;
 }
 
-:root.chapter-pathcore {
-  --color-accent: 94 234 212;    /* cyan — clinical/technical */
-  --color-accent-secondary: 94 234 212;
-}
-
-:root.chapter-videolinker {
-  --color-accent: 255 107 53;    /* #ff6b35 warm orange — creative tool */
-  --color-accent-secondary: 255 107 53;
-}
+/* Per-case accents are scoped inline via style="--color-accent: r g b" on case sections. */
 
 html {
   transition: color 500ms cubic-bezier(0.2, 0.8, 0.2, 1);

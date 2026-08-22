@@ -1,32 +1,99 @@
 {
   "meta": {
     "title": "Software that runs itself",
-    "description": "Autofract is an independent studio building antifragile AI systems — self-healing infrastructure and autonomous video production. Software that heals, learns, and grows stronger with use."
+    "description": "Autofract is an independent studio building antifragile AI systems — self-healing infrastructure, autonomous video production, a tamper-evident price record, and open-data products. 100+ services in production."
   },
   "hero": {
     "kicker": "Autofract — a studio",
     "line1": "Software that",
     "line2": "runs itself",
-    "sub": "Autofract builds antifragile AI systems — infrastructure that heals itself, video that renders itself."
+    "sub": "An independent studio building antifragile AI systems. Four production platforms. 100+ services. Zero dashboards to babysit."
   },
   "manifesto": {
-    "body": "Most software is a dashboard. It waits for you, stares at you, asks you to configure it. We build the opposite: systems that heal themselves, learn from failure, and grow stronger with every use. Antifragile by design, with a character that stays."
+    "body": "Most software is a dashboard. It waits for you, stares at you, asks to be configured. We build the opposite: systems that watch themselves, heal themselves, and come back stronger every time something breaks. Chaos is scheduled. Verification is adversarial. Every fact ships with a receipt. Antifragile by design — with a character that stays."
   },
-  "pathcore": {
-    "label": "PathCore",
-    "headline": "Antifragile infrastructure.",
-    "body": "PathCore is a self-healing microservices platform with cognitive AI workers, chaos engineering, and real-time system visualization through MindView. Hexagonal architecture with strict layer separation: Core, Uncore, Un-uncore. Systems that get stronger every time they break.",
-    "cta": "Explore PathCore"
+  "work": {
+    "kicker": "Selected systems",
+    "heading": "Four platforms. One doctrine.",
+    "sub": "Everything below is real, in production, and drawn from the actual architecture. Open a case and pull the graph apart — every node is a running system.",
+    "view": "Open the system",
+    "systems": "systems",
+    "pathcore": {
+      "name": "PathCore",
+      "tag": "Self-healing infrastructure",
+      "blurb": "A hexagonal platform that treats failure as a training signal: chaos on a schedule, circuit breakers, cognitive AI workers — and MindView, a living map of the whole organism.",
+      "headline": "The system that heals itself.",
+      "tagline": "An infrastructure platform where failure is a training signal, not an incident.",
+      "body1": "PathCore is built as a strict hexagon — Core, Uncore, Un-uncore — where every capability lives behind a hard boundary. A chaos engine injects failure on purpose. Circuit breakers isolate the blast radius. Cognitive AI workers read the wreckage, diagnose the cause and propose the fix. The platform doesn't page a human at 3 a.m. — it retrains itself and moves on.",
+      "body2": "You watch all of it happen in MindView: a real-time graph of every service, worker and queue, streamed live over server-sent events. Deploys route through a failure-aware executor with automatic rollback; changes land through a merge queue in provably safe order. It is infrastructure with a nervous system — and a survival instinct.",
+      "s1v": "3", "s1l": "hexagonal core layers",
+      "s2v": "24/7", "s2l": "self-healing loops",
+      "s3v": "1", "s3l": "living map of the whole system",
+      "s4v": "0", "s4l": "dashboards to babysit"
+    },
+    "videolinker": {
+      "name": "VideoLinker",
+      "tag": "Autonomous video production",
+      "blurb": "Script in, broadcast-ready episode out. An 11-step pipeline, 60+ services and an autonomous agent wielding 59 tools — with a 60-rule QA gate before anything ships.",
+      "headline": "A film crew made of services.",
+      "tagline": "Script in — broadcast-ready episode out. No humans in the render path.",
+      "body1": "VideoLinker runs an 11-step production line: series bible, episode ideas, script, shot decomposition, keyframes, image-to-video, cloned-voice narration, word-timed captions, and a final FFmpeg composition with transitions, overlays and a mixed SFX bed. A dedicated GPU container upscales frames on the way through. Every episode faces a QA engine scoring it 0–100 against 60+ weighted rules — hook, pacing, variety, continuity — before it is allowed to exist.",
+      "body2": "Above the pipeline sits an autonomous agent: it plans the job, calls 59 tools across 12 tool servers, respects budget caps, and pauses for human approval only where you tell it to. Artifacts are content-addressed and deduplicated by hash. The whole factory is one API call wide.",
+      "s1v": "60+", "s1l": "service modules in production",
+      "s2v": "38", "s2l": "background tasks on the fleet",
+      "s3v": "59", "s3l": "tools the agent can wield",
+      "s4v": "60+", "s4l": "QA rules gate every episode"
+    },
+    "frontdesk": {
+      "name": "FrontDesk",
+      "tag": "The price of record",
+      "blurb": "A public record of what things actually cost: AI writers compile, an adversarial agent refutes, a fidelity gate re-fetches every source — and a SHA-256 ledger makes history unrewritable.",
+      "headline": "Every price has a receipt.",
+      "tagline": "A public record of what things actually cost — sourced, dated, tamper-evident.",
+      "body1": "FrontDesk is built on institutional distrust of its own content. Writer agents compile products and prices from published sources; a second, adversarial agent exists only to refute them. Whatever survives meets the fidelity gate, which re-fetches every cited page and refuses to ship any number that isn't literally there. The result is a corpus of 4,400+ entities where every fact carries a source URL and the date it was verified.",
+      "body2": "A daily AI-free price scan writes into an append-only history, and a hash-chained ledger makes that history tamper-evident — you can't rewrite last month. The corpus fans out to 23,000+ citable pages, machine feeds built for AI readers, an MCP server with 19 tools, an open CC-BY mirror with a DOI, and a browser extension that overlays the price of record right on the store page.",
+      "s1v": "23k+", "s1l": "citable pages, every fact sourced",
+      "s2v": "4,400+", "s2l": "entities under the record",
+      "s3v": "19", "s3l": "tools served to AI agents",
+      "s4v": "SHA-256", "s4l": "chained, tamper-evident ledger"
+    },
+    "relocating": {
+      "name": "Relocating",
+      "tag": "Relocation, as data",
+      "blurb": "Open data distilled into 33 calculators, programmatic country corridors and a moderated live community — mirrored into 22 languages by its own translation pipeline.",
+      "headline": "Moving countries, minus the guesswork.",
+      "tagline": "Open data turned into calculators, corridors and a live community — in 22 languages.",
+      "body1": "Relocating starts where the anxiety starts: what will it actually cost, what visa fits, how long until citizenship. A build-time ETL normalizes World Bank, weather and geographic data into 30+ datasets across 50 countries; a quality gate fails the entire build if a single dataset is inconsistent. From that spine, a page engine generates country corridors, comparisons and rankings, and 33 calculators run entirely client-side.",
+      "body2": "The whole site is then mirrored into 22 languages by its own translation pipeline — self-hosted models, a versioned translation memory, and a hard build failure on any untranslated string. It ships as a fully static build to the edge: nothing to crash at runtime. Alongside the data lives City Chat, where every message passes AI moderation before it goes public, backed by EU-resident Postgres with row-level security and GDPR retention by construction.",
+      "s1v": "50", "s1l": "countries in the dataset core",
+      "s2v": "33", "s2l": "calculators, all client-side",
+      "s3v": "22", "s3l": "languages, one pipeline",
+      "s4v": "0", "s4l": "runtime servers to break"
+    }
   },
-  "videolinker": {
-    "label": "VideoLinker",
-    "headline": "Video that renders itself.",
-    "body": "VideoLinker is an AI-orchestrated video production platform. 64 services, 12 workers, 11 MCP tool servers. Script in, finished episode out — image-gen, video-gen, TTS, captions, QA scoring against 52 rules, FFmpeg composition. One API call, broadcast-quality video.",
-    "cta": "See VideoLinker"
+  "approach": {
+    "kicker": "The doctrine",
+    "heading": "How we build.",
+    "i1t": "Failure is fuel",
+    "i1b": "We schedule chaos instead of fearing it. Circuit breakers, retries with memory, and AI workers that diagnose their own wreckage — every outage makes the system harder to kill.",
+    "i2t": "Adversarial by default",
+    "i2b": "Nothing ships on one opinion. Writer agents are shadowed by refuting agents; fidelity gates re-fetch every source; QA engines score every artifact against dozens of rules before it exists in public.",
+    "i3t": "Receipts, not claims",
+    "i3b": "Every fact carries its source and its date. Append-only logs, hash-chained ledgers, tamper-evident history. If we can't prove it, we don't publish it.",
+    "i4t": "No babysitting",
+    "i4b": "Software should not need a human staring at it. Our platforms deploy themselves, roll themselves back, translate themselves and moderate themselves — and page nobody."
+  },
+  "casepage": {
+    "kicker": "Case — inside the system",
+    "map": "System map",
+    "hint": "Live simulation — hover the nodes, drag them around.",
+    "inside": "Inside the system",
+    "visit": "Visit",
+    "next": "Next system"
   },
   "studio": {
     "headline": "An independent studio.",
-    "p1": "Autofract is an independent software studio. Two products share a single engineering voice: antifragile infrastructure and an AI-orchestrated video production engine.",
+    "p1": "Autofract is an independent software studio. Four production platforms share one engineering doctrine: self-healing infrastructure, an autonomous video factory, a tamper-evident price record, and an open-data relocation hub — over a hundred services, designed, built and operated end to end.",
     "p2": "Not VC-funded, not hiring. We build slowly, on purpose, for the long run."
   },
   "footer": {

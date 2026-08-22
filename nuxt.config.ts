@@ -53,6 +53,12 @@ export default defineNuxtConfig({
 
   sitemap: {
     autoLastmod: true,
+    urls: [
+      '/work/pathcore',
+      '/work/videolinker',
+      '/work/frontdesk',
+      '/work/relocating',
+    ],
   },
 
   app: {

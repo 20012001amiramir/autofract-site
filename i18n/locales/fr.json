@@ -1,32 +1,99 @@
 {
   "meta": {
     "title": "Un logiciel qui fonctionne seul",
-    "description": "Autofract est un studio indépendant qui construit des systèmes d'IA antifragiles — infrastructure auto-réparatrice et production vidéo autonome. Un logiciel qui se répare, apprend et se renforce à chaque utilisation."
+    "description": "Autofract est un studio indépendant qui construit des systèmes d'IA antifragiles — infrastructure auto-réparatrice, production vidéo autonome, un registre de prix infalsifiable et des produits open-data. 100+ services en production."
   },
   "hero": {
     "kicker": "Autofract — un studio",
     "line1": "Un logiciel qui",
     "line2": "fonctionne seul",
-    "sub": "Autofract construit des systèmes d'IA antifragiles — une infrastructure qui se répare seule, une vidéo qui se rend seule."
+    "sub": "Un studio indépendant de systèmes d'IA antifragiles. Quatre plateformes en production. 100+ services. Zéro dashboard à surveiller."
   },
   "manifesto": {
-    "body": "La plupart des logiciels sont un tableau de bord. Ils t'attendent, te fixent, demandent à être configurés. Nous construisons l'opposé : des systèmes qui se réparent, apprennent de leurs erreurs et se renforcent à chaque utilisation. Antifragiles par conception, avec un caractère qui reste."
+    "body": "La plupart des logiciels sont un tableau de bord. Ils t'attendent, te fixent, demandent à être configurés. Nous construisons l'opposé : des systèmes qui se surveillent, se réparent et reviennent plus forts après chaque casse. Le chaos est planifié. La vérification est adversariale. Chaque fait est livré avec son reçu. Antifragiles par conception — avec un caractère qui reste."
   },
-  "pathcore": {
-    "label": "PathCore",
-    "headline": "Infrastructure antifragile.",
-    "body": "PathCore est une plateforme de microservices auto-réparatrice avec des workers IA cognitifs, du chaos engineering et une visualisation système en temps réel via MindView. Architecture hexagonale à séparation stricte des couches : Core, Uncore, Un-uncore. Des systèmes qui se renforcent chaque fois qu'ils cassent.",
-    "cta": "Explorer PathCore"
+  "work": {
+    "kicker": "Systèmes choisis",
+    "heading": "Quatre plateformes. Une doctrine.",
+    "sub": "Tout ce qui suit est réel, en production, et dessiné depuis l'architecture véritable. Ouvre un cas et manipule le graphe — chaque nœud est un système qui tourne.",
+    "view": "Ouvrir le système",
+    "systems": "systèmes",
+    "pathcore": {
+      "name": "PathCore",
+      "tag": "Infrastructure auto-réparatrice",
+      "blurb": "Une plateforme hexagonale pour qui la panne est un signal d'entraînement : chaos planifié, circuit breakers, workers IA cognitifs — et MindView, carte vivante de tout l'organisme.",
+      "headline": "Le système qui se répare seul.",
+      "tagline": "Une plateforme d'infrastructure où la panne est un signal d'entraînement, pas un incident.",
+      "body1": "PathCore est un hexagone strict — Core, Uncore, Un-uncore — où chaque capacité vit derrière une frontière dure. Un moteur de chaos casse le système volontairement. Les circuit breakers isolent la zone touchée. Des workers IA cognitifs lisent les débris, posent le diagnostic et proposent le correctif. La plateforme ne réveille personne à trois heures du matin — elle se ré-entraîne et continue.",
+      "body2": "Et tout cela se regarde dans MindView : un graphe temps réel de chaque service, worker et file, diffusé en direct par server-sent events. Les déploiements passent par un exécuteur conscient des pannes avec rollback automatique ; les changements atterrissent via une merge queue dans un ordre prouvablement sûr. Une infrastructure avec un système nerveux — et un instinct de survie.",
+      "s1v": "3", "s1l": "couches du cœur hexagonal",
+      "s2v": "24/7", "s2l": "boucles d'auto-réparation",
+      "s3v": "1", "s3l": "carte vivante du système entier",
+      "s4v": "0", "s4l": "dashboard à surveiller"
+    },
+    "videolinker": {
+      "name": "VideoLinker",
+      "tag": "Production vidéo autonome",
+      "blurb": "Script en entrée, épisode prêt à diffuser en sortie. Une pipeline en 11 étapes, 60+ services et un agent autonome maniant 59 outils — avec un gate QA de 60 règles avant toute sortie.",
+      "headline": "Une équipe de tournage faite de services.",
+      "tagline": "Script en entrée — épisode prêt à diffuser en sortie. Aucun humain dans le chemin de rendu.",
+      "body1": "VideoLinker fait tourner une chaîne de production en 11 étapes : bible de série, idées d'épisodes, script, découpage en plans, keyframes, image-vers-vidéo, narration en voix clonée, sous-titres calés au mot, et la composition FFmpeg finale avec transitions, overlays et lit de SFX mixé. Un conteneur GPU dédié upscale les frames au passage. Chaque épisode affronte un moteur QA qui le note 0–100 contre 60+ règles pondérées — accroche, rythme, variété, continuité — avant d'avoir le droit d'exister.",
+      "body2": "Au-dessus de la pipeline siège un agent autonome : il planifie le travail, appelle 59 outils répartis sur 12 serveurs, respecte des plafonds de budget et ne s'arrête pour approbation humaine que là où tu le décides. Les artefacts sont adressés par contenu et dédupliqués par hash. Toute l'usine tient dans un seul appel d'API.",
+      "s1v": "60+", "s1l": "modules de service en production",
+      "s2v": "38", "s2l": "tâches de fond dans la flotte",
+      "s3v": "59", "s3l": "outils à la main de l'agent",
+      "s4v": "60+", "s4l": "règles QA par épisode"
+    },
+    "frontdesk": {
+      "name": "FrontDesk",
+      "tag": "Le prix de référence",
+      "blurb": "Un registre public des vrais prix : des rédacteurs IA compilent, un agent adversarial réfute, un fidelity gate re-vérifie chaque source — et un ledger SHA-256 rend l'historique infalsifiable.",
+      "headline": "Chaque prix a son reçu.",
+      "tagline": "Un registre public de ce que les choses coûtent vraiment — sourcé, daté, infalsifiable.",
+      "body1": "FrontDesk repose sur une méfiance institutionnelle envers son propre contenu. Des agents rédacteurs compilent produits et prix depuis des sources publiées ; un second agent, adversarial, n'existe que pour les réfuter. Ce qui survit affronte le fidelity gate, qui re-télécharge chaque page citée et refuse de publier un chiffre qui ne s'y trouve pas littéralement. Résultat : un corpus de 4 400+ entités où chaque fait porte l'URL de sa source et sa date de vérification.",
+      "body2": "Un scan de prix quotidien — sans IA, avec quatre garde-fous avant commit — écrit dans un historique append-only, et un ledger chaîné par hash le rend infalsifiable : le mois dernier ne peut pas être réécrit. Le corpus se déploie en 23 000+ pages citables, des flux machine pensés pour les lecteurs IA, un serveur MCP à 19 outils, un miroir ouvert CC-BY avec DOI, et une extension navigateur qui affiche le prix de référence directement sur la page du marchand.",
+      "s1v": "23k+", "s1l": "pages citables, chaque fait sourcé",
+      "s2v": "4 400+", "s2l": "entités au registre",
+      "s3v": "19", "s3l": "outils servis aux agents IA",
+      "s4v": "SHA-256", "s4l": "ledger chaîné, infalsifiable"
+    },
+    "relocating": {
+      "name": "Relocating",
+      "tag": "L'expatriation en données",
+      "blurb": "Des données ouvertes distillées en 33 calculateurs, des corridors pays programmatiques et une communauté live modérée — miroitée en 22 langues par sa propre pipeline de traduction.",
+      "headline": "Changer de pays, sans deviner.",
+      "tagline": "Des données ouvertes transformées en calculateurs, corridors et communauté vivante — en 22 langues.",
+      "body1": "Relocating commence là où commence l'anxiété : combien ça coûte vraiment, quel visa convient, combien d'années avant la citoyenneté. Un ETL au build normalise les données de la Banque mondiale, de la météo et de la géographie en 30+ jeux de données sur 50 pays ; un quality gate fait échouer tout le build si un seul jeu est incohérent. De cette colonne vertébrale, un moteur de pages génère corridors, comparaisons et classements — et 33 calculateurs tournent entièrement côté client.",
+      "body2": "Le site entier est ensuite miroité en 22 langues par sa propre pipeline de traduction — modèles auto-hébergés, mémoire de traduction versionnée, et échec dur du build à la moindre chaîne non traduite. Il part en build entièrement statique vers l'edge : rien ne peut planter à l'exécution. À côté des données vit City Chat, où chaque message passe une modération IA avant d'être public — sur un Postgres européen avec row-level security et rétention GDPR par construction.",
+      "s1v": "50", "s1l": "pays dans le cœur de données",
+      "s2v": "33", "s2l": "calculateurs, tous côté client",
+      "s3v": "22", "s3l": "langues, une seule pipeline",
+      "s4v": "0", "s4l": "serveur runtime à faire tomber"
+    }
   },
-  "videolinker": {
-    "label": "VideoLinker",
-    "headline": "La vidéo qui se rend elle-même.",
-    "body": "VideoLinker est une plateforme de production vidéo orchestrée par IA. 64 services, 12 workers, 11 serveurs MCP. Un script en entrée, un épisode fini en sortie — image-gen, video-gen, TTS, sous-titres, QA selon 52 règles, composition FFmpeg. Un appel API, une vidéo de qualité broadcast.",
-    "cta": "Voir VideoLinker"
+  "approach": {
+    "kicker": "La doctrine",
+    "heading": "Comment nous construisons.",
+    "i1t": "La panne est un carburant",
+    "i1b": "Nous planifions le chaos au lieu de le craindre. Circuit breakers, retries avec mémoire, workers IA qui analysent leurs propres débris — chaque incident rend le système plus dur à tuer.",
+    "i2t": "Adversarial par défaut",
+    "i2b": "Rien ne sort sur une seule opinion. Les agents rédacteurs sont doublés d'agents réfutateurs ; les fidelity gates re-téléchargent chaque source ; les moteurs QA notent chaque artefact contre des dizaines de règles avant publication.",
+    "i3t": "Des reçus, pas des affirmations",
+    "i3b": "Chaque fait porte sa source et sa date. Logs append-only, chaînes de hash, historique infalsifiable. Ce que nous ne pouvons pas prouver, nous ne le publions pas.",
+    "i4t": "Pas de babysitting",
+    "i4b": "Un logiciel ne devrait pas avoir besoin d'un humain qui le regarde. Nos plateformes se déploient seules, se rollback seules, se traduisent seules, se modèrent seules — et ne réveillent personne."
+  },
+  "casepage": {
+    "kicker": "Cas — à l'intérieur du système",
+    "map": "Carte du système",
+    "hint": "Simulation vivante — survole les nœuds, déplace-les.",
+    "inside": "À l'intérieur du système",
+    "visit": "Visiter",
+    "next": "Système suivant"
   },
   "studio": {
     "headline": "Un studio indépendant.",
-    "p1": "Autofract est un studio de logiciels indépendant. Deux produits partagent une voix technique unique : infrastructure antifragile et un moteur de production vidéo orchestré par IA.",
+    "p1": "Autofract est un studio de logiciels indépendant. Quatre plateformes de production partagent une même doctrine d'ingénierie : infrastructure auto-réparatrice, usine vidéo autonome, registre de prix infalsifiable et hub open-data d'expatriation — plus de cent services conçus, construits et opérés de bout en bout.",
     "p2": "Pas de financement VC, pas de recrutement. Nous construisons lentement, intentionnellement, sur le long terme."
   },
   "footer": {

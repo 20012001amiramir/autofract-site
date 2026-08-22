@@ -1,0 +1,140 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import SystemGraph from '~/components/graph/SystemGraph.vue'
+import GraphLegend from '~/components/graph/GraphLegend.vue'
+import SiteFooter from '~/components/SiteFooter.vue'
+import { CASES, CASE_META, SYSTEMS, TYPE_COLORS, type CaseSlug } from '~/data/systems'
+
+const route = useRoute()
+const { t, locale } = useI18n()
+const localePath = useLocalePath()
+
+const slug = route.params.slug as CaseSlug
+if (!CASES.includes(slug)) {
+  throw createError({ statusCode: 404, statusMessage: 'Case not found' })
+}
+
+const meta = CASE_META[slug]
+const map = SYSTEMS[slug]
+const nextSlug = CASES[(CASES.indexOf(slug) + 1) % CASES.length]
+
+function hexToTriplet(hex: string): string {
+  const n = parseInt(hex.slice(1), 16)
+  return `${(n >> 16) & 255} ${(n >> 8) & 255} ${n & 255}`
+}
+const accentVars = {
+  '--color-accent': hexToTriplet(meta.accent),
+  '--color-accent-secondary': hexToTriplet(meta.accent),
+}
+
+const stats = computed(() => (['s1', 's2', 's3', 's4'] as const).map(k => ({
+  value: t(`work.${slug}.${k}v`),
+  label: t(`work.${slug}.${k}l`),
+})))
+
+const detailNodes = computed(() => map.nodes.filter(n => n.desc))
+
+function nodeColor(type: string): string {
+  return type === 'core' ? meta.accent : TYPE_COLORS[type as keyof typeof TYPE_COLORS]
+}
+
+useHead({
+  htmlAttrs: { lang: locale.value },
+  title: () => `${t(`work.${slug}.name`)} — Autofract`,
+  meta: [
+    { name: 'description', content: t(`work.${slug}.tagline`) },
+    { property: 'og:title', content: `${t(`work.${slug}.name`)} — Autofract` },
+    { property: 'og:description', content: t(`work.${slug}.tagline`) },
+    { property: 'og:image', content: 'https://autofract.com/og-image.png' },
+  ],
+})
+</script>
+
+<template>
+  <div :style="accentVars">
+    <main class="px-6 md:px-16 pt-28 md:pt-36">
+      <NuxtLink
+        :to="localePath('/')"
+        class="inline-flex items-center gap-2 text-sm text-muted hover:text-accent transition-colors"
+      >
+        <span aria-hidden="true">&larr;</span> Autofract
+      </NuxtLink>
+
+      <header class="mt-14 max-w-5xl">
+        <p class="text-sm uppercase tracking-widest mb-5 font-mono" :style="{ color: meta.accent }">
+          {{ t('casepage.kicker') }}
+        </p>
+        <h1 class="font-display font-black text-hero text-ink">{{ t(`work.${slug}.headline`) }}</h1>
+        <p class="mt-8 max-w-2xl text-xl md:text-2xl text-muted leading-relaxed">
+          {{ t(`work.${slug}.tagline`) }}
+        </p>
+      </header>
+
+      <div class="mt-20 grid grid-cols-2 gap-y-10 md:grid-cols-4 border-y border-ink/10 py-10">
+        <div v-for="s in stats" :key="s.label" class="pr-6">
+          <p class="font-display font-black text-4xl md:text-5xl" :style="{ color: meta.accent }">{{ s.value }}</p>
+          <p class="mt-2 text-sm text-muted leading-snug">{{ s.label }}</p>
+        </div>
+      </div>
+
+      <div class="mt-20 grid gap-10 md:grid-cols-2 max-w-6xl">
+        <p class="text-lg md:text-xl text-ink/85 leading-relaxed">{{ t(`work.${slug}.body1`) }}</p>
+        <p class="text-lg md:text-xl text-ink/85 leading-relaxed">{{ t(`work.${slug}.body2`) }}</p>
+      </div>
+
+      <section class="mt-28" :aria-label="t('casepage.map')">
+        <div class="flex flex-wrap items-end justify-between gap-4 mb-6">
+          <div>
+            <p class="text-sm uppercase tracking-widest text-muted mb-2">{{ t('casepage.map') }}</p>
+            <p class="text-sm text-muted/80 font-mono">{{ t('casepage.hint') }}</p>
+          </div>
+          <GraphLegend :accent="meta.accent" />
+        </div>
+        <div class="rounded-lg border border-ink/10 bg-paper overflow-hidden">
+          <ClientOnly>
+            <SystemGraph :map="map" :height="620" />
+            <template #fallback>
+              <div :style="{ height: '620px' }" />
+            </template>
+          </ClientOnly>
+        </div>
+      </section>
+
+      <section class="mt-28 max-w-6xl" :aria-label="t('casepage.inside')">
+        <p class="text-sm uppercase tracking-widest text-muted mb-10">{{ t('casepage.inside') }}</p>
+        <div class="grid gap-x-10 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div v-for="n in detailNodes" :key="n.id" class="border-l pl-4" :style="{ borderColor: `${nodeColor(n.type)}55` }">
+            <p class="font-mono text-[12px] uppercase tracking-wider mb-1.5" :style="{ color: nodeColor(n.type) }">
+              {{ n.label }}
+            </p>
+            <p class="text-sm text-ink/70 leading-relaxed">{{ n.desc }}</p>
+          </div>
+        </div>
+      </section>
+
+      <div v-if="meta.link" class="mt-24">
+        <a
+          :href="meta.link"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-3 border-b-2 border-accent pb-1 text-lg font-medium text-ink hover:text-accent transition-colors"
+        >
+          {{ t('casepage.visit') }} — {{ meta.linkLabel }}
+          <span aria-hidden="true">&nearr;</span>
+        </a>
+      </div>
+
+      <div class="mt-32 border-t border-ink/10 py-16">
+        <p class="text-sm uppercase tracking-widest text-muted mb-4">{{ t('casepage.next') }}</p>
+        <NuxtLink
+          :to="localePath(`/work/${nextSlug}`)"
+          class="font-display font-black text-chapter text-ink hover:text-accent transition-colors duration-300"
+        >
+          {{ t(`work.${nextSlug}.name`) }} &rarr;
+        </NuxtLink>
+      </div>
+    </main>
+    <SiteFooter />
+  </div>
+</template>

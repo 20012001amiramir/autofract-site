@@ -2,8 +2,8 @@
 import { useI18n } from 'vue-i18n'
 import TheHero from '~/components/TheHero.vue'
 import TheManifesto from '~/components/TheManifesto.vue'
-import PathCoreChapter from '~/components/PathCoreChapter.vue'
-import VideoLinkerChapter from '~/components/VideoLinkerChapter.vue'
+import WorkGrid from '~/components/WorkGrid.vue'
+import TheApproach from '~/components/TheApproach.vue'
 import TheStudio from '~/components/TheStudio.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
@@ -45,8 +45,8 @@ useHead({
   <div>
     <TheHero />
     <TheManifesto />
-    <PathCoreChapter />
-    <VideoLinkerChapter />
+    <WorkGrid />
+    <TheApproach />
     <TheStudio />
     <SiteFooter />
   </div>
