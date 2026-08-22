@@ -53,12 +53,13 @@ export default defineNuxtConfig({
 
   sitemap: {
     autoLastmod: true,
+    // Динамические роуты не автообнаруживаются; _i18nTransform размножает их
+    // по всем локалям с корректными hreflang-альтернативами.
     urls: [
-      '/hire',
-      '/work/pathcore',
-      '/work/videolinker',
-      '/work/frontdesk',
-      '/work/relocating',
+      { loc: '/work/pathcore', _i18nTransform: true },
+      { loc: '/work/videolinker', _i18nTransform: true },
+      { loc: '/work/frontdesk', _i18nTransform: true },
+      { loc: '/work/relocating', _i18nTransform: true },
     ],
   },
 
