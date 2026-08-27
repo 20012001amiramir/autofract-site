@@ -98,7 +98,7 @@
   },
   "hire": {
     "metaTitle": "Engager le studio",
-    "metaDesc": "Nous concevons et construisons des systèmes d'IA antifragiles sur commande — agents, pipelines, plateformes auto-réparatrices. Devis fixe, production dès la première semaine, à partir de $4 000.",
+    "metaDesc": "Nous construisons des systèmes d'IA antifragiles sur mesure : agents, pipelines, plateformes auto-réparatrices. Devis fixe, production dès la semaine un.",
     "kicker": "Engager le studio",
     "headline": "Nous construisons des systèmes qui fonctionnent seuls — pour toi.",
     "sub": "Les quatre plateformes de ce site ont été conçues, construites et opérées par ce studio. La même doctrine — testée au chaos, vérifiée de façon adversariale, des reçus pour tout — est disponible sur commande.",
@@ -198,6 +198,33 @@
   },
   "footer": {
     "tagline": "Un logiciel qui fonctionne seul.",
-    "hire": "Nous engager"
+    "hire": "Nous engager",
+    "tools": "Tools"
+  },
+  "tools": {
+    "kicker": "Tools",
+    "breadcrumb": "Tools",
+    "open": "Open the tool",
+    "read": "How it works",
+    "visit": "Visit",
+    "case": "Read the case",
+    "backToHub": "All tools",
+    "free": "Free · no account",
+    "opens": "Opens {host}",
+    "strip": {
+      "kicker": "Free tools",
+      "heading": "We also build small things.",
+      "sub": "Three free browser tools: contracts read for traps, meetings that fit every time zone, and the costs nobody invoices.",
+      "cta": "See the tools"
+    }
+  },
+  "error": {
+    "kicker": "Error",
+    "title404": "This page does not exist.",
+    "body404": "The address you asked for is not part of this site — it may have moved, or the link may carry a typo. Everything the studio publishes is one click away below.",
+    "titleGeneric": "Something broke.",
+    "bodyGeneric": "An unexpected error stopped this page from rendering. That is on us — try again, or start from the home page.",
+    "home": "Back to Autofract",
+    "tools": "See the tools"
   }
 }

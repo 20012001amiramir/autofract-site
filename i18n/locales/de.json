@@ -98,7 +98,7 @@
   },
   "hire": {
     "metaTitle": "Studio beauftragen",
-    "metaDesc": "Wir entwerfen und bauen antifragile KI-Systeme auf Bestellung — Agenten, Pipelines, selbstheilende Plattformen. Festpreis, Produktion ab Woche eins, ab $4.000.",
+    "metaDesc": "Wir bauen antifragile KI-Systeme auf Bestellung: Agenten, Pipelines, selbstheilende Plattformen. Festpreis, Produktion ab Woche eins, ab $4.000.",
     "kicker": "Studio beauftragen",
     "headline": "Wir bauen Systeme, die sich selbst betreiben — für dich.",
     "sub": "Die vier Plattformen auf dieser Seite hat dieses Studio entworfen, gebaut und betrieben. Dieselbe Doktrin — chaos-getestet, adversarial verifiziert, Belege für alles — gibt es auf Bestellung.",
@@ -198,6 +198,33 @@
   },
   "footer": {
     "tagline": "Software, die sich selbst betreibt.",
-    "hire": "Beauftragen"
+    "hire": "Beauftragen",
+    "tools": "Tools"
+  },
+  "tools": {
+    "kicker": "Tools",
+    "breadcrumb": "Tools",
+    "open": "Open the tool",
+    "read": "How it works",
+    "visit": "Visit",
+    "case": "Read the case",
+    "backToHub": "All tools",
+    "free": "Free · no account",
+    "opens": "Opens {host}",
+    "strip": {
+      "kicker": "Free tools",
+      "heading": "We also build small things.",
+      "sub": "Three free browser tools: contracts read for traps, meetings that fit every time zone, and the costs nobody invoices.",
+      "cta": "See the tools"
+    }
+  },
+  "error": {
+    "kicker": "Error",
+    "title404": "This page does not exist.",
+    "body404": "The address you asked for is not part of this site — it may have moved, or the link may carry a typo. Everything the studio publishes is one click away below.",
+    "titleGeneric": "Something broke.",
+    "bodyGeneric": "An unexpected error stopped this page from rendering. That is on us — try again, or start from the home page.",
+    "home": "Back to Autofract",
+    "tools": "See the tools"
   }
 }

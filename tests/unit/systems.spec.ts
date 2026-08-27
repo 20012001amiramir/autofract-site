@@ -3,7 +3,9 @@ import { CASES, CASE_META, SYSTEMS, STUDIO_MAP, TYPE_COLORS } from '~/data/syste
 import en from '~/i18n/locales/en.json'
 import ru from '~/i18n/locales/ru.json'
 import de from '~/i18n/locales/de.json'
+import es from '~/i18n/locales/es.json'
 import fr from '~/i18n/locales/fr.json'
+import pt from '~/i18n/locales/pt.json'
 
 const ALL_MAPS = [...CASES.map(slug => ({ name: slug, map: SYSTEMS[slug] })), { name: 'studio', map: STUDIO_MAP }]
 
@@ -45,7 +47,7 @@ describe('system maps', () => {
 })
 
 describe('locales cover every case', () => {
-  const locales = { en, ru, de, fr }
+  const locales = { en, ru, de, es, fr, pt }
   const requiredKeys = ['name', 'tag', 'blurb', 'headline', 'tagline', 'body1', 'body2', 's1v', 's1l', 's2v', 's2l', 's3v', 's3l', 's4v', 's4l']
 
   for (const [code, messages] of Object.entries(locales)) {

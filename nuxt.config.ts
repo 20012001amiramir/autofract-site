@@ -1,4 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { LOCALES, LOCALE_LABELS } from './data/locales'
+import { SITE_NAME, SITE_URL } from './data/site'
+
 export default defineNuxtConfig({
   compatibilityDate: '2026-04-23',
   devtools: { enabled: true },
@@ -22,22 +25,22 @@ export default defineNuxtConfig({
   i18n: {
     // baseUrl feeds useLocaleHead(seo) — absolute canonical + hreflang alternates.
     // Must match site.url host exactly (no trailing slash).
-    baseUrl: 'https://autofract.com',
+    baseUrl: SITE_URL,
     strategy: 'prefix_except_default',
     defaultLocale: 'en',
     // Bare language codes (not region subtags): the site targets languages, not countries.
-    locales: [
-      { code: 'en', language: 'en', file: 'en.json', name: 'English' },
-      { code: 'de', language: 'de', file: 'de.json', name: 'Deutsch' },
-      { code: 'ru', language: 'ru', file: 'ru.json', name: 'Русский' },
-      { code: 'fr', language: 'fr', file: 'fr.json', name: 'Français' },
-    ],
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-      fallbackLocale: 'en',
-    },
+    // One registry (data/locales.ts) feeds the head, the switcher and the sitemap.
+    locales: LOCALES.map(code => ({
+      code,
+      language: code,
+      file: `${code}.json`,
+      name: LOCALE_LABELS[code],
+    })),
+    // Missing keys fall back to English instead of rendering a raw key path.
+    vueI18n: './i18n.config.ts',
+    // No Accept-Language redirect: `/` must answer 200 for everyone, crawlers
+    // included, because it is the x-default of the hreflang cluster.
+    detectBrowserLanguage: false,
     bundle: {
       optimizeTranslationDirective: false,
     },
@@ -51,8 +54,8 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://autofract.com',
-    name: 'Autofract',
+    url: SITE_URL,
+    name: SITE_NAME,
   },
 
   sitemap: {
