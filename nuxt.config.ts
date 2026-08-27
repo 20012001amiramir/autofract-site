@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { LOCALES, LOCALE_LABELS } from './data/locales'
-import { SITE_NAME, SITE_URL } from './data/site'
+import { ANALYTICS_SRC, ANALYTICS_WEBSITE_ID, SITE_NAME, SITE_URL } from './data/site'
 import { TOOLS } from './data/tools'
 
 export default defineNuxtConfig({
@@ -85,6 +85,10 @@ export default defineNuxtConfig({
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+      ],
+      // Cookieless page views. Declared here so every SSR page carries it.
+      script: [
+        { src: ANALYTICS_SRC, defer: true, 'data-website-id': ANALYTICS_WEBSITE_ID },
       ],
     },
   },
