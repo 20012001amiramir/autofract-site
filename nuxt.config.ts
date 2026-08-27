@@ -60,6 +60,9 @@ export default defineNuxtConfig({
 
   sitemap: {
     autoLastmod: true,
+    // One /sitemap.xml that answers 200 directly: robots.txt may not point at a
+    // redirect, and the i18n split would make /sitemap.xml a 307 to an index.
+    sitemaps: false,
     // Динамические роуты не автообнаруживаются; _i18nTransform размножает их
     // по всем локалям с корректными hreflang-альтернативами.
     urls: [

@@ -15,6 +15,4 @@ export function useJsonLd(key: string, graph: Record<string, unknown>[]): void {
   })
 }
 
-export const SITE_URL = 'https://autofract.com'
-export const ORG_ID = `${SITE_URL}/#identity`
-export const WEBSITE_ID = `${SITE_URL}/#website`
+export { SITE_URL, ORG_ID, WEBSITE_ID } from '~/data/site'
