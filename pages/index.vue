@@ -1,13 +1,19 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
+import { asLocale } from '~/data/locales'
+import { ogUrl } from '~/data/og'
+import { SITE_NAME, TWITTER_HANDLE } from '~/data/site'
 import TheHero from '~/components/TheHero.vue'
 import TheManifesto from '~/components/TheManifesto.vue'
 import WorkGrid from '~/components/WorkGrid.vue'
+import ToolsStrip from '~/components/ToolsStrip.vue'
 import TheApproach from '~/components/TheApproach.vue'
 import TheStudio from '~/components/TheStudio.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
+const lang = computed(() => asLocale(locale.value))
 
 useSeoMeta({
   title: () => `${t('meta.title')} — Autofract`,
@@ -15,10 +21,16 @@ useSeoMeta({
   ogTitle: () => t('meta.title'),
   ogDescription: () => t('meta.description'),
   ogType: 'website',
-  ogSiteName: 'Autofract',
-  ogImage: { url: 'https://autofract.com/og-image.png', width: 1200, height: 630, type: 'image/png', alt: 'Autofract — software that runs itself' },
+  ogSiteName: SITE_NAME,
+  ogImage: () => ({
+    url: ogUrl('/og-image', lang.value),
+    width: 1200,
+    height: 630,
+    type: 'image/png' as const,
+    alt: `Autofract — ${t('meta.title')}`,
+  }),
   twitterCard: 'summary_large_image',
-  twitterSite: '@autofract',
+  twitterSite: TWITTER_HANDLE,
   twitterTitle: () => t('meta.title'),
   twitterDescription: () => t('meta.description'),
 })
@@ -29,6 +41,7 @@ useSeoMeta({
     <TheHero />
     <TheManifesto />
     <WorkGrid />
+    <ToolsStrip />
     <TheApproach />
     <TheStudio />
     <SiteFooter />

@@ -5,10 +5,14 @@ import SystemGraph from '~/components/graph/SystemGraph.vue'
 import GraphLegend from '~/components/graph/GraphLegend.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
 import { CASES, CASE_META, SYSTEMS, TYPE_COLORS, type CaseSlug } from '~/data/systems'
-import { useJsonLd, SITE_URL, ORG_ID } from '~/composables/useJsonLd'
+import { useJsonLd, ORG_ID } from '~/composables/useJsonLd'
+import { breadcrumbList } from '~/composables/seo'
+import { asLocale } from '~/data/locales'
+import { ogUrl } from '~/data/og'
+import { SITE_NAME, TWITTER_HANDLE, abs } from '~/data/site'
 
 const route = useRoute()
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
 const slug = route.params.slug as CaseSlug
@@ -46,25 +50,28 @@ useSeoMeta({
   ogTitle: () => `${t(`work.${slug}.name`)} — Autofract`,
   ogDescription: () => t(`work.${slug}.tagline`),
   ogType: 'article',
-  ogSiteName: 'Autofract',
-  ogImage: { url: `https://autofract.com/og/${slug}.png`, width: 1200, height: 630, type: 'image/png', alt: () => `${t(`work.${slug}.name`)} — a system by Autofract` },
+  ogSiteName: SITE_NAME,
+  ogImage: () => ({
+    url: ogUrl(`/og/${slug}`, asLocale(locale.value)),
+    width: 1200,
+    height: 630,
+    type: 'image/png' as const,
+    alt: `${t(`work.${slug}.name`)} — ${t(`work.${slug}.tag`)}`,
+  }),
   twitterCard: 'summary_large_image',
-  twitterSite: '@autofract',
+  twitterSite: TWITTER_HANDLE,
   twitterTitle: () => `${t(`work.${slug}.name`)} — Autofract`,
   twitterDescription: () => t(`work.${slug}.tagline`),
 })
 
 useJsonLd('case', [
-  {
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Autofract', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: t(`work.${slug}.name`) },
-    ],
-  },
+  breadcrumbList([
+    { name: SITE_NAME, path: localePath('/') },
+    { name: t(`work.${slug}.name`), path: localePath(`/work/${slug}`) },
+  ]),
   {
     '@type': 'CreativeWork',
-    '@id': `${SITE_URL}/work/${slug}#case`,
+    '@id': `${abs(localePath(`/work/${slug}`))}#case`,
     name: t(`work.${slug}.name`),
     headline: t(`work.${slug}.headline`),
     description: t(`work.${slug}.tagline`),

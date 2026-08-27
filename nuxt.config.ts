@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { LOCALES, LOCALE_LABELS } from './data/locales'
 import { SITE_NAME, SITE_URL } from './data/site'
+import { TOOLS } from './data/tools'
 
 export default defineNuxtConfig({
   compatibilityDate: '2026-04-23',
@@ -70,6 +71,7 @@ export default defineNuxtConfig({
       { loc: '/work/videolinker', _i18nTransform: true },
       { loc: '/work/frontdesk', _i18nTransform: true },
       { loc: '/work/relocating', _i18nTransform: true },
+      ...TOOLS.map(slug => ({ loc: `/tools/${slug}`, _i18nTransform: true })),
     ],
   },
 

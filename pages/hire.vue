@@ -3,8 +3,12 @@ import { ref, onMounted, nextTick } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SiteFooter from '~/components/SiteFooter.vue'
 import { useJsonLd, SITE_URL, ORG_ID } from '~/composables/useJsonLd'
+import { breadcrumbList } from '~/composables/seo'
+import { asLocale } from '~/data/locales'
+import { ogUrl } from '~/data/og'
+import { SITE_NAME, TWITTER_HANDLE } from '~/data/site'
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
 const OFFERS = [
@@ -81,10 +85,16 @@ useSeoMeta({
   ogTitle: () => `${t('hire.metaTitle')} — Autofract`,
   ogDescription: () => t('hire.metaDesc'),
   ogType: 'website',
-  ogSiteName: 'Autofract',
-  ogImage: { url: 'https://autofract.com/og/hire.png', width: 1200, height: 630, type: 'image/png', alt: 'Autofract — hire the studio' },
+  ogSiteName: SITE_NAME,
+  ogImage: () => ({
+    url: ogUrl('/og/hire', asLocale(locale.value)),
+    width: 1200,
+    height: 630,
+    type: 'image/png' as const,
+    alt: `Autofract — ${t('hire.metaTitle')}`,
+  }),
   twitterCard: 'summary_large_image',
-  twitterSite: '@autofract',
+  twitterSite: TWITTER_HANDLE,
   twitterTitle: () => `${t('hire.metaTitle')} — Autofract`,
   twitterDescription: () => t('hire.metaDesc'),
 })
@@ -93,13 +103,10 @@ useSeoMeta({
 // one Service+Offer per priced tier, and FAQPage (AI-ingestion value; Google
 // retired FAQ rich results May 2026, so no stars expected).
 useJsonLd('hire', [
-  {
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Autofract', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: t('hire.metaTitle') },
-    ],
-  },
+  breadcrumbList([
+    { name: SITE_NAME, path: localePath('/') },
+    { name: t('hire.metaTitle'), path: localePath('/hire') },
+  ]),
   ...OFFERS.map(o => ({
     '@type': 'Service',
     '@id': `${SITE_URL}/hire#service-${o.key}`,
