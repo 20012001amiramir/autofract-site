@@ -29,7 +29,7 @@ const CAPS = [
 const STEPS = ['s1', 's2', 's3', 's4'] as const
 const FAQS = ['f1', 'f2', 'f3', 'f4'] as const
 
-// --- форма ---
+// --- form ---
 const name = ref('')
 const email = ref('')
 const company = ref('')
@@ -345,7 +345,7 @@ useJsonLd('hire', [
   height: 1px;
   overflow: hidden;
 }
-/* видимый фокус на радио-чипсах (сам input — sr-only) */
+/* visible focus on the radio chips (the input itself is sr-only) */
 .chip:focus-within {
   outline: 2px solid rgb(var(--color-accent));
   outline-offset: 2px;

@@ -2,14 +2,14 @@ import { validateLead } from '../utils/lead'
 
 const WINDOW_MS = 60 * 60 * 1000
 const MAX_PER_IP = 5
-const MAX_KEYS = 2000 // жёсткий потолок карты — защита от memory-DoS
-const MAX_BODY_BYTES = 64 * 1024 // легитимный лид < ~6KB
-const GLOBAL_MAX_PER_HOUR = 80 // backstop: письма/час на весь сайт, независимо от IP
+const MAX_KEYS = 2000 // hard ceiling on the map — memory-DoS guard
+const MAX_BODY_BYTES = 64 * 1024 // a legitimate lead is < ~6KB
+const GLOBAL_MAX_PER_HOUR = 80 // backstop: mails per hour for the whole site, IP or not
 
 /**
- * Per-IP счётчик со встроенным LRU-выселением: Map с insertion-order,
- * при переполнении удаляем самый старый ключ. Размер ограничен жёстко,
- * поэтому подмена X-Forwarded-For не может раздуть память.
+ * Per-IP counter with built-in LRU eviction: a Map keeps insertion order, so
+ * the oldest key goes first once it is full. The size is capped hard, which is
+ * why a spoofed X-Forwarded-For cannot inflate memory.
  */
 const hits = new Map<string, number[]>()
 
@@ -17,7 +17,7 @@ function ipLimited(ip: string): boolean {
   const now = Date.now()
   const list = (hits.get(ip) ?? []).filter(t => now - t < WINDOW_MS)
   if (list.length >= MAX_PER_IP) {
-    hits.delete(ip); hits.set(ip, list) // освежаем позицию в LRU
+    hits.delete(ip); hits.set(ip, list) // refresh the LRU position
     return true
   }
   list.push(now)
@@ -30,7 +30,7 @@ function ipLimited(ip: string): boolean {
   return false
 }
 
-// Глобальный backstop: кольцо таймстампов исходящих писем. Спуфинг IP его не обходит.
+// Global backstop: a ring of outgoing-mail timestamps. Spoofing an IP does not bypass it.
 let globalSends: number[] = []
 function globalLimited(): boolean {
   const now = Date.now()
@@ -61,7 +61,7 @@ export default defineEventHandler(async (event) => {
     throw createError({ statusCode: 429, statusMessage: 'Too many requests' })
   }
 
-  // Отвергаем крупные тела ДО парсинга (Content-Length может врать → проверяем и сырой размер)
+  // Reject large bodies BEFORE parsing (Content-Length can lie, so the raw size is checked too)
   const declared = Number(getRequestHeader(event, 'content-length') ?? 0)
   if (declared > MAX_BODY_BYTES) {
     throw createError({ statusCode: 413, statusMessage: 'Payload too large' })
@@ -74,7 +74,7 @@ export default defineEventHandler(async (event) => {
   try { body = raw ? JSON.parse(raw) : null } catch { body = null }
 
   const v = validateLead(body)
-  if (v.silentDrop) return { ok: true } // honeypot — бота не информируем
+  if (v.silentDrop) return { ok: true } // honeypot — never tell the bot
   if (!v.ok || !v.lead) {
     throw createError({ statusCode: 400, statusMessage: `Invalid field: ${v.error ?? 'payload'}` })
   }
@@ -87,7 +87,7 @@ export default defineEventHandler(async (event) => {
   }
 
   if (globalLimited()) {
-    // общий лимит писем исчерпан — не жжём quota, но и лид не теряем молча
+    // the global mail budget is spent — stop burning quota, but do not drop the lead silently
     throw createError({ statusCode: 429, statusMessage: 'Too many requests' })
   }
 

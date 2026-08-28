@@ -5,9 +5,9 @@ export interface LeadPayload {
   interest: 'build' | 'run' | 'rescue' | 'other'
   budget: 'lt4k' | '4-10k' | '10-25k' | '25k+' | 'unsure'
   message: string
-  /** honeypot — люди это поле не видят и не заполняют */
+  /** honeypot — people neither see nor fill this field */
   website?: string
-  /** мс с момента маунта формы — боты сабмитят мгновенно */
+  /** ms since the form mounted — bots submit instantly */
   elapsed?: number
 }
 
@@ -27,9 +27,9 @@ export interface CleanLead {
 
 export interface LeadValidation {
   ok: boolean
-  /** true = молча принять и выбросить (honeypot заполнен — это бот) */
+  /** true = accept silently and discard (a filled honeypot means a bot) */
   silentDrop?: boolean
-  /** подозрительно (слишком быстрый сабмит), но лид доставляем с пометкой — не теряем горячие заявки */
+  /** suspicious (submitted too fast), but the lead is still delivered, flagged — hot enquiries are never dropped */
   suspect?: boolean
   error?: string
   lead?: CleanLead
@@ -39,7 +39,7 @@ export function validateLead(body: unknown): LeadValidation {
   if (typeof body !== 'object' || body === null) return { ok: false, error: 'bad payload' }
   const b = body as Record<string, unknown>
 
-  // honeypot: скрытое поле, заполненное только ботами → тихо отбрасываем
+  // honeypot: a hidden field only bots fill — discard quietly
   if (typeof b.website === 'string' && b.website.trim() !== '') return { ok: false, silentDrop: true }
 
   const name = typeof b.name === 'string' ? b.name.trim() : ''
@@ -56,7 +56,7 @@ export function validateLead(body: unknown): LeadValidation {
   if (!BUDGETS.has(budget)) return { ok: false, error: 'budget' }
   if (message.length < 20 || message.length > 5000) return { ok: false, error: 'message' }
 
-  // слишком быстрый сабмит (или отсутствующий таймер) — не роняем лид, а помечаем
+  // submitted too fast (or no timer at all) — flag the lead instead of dropping it
   const suspect = typeof b.elapsed !== 'number' || b.elapsed < MIN_FILL_MS
 
   return {

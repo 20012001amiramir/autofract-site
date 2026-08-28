@@ -4,7 +4,7 @@ import { resolve } from 'node:path'
 import { LOCALES, type Locale } from '~/data/locales'
 import { TOOLS, TOOL_META, PRODUCTS, PRODUCT_META, toolHref } from '~/data/tools'
 import { OG_CARDS, ogPath, ogUrl } from '~/data/og'
-import { INDEXNOW_KEY, SITE_URL, abs } from '~/data/site'
+import { INDEXNOW_KEY, SITE_URL, abs, canonicalizeSitemap } from '~/data/site'
 import { toolsContent, toolsContentFor } from '~/content/tools'
 import { toolsEn } from '~/content/tools/en'
 import { breadcrumbList, faqPage, webApplication } from '~/composables/seo'
@@ -170,6 +170,22 @@ describe('crawler files', () => {
     const robots = readFileSync(resolve(root, 'public/robots.txt'), 'utf8')
     expect(robots).toContain(`Sitemap: ${SITE_URL}/sitemap.xml`)
     expect(robots).toContain('Disallow: /api/')
+  })
+
+  it('names the home page in the sitemap the way its canonical does', () => {
+    const xml = [
+      `<url><loc>${SITE_URL}/</loc>`,
+      `<xhtml:link rel="alternate" hreflang="en" href="${SITE_URL}/" />`,
+      `<xhtml:link rel="alternate" hreflang="ru" href="${SITE_URL}/ru" />`,
+      `<loc>${SITE_URL}/tools</loc></url>`,
+    ].join('')
+    const out = canonicalizeSitemap(xml)
+    expect(out).toContain(`<loc>${SITE_URL}</loc>`)
+    expect(out).toContain(`hreflang="en" href="${SITE_URL}"`)
+    expect(out).not.toContain(`${SITE_URL}/"`)
+    // Everything below the root keeps its path untouched.
+    expect(out).toContain(`<loc>${SITE_URL}/tools</loc>`)
+    expect(out).toContain(`href="${SITE_URL}/ru"`)
   })
 
   it('serves the IndexNow key that the submit script uses', () => {

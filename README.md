@@ -40,7 +40,8 @@ the apps server, whose Caddy is a thin reverse proxy to OVH — so always verify
 - `data/locales.ts` — the six-locale registry: labels, og:locale tags, `localeHref`, `alternates`
 - `data/site.ts` — canonical origin, schema.org @ids, analytics id, IndexNow key
 - `data/tools.ts` — tool + product registry (subdomain URLs, accents, which locales each tool serves)
-- `data/systems.ts` — curated system maps per case (logical architecture only, no infra details)
+- `data/systems.ts` — curated system maps per case: topology only (ids, types, edges), no words
+- `content/systems/` — every node label and tooltip, one TS file per locale, keyed by node id
 - `data/og.ts` — the social-card list; `ogPath()`/`ogUrl()` name one PNG per card per locale
 - `composables/useJsonLd.ts`, `composables/seo.ts` — the JSON-LD emitter and its node builders
 - `i18n/locales/` — UI + meta strings, one JSON per locale, all with the same key set
@@ -56,8 +57,21 @@ the apps server, whose Caddy is a thin reverse proxy to OVH — so always verify
   single 200 (no index, no redirect) listing every page × every locale with `xhtml:link` alternates.
   Dynamic routes are not auto-discovered: new `/work/<slug>` or `/tools/<slug>` pages must be listed
   in `nuxt.config.ts` → `sitemap.urls` with `_i18nTransform: true`.
-- Titles stay ≤ 60 characters with `— Autofract` appended, descriptions 120–155. Tests enforce both.
+- Titles stay ≤ 60 characters with `— Autofract` appended, descriptions 120–155 — **both bounds**.
+  Tests enforce them for the home page, `/hire`, every `/work/<slug>` and every `/tools/<slug>`.
+- Case pages title themselves from `work.<slug>.metaTitle`, not the product name: the name alone is
+  the same string in all six locales and carries no keyword.
+- `server/plugins/sitemap-canonical.ts` folds the home page back to `https://autofract.com`, so the
+  sitemap names it exactly as its own canonical does.
 - IndexNow key is served from `public/<key>.txt`; `npm run indexnow` reads the live sitemap and submits.
+
+## Typography and long words
+
+Display headings run at a 48px (hero) / 36px (chapter) floor, which fits about twelve characters on a
+360px phone. `hyphens: auto` is set but Chromium has no dictionary for every language, so a longer
+compound — `Kleingedruckte`, `independiente` — carries a soft hyphen (U+00AD) at a real syllable
+boundary. `tests/unit/typography.spec.ts` fails on any headline word longer than that, and on a soft
+hyphen that leaks into a `<title>` or a description.
 
 ## Adding a locale
 
@@ -65,9 +79,11 @@ the apps server, whose Caddy is a thin reverse proxy to OVH — so always verify
    Everything else (i18n config, hreflang, sitemap, switcher, OG cards) is derived from that list.
 2. `i18n/locales/<code>.json` — copy `en.json` and translate every value.
 3. `content/tools/<code>.ts` — copy `en.ts` and translate every value; register it in `content/tools/index.ts`.
-4. `npm test` fails on any missing key, lost placeholder, over-long title or blank value.
-5. `npm run generate:og` and commit the new PNGs.
+4. `content/systems/<code>.ts` — copy `en.ts` and translate every node label and description;
+   register it in `content/systems/index.ts`.
+5. `npm test` fails on any missing key, lost placeholder, over-long title, blank value, untranslated
+   node description or headline word that will not fit a phone.
+6. `npm run generate:og` and commit the new PNGs.
 
-**Translation status:** `es` and `pt`, the `tools` and `error` namespaces in every non-English
-JSON, and `content/tools/{ru,de,es,fr,pt}.ts` currently hold the English source text and are waiting
-on a translation pass. Missing keys fall back to English through `i18n/i18n.config.ts`.
+All six locales are fully translated: dictionaries, tools copy and system-map copy alike. Missing
+keys would fall back to English through `i18n/i18n.config.ts`, but the parity tests fail first.

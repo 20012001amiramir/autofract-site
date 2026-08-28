@@ -64,8 +64,8 @@ export default defineNuxtConfig({
     // One /sitemap.xml that answers 200 directly: robots.txt may not point at a
     // redirect, and the i18n split would make /sitemap.xml a 307 to an index.
     sitemaps: false,
-    // Динамические роуты не автообнаруживаются; _i18nTransform размножает их
-    // по всем локалям с корректными hreflang-альтернативами.
+    // Dynamic routes are not auto-discovered; _i18nTransform fans each one out
+    // across every locale with the matching hreflang alternates.
     urls: [
       { loc: '/work/pathcore', _i18nTransform: true },
       { loc: '/work/videolinker', _i18nTransform: true },

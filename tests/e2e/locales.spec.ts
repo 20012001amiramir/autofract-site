@@ -53,6 +53,39 @@ test('case page renders headline, stats and graph canvas', async ({ page }) => {
   await expect(page.locator('a[href="https://frontdeskreview.com"]')).toBeVisible()
 })
 
+/**
+ * The "Inside the system" grid used to render English on every translated
+ * locale — 62 descriptions were hard-coded in the topology file.
+ */
+test('case pages read in the reader\'s language, head and body alike', async ({ page }) => {
+  const cases = [
+    { path: '/es/work/relocating', native: 'Datos abiertos convertidos', english: 'Open data turned into' },
+    { path: '/de/work/pathcore', native: 'Selbstheilender hexagonaler Kern', english: 'Self-healing hexagonal engine' },
+    { path: '/pt/work/frontdesk', native: 'tenta refutar cada afirmação', english: 'tries to refute every claim' },
+    { path: '/ru/work/videolinker', native: 'Автономный агент планирует', english: 'An autonomous agent plans' },
+  ]
+  for (const c of cases) {
+    await page.goto(c.path)
+    const inside = page.locator('section[aria-label]').last()
+    await expect(inside, c.path).toContainText(c.native)
+    await expect(page.locator('body'), c.path).not.toContainText(c.english)
+
+    const desc = await page.locator('meta[name="description"]').getAttribute('content')
+    expect(desc!.length, `${c.path} description ${desc!.length} chars`).toBeGreaterThanOrEqual(120)
+    expect(desc!.length, `${c.path} description ${desc!.length} chars`).toBeLessThanOrEqual(155)
+    await expect(page).not.toHaveTitle(/^(PathCore|VideoLinker|FrontDesk|Relocating) — Autofract$/)
+  }
+})
+
+test('no page pushes a 320px screen sideways', async ({ page }) => {
+  await page.setViewportSize({ width: 320, height: 900 })
+  for (const path of ['/tools/overlap', '/de/tools/overlap', '/pt/tools/costof', '/de/tools/redline', '/es/work/relocating']) {
+    await page.goto(path)
+    const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+    expect(over, `${path} overflows by ${over}px`).toBeLessThanOrEqual(0)
+  }
+})
+
 test('tools hub lists every tool and product', async ({ page }) => {
   await page.goto('/tools')
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Small tools')
@@ -96,6 +129,10 @@ test('sitemap answers 200 directly and covers every locale', async ({ request })
   for (const path of ['/tools', '/tools/overlap', '/pt/tools/costof']) {
     expect(xml, path).toContain(`<loc>https://autofract.com${path}</loc>`)
   }
+  // The home page canonical has no trailing slash; the sitemap must agree.
+  expect(xml).toContain('<loc>https://autofract.com</loc>')
+  expect(xml).not.toContain('https://autofract.com/"')
+  expect(xml).not.toContain('<loc>https://autofract.com/</loc>')
 })
 
 test('robots.txt is served and points at the sitemap', async ({ request }) => {
