@@ -22,8 +22,10 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       fontSize: {
-        hero: ['clamp(72px, 14vw, 200px)', { lineHeight: '0.9', letterSpacing: '-0.02em' }],
-        chapter: ['clamp(48px, 7vw, 96px)', { lineHeight: '0.95', letterSpacing: '-0.01em' }],
+        /* Floors sized so a long word still fits a 360px screen; the vw term and
+           the ceiling are unchanged, so desktop typography stays as designed. */
+        hero: ['clamp(48px, 14vw, 200px)', { lineHeight: '0.9', letterSpacing: '-0.02em' }],
+        chapter: ['clamp(36px, 7vw, 96px)', { lineHeight: '0.95', letterSpacing: '-0.01em' }],
         quote: ['clamp(28px, 4vw, 48px)', { lineHeight: '1.15' }],
       },
       transitionTimingFunction: {

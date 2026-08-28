@@ -36,6 +36,17 @@ body {
   border-radius: 2px;
 }
 
+/*
+ * German and Iberian headlines carry words the English source never had
+ * ("Kleingedruckte", "Construimos"). At display sizes one of them is wider
+ * than the column, so let the browser hyphenate per <html lang> and, as a
+ * last resort, break the word rather than push the page sideways.
+ */
+.font-display {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
 /* Faint grid/noise texture option via radial for tech feel — kept subtle */
 body::before {
   content: '';

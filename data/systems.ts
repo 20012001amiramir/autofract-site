@@ -35,14 +35,7 @@ export const TYPE_COLORS: Record<NodeType, string> = {
   ui: '#f5f1ea',
 }
 
-export const TYPE_LABELS: Record<NodeType, string> = {
-  ai: 'AI',
-  worker: 'Workers',
-  data: 'Data',
-  edge: 'Delivery',
-  gate: 'Gates',
-  ui: 'Surface',
-}
+/** Legend wording for these types lives in i18n under `casepage.legend`. */
 
 export const CASES = ['pathcore', 'videolinker', 'frontdesk', 'relocating'] as const
 export type CaseSlug = typeof CASES[number]
