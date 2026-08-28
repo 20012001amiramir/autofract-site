@@ -35,7 +35,7 @@ export const TOOL_META: Record<ToolSlug, ToolMeta> = {
     accent: '#f38ba8',
     category: 'BusinessApplication',
     // Extend as the tool ships more languages — an unlisted locale links to the root.
-    locales: ['en', 'ru'],
+    locales: ALL_LOCALES,
   },
   overlap: {
     url: 'https://overlap.autofract.com',
