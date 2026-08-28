@@ -1,10 +1,8 @@
 /**
  * Spanish copy for /tools and /tools/<slug>.
  *
- * TRANSLATION PENDING — every value below is still the English source, so the
- * page renders in English until it is translated rather than showing a raw key.
- * Mirror content/tools/en.ts key for key; the shape is enforced by
- * tests/unit/tools.spec.ts.
+ * Neutral international Spanish. Mirror content/tools/en.ts key for key;
+ * the shape is enforced by tests/unit/tools.spec.ts.
  */
 
 import type { ToolsContent } from './en'
@@ -12,420 +10,420 @@ import type { ToolsContent } from './en'
 export const toolsEs: ToolsContent = {
   hub: {
     meta: {
-      title: 'Free tools by Autofract',
-      description: 'Three free browser tools from the Autofract studio: a contract fine-print checker, a time zone meeting planner and calculators for costs nobody invoices.',
+      title: 'Herramientas gratuitas — Autofract',
+      description: 'Tres herramientas gratuitas del estudio Autofract: un revisor de contratos, un planificador de reuniones entre zonas horarias y calculadoras de costos.',
     },
-    kicker: 'Tools',
-    h1: 'Small tools, done properly.',
-    lede: 'The studio builds large systems for clients. These are the small ones we build for ourselves — and then give away, because they cost almost nothing to run.',
+    kicker: 'Herramientas',
+    h1: 'Herramientas pequeñas, hechas como se debe.',
+    lede: 'El estudio construye sistemas grandes para sus clientes. Estas son las cosas pequeñas que construimos para nosotros mismos y luego regalamos, porque mantenerlas vivas no nos cuesta casi nada.',
     intro: [
-      'Every tool here started as an internal annoyance: a contract nobody had time to read, a meeting that kept landing at 22:00 for someone, a recurring cost that never appeared on any invoice. We built the smallest thing that answered the question, then kept it.',
-      'None of them ask for an account. None of them sell anything. They are free, they run in your browser or on our machines at our expense, and they are built to the same doctrine as the platforms below: verify before you publish, show your work, never invent a fact you cannot point at.',
+      'Cada herramienta de aquí empezó siendo una molestia interna: un contrato que nadie tenía tiempo de leer, una reunión que a alguien le caía siempre a las 22:00, un costo recurrente que jamás aparecía en ninguna factura. Construimos la cosa más pequeña capaz de responder a la pregunta y después la conservamos.',
+      'Ninguna te pide una cuenta. Ninguna te vende nada. Son gratuitas, se ejecutan en tu navegador o en nuestras máquinas y a nuestra costa, y están construidas con la misma doctrina que las plataformas de abajo: verifica antes de publicar, enseña tu trabajo, nunca inventes un dato que no puedas señalar con el dedo.',
     ],
-    toolsHeading: 'Free tools',
-    toolsSub: 'Open one, use it, close the tab. No signup, no trial, no upsell.',
-    productsHeading: 'Products',
-    productsSub: 'Larger systems the studio designed, built and still operates.',
+    toolsHeading: 'Herramientas gratuitas',
+    toolsSub: 'Abre una, úsala, cierra la pestaña. Sin registro, sin prueba gratuita, sin venta añadida.',
+    productsHeading: 'Productos',
+    productsSub: 'Sistemas más grandes que el estudio diseñó, construyó y sigue operando.',
     faq: {
-      h2: 'Questions people ask',
+      h2: 'Preguntas que nos hacen',
       items: [
         {
-          q: 'Are these really free?',
-          a: 'Yes. No account, no trial, no card, no usage limit, no ads. Two of the three do all their work inside your browser, so serving them costs us almost nothing; the third runs on our machines and we pay for it because it earns us more attention than an ad would.',
+          q: '¿De verdad son gratuitas?',
+          a: 'Sí. Sin cuenta, sin prueba gratuita, sin tarjeta, sin límite de uso y sin anuncios. Dos de las tres hacen todo su trabajo dentro de tu navegador, así que servirlas no nos cuesta casi nada; la tercera corre en nuestras máquinas y la pagamos nosotros porque nos consigue más atención de la que nos daría un anuncio.',
         },
         {
-          q: 'Do I need to sign up?',
-          a: 'No. There is nothing to register for and nothing to install. Every tool opens straight into a working state, and where a tool has state to keep, that state lives in the URL — copy the link and you have saved your work.',
+          q: '¿Necesito registrarme?',
+          a: 'No. No hay nada que registrar ni nada que instalar. Cada herramienta se abre directamente lista para usar y, cuando una herramienta tiene estado que guardar, ese estado vive en la URL: copias el enlace y ya has guardado tu trabajo.',
         },
         {
-          q: 'What happens to what I put in?',
-          a: 'Overlap and Cost Of never send your inputs anywhere: the board and the receipt are encoded in the address bar and computed by your own browser. Redline has to read your document on a server to analyse it, so treat it the way you would treat any online tool and do not paste material you are not allowed to share.',
+          q: '¿Qué pasa con lo que escribo?',
+          a: 'Overlap y Cost Of nunca envían tus datos a ninguna parte: el tablero y el recibo se codifican en la barra de direcciones y los calcula tu propio navegador. Redline sí tiene que leer tu documento en un servidor para analizarlo, así que trátalo como cualquier herramienta en línea y no pegues material que no tengas permitido compartir.',
         },
         {
-          q: 'Do you track me?',
-          a: 'We count page views with a cookieless, privacy-preserving analytics setup that stores no personal data and follows nobody across sites. That is the whole of it — no advertising pixels, no session replay, no profiles.',
+          q: '¿Me rastrean?',
+          a: 'Contamos las visitas con una analítica sin cookies y respetuosa con la privacidad, que no guarda datos personales y no sigue a nadie de un sitio a otro. Eso es todo: ningún píxel publicitario, ninguna grabación de sesión, ningún perfil.',
         },
         {
-          q: 'Can I use them at work?',
-          a: 'Yes, including commercially. Teams use the meeting planner for standups across continents and the calculators to argue a budget. Redline is a first read of a contract, not legal advice, so treat its output as a checklist for your lawyer rather than a substitute for one.',
+          q: '¿Puedo usarlas en el trabajo?',
+          a: 'Sí, también con fines comerciales. Hay equipos que usan el planificador de reuniones para sus reuniones diarias entre continentes y las calculadoras para defender un presupuesto. Redline es una primera lectura de un contrato, no asesoramiento legal, así que toma su resultado como una lista de control para tu abogado y no como un sustituto.',
         },
         {
-          q: 'Why does a studio give tools away?',
-          a: 'Two honest reasons. They are proving grounds: the adversarial verification in Redline and the build-time data gates in our larger platforms are the same doctrine at different scales. And they introduce the studio to people better than a portfolio page does — you can see how we build before you ever talk to us.',
+          q: '¿Por qué un estudio regala herramientas?',
+          a: 'Por dos razones honestas. Son campos de pruebas: la verificación adversaria de Redline y las puertas de datos en tiempo de compilación de nuestras plataformas grandes son la misma doctrina a distinta escala. Y presentan el estudio mejor de lo que lo hace una página de portafolio: puedes ver cómo construimos antes siquiera de hablar con nosotros.',
         },
         {
-          q: 'Will they still be here next year?',
-          a: 'That is the intent. They are static or near-static by design, which is exactly why they are cheap to keep alive: there is no database to migrate, no subscription to fund, no runtime to babysit. If a tool ever does shut down, its page will say so instead of quietly disappearing.',
+          q: '¿Seguirán aquí el año que viene?',
+          a: 'Esa es la intención. Son estáticas o casi estáticas por diseño, que es justo lo que las hace baratas de mantener vivas: no hay base de datos que migrar, ni suscripción que financiar, ni tiempo de ejecución al que hacer de niñera. Si alguna llega a cerrar, su página lo dirá en vez de desaparecer en silencio.',
         },
         {
-          q: 'Can I suggest a tool?',
-          a: 'Please do. The best ideas so far have come from someone describing a spreadsheet they rebuild every month. Write to info@autofract.com and tell us what you keep doing by hand.',
+          q: '¿Puedo proponer una herramienta?',
+          a: 'Por favor, hazlo. Las mejores ideas hasta ahora vinieron de alguien describiendo una hoja de cálculo que rehace cada mes. Escribe a info@autofract.com y cuéntanos qué sigues haciendo a mano.',
         },
       ],
     },
     cta: {
-      title: 'Need one of these at your scale?',
-      body: 'The same studio builds the large version: agents, pipelines and platforms that run themselves. Fixed quote after a 48-hour scoping pass.',
-      button: 'Hire the studio',
+      title: '¿Necesitas algo así a tu escala?',
+      body: 'El mismo estudio construye la versión grande: agentes, cadenas y plataformas que funcionan solas. Presupuesto cerrado tras 48 horas de análisis de alcance.',
+      button: 'Contratar al estudio',
     },
   },
 
   tools: {
     redline: {
       name: 'Redline',
-      tagline: 'The fine print, decoded.',
-      category: 'Contracts',
+      tagline: 'La letra pequeña, descifrada.',
+      category: 'Contratos',
       meta: {
-        title: 'Contract fine-print checker — Redline',
-        description: 'Paste a contract, lease, loan or terms of service and get a ranked list of traps, each anchored to the exact clause and checked by a second reviewer.',
+        title: 'Revisor de contratos y letra pequeña — Redline',
+        description: 'Revisor de contratos gratuito: pega un contrato, arrendamiento o términos de servicio y recibe una lista ordenada de trampas anclada a su cláusula exacta.',
       },
-      h1: 'Read the fine print, fast.',
-      lede: 'Redline reads a contract the way a suspicious lawyer would: it looks for the clauses that will cost you later, quotes each one word for word, and explains in plain language what it actually does to you.',
+      h1: 'Lee la letra pequeña, rápido.',
+      lede: 'Redline lee un contrato como lo leería un abogado desconfiado: busca las cláusulas que te van a costar dinero más adelante, cita cada una palabra por palabra y explica en lenguaje llano lo que en realidad te hace.',
       what: {
-        h2: 'What it does',
+        h2: 'Qué hace',
         body: [
-          'You give it a document — pasted text, a PDF with a real text layer, or a public link — and it returns a ranked list of traps. Auto-renewal you cannot escape in time. Unilateral changes to price or terms. Arbitration and venue clauses that decide where you would have to fight. Indemnities that hand you someone else\'s liability. Deposit deductions, late fees, notice periods measured in the least convenient unit available.',
-          'Every flag is anchored to the verbatim clause it comes from, with the document\'s own characters — not a paraphrase, not a reconstruction. You can see the sentence, its place in the document, why it matters, and what a normal version of that clause looks like.',
-          'The report also shows its own audit trail: how many candidate flags were proposed, how many were blocked because the quote could not be found in the document, how many a second reviewer refuted, and how many were downgraded from the severity first assigned. You are told what the machine got wrong, not only what it got right.',
+          'Le das un documento —texto pegado, un PDF con capa de texto real o un enlace público— y te devuelve una lista ordenada de trampas. Renovación automática de la que no puedes salir a tiempo. Cambios unilaterales de precio o de condiciones. Cláusulas de arbitraje y de jurisdicción que deciden dónde tendrías que pelear. Indemnizaciones que te endosan la responsabilidad de otro. Deducciones sobre el depósito, recargos por mora y plazos de preaviso medidos en la unidad menos conveniente disponible.',
+          'Cada señal queda anclada a la cláusula literal de la que sale, con los propios caracteres del documento: nada de paráfrasis, nada de reconstrucciones. Puedes ver la frase, su lugar en el documento, por qué importa y qué aspecto tiene una versión normal de esa cláusula.',
+          'El informe muestra además su propio rastro de auditoría: cuántas señales candidatas se propusieron, cuántas se bloquearon porque la cita no aparecía en el documento, cuántas refutó un segundo revisor y cuántas bajaron de la gravedad que se les asignó al principio. Te dice en qué se equivocó la máquina, no solo en qué acertó.',
         ],
       },
       why: {
-        h2: 'Why the fine print keeps winning',
+        h2: 'Por qué la letra pequeña sigue ganando',
         body: [
-          'Nobody reads terms of service, and everybody knows nobody reads them — which is precisely why the expensive clauses live there. A subscription agreement is written by people paid to protect one side of it, and you meet it at the worst possible moment: at the end of a hiring process, on move-in day, an hour before a launch.',
-          'Skimming does not work, because the dangerous clauses do not look dangerous. They are grammatically boring, buried in a numbered subsection, and cross-referenced to a definition four pages earlier. The damage is done by "in accordance with Section 12.3", not by capital letters.',
-          'A lawyer is the right answer for a serious contract, and Redline will never pretend otherwise. But you are not sending a €9-a-month SaaS agreement, a gym membership or a flat viewing you have to answer by tonight to a lawyer. For those, the realistic alternative to a machine read is no read at all.',
+          'Nadie lee los términos de servicio, y todo el mundo sabe que nadie los lee, que es precisamente por lo que las cláusulas caras viven ahí. Un contrato de suscripción lo escribe gente pagada para proteger uno de los dos lados, y te lo encuentras en el peor momento posible: al final de un proceso de contratación, el día de la mudanza, una hora antes de un lanzamiento.',
+          'Leer en diagonal no sirve, porque las cláusulas peligrosas no parecen peligrosas. Son gramaticalmente aburridas, están enterradas en un subapartado numerado y remiten a una definición cuatro páginas antes. El daño lo hace un «conforme al apartado 12.3», no las mayúsculas.',
+          'Para un contrato serio la respuesta correcta es un abogado, y Redline nunca fingirá lo contrario. Pero tú no le mandas a un abogado un SaaS de 9 € al mes, una cuota de gimnasio o la visita a un apartamento que tienes que responder esta noche. Para eso, la alternativa realista a una lectura automática es no leer nada.',
         ],
       },
       how: {
-        h2: 'How it works',
+        h2: 'Cómo funciona',
         steps: [
           {
-            h3: 'It splits the document by its own numbering',
-            body: 'Before anything is analysed, the text is segmented along the structure the document already has — 4.2, §7, Article 3, ¶12. Every later flag therefore points at a real place in a real section, which is what makes the quotes checkable.',
+            h3: 'Divide el documento por su propia numeración',
+            body: 'Antes de analizar nada, el texto se segmenta siguiendo la estructura que el documento ya tiene: 4.2, §7, artículo 3, ¶12. Por eso cada señal posterior apunta a un lugar real de una sección real, que es lo que hace comprobables las citas.',
           },
           {
-            h3: 'A first pass proposes candidates against a trap taxonomy',
-            body: 'The model does not free-associate about "risky language". It works against a curated taxonomy of the traps that actually recur in consumer and business contracts, each with a known severity and a known likelihood, and proposes candidates that match.',
+            h3: 'Una primera pasada propone candidatas contra una taxonomía de trampas',
+            body: 'El modelo no divaga sobre «lenguaje arriesgado». Trabaja contra una taxonomía curada de las trampas que de verdad se repiten en los contratos de consumo y de empresa, cada una con una gravedad y una probabilidad conocidas, y propone las candidatas que encajan.',
           },
           {
-            h3: 'A quote gate throws out anything it cannot prove',
-            body: 'This step is deterministic, not a model: a candidate survives only if its quote exists in the source text. The document\'s own characters then replace the model\'s version of the quote. A flag that cannot point at a sentence in your document never reaches you.',
+            h3: 'Una puerta de citas descarta todo lo que no puede demostrar',
+            body: 'Este paso es determinista, no es un modelo: una candidata sobrevive solo si su cita existe en el texto de origen. Después, los propios caracteres del documento sustituyen a la versión que el modelo dio de la cita. Una señal que no puede señalar una frase de tu documento nunca llega hasta ti.',
           },
           {
-            h3: 'A second, independent reviewer tries to refute it',
-            body: 'What survives the gate is handed to a fresh pass that reads the same document with the opposite job: confirm, call it overstated, or refute it outright. Unproven flags are dropped and overstated ones lose severity — the report shows both counts.',
+            h3: 'Un segundo revisor independiente intenta refutarla',
+            body: 'Lo que sobrevive a la puerta pasa a una lectura nueva que recorre el mismo documento con el encargo contrario: confirmarla, calificarla de exagerada o refutarla por completo. Las señales sin pruebas se descartan y las exageradas pierden gravedad; el informe muestra ambos recuentos.',
           },
           {
-            h3: 'What is left is ranked by what it costs you',
-            body: 'The final order combines the severity of the clause type, how likely that trap is to bite in practice, and how confident the verifier was. You read from the top down and stop when you run out of stakes, not when you run out of patience.',
+            h3: 'Lo que queda se ordena por lo que te cuesta',
+            body: 'El orden final combina la gravedad del tipo de cláusula, la probabilidad real de que esa trampa te muerda y la confianza del verificador. Lees de arriba abajo y paras cuando se te acaba lo que está en juego, no cuando se te acaba la paciencia.',
           },
         ],
       },
       useCases: {
-        h2: 'When to run it',
+        h2: 'Cuándo pasarlo',
         items: [
           {
-            h3: 'Before a team rolls out a new SaaS tool',
-            body: 'Someone has to read the terms before fifty colleagues put company data in them. Paste the agreement and you get the auto-renewal window, the data and liability clauses and the unilateral-change language in one pass, in time for the decision.',
+            h3: 'Antes de que un equipo adopte una nueva herramienta SaaS',
+            body: 'Alguien tiene que leer las condiciones antes de que cincuenta compañeros metan ahí datos de la empresa. Pega el contrato y obtienes en una sola pasada la ventana de renovación automática, las cláusulas de datos y de responsabilidad y el lenguaje de cambio unilateral, a tiempo para decidir.',
           },
           {
-            h3: 'A rental lease you must answer today',
-            body: 'Leases are where notice periods, deposit deductions, repair obligations and automatic extensions hide. Reading a flagged list before the viewing beats discovering the clause when you try to leave.',
+            h3: 'Un contrato de arrendamiento que hay que responder hoy',
+            body: 'En los arrendamientos se esconden los plazos de preaviso, las deducciones sobre el depósito, las obligaciones de reparación y las prórrogas automáticas. Leer una lista de señales antes de la visita es mejor que descubrir la cláusula el día que intentas irte.',
           },
           {
-            h3: 'Freelance and contractor agreements',
-            body: 'Payment terms, IP assignment, non-solicit, unlimited revisions, indemnity: the clauses that decide whether a good rate is actually a good deal. Run the draft before you counter-propose.',
+            h3: 'Contratos de freelance y de prestación de servicios',
+            body: 'Condiciones de pago, cesión de propiedad intelectual, no captación, revisiones ilimitadas, indemnización: las cláusulas que deciden si una buena tarifa es de verdad un buen trato. Pasa el borrador antes de hacer tu contrapropuesta.',
           },
           {
-            h3: 'Loans, insurance and anything with a schedule',
-            body: 'Fees that only appear on early repayment, exclusions that quietly remove the reason you bought the policy, definitions that narrow a covered event. These are exactly the clauses that reward a slow, adversarial read.',
+            h3: 'Préstamos, seguros y cualquier cosa con un calendario',
+            body: 'Comisiones que solo aparecen si amortizas antes de tiempo, exclusiones que quitan discretamente la razón por la que contrataste la póliza, definiciones que estrechan lo que cuenta como siniestro cubierto. Son exactamente las cláusulas que premian una lectura lenta y desconfiada.',
           },
           {
-            h3: 'A second opinion on a contract you already read',
-            body: 'You went through it yourself and it seemed fine. Ten minutes of machine reading either confirms that with an audit trail, or shows you the subsection you skimmed at three in the morning.',
+            h3: 'Una segunda opinión sobre un contrato que ya leíste',
+            body: 'Lo repasaste tú y te pareció correcto. Diez minutos de lectura automática o bien lo confirman con un rastro de auditoría, o bien te enseñan el subapartado que leíste en diagonal a las tres de la mañana.',
           },
         ],
       },
       faq: {
-        h2: 'Questions people ask',
+        h2: 'Preguntas que nos hacen',
         items: [
           {
-            q: 'Is this legal advice?',
-            a: 'No, and it cannot be. Redline is a fast, structured first read that tells you which clauses deserve a human. For anything with real money or real liability behind it, take the flagged list to a lawyer — you will get a better hour out of them for having one.',
+            q: '¿Esto es asesoramiento legal?',
+            a: 'No, y no puede serlo. Redline es una primera lectura rápida y estructurada que te dice qué cláusulas merecen ojos humanos. Para cualquier cosa con dinero o responsabilidad de verdad detrás, lleva la lista de señales a un abogado: le sacarás mejor partido a su hora por llevarla.',
           },
           {
-            q: 'What can I put in?',
-            a: 'Pasted text, a PDF that contains a real text layer, or a public URL the tool can fetch. A scanned photograph of a contract has no text to read, so run it through OCR first or paste the text yourself.',
+            q: '¿Qué puedo darle?',
+            a: 'Texto pegado, un PDF que contenga una capa de texto real o una URL pública que la herramienta pueda descargar. Una fotografía escaneada de un contrato no tiene texto que leer, así que pásala antes por un OCR o pega tú mismo el texto.',
           },
           {
-            q: 'How do I know it is not inventing clauses?',
-            a: 'Because a flag without a verbatim quote is deleted before you ever see it. The quote gate checks that the cited text really occurs in your document, then substitutes the document\'s own characters. That check is ordinary code, not a model deciding whether to trust itself.',
+            q: '¿Cómo sé que no se inventa cláusulas?',
+            a: 'Porque una señal sin cita literal se borra antes de que llegues a verla. La puerta de citas comprueba que el texto citado aparece de verdad en tu documento y después sustituye por los caracteres propios del documento. Esa comprobación es código corriente, no un modelo decidiendo si confiar en sí mismo.',
           },
           {
-            q: 'Does it find everything?',
-            a: 'No, and it is built to fail in the safer direction. Two passes and a quote gate mean a real trap can occasionally be dropped for lack of proof; the alternative — a confident list of traps that are not in your document — is far more dangerous. Read it as a ranked list of likely problems, not as a certificate.',
+            q: '¿Lo encuentra todo?',
+            a: 'No, y está construido para fallar hacia el lado seguro. Dos pasadas y una puerta de citas significan que una trampa real puede caerse de vez en cuando por falta de pruebas; la alternativa —una lista rotunda de trampas que no están en tu documento— es mucho más peligrosa. Léelo como una lista ordenada de problemas probables, no como un certificado.',
           },
           {
-            q: 'Which languages does it read?',
-            a: 'English and Russian documents, including the numbering conventions each uses — sections, paragraph marks, articles. The explanations come back in plain language rather than the legalese they describe.',
+            q: '¿Qué idiomas lee?',
+            a: 'Documentos en inglés y en ruso, incluidas las convenciones de numeración de cada uno: apartados, marcas de párrafo, artículos. Las explicaciones vuelven en lenguaje llano y no en la jerga jurídica que describen.',
           },
           {
-            q: 'What happens to my document?',
-            a: 'It is processed to produce your report, which lives behind its own link. We do not publish, sell or resell what you send. Treat it like any online tool: do not paste material you are contractually forbidden to share.',
+            q: '¿Qué pasa con mi documento?',
+            a: 'Se procesa para generar tu informe, que vive detrás de su propio enlace. No publicamos, no vendemos ni revendemos lo que nos envías. Trátalo como cualquier herramienta en línea: no pegues material que tengas contractualmente prohibido compartir.',
           },
           {
-            q: 'How long does a scan take?',
-            a: 'Usually a couple of minutes for a normal contract, because two independent passes read the whole document rather than skimming the first page. Long agreements take longer; the progress is visible while it works.',
+            q: '¿Cuánto tarda un análisis?',
+            a: 'Normalmente un par de minutos para un contrato corriente, porque dos pasadas independientes leen el documento entero en vez de mirar por encima la primera página. Los contratos largos tardan más; el progreso se ve mientras trabaja.',
           },
           {
-            q: 'Is it free?',
-            a: 'The scan is free and does not need an account. It costs us real money per document, which is a deliberate trade: it is the most convincing demonstration of how the studio builds that we could put on the internet.',
+            q: '¿Es gratis?',
+            a: 'El análisis es gratuito y no necesita cuenta. A nosotros nos cuesta dinero real por documento, y es un intercambio deliberado: es la demostración más convincente de cómo construye el estudio que podíamos poner en internet.',
           },
         ],
       },
       cta: {
-        title: 'Open Redline',
-        body: 'Paste the contract you have been meaning to read. Two minutes, no account, and you will know which three clauses matter.',
-        button: 'Check a contract',
+        title: 'Abrir Redline',
+        body: 'Pega ese contrato que llevas semanas queriendo leer. Dos minutos, sin cuenta, y sabrás qué tres cláusulas importan.',
+        button: 'Revisar un contrato',
       },
     },
 
     overlap: {
       name: 'Overlap',
-      tagline: 'The hour that works for everyone.',
-      category: 'Scheduling',
+      tagline: 'La hora que le sirve a todos.',
+      category: 'Reuniones',
       meta: {
-        title: 'Time zone meeting planner — Overlap',
-        description: 'Put several people on one board, see when everyone is awake and at work, get the best one-hour windows ranked, and share the whole thing as a link.',
+        title: 'Planificador de reuniones entre zonas horarias — Overlap',
+        description: 'Pon a varias personas en un mismo tablero, mira cuándo están despiertas y trabajando, obtén las mejores franjas de una hora y comparte todo como enlace.',
       },
-      h1: 'Stop doing time zone math.',
-      lede: 'Overlap lays several people\'s days on one line so you can see — not calculate — the hours a meeting can actually happen, and who pays for it when none of them are good.',
+      h1: 'Deja de hacer cuentas con las zonas horarias.',
+      lede: 'Overlap pone el día de varias personas en una misma línea para que veas —no calcules— las horas en que una reunión puede ocurrir de verdad, y quién la paga cuando ninguna de ellas es buena.',
       what: {
-        h2: 'What it does',
+        h2: 'Qué hace',
         body: [
-          'Add people by city, by time zone or by a plain offset. Each one becomes a horizontal band of their own local day: grey while they are asleep, amber while they are awake but off the clock, green inside their working hours. The columns where the bands agree are your meeting.',
-          'Working hours belong to the person, not to the board. A developer who starts at 11:00 and a client who stops at 16:00 both keep their real day, and the answer changes accordingly.',
-          'Underneath, one-hour windows are ranked: how many people are at work, how many are merely awake, and — when nobody can have it easy — exactly who has to bend. Any window exports to a calendar file, and the whole board is a link you can send.',
+          'Añade personas por ciudad, por zona horaria o por un desfase simple. Cada una se convierte en una banda horizontal con su propio día local: gris mientras duerme, ámbar mientras está despierta pero fuera del horario, verde dentro de su jornada laboral. Las columnas donde las bandas coinciden son tu reunión.',
+          'El horario laboral pertenece a la persona, no al tablero. Un programador que empieza a las 11:00 y un cliente que termina a las 16:00 conservan su día real, y la respuesta cambia en consecuencia.',
+          'Debajo, las franjas de una hora aparecen ordenadas: cuánta gente está trabajando, cuánta está simplemente despierta y —cuando a nadie le puede salir fácil— quién exactamente tiene que ceder. Cualquier franja se exporta a un archivo de calendario, y el tablero entero es un enlace que puedes enviar.',
         ],
       },
       why: {
-        h2: 'Why the usual methods fail',
+        h2: 'Por qué fallan los métodos de siempre',
         body: [
-          'Mental math is fine for two cities you know. It falls apart at four you do not, and it breaks completely in the two weeks each spring and autumn when one country has changed its clocks and the other has not.',
-          'A world clock tells you what time it is somewhere. It does not tell you whether that person is asleep, at dinner, or three hours into their working day — which is the only thing you actually needed to know.',
-          'A scheduling poll pushes the conversion onto everyone else and then blocks the booking until the slowest person replies. That is the work you were trying to avoid, redistributed.',
-          'And the polite version of the problem is invisible: 08:00 in Berlin is an ordinary hour for a Berliner and a cruel one for someone in Los Angeles. Nobody notices until the invitation has already landed.',
+          'El cálculo mental funciona con dos ciudades que conoces. Se desmorona con cuatro que no conoces, y se rompe del todo en las dos semanas de cada primavera y cada otoño en que un país ya cambió la hora y el otro todavía no.',
+          'Un reloj mundial te dice qué hora es en algún sitio. No te dice si esa persona está dormida, cenando o tres horas metida en su jornada, que era lo único que de verdad necesitabas saber.',
+          'Una encuesta de disponibilidad traslada la conversión a todos los demás y luego bloquea la reserva hasta que responde el más lento. Eso es exactamente el trabajo que querías evitar, solo que repartido.',
+          'Y la versión educada del problema es invisible: las 08:00 en Berlín son una hora corriente para alguien de Berlín y una hora cruel para alguien en Los Ángeles. Nadie se da cuenta hasta que la invitación ya salió.',
         ],
       },
       how: {
-        h2: 'How it works',
+        h2: 'Cómo funciona',
         steps: [
           {
-            h3: 'Offsets come from the browser, not from a table',
-            body: 'Every conversion goes through the standard Intl API and the browser\'s own IANA time zone database. There is no offset list of ours to go stale: if the browser knows a country changed its rules, so does the board.',
+            h3: 'Los desfases salen del navegador, no de una tabla',
+            body: 'Cada conversión pasa por la API estándar Intl y por la propia base de datos de zonas horarias IANA del navegador. No hay ninguna lista de desfases nuestra que se quede vieja: si el navegador sabe que un país cambió sus reglas, el tablero también.',
           },
           {
-            h3: 'Daylight saving is resolved per person and per date',
-            body: 'Pick a date in late March or late October and the board itself changes length — 46 half-hour columns on a day that loses an hour, 50 on a day that repeats one — because each row is computed from the real instant rather than a fixed offset.',
+            h3: 'El horario de verano se resuelve por persona y por fecha',
+            body: 'Elige una fecha de finales de marzo o de finales de octubre y el tablero cambia literalmente de longitud —46 columnas de media hora el día que pierde una hora, 50 el día que la repite— porque cada fila se calcula a partir del instante real y no de un desfase fijo.',
           },
           {
-            h3: 'Columns are half an hour wide',
-            body: 'Zones at :30 and :45 — India, Nepal, the Chatham Islands — line up honestly instead of being rounded to the nearest hour, which is the rounding that produces meetings nobody can attend.',
+            h3: 'Las columnas miden media hora',
+            body: 'Las zonas a :30 y a :45 —India, Nepal, las islas Chatham— encajan con honestidad en vez de redondearse a la hora más cercana, que es justo el redondeo que produce reuniones a las que nadie puede asistir.',
           },
           {
-            h3: 'Windows are scored, not guessed',
-            body: 'Being at work counts fully, being awake near working hours counts partly, being asleep disqualifies a window outright. Candidates are kept at least two hours apart so the suggestions are genuinely different options, and each person is flagged early, late or off-hours.',
+            h3: 'Las franjas se puntúan, no se adivinan',
+            body: 'Estar trabajando cuenta entero, estar despierto cerca del horario laboral cuenta a medias, estar dormido descalifica la franja del todo. Las candidatas se mantienen separadas al menos dos horas para que las sugerencias sean opciones realmente distintas, y a cada persona se le marca si le queda temprano, tarde o fuera de horario.',
           },
           {
-            h3: 'The link is the document',
-            body: 'People, names, working hours, date and anchor are all encoded in the URL. Nothing is uploaded and there is no account: sharing a board is sharing a link, and the person who opens it sees exactly what you saw.',
+            h3: 'El enlace es el documento',
+            body: 'Personas, nombres, horarios laborales, fecha y ancla van codificados en la URL. No se sube nada y no hay cuenta: compartir un tablero es compartir un enlace, y quien lo abre ve exactamente lo mismo que viste tú.',
           },
         ],
       },
       useCases: {
-        h2: 'When to use it',
+        h2: 'Cuándo usarlo',
         items: [
           {
-            h3: 'A standup across three continents',
-            body: 'Find out whether an hour inside everyone\'s working day exists at all — and when it does not, which person is paying for it, so the cost can be rotated instead of silently assigned to whoever complains least.',
+            h3: 'La reunión diaria de un equipo en tres continentes',
+            body: 'Averigua si existe siquiera una hora dentro de la jornada de todos y, cuando no existe, quién la está pagando, para que ese costo se pueda rotar en vez de asignárselo en silencio a quien menos protesta.',
           },
           {
-            h3: 'Interviewing candidates abroad',
-            body: 'The hour you propose is read as a signal about the company. Set the candidate\'s city, look at the green columns, and avoid asking someone to perform at 22:00 on a work night.',
+            h3: 'Entrevistar candidatos en el extranjero',
+            body: 'La hora que propones se lee como una señal sobre la empresa. Pon la ciudad de la persona candidata, mira las columnas verdes y evita pedirle que rinda a las 22:00 en un día laborable.',
           },
           {
-            h3: 'Client and agency calls',
-            body: 'You rarely know a new client\'s real working day. Set it once, send them the board, and let them counter-propose from the same picture instead of trading "does 3pm your time work?" for two days.',
+            h3: 'Llamadas con clientes y agencias',
+            body: 'Rara vez conoces la jornada real de un cliente nuevo. Configúrala una vez, mándale el tablero y deja que contraproponga desde la misma imagen, en lugar de estar dos días intercambiando «¿te va bien a las 15:00 tu hora?».',
           },
           {
-            h3: 'Working two markets at once',
-            body: 'One contract in Berlin, another in Singapore. Put both on the board with your own row in the middle and see, before you promise anything, how many hours of genuine overlap your day really contains.',
+            h3: 'Trabajar en dos mercados a la vez',
+            body: 'Un contrato en Berlín y otro en Singapur. Pon los dos en el tablero con tu propia fila en medio y comprueba, antes de prometer nada, cuántas horas de solapamiento real tiene de verdad tu día.',
           },
           {
-            h3: 'Calling family in another country',
-            body: 'Here the grey band is the useful one: it tells you when a call would wake someone up, and the amber band tells you when they are awake but would rather be eating dinner.',
+            h3: 'Llamar a la familia en otro país',
+            body: 'Aquí la banda útil es la gris: te dice cuándo una llamada despertaría a alguien, y la banda ámbar te dice cuándo está despierto pero preferiría estar cenando.',
           },
         ],
       },
       faq: {
-        h2: 'Questions people ask',
+        h2: 'Preguntas que nos hacen',
         items: [
           {
-            q: 'Do I need an account?',
-            a: 'No. Nothing to sign up for, nothing to install. Open the page, add people, send the link.',
+            q: '¿Necesito una cuenta?',
+            a: 'No. No hay nada que registrar ni nada que instalar. Abre la página, añade personas y manda el enlace.',
           },
           {
-            q: 'Where does my data go?',
-            a: 'Nowhere. The people you add are encoded in the URL in your address bar and every calculation happens in your browser. Saved teams use your browser\'s own storage and stay on that device.',
+            q: '¿Adónde van mis datos?',
+            a: 'A ninguna parte. Las personas que añades van codificadas en la URL de tu barra de direcciones y todos los cálculos ocurren en tu navegador. Los equipos guardados usan el almacenamiento del propio navegador y se quedan en ese dispositivo.',
           },
           {
-            q: 'Does it handle daylight saving time?',
-            a: 'Yes, per person and per date. On a transition day the board is literally a different length, because each row is derived from the real instant rather than from a stored offset.',
+            q: '¿Tiene en cuenta el horario de verano?',
+            a: 'Sí, por persona y por fecha. Un día de cambio de hora el tablero es literalmente de otra longitud, porque cada fila se deriva del instante real y no de un desfase guardado.',
           },
           {
-            q: 'My city is not in the list.',
-            a: 'Type the IANA zone instead — Europe/Berlin, Asia/Kolkata, America/Sao_Paulo — or a plain offset like UTC+3 or +05:45. Both always work, including for places the city index does not cover.',
+            q: 'Mi ciudad no está en la lista.',
+            a: 'Escribe la zona IANA en su lugar —Europe/Berlin, Asia/Kolkata, America/Sao_Paulo— o un desfase simple como UTC+3 o +05:45. Las dos formas funcionan siempre, incluso para lugares que el índice de ciudades no cubre.',
           },
           {
-            q: 'How many people fit on one board?',
-            a: 'Up to twelve. Beyond that the bands stop being readable, and in practice a meeting spanning more than twelve time zones needs a recording rather than a slot.',
+            q: '¿Cuántas personas caben en un tablero?',
+            a: 'Hasta doce. Más allá de eso las bandas dejan de ser legibles y, en la práctica, una reunión que abarca más de doce zonas horarias necesita una grabación y no un hueco en la agenda.',
           },
           {
-            q: 'Can each person have different working hours?',
-            a: 'Yes, including windows that cross midnight for night shifts. They travel in the link with everything else.',
+            q: '¿Cada persona puede tener su propio horario?',
+            a: 'Sí, incluidos los horarios que cruzan la medianoche para los turnos de noche. Viajan en el enlace junto con todo lo demás.',
           },
           {
-            q: 'What if there is no hour when everyone is awake?',
-            a: 'It says so plainly instead of inventing a green column, then offers the least-bad hour and names who would be asleep for it. A fair-rotation view helps spread that cost across a team over several weeks.',
+            q: '¿Y si no hay ninguna hora en la que todos estén despiertos?',
+            a: 'Lo dice sin rodeos en vez de inventarse una columna verde, y luego ofrece la hora menos mala y nombra a quien estaría durmiendo. Una vista de rotación justa ayuda a repartir ese costo dentro del equipo a lo largo de varias semanas.',
           },
           {
-            q: 'Does it work on a phone?',
-            a: 'Yes. The board scrolls inside its own frame, the rows stay readable at small widths, and light and dark follow your system setting.',
+            q: '¿Funciona en el teléfono?',
+            a: 'Sí. El tablero se desplaza dentro de su propio marco, las filas siguen siendo legibles en anchos pequeños, y el modo claro y el oscuro siguen la configuración de tu sistema.',
           },
         ],
       },
       cta: {
-        title: 'Open Overlap',
-        body: 'Add two people and the city you keep getting wrong. Fifteen seconds is enough to see whether a good hour exists.',
-        button: 'Find a meeting time',
+        title: 'Abrir Overlap',
+        body: 'Añade dos personas y esa ciudad que siempre calculas mal. Quince segundos bastan para ver si existe una buena hora.',
+        button: 'Buscar hora de reunión',
       },
     },
 
     costof: {
       name: 'Cost Of',
-      tagline: 'What things actually cost.',
-      category: 'Calculators',
+      tagline: 'Lo que cuestan las cosas de verdad.',
+      category: 'Calculadoras',
       meta: {
-        title: 'Cost calculators for hidden costs — Cost Of',
-        description: 'Free calculators that turn recurring meetings, an unused SaaS stack, context switching, a bad hire or an hour of downtime into one number you can share.',
+        title: 'Calculadoras de costos ocultos — Cost Of',
+        description: 'Calculadoras gratuitas que convierten reuniones recurrentes, suscripciones sin usar, interrupciones o una hora de caída en una cifra que puedes compartir.',
       },
-      h1: 'The costs nobody invoices.',
-      lede: 'A weekly meeting, a forgotten subscription, an interruption, a bad hire, an hour of downtime — Cost Of turns each of them into a single figure on a receipt you can send to the person who decides.',
+      h1: 'Los costos que nadie factura.',
+      lede: 'Una reunión semanal, una suscripción olvidada, una interrupción, una contratación fallida, una hora de caída: Cost Of convierte cada una en una sola cifra dentro de un recibo que puedes mandarle a quien decide.',
       what: {
-        h2: 'What it does',
+        h2: 'Qué hace',
         body: [
-          'Each calculator asks for the few inputs that actually move the number — how many people, at what seniority, for how long, how often — and returns one figure with the arithmetic shown underneath. No dashboards, no sign-up, no fourteen-step wizard.',
-          'Salaries do not have to be guessed. Presets cover fifteen countries and ten roles at median gross pay in local currency, and every one of them is editable: use the preset to start the conversation, override it with your real numbers before you take it to a meeting.',
-          'The result is a receipt. Copy it as a link, save it as an image, or open a share card whose link preview already carries the number — which is usually what makes the point in a chat thread without anyone having to click.',
+          'Cada calculadora pide los pocos datos que de verdad mueven la cifra —cuánta gente, con qué nivel, durante cuánto tiempo, con qué frecuencia— y devuelve un número con la aritmética a la vista debajo. Sin paneles, sin registro, sin un asistente de catorce pasos.',
+          'Los salarios no hay que adivinarlos. Los valores predefinidos cubren quince países y diez puestos con la mediana del salario bruto en moneda local, y todos son editables: usa el predefinido para arrancar la conversación y sustitúyelo por tus cifras reales antes de llevarlo a una reunión.',
+          'El resultado es un recibo. Cópialo como enlace, guárdalo como imagen o abre una tarjeta para compartir cuya vista previa ya lleva la cifra dentro, que suele ser lo que zanja el asunto en un hilo de chat sin que nadie tenga que hacer clic.',
         ],
       },
       why: {
-        h2: 'Why these costs stay invisible',
+        h2: 'Por qué estos costos siguen siendo invisibles',
         body: [
-          'Nobody sends an invoice for a recurring meeting. It has no line item, no owner and no renewal date, so it never appears in the budget review that kills a €40-per-month tool — even when it consumes twenty times as much money every year.',
-          'Time is the currency, and time is denominated in salaries, which people are reluctant to say out loud. Once an hour of a room becomes an amount, the argument changes from "this meeting feels long" to a number the person with the calendar can act on.',
-          'The same blindness covers everything with a diffuse cost: subscriptions nobody cancels because each one is small, interruptions that cost far more than the minute they take, a hire that does not work out and quietly consumes a quarter of a team\'s year.',
-          'None of these numbers need to be exact to be useful. An order of magnitude, with the assumptions visible and editable, is enough to make a decision that was previously being made by vibes.',
+          'Nadie emite una factura por una reunión recurrente. No tiene línea de gasto, ni responsable, ni fecha de renovación, así que jamás aparece en la revisión de presupuesto que sí mata una herramienta de 40 € al mes, aunque consuma veinte veces más dinero cada año.',
+          'La moneda es el tiempo, y el tiempo se denomina en salarios, que es justo lo que a la gente le incomoda decir en voz alta. En cuanto una hora de sala se convierte en un importe, la discusión pasa de «esta reunión se hace larga» a una cifra sobre la que quien lleva el calendario puede actuar.',
+          'La misma ceguera cubre todo lo que tiene un costo difuso: suscripciones que nadie cancela porque cada una es pequeña, interrupciones que cuestan mucho más que el minuto que duran, una contratación que no sale bien y se come en silencio un trimestre del año de un equipo.',
+          'Ninguna de estas cifras necesita ser exacta para ser útil. Un orden de magnitud, con los supuestos visibles y editables, basta para tomar una decisión que antes se tomaba por intuición.',
         ],
       },
       how: {
-        h2: 'How it works',
+        h2: 'Cómo funciona',
         steps: [
           {
-            h3: 'One pure model per calculator',
-            body: 'Each calculator is a small, self-contained model with its inputs, its formula and its presentation kept separate. That is why the arithmetic can be shown to you in full — there is nothing behind the number except the number.',
+            h3: 'Un modelo puro por calculadora',
+            body: 'Cada calculadora es un modelo pequeño y autocontenido con sus datos de entrada, su fórmula y su presentación separados. Por eso se te puede enseñar la aritmética entera: detrás de la cifra no hay nada más que la cifra.',
           },
           {
-            h3: 'Salary presets you can overrule',
-            body: 'Fifteen countries by ten roles, at median gross pay in the local currency, with sources kept alongside the data. They are a starting point, not an authority: every field is editable and your override travels with the result.',
+            h3: 'Salarios predefinidos que puedes contradecir',
+            body: 'Quince países por diez puestos, con la mediana del salario bruto en la moneda local y las fuentes guardadas junto a los datos. Son un punto de partida, no una autoridad: todos los campos son editables y tu cambio viaja con el resultado.',
           },
           {
-            h3: 'The link is the document',
-            body: 'Inputs are encoded in the URL. Nothing is stored on a server, there is no account, and sending someone your scenario is sending them a link that reopens exactly the numbers you used.',
+            h3: 'El enlace es el documento',
+            body: 'Los datos de entrada van codificados en la URL. No se guarda nada en ningún servidor, no hay cuenta, y mandarle a alguien tu escenario es mandarle un enlace que reabre exactamente las cifras que usaste.',
           },
           {
-            h3: 'A receipt built to be forwarded',
-            body: 'The output is deliberately shaped like something you can paste into a thread: a headline figure, the assumptions under it, and a share card whose preview shows the number before anyone opens the link.',
+            h3: 'Un recibo hecho para reenviarse',
+            body: 'La salida tiene deliberadamente la forma de algo que puedes pegar en un hilo: una cifra destacada, los supuestos debajo y una tarjeta para compartir cuya vista previa enseña el número antes de que nadie abra el enlace.',
           },
         ],
       },
       useCases: {
-        h2: 'When to use it',
+        h2: 'Cuándo usarlo',
         items: [
           {
-            h3: 'Killing or shortening a recurring meeting',
-            body: 'Eight people, one hour, every week. Put the annual figure next to the agenda and the conversation about whether it should be a written update becomes a short one.',
+            h3: 'Eliminar o acortar una reunión recurrente',
+            body: 'Ocho personas, una hora, cada semana. Pon la cifra anual al lado del orden del día y la conversación sobre si eso debería ser un resumen escrito se vuelve muy corta.',
           },
           {
-            h3: 'The annual SaaS clean-up',
-            body: 'Every subscription looks affordable on its own. Totalled, with seats nobody uses, the stack usually produces a number that pays for something the team has been asking for all year.',
+            h3: 'La limpieza anual de suscripciones',
+            body: 'Cada suscripción parece asequible por separado. Sumadas, y con las licencias que nadie usa, el conjunto suele dar una cifra que paga eso que el equipo lleva todo el año pidiendo.',
           },
           {
-            h3: 'Arguing for focus time',
-            body: 'Interruption costs are not the length of the interruption. Show what a fragmented day actually costs and "no meetings before noon" stops sounding like a preference.',
+            h3: 'Defender el tiempo de concentración',
+            body: 'El costo de una interrupción no es lo que dura la interrupción. Enseña lo que cuesta de verdad un día fragmentado y «nada de reuniones antes del mediodía» deja de sonar a preferencia personal.',
           },
           {
-            h3: 'Making the case for one more hire',
-            body: 'Run the cost of the wrong hire against the cost of the vacancy staying open. Both numbers are uncomfortable, and having both is what makes the decision defensible.',
+            h3: 'Argumentar una contratación más',
+            body: 'Compara el costo de una contratación equivocada con el costo de dejar la vacante abierta. Las dos cifras incomodan, y tener las dos es lo que hace defendible la decisión.',
           },
           {
-            h3: 'Justifying reliability work',
-            body: 'An hour of downtime has a price in lost revenue and in the people who stop what they are doing. That figure is what turns "we should fix the deploy pipeline" into a funded piece of work.',
+            h3: 'Justificar el trabajo de fiabilidad',
+            body: 'Una hora de caída tiene un precio en ingresos perdidos y en las personas que dejan lo que estaban haciendo. Esa cifra es lo que convierte «habría que arreglar el pipeline de despliegue» en un trabajo con presupuesto.',
           },
         ],
       },
       faq: {
-        h2: 'Questions people ask',
+        h2: 'Preguntas que nos hacen',
         items: [
           {
-            q: 'Is it free?',
-            a: 'Yes — every calculator, no account, no limits, no ads. It runs entirely in your browser, which is why it can stay free.',
+            q: '¿Es gratis?',
+            a: 'Sí: todas las calculadoras, sin cuenta, sin límites y sin anuncios. Funciona íntegramente en tu navegador, que es justo lo que le permite seguir siendo gratuita.',
           },
           {
-            q: 'Where do the salary numbers come from?',
-            a: 'Published median gross pay per country and role, kept with their sources, in local currency. They are presets for a first pass, and every one of them can be replaced with your real figures.',
+            q: '¿De dónde salen las cifras de salarios?',
+            a: 'De medianas de salario bruto publicadas por país y por puesto, guardadas junto a sus fuentes y en moneda local. Son valores predefinidos para una primera pasada, y todos se pueden sustituir por tus cifras reales.',
           },
           {
-            q: 'Are my inputs sent anywhere?',
-            a: 'No. They are encoded in the URL and computed in your browser. Visits are counted with cookieless analytics that records no personal data and no inputs.',
+            q: '¿Mis datos se envían a alguna parte?',
+            a: 'No. Van codificados en la URL y se calculan en tu navegador. Las visitas se cuentan con una analítica sin cookies que no registra datos personales ni datos de entrada.',
           },
           {
-            q: 'How accurate is this?',
-            a: 'As accurate as your inputs, and it shows you the arithmetic so you can judge. The point is not a precise figure to four digits but a defensible order of magnitude with the assumptions on the table.',
+            q: '¿Qué precisión tiene esto?',
+            a: 'La de tus datos de entrada, y te enseña la aritmética para que puedas juzgarlo. La idea no es una cifra exacta hasta el cuarto dígito, sino un orden de magnitud defendible con los supuestos encima de la mesa.',
           },
           {
-            q: 'Can I share a result?',
-            a: 'That is the design. Copy the link, save a PNG of the receipt, or paste the share card into a chat where the preview already shows the number.',
+            q: '¿Puedo compartir un resultado?',
+            a: 'Está diseñado para eso. Copia el enlace, guarda un PNG del recibo o pega la tarjeta para compartir en un chat donde la vista previa ya enseñe la cifra.',
           },
           {
-            q: 'Can I use my own currency?',
-            a: 'Yes. Country presets set a sensible default and you can change both the amounts and the currency; the receipt formats itself accordingly.',
+            q: '¿Puedo usar mi propia moneda?',
+            a: 'Sí. Los valores por país fijan un valor por defecto razonable y puedes cambiar tanto los importes como la moneda; el recibo se formatea en consecuencia.',
           },
           {
-            q: 'Which calculators are there?',
-            a: 'The recurring meeting, the SaaS stack, context switching, a bad hire and downtime — the costs that come up most often in the arguments people actually have at work.',
+            q: '¿Qué calculadoras hay?',
+            a: 'La reunión recurrente, el conjunto de suscripciones SaaS, el cambio de contexto, una contratación fallida y las caídas de servicio: los costos que más aparecen en las discusiones que la gente tiene de verdad en el trabajo.',
           },
           {
-            q: 'Will you add more?',
-            a: 'When a real question keeps recurring, yes. If you rebuild the same spreadsheet every quarter, describe it to us and it may become the next one.',
+            q: '¿Van a añadir más?',
+            a: 'Cuando una pregunta real se repite, sí. Si rehaces la misma hoja de cálculo cada trimestre, descríbenosla y quizá se convierta en la siguiente.',
           },
         ],
       },
       cta: {
-        title: 'Open Cost Of',
-        body: 'Pick the meeting that keeps ending without a decision. It takes about a minute to find out what it costs per year.',
-        button: 'Run a calculator',
+        title: 'Abrir Cost Of',
+        body: 'Elige esa reunión que siempre termina sin una decisión. Se tarda alrededor de un minuto en saber lo que cuesta al año.',
+        button: 'Usar una calculadora',
       },
     },
   },
@@ -433,13 +431,13 @@ export const toolsEs: ToolsContent = {
   products: {
     relocating: {
       name: 'Relocating',
-      tagline: 'Moving countries, minus the guesswork.',
-      blurb: 'Open data turned into 33 client-side calculators, programmatic country corridors and a moderated live community — mirrored into 22 languages by its own translation pipeline.',
+      tagline: 'Cambiar de país sin adivinar nada.',
+      blurb: 'Datos abiertos convertidos en 33 calculadoras que corren en el navegador, corredores entre países generados de forma programática y una comunidad en vivo moderada, replicada a 22 idiomas por su propia cadena de traducción.',
     },
     frontdesk: {
       name: 'FrontDesk',
-      tagline: 'The price of record.',
-      blurb: 'A public record of what things actually cost: every price sourced, dated and defended by an adversarial verifier, with a hash-chained history that cannot be quietly rewritten.',
+      tagline: 'El precio de referencia.',
+      blurb: 'Un registro público de lo que cuestan las cosas de verdad: cada precio con su fuente, con su fecha y defendido por un verificador adversario, con un historial encadenado por hashes que no se puede reescribir en silencio.',
     },
   },
 }

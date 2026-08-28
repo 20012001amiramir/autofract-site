@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Un logiciel qui fonctionne seul",
-    "description": "Un studio indépendant de systèmes d'IA antifragiles : infrastructure auto-réparatrice, vidéo autonome, données vérifiables. 100+ services en prod."
+    "description": "Studio indépendant de systèmes d'IA antifragiles : infrastructure auto-réparatrice, vidéo autonome, données vérifiables. 100+ services en production."
   },
   "hero": {
     "kicker": "Autofract — un studio",
@@ -12,12 +12,12 @@
     "workCta": "Voir les systèmes"
   },
   "manifesto": {
-    "body": "La plupart des logiciels sont un tableau de bord. Ils t'attendent, te fixent, demandent à être configurés. Nous construisons l'opposé : des systèmes qui se surveillent, se réparent et reviennent plus forts après chaque casse. Le chaos est planifié. La vérification est adversariale. Chaque fait est livré avec son reçu. Antifragiles par conception — avec un caractère qui reste."
+    "body": "La plupart des logiciels sont un tableau de bord. Ils vous attendent, vous fixent, réclament d'être configurés. Nous construisons l'inverse : des systèmes qui se surveillent, se réparent et reviennent plus forts chaque fois que quelque chose casse. Le chaos est planifié. La vérification est adversariale. Chaque fait est livré avec son reçu. Antifragiles par conception — avec un caractère qui reste."
   },
   "work": {
     "kicker": "Systèmes choisis",
     "heading": "Quatre plateformes. Une doctrine.",
-    "sub": "Tout ce qui suit est réel, en production, et dessiné depuis l'architecture véritable. Ouvre un cas et manipule le graphe — chaque nœud est un système qui tourne.",
+    "sub": "Tout ce qui suit est réel, en production, et dessiné d'après l'architecture réelle. Ouvrez une étude de cas et démontez le graphe — chaque nœud est un système qui tourne.",
     "view": "Ouvrir le système",
     "systems": "systèmes",
     "pathcore": {
@@ -27,24 +27,32 @@
       "headline": "Le système qui se répare seul.",
       "tagline": "Une plateforme d'infrastructure où la panne est un signal d'entraînement, pas un incident.",
       "body1": "PathCore est un hexagone strict — Core, Uncore, Un-uncore — où chaque capacité vit derrière une frontière dure. Un moteur de chaos casse le système volontairement. Les circuit breakers isolent la zone touchée. Des workers IA cognitifs lisent les débris, posent le diagnostic et proposent le correctif. La plateforme ne réveille personne à trois heures du matin — elle se ré-entraîne et continue.",
-      "body2": "Et tout cela se regarde dans MindView : un graphe temps réel de chaque service, worker et file, diffusé en direct par server-sent events. Les déploiements passent par un exécuteur conscient des pannes avec rollback automatique ; les changements atterrissent via une merge queue dans un ordre prouvablement sûr. Une infrastructure avec un système nerveux — et un instinct de survie.",
-      "s1v": "3", "s1l": "couches du cœur hexagonal",
-      "s2v": "24/7", "s2l": "boucles d'auto-réparation",
-      "s3v": "1", "s3l": "carte vivante du système entier",
-      "s4v": "0", "s4l": "dashboard à surveiller"
+      "body2": "Vous suivez tout cela dans MindView : un graphe temps réel de chaque service, worker et file d'attente, diffusé en direct par server-sent events. Les déploiements passent par un exécuteur conscient des pannes, avec rollback automatique ; les changements atterrissent via une merge queue dans un ordre prouvablement sûr. Une infrastructure avec un système nerveux — et un instinct de survie.",
+      "s1v": "3",
+      "s1l": "couches du cœur hexagonal",
+      "s2v": "24/7",
+      "s2l": "boucles d'auto-réparation",
+      "s3v": "1",
+      "s3l": "carte vivante du système entier",
+      "s4v": "0",
+      "s4l": "dashboard à surveiller"
     },
     "videolinker": {
       "name": "VideoLinker",
       "tag": "Production vidéo autonome",
-      "blurb": "Script en entrée, épisode prêt à diffuser en sortie. Une pipeline en 11 étapes, 60+ services et un agent autonome maniant 59 outils — avec un gate QA de 60 règles avant toute sortie.",
+      "blurb": "Script en entrée, épisode prêt à diffuser en sortie. Un pipeline en 11 étapes, 60+ services et un agent autonome maniant 59 outils — avec un gate QA de 60 règles avant toute sortie.",
       "headline": "Une équipe de tournage faite de services.",
       "tagline": "Script en entrée — épisode prêt à diffuser en sortie. Aucun humain dans le chemin de rendu.",
-      "body1": "VideoLinker fait tourner une chaîne de production en 11 étapes : bible de série, idées d'épisodes, script, découpage en plans, keyframes, image-vers-vidéo, narration en voix clonée, sous-titres calés au mot, et la composition FFmpeg finale avec transitions, overlays et lit de SFX mixé. Un conteneur GPU dédié upscale les frames au passage. Chaque épisode affronte un moteur QA qui le note 0–100 contre 60+ règles pondérées — accroche, rythme, variété, continuité — avant d'avoir le droit d'exister.",
-      "body2": "Au-dessus de la pipeline siège un agent autonome : il planifie le travail, appelle 59 outils répartis sur 12 serveurs, respecte des plafonds de budget et ne s'arrête pour approbation humaine que là où tu le décides. Les artefacts sont adressés par contenu et dédupliqués par hash. Toute l'usine tient dans un seul appel d'API.",
-      "s1v": "60+", "s1l": "modules de service en production",
-      "s2v": "38", "s2l": "tâches de fond dans la flotte",
-      "s3v": "59", "s3l": "outils à la main de l'agent",
-      "s4v": "60+", "s4l": "règles QA par épisode"
+      "body1": "VideoLinker fait tourner une chaîne de production en 11 étapes : bible de série, idées d'épisodes, script, découpage en plans, keyframes, image-vers-vidéo, narration en voix clonée, sous-titres calés au mot, et la composition FFmpeg finale avec transitions, overlays et fond d'effets sonores mixé. Un conteneur GPU dédié upscale les images au passage. Chaque épisode affronte un moteur QA qui le note de 0 à 100 contre 60+ règles pondérées — accroche, rythme, variété, continuité — avant d'avoir le droit d'exister.",
+      "body2": "Au-dessus du pipeline siège un agent autonome : il planifie le travail, appelle 59 outils répartis sur 12 serveurs d'outils, respecte des plafonds de budget et ne s'arrête pour validation humaine que là où vous le décidez. Les artefacts sont adressés par contenu et dédupliqués par hash. Toute l'usine tient dans un seul appel d'API.",
+      "s1v": "60+",
+      "s1l": "modules de service en production",
+      "s2v": "38",
+      "s2l": "tâches de fond dans la flotte",
+      "s3v": "59",
+      "s3l": "outils maniés par l'agent",
+      "s4v": "60+",
+      "s4l": "règles QA par épisode"
     },
     "frontdesk": {
       "name": "FrontDesk",
@@ -52,25 +60,33 @@
       "blurb": "Un registre public des vrais prix : des rédacteurs IA compilent, un agent adversarial réfute, un fidelity gate re-vérifie chaque source — et un ledger SHA-256 rend l'historique infalsifiable.",
       "headline": "Chaque prix a son reçu.",
       "tagline": "Un registre public de ce que les choses coûtent vraiment — sourcé, daté, infalsifiable.",
-      "body1": "FrontDesk repose sur une méfiance institutionnelle envers son propre contenu. Des agents rédacteurs compilent produits et prix depuis des sources publiées ; un second agent, adversarial, n'existe que pour les réfuter. Ce qui survit affronte le fidelity gate, qui re-télécharge chaque page citée et refuse de publier un chiffre qui ne s'y trouve pas littéralement. Résultat : un corpus de 4 400+ entités où chaque fait porte l'URL de sa source et sa date de vérification.",
-      "body2": "Un scan de prix quotidien — sans IA, avec quatre garde-fous avant commit — écrit dans un historique append-only, et un ledger chaîné par hash le rend infalsifiable : le mois dernier ne peut pas être réécrit. Le corpus se déploie en 23 000+ pages citables, des flux machine pensés pour les lecteurs IA, un serveur MCP à 19 outils, un miroir ouvert CC-BY avec DOI, et une extension navigateur qui affiche le prix de référence directement sur la page du marchand.",
-      "s1v": "23k+", "s1l": "pages citables, chaque fait sourcé",
-      "s2v": "4 400+", "s2l": "entités au registre",
-      "s3v": "19", "s3l": "outils servis aux agents IA",
-      "s4v": "SHA-256", "s4l": "ledger chaîné, infalsifiable"
+      "body1": "FrontDesk repose sur une méfiance institutionnelle envers son propre contenu. Des agents rédacteurs compilent produits et prix à partir de sources publiées ; un second agent, adversarial, n'existe que pour les réfuter. Ce qui survit affronte le fidelity gate, qui re-télécharge chaque page citée et refuse de publier un chiffre qui ne s'y trouve pas littéralement. Résultat : un corpus de 4 400+ entités où chaque fait porte l'URL de sa source et sa date de vérification.",
+      "body2": "Un scan de prix quotidien, sans IA, écrit dans un historique append-only, et un ledger chaîné par hash rend cet historique infalsifiable : le mois dernier ne peut pas être réécrit. Le corpus se déploie en 23 000+ pages citables, des flux machine pensés pour les lecteurs IA, un serveur MCP à 19 outils, un miroir ouvert CC-BY avec DOI, et une extension navigateur qui affiche le prix de référence directement sur la page du marchand.",
+      "s1v": "23k+",
+      "s1l": "pages citables, chaque fait sourcé",
+      "s2v": "4 400+",
+      "s2l": "entités au registre",
+      "s3v": "19",
+      "s3l": "outils servis aux agents IA",
+      "s4v": "SHA-256",
+      "s4l": "ledger chaîné, infalsifiable"
     },
     "relocating": {
       "name": "Relocating",
       "tag": "L'expatriation en données",
-      "blurb": "Des données ouvertes distillées en 33 calculateurs, des corridors pays programmatiques et une communauté live modérée — miroitée en 22 langues par sa propre pipeline de traduction.",
+      "blurb": "Des données ouvertes distillées en 33 calculateurs, des corridors pays programmatiques et une communauté live modérée — répliquée en 22 langues par son propre pipeline de traduction.",
       "headline": "Changer de pays, sans deviner.",
       "tagline": "Des données ouvertes transformées en calculateurs, corridors et communauté vivante — en 22 langues.",
       "body1": "Relocating commence là où commence l'anxiété : combien ça coûte vraiment, quel visa convient, combien d'années avant la citoyenneté. Un ETL au build normalise les données de la Banque mondiale, de la météo et de la géographie en 30+ jeux de données sur 50 pays ; un quality gate fait échouer tout le build si un seul jeu est incohérent. De cette colonne vertébrale, un moteur de pages génère corridors, comparaisons et classements — et 33 calculateurs tournent entièrement côté client.",
-      "body2": "Le site entier est ensuite miroité en 22 langues par sa propre pipeline de traduction — modèles auto-hébergés, mémoire de traduction versionnée, et échec dur du build à la moindre chaîne non traduite. Il part en build entièrement statique vers l'edge : rien ne peut planter à l'exécution. À côté des données vit City Chat, où chaque message passe une modération IA avant d'être public — sur un Postgres européen avec row-level security et rétention GDPR par construction.",
-      "s1v": "50", "s1l": "pays dans le cœur de données",
-      "s2v": "33", "s2l": "calculateurs, tous côté client",
-      "s3v": "22", "s3l": "langues, une seule pipeline",
-      "s4v": "0", "s4l": "serveur runtime à faire tomber"
+      "body2": "Le site entier est ensuite répliqué en 22 langues par son propre pipeline de traduction — modèles auto-hébergés, mémoire de traduction versionnée, et échec dur du build à la moindre chaîne non traduite. Le site est livré en build entièrement statique sur l'edge : rien ne peut planter à l'exécution. À côté des données vit City Chat, où chaque message passe une modération IA avant d'être public — sur un Postgres européen avec row-level security et rétention RGPD par construction.",
+      "s1v": "50",
+      "s1l": "pays dans le cœur de données",
+      "s2v": "33",
+      "s2l": "calculateurs, tous côté client",
+      "s3v": "22",
+      "s3l": "langues, un seul pipeline",
+      "s4v": "0",
+      "s4l": "serveur runtime à faire tomber"
     }
   },
   "approach": {
@@ -79,30 +95,39 @@
     "i1t": "La panne est un carburant",
     "i1b": "Nous planifions le chaos au lieu de le craindre. Circuit breakers, retries avec mémoire, workers IA qui analysent leurs propres débris — chaque incident rend le système plus dur à tuer.",
     "i2t": "Adversarial par défaut",
-    "i2b": "Rien ne sort sur une seule opinion. Les agents rédacteurs sont doublés d'agents réfutateurs ; les fidelity gates re-téléchargent chaque source ; les moteurs QA notent chaque artefact contre des dizaines de règles avant publication.",
+    "i2b": "Rien ne sort sur une seule opinion. Les agents rédacteurs sont doublés d'agents réfutateurs ; les fidelity gates re-téléchargent chaque source ; les moteurs QA notent chaque artefact contre des dizaines de règles avant qu'il existe en public.",
     "i3t": "Des reçus, pas des affirmations",
     "i3b": "Chaque fait porte sa source et sa date. Logs append-only, chaînes de hash, historique infalsifiable. Ce que nous ne pouvons pas prouver, nous ne le publions pas.",
     "i4t": "Pas de babysitting",
     "i4b": "Un logiciel ne devrait pas avoir besoin d'un humain qui le regarde. Nos plateformes se déploient seules, se rollback seules, se traduisent seules, se modèrent seules — et ne réveillent personne."
   },
   "casepage": {
-    "kicker": "Cas — à l'intérieur du système",
+    "kicker": "Étude de cas — à l'intérieur du système",
     "map": "Carte du système",
-    "hint": "Simulation vivante — survole les nœuds, déplace-les.",
+    "hint": "Simulation vivante — survolez les nœuds, déplacez-les.",
     "inside": "À l'intérieur du système",
     "visit": "Visiter",
     "next": "Système suivant",
     "hireTitle": "Un système comme celui-ci ?",
-    "hireBody": "Ce cas a été conçu, construit et opéré par le studio, de bout en bout. Le tien peut être le prochain — devis fixe, production dès la première semaine.",
-    "hireCta": "Engager le studio"
+    "hireBody": "Cette plateforme a été conçue, construite et opérée par le studio, de bout en bout. Le vôtre peut être le prochain — devis fixe, production dès la première semaine.",
+    "hireCta": "Engager le studio",
+    "legend": {
+      "core": "Cœur",
+      "ai": "IA",
+      "worker": "Traitements",
+      "data": "Données",
+      "edge": "Diffusion",
+      "gate": "Contrôles",
+      "ui": "Interface"
+    }
   },
   "hire": {
     "metaTitle": "Engager le studio",
-    "metaDesc": "Nous construisons des systèmes d'IA antifragiles sur mesure : agents, pipelines, plateformes auto-réparatrices. Devis fixe, production dès la semaine un.",
+    "metaDesc": "Systèmes d'IA antifragiles sur mesure : agents, pipelines, plateformes auto-réparatrices. Devis fixe, production dès la semaine un, à partir de 4 000 $.",
     "kicker": "Engager le studio",
-    "headline": "Nous construisons des systèmes qui fonctionnent seuls — pour toi.",
+    "headline": "Nous construisons des systèmes qui fonctionnent seuls — pour vous.",
     "sub": "Les quatre plateformes de ce site ont été conçues, construites et opérées par ce studio. La même doctrine — testée au chaos, vérifiée de façon adversariale, des reçus pour tout — est disponible sur commande.",
-    "cta": "Dis-nous quoi construire",
+    "cta": "Un devis fixe sous 48 heures",
     "offersHeading": "Trois façons de travailler ensemble",
     "offers": {
       "build": {
@@ -116,10 +141,10 @@
       "run": {
         "label": "Run",
         "title": "Nous le gardons en vie",
-        "desc": "Ton système, opéré comme nous opérons les nôtres : surveillé, auto-réparateur, amélioré chaque mois. Tu lis un rapport — personne ne surveille un dashboard.",
+        "desc": "Votre système, opéré comme nous opérons les nôtres : surveillé, auto-réparateur, amélioré chaque mois. Vous lisez un rapport ; personne ne surveille un dashboard.",
         "b1": "Monitoring, réponse aux incidents et récupération inclus",
-        "b2": "Un budget d'amélioration mensuel dépensé sur tes priorités",
-        "b3": "Résiliable au mois — le système reste le tien"
+        "b2": "Un budget d'amélioration mensuel dépensé sur vos priorités",
+        "b3": "Résiliable au mois — le système reste le vôtre"
       },
       "rescue": {
         "label": "Rescue",
@@ -130,60 +155,78 @@
         "b3": "Preuves avant/après — mesurées, pas affirmées"
       }
     },
-    "offersNote": "Les prix sont des points de départ pour le plus petit périmètre utile. Le scoping de 48 heures transforme ton brief en devis fixe.",
+    "offersNote": "Les prix sont des points de départ pour le plus petit périmètre utile. Le scoping de 48 heures transforme votre brief en devis fixe.",
     "capsHeading": "Ce que nous prenons en charge",
     "capsTitle": "Tout ce qui doit fonctionner seul.",
     "caps": {
-      "c1": { "t": "Agents IA & plateformes multi-agents", "b": "Des agents autonomes qui planifient, appellent des outils et finissent le travail — avec plafonds de budget et validations humaines exactement où tu les veux." },
-      "c2": { "t": "Pipelines de contenu & médias", "b": "Usines script-vers-vidéo, pipelines de génération, automatisation de publication — des productions entières déclenchées par un seul appel d'API." },
-      "c3": { "t": "Backends auto-réparateurs", "b": "Des services qui détectent la panne, l'isolent et récupèrent seuls — testés au chaos avant que ça n'arrive pour de vrai." },
-      "c4": { "t": "Produits data vérifiés", "b": "Des registres et datasets où chaque fait porte une source, une date et un historique infalsifiable." },
-      "c5": { "t": "Plateformes data multilingues", "b": "Des produits open-data répliqués en dizaines de langues par leurs propres pipelines — statiques, rapides, aucun serveur qui puisse tomber." },
-      "c6": { "t": "Sécurité IA & gates QA", "b": "Couches de modération, vérification adversariale, moteurs de règles qui notent chaque artefact avant sa sortie." }
+      "c1": {
+        "t": "Agents IA & plateformes multi-agents",
+        "b": "Des agents autonomes qui planifient, appellent des outils et finissent le travail — avec plafonds de budget et validations humaines exactement où vous les voulez."
+      },
+      "c2": {
+        "t": "Pipelines de contenu & médias",
+        "b": "Usines script-vers-vidéo, pipelines de génération, automatisation de publication — des productions entières déclenchées par un seul appel d'API."
+      },
+      "c3": {
+        "t": "Backends auto-réparateurs",
+        "b": "Des services qui détectent la panne, l'isolent et récupèrent seuls — testés au chaos avant que ça n'arrive pour de vrai."
+      },
+      "c4": {
+        "t": "Produits data vérifiés",
+        "b": "Des registres et datasets où chaque fait porte une source, une date et un historique infalsifiable."
+      },
+      "c5": {
+        "t": "Plateformes data multilingues",
+        "b": "Des produits open-data répliqués dans plusieurs langues par leurs propres pipelines — statiques, rapides, aucun serveur qui puisse tomber."
+      },
+      "c6": {
+        "t": "Sécurité IA & gates QA",
+        "b": "Couches de modération, vérification adversariale, moteurs de règles qui notent chaque artefact avant sa sortie."
+      }
     },
     "proven": "prouvé dans",
     "processHeading": "Le processus",
     "process": {
       "s1t": "Scope",
-      "s1b": "Tu envoies le brief. Sous 48 heures tu reçois un devis fixe, une ligne claire de ce qui est inclus ou non, et la première esquisse d'architecture.",
+      "s1b": "Vous envoyez le brief. Sous 48 heures, vous recevez un devis fixe, une ligne claire de ce qui est inclus ou non, et la première esquisse d'architecture.",
       "s2t": "Build",
-      "s2b": "Des cycles hebdomadaires courts, chacun terminé par une démo sur infrastructure de production. Tu regardes le système prendre vie — pas des slides.",
-      "s3t": "Durcir",
+      "s2b": "Des cycles hebdomadaires courts, chacun terminé par une démo sur infrastructure de production. Vous regardez le système prendre vie — pas des slides.",
+      "s3t": "Durcissement",
       "s3b": "Avant la livraison, nous attaquons notre propre travail : runs de chaos, QA adversariale, exercices de panne. Ce qui survit est ce qui sort.",
       "s4t": "Run ou livraison",
-      "s4b": "Prends les clés — docs, tests et reçus inclus — ou mets-le sous retainer Run et n'y pense plus jamais."
+      "s4b": "Prenez les clés — docs, tests et reçus inclus — ou mettez-le sous retainer Run et n'y pensez plus jamais."
     },
     "gHeading": "Garanties",
     "g1": "Devis fixe avant de commencer — le chiffre ne bouge pas",
-    "g2": "Tout t'appartient : code, IP, infrastructure, données",
+    "g2": "Tout vous appartient : code, IP, infrastructure, données",
     "g3": "Production dès la première semaine — pas de prototypes jetables",
-    "g4": "Async-first, parler vrai — anglais ou russe",
-    "faqHeading": "Questions fréquentes",
+    "g4": "Async-first, franc-parler — en anglais ou en russe",
+    "faqHeading": "Les questions qu'on nous pose",
     "faq": {
-      "f1q": "En combien de temps ?",
-      "f1a": "Un prototype fonctionnel arrive typiquement en 1–2 semaines ; un système de production en 3–6, selon le périmètre. Le scoping de 48 heures donne le vrai chiffre avant tout engagement.",
-      "f2q": "Quel stack ?",
-      "f2a": "TypeScript, Go et Python — auto-hébergé ou dans ton cloud. Neutres sur les modèles et fournisseurs : les systèmes sont construits pour que les composants se remplacent sans réécriture.",
+      "f1q": "Sous quel délai livrez-vous ?",
+      "f1a": "Une première tranche fonctionnelle tourne en production sous 1–2 semaines ; un système complet en 3–6, selon le périmètre. Le scoping de 48 heures vous donne le vrai chiffre avant tout engagement.",
+      "f2q": "Quel stack utilisez-vous ?",
+      "f2a": "TypeScript, Go et Python — auto-hébergés ou dans votre cloud. Nous restons neutres sur les modèles et les fournisseurs : les systèmes sont construits pour que les composants se remplacent sans réécriture.",
       "f3q": "À qui appartient le résultat ?",
-      "f3a": "À toi. Transfert complet du code, de l'infrastructure et de la propriété intellectuelle au paiement final. Nous gardons seulement le droit de décrire le travail anonymement comme un cas.",
+      "f3a": "À vous. Transfert complet du code, de l'infrastructure et de la propriété intellectuelle au paiement final. Nous gardons seulement le droit de décrire le travail anonymement comme une étude de cas.",
       "f4q": "Et après la livraison ?",
-      "f4a": "Chaque Build inclut une fenêtre de correctifs de 30 jours. Ensuite, ton équipe l'opère avec nos docs — ou nous le gardons en vie sous retainer Run."
+      "f4a": "Chaque Build inclut une fenêtre de correctifs de 30 jours. Ensuite, votre équipe l'opère avec nos docs — ou nous le gardons en vie sous retainer Run."
     },
     "form": {
-      "heading": "Dis-nous ce qui doit fonctionner seul.",
+      "heading": "Dites-nous ce qui doit fonctionner seul.",
       "sub": "Trois phrases suffisent. Nous répondons sous 24 heures — avec des questions ou une proposition de scoping.",
       "name": "Nom",
       "company": "Société (optionnel)",
-      "interest": "De quoi as-tu besoin ?",
+      "interest": "De quoi avez-vous besoin ?",
       "budget": "Budget",
-      "message": "Que construire ?",
+      "message": "Que devons-nous construire ?",
       "placeholder": "Ce que ça doit faire, qui l'utilise, ce qui existe déjà…",
       "submit": "Envoyer le brief",
       "sending": "Envoi…",
       "sentTitle": "Bien reçu.",
-      "sentBody": "Ton brief est arrivé. Nous répondons sous 24 heures — vérifie ta boîte (et le spam, une fois).",
-      "err429": "Trop de requêtes depuis ce réseau — réessaie dans une heure ou écris à",
-      "errGeneric": "Échec de l'envoi — écris-nous directement :",
+      "sentBody": "Votre brief est arrivé. Nous répondons sous 24 heures — vérifiez votre boîte (et les spams, une fois).",
+      "err429": "Trop de requêtes depuis ce réseau — réessayez dans une heure ou écrivez à",
+      "errGeneric": "Échec de l'envoi — écrivez-nous directement :",
       "i_build": "Build — un nouveau système",
       "i_run": "Run — opérer le mien",
       "i_rescue": "Rescue — réparer un projet",
@@ -193,38 +236,38 @@
   },
   "studio": {
     "headline": "Un studio indépendant.",
-    "p1": "Autofract est un studio de logiciels indépendant. Quatre plateformes de production partagent une même doctrine d'ingénierie : infrastructure auto-réparatrice, usine vidéo autonome, registre de prix infalsifiable et hub open-data d'expatriation — plus de cent services conçus, construits et opérés de bout en bout.",
-    "p2": "Pas de financement VC, pas de recrutement. Nous construisons lentement, intentionnellement, sur le long terme."
+    "p1": "Autofract est un studio de logiciels indépendant. Quatre plateformes en production partagent une même doctrine d'ingénierie : infrastructure auto-réparatrice, usine vidéo autonome, registre de prix infalsifiable et hub open-data d'expatriation — plus de cent services conçus, construits et opérés de bout en bout.",
+    "p2": "Pas de financement VC, pas de recrutement. Nous construisons lentement, délibérément, pour le long terme."
   },
   "footer": {
     "tagline": "Un logiciel qui fonctionne seul.",
     "hire": "Nous engager",
-    "tools": "Tools"
+    "tools": "Outils"
   },
   "tools": {
-    "kicker": "Tools",
-    "breadcrumb": "Tools",
-    "open": "Open the tool",
-    "read": "How it works",
-    "visit": "Visit",
-    "case": "Read the case",
-    "backToHub": "All tools",
-    "free": "Free · no account",
-    "opens": "Opens {host}",
+    "kicker": "Outils",
+    "breadcrumb": "Outils",
+    "open": "Ouvrir l'outil",
+    "read": "Comment ça marche",
+    "visit": "Visiter",
+    "case": "Lire l'étude de cas",
+    "backToHub": "Tous les outils",
+    "free": "Gratuit · sans compte",
+    "opens": "Ouvre {host}",
     "strip": {
-      "kicker": "Free tools",
-      "heading": "We also build small things.",
-      "sub": "Three free browser tools: contracts read for traps, meetings that fit every time zone, and the costs nobody invoices.",
-      "cta": "See the tools"
+      "kicker": "Outils gratuits",
+      "heading": "Nous construisons aussi de petites choses.",
+      "sub": "Trois outils gratuits dans le navigateur : des contrats passés au crible, des réunions qui tiennent dans tous les fuseaux et les coûts que personne ne facture.",
+      "cta": "Voir les outils"
     }
   },
   "error": {
-    "kicker": "Error",
-    "title404": "This page does not exist.",
-    "body404": "The address you asked for is not part of this site — it may have moved, or the link may carry a typo. Everything the studio publishes is one click away below.",
-    "titleGeneric": "Something broke.",
-    "bodyGeneric": "An unexpected error stopped this page from rendering. That is on us — try again, or start from the home page.",
-    "home": "Back to Autofract",
-    "tools": "See the tools"
+    "kicker": "Erreur",
+    "title404": "Cette page n'existe pas.",
+    "body404": "L'adresse demandée ne fait pas partie de ce site — elle a peut-être changé, ou le lien contient une coquille. Tout ce que le studio publie est à un clic ci-dessous.",
+    "titleGeneric": "Quelque chose a cassé.",
+    "bodyGeneric": "Une erreur inattendue a empêché cette page de s'afficher. C'est de notre faute — réessayez, ou repartez de la page d'accueil.",
+    "home": "Retour à Autofract",
+    "tools": "Voir les outils"
   }
 }

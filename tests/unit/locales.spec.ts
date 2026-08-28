@@ -26,7 +26,7 @@ const dicts: Record<Locale, Record<string, any>> = { en, ru, de, es, fr, pt }
  * Until then it ships the English source, which reads worse than a translation
  * but far better than a raw key path.
  */
-const TRANSLATED: Locale[] = ['ru', 'de', 'fr']
+const TRANSLATED: Locale[] = ['ru', 'de', 'es', 'fr', 'pt']
 
 const BRAND_SUFFIX = ' — Autofract'
 

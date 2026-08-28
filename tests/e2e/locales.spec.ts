@@ -4,9 +4,9 @@ const LOCALES = [
   { path: '/', code: 'en', hero: 'runs itself' },
   { path: '/ru', code: 'ru', hero: 'работает сам' },
   { path: '/de', code: 'de', hero: 'selbst betreibt' },
-  { path: '/es', code: 'es', hero: 'runs itself' },
+  { path: '/es', code: 'es', hero: 'funciona solo' },
   { path: '/fr', code: 'fr', hero: 'fonctionne seul' },
-  { path: '/pt', code: 'pt', hero: 'runs itself' },
+  { path: '/pt', code: 'pt', hero: 'roda sozinho' },
 ]
 
 for (const l of LOCALES) {

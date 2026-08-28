@@ -1,23 +1,23 @@
 {
   "meta": {
     "title": "Software, die sich selbst betreibt",
-    "description": "Ein unabhängiges Studio für antifragile KI-Systeme: selbstheilende Infrastruktur, autonome Videoproduktion, verifizierbare Daten. 100+ Services live."
+    "description": "Ein unabhängiges Studio für antifragile KI-Systeme: selbstheilende Infrastruktur, autonome Videofabrik, verifizierbare Daten. 100+ Services in Produktion."
   },
   "hero": {
     "kicker": "Autofract — ein Studio",
     "line1": "Software, die sich",
     "line2": "selbst betreibt",
-    "sub": "Ein unabhängiges Studio für antifragile KI-Systeme. Vier Produktionsplattformen. 100+ Services. Null Dashboards, die man hüten muss.",
+    "sub": "Ein unabhängiges Studio für antifragile KI-Systeme. Vier Produktionsplattformen. 100+ Services. Null Dashboards, die jemand hüten muss.",
     "hireCta": "Studio beauftragen",
     "workCta": "Systeme ansehen"
   },
   "manifesto": {
-    "body": "Die meiste Software ist ein Dashboard. Sie wartet auf dich, starrt dich an, verlangt Konfiguration. Wir bauen das Gegenteil: Systeme, die sich selbst überwachen, sich selbst heilen und nach jedem Bruch stärker zurückkommen. Chaos hat einen Zeitplan. Verifikation ist adversarial. Jeder Fakt kommt mit Beleg. Antifragil im Design — mit einem Charakter, der bleibt."
+    "body": "Die meiste Software ist ein Dashboard. Sie wartet, sie starrt zurück, sie verlangt Konfiguration. Wir bauen das Gegenteil: Systeme, die sich selbst überwachen, sich selbst heilen und nach jedem Bruch stärker zurückkommen. Chaos hat einen Zeitplan. Verifikation ist adversarial. Jeder Fakt kommt mit Beleg. Antifragil im Design — mit einem Charakter, der bleibt."
   },
   "work": {
     "kicker": "Ausgewählte Systeme",
     "heading": "Vier Plattformen. Eine Doktrin.",
-    "sub": "Alles hier ist echt, in Produktion und aus der realen Architektur gezeichnet. Öffne einen Case und zieh den Graphen auseinander — jeder Knoten ist ein laufendes System.",
+    "sub": "Alles hier ist echt, läuft in Produktion und ist der tatsächlichen Architektur nachgezeichnet. Öffnen Sie einen Case und ziehen Sie den Graphen auseinander — jeder Knoten ist ein laufendes System.",
     "view": "System öffnen",
     "systems": "Systeme",
     "pathcore": {
@@ -27,11 +27,15 @@
       "headline": "Das System, das sich selbst heilt.",
       "tagline": "Eine Infrastrukturplattform, in der Ausfall ein Trainingssignal ist — kein Incident.",
       "body1": "PathCore ist ein striktes Hexagon — Core, Uncore, Un-uncore — in dem jede Fähigkeit hinter einer harten Grenze lebt. Eine Chaos-Engine bricht das System absichtlich. Circuit Breaker isolieren den Schaden. Kognitive KI-Worker lesen die Trümmer, stellen die Diagnose und schlagen den Fix vor. Die Plattform weckt niemanden um drei Uhr nachts — sie trainiert sich neu und fährt weiter.",
-      "body2": "Alles davon siehst du in MindView: ein Echtzeit-Graph jedes Services, Workers und jeder Queue, live über Server-Sent Events gestreamt. Deploys laufen durch einen ausfallbewussten Executor mit automatischem Rollback; Änderungen landen über eine Merge Queue in beweisbar sicherer Reihenfolge. Infrastruktur mit Nervensystem — und Überlebensinstinkt.",
-      "s1v": "3", "s1l": "hexagonale Kernschichten",
-      "s2v": "24/7", "s2l": "Selbstheilungs-Loops",
-      "s3v": "1", "s3l": "lebende Karte des Gesamtsystems",
-      "s4v": "0", "s4l": "Dashboards zum Hüten"
+      "body2": "Alles davon sehen Sie in MindView: ein Echtzeit-Graph jedes Services, Workers und jeder Queue, live über Server-Sent Events gestreamt. Deploys laufen durch einen ausfallbewussten Executor mit automatischem Rollback; Änderungen landen über eine Merge Queue in beweisbar sicherer Reihenfolge. Infrastruktur mit Nervensystem — und Überlebensinstinkt.",
+      "s1v": "3",
+      "s1l": "hexagonale Kernschichten",
+      "s2v": "24/7",
+      "s2l": "Selbstheilungs-Loops",
+      "s3v": "1",
+      "s3l": "lebende Karte des Gesamtsystems",
+      "s4v": "0",
+      "s4l": "Dashboards zum Hüten"
     },
     "videolinker": {
       "name": "VideoLinker",
@@ -39,12 +43,16 @@
       "blurb": "Skript rein, sendefertige Episode raus. Eine 11-Schritte-Pipeline, 60+ Services und ein autonomer Agent mit 59 Tools — mit einem 60-Regeln-QA-Gate vor jedem Release.",
       "headline": "Ein Filmteam aus Services.",
       "tagline": "Skript rein — sendefertige Episode raus. Keine Menschen im Render-Pfad.",
-      "body1": "VideoLinker fährt eine Produktionslinie mit 11 Schritten: Serienbibel, Episodenideen, Skript, Shot-Zerlegung, Keyframes, Image-to-Video, geklonte Erzählstimme, wortgenau getimte Untertitel und die finale FFmpeg-Komposition mit Übergängen, Overlays und gemischtem SFX-Bett. Ein eigener GPU-Container skaliert Frames unterwegs hoch. Jede Episode muss durch eine QA-Engine, die sie 0–100 gegen 60+ gewichtete Regeln bewertet — Hook, Pacing, Varianz, Kontinuität — bevor sie existieren darf.",
-      "body2": "Über der Pipeline sitzt ein autonomer Agent: Er plant den Job, ruft 59 Tools auf 12 Tool-Servern auf, respektiert Budget-Caps und hält nur dort für menschliche Freigabe an, wo du es willst. Artefakte sind content-addressiert und per Hash dedupliziert. Die ganze Fabrik ist einen API-Call breit.",
-      "s1v": "60+", "s1l": "Service-Module in Produktion",
-      "s2v": "38", "s2l": "Background-Tasks in der Flotte",
-      "s3v": "59", "s3l": "Tools für den Agenten",
-      "s4v": "60+", "s4l": "QA-Regeln pro Episode"
+      "body1": "VideoLinker fährt eine Produktionslinie mit 11 Schritten: Serienbibel, Episodenideen, Skript, Shot-Zerlegung, Keyframes, Image-to-Video, geklonte Erzählstimme, wortgenau synchronisierte Untertitel und die finale FFmpeg-Komposition mit Übergängen, Overlays und gemischtem SFX-Bett. Ein eigener GPU-Container rechnet Frames im Durchlauf hoch. Jede Episode muss durch eine QA-Engine, die sie 0–100 gegen 60+ gewichtete Regeln bewertet — Hook, Pacing, Varianz, Kontinuität — bevor sie existieren darf.",
+      "body2": "Über der Pipeline sitzt ein autonomer Agent: Er plant den Job, ruft 59 Tools auf 12 Tool-Servern auf, respektiert Budget-Caps und hält nur dort für eine menschliche Freigabe an, wo Sie es wollen. Artefakte sind content-addressiert und per Hash dedupliziert. Die ganze Fabrik ist einen API-Call breit.",
+      "s1v": "60+",
+      "s1l": "Service-Module in Produktion",
+      "s2v": "38",
+      "s2l": "Background-Tasks in der Flotte",
+      "s3v": "59",
+      "s3l": "Tools für den Agenten",
+      "s4v": "60+",
+      "s4l": "QA-Regeln pro Episode"
     },
     "frontdesk": {
       "name": "FrontDesk",
@@ -52,12 +60,16 @@
       "blurb": "Ein öffentliches Register echter Preise: KI-Autoren sammeln, ein adversarialer Agent widerlegt, ein Fidelity-Gate prüft jede Quelle neu — und ein SHA-256-Ledger macht die Historie unveränderbar.",
       "headline": "Jeder Preis hat einen Beleg.",
       "tagline": "Ein öffentliches Register dessen, was Dinge wirklich kosten — mit Quellen, Daten und fälschungssicherer Historie.",
-      "body1": "FrontDesk basiert auf institutionellem Misstrauen gegenüber dem eigenen Inhalt. Autoren-Agenten sammeln Produkte und Preise aus veröffentlichten Quellen; ein zweiter, adversarialer Agent existiert nur, um sie zu widerlegen. Was überlebt, trifft das Fidelity-Gate: Es lädt jede zitierte Seite neu und weigert sich, eine Zahl zu veröffentlichen, die dort nicht wörtlich steht. Das Ergebnis: ein Korpus aus 4.400+ Entitäten, in dem jeder Fakt Quell-URL und Verifikationsdatum trägt.",
+      "body1": "FrontDesk basiert auf institutionellem Misstrauen gegenüber den eigenen Inhalten. Autoren-Agenten sammeln Produkte und Preise aus veröffentlichten Quellen; ein zweiter, adversarialer Agent existiert nur, um sie zu widerlegen. Was überlebt, trifft das Fidelity-Gate: Es lädt jede zitierte Seite neu und weigert sich, eine Zahl zu veröffentlichen, die dort nicht wörtlich steht. Das Ergebnis: ein Korpus aus 4.400+ Entitäten, in dem jeder Fakt Quell-URL und Verifikationsdatum trägt.",
       "body2": "Ein täglicher KI-freier Preisscan schreibt in eine Append-only-Historie, und ein hash-verketteter Ledger macht sie fälschungssicher — den letzten Monat kann niemand umschreiben. Aus dem Korpus entstehen 23.000+ zitierfähige Seiten, Maschinen-Feeds für KI-Leser, ein MCP-Server mit 19 Tools, ein offener CC-BY-Mirror mit DOI und eine Browser-Extension, die den Registerpreis direkt auf der Shop-Seite einblendet.",
-      "s1v": "23k+", "s1l": "zitierfähige Seiten mit Quellen",
-      "s2v": "4.400+", "s2l": "Entitäten im Register",
-      "s3v": "19", "s3l": "Tools für KI-Agenten",
-      "s4v": "SHA-256", "s4l": "verkettetes, fälschungssicheres Ledger"
+      "s1v": "23k+",
+      "s1l": "zitierfähige Seiten mit Quellen",
+      "s2v": "4.400+",
+      "s2l": "Entitäten im Register",
+      "s3v": "19",
+      "s3l": "Tools für KI-Agenten",
+      "s4v": "SHA-256",
+      "s4l": "verkettetes, fälschungssicheres Ledger"
     },
     "relocating": {
       "name": "Relocating",
@@ -65,12 +77,16 @@
       "blurb": "Offene Daten, destilliert in 33 Rechner, programmatische Länder-Korridore und eine moderierte Live-Community — von der eigenen Übersetzungspipeline in 22 Sprachen gespiegelt.",
       "headline": "Auswandern, minus Rätselraten.",
       "tagline": "Offene Daten, verwandelt in Rechner, Korridore und eine Live-Community — in 22 Sprachen.",
-      "body1": "Relocating beginnt dort, wo die Unsicherheit beginnt: Was kostet es wirklich, welches Visum passt, wie lange bis zur Staatsbürgerschaft. Ein Build-Time-ETL normalisiert Weltbank-, Wetter- und Geodaten in 30+ Datensätze über 50 Länder; ein Quality-Gate lässt den gesamten Build scheitern, wenn ein einziger Datensatz inkonsistent ist. Aus diesem Rückgrat generiert eine Page-Engine Länder-Korridore, Vergleiche und Rankings — und 33 Rechner laufen vollständig clientseitig.",
-      "body2": "Dann wird die gesamte Seite von der eigenen Übersetzungspipeline in 22 Sprachen gespiegelt — selbstgehostete Modelle, versionierte Translation Memory und ein harter Build-Fehler bei jedem unübersetzten String. Ausgeliefert wird ein vollstatischer Build an die Edge: Zur Laufzeit kann nichts abstürzen. Daneben lebt City Chat, wo jede Nachricht vor Veröffentlichung durch KI-Moderation geht — auf EU-Postgres mit Row-Level Security und GDPR-Retention per Konstruktion.",
-      "s1v": "50", "s1l": "Länder im Datenkern",
-      "s2v": "33", "s2l": "Rechner, alle clientseitig",
-      "s3v": "22", "s3l": "Sprachen, eine Pipeline",
-      "s4v": "0", "s4l": "Laufzeit-Server, die ausfallen könnten"
+      "body1": "Relocating beginnt dort, wo die Unsicherheit beginnt: Was kostet es wirklich, welches Visum passt, wie lange bis zur Staatsbürgerschaft. Ein Build-Time-ETL normalisiert Weltbank-, Wetter- und Geodaten zu 30+ Datensätzen über 50 Länder hinweg; ein Quality-Gate lässt den gesamten Build scheitern, wenn ein einziger Datensatz inkonsistent ist. Aus diesem Rückgrat generiert eine Page-Engine Länder-Korridore, Vergleiche und Rankings — und 33 Rechner laufen vollständig clientseitig.",
+      "body2": "Dann wird die gesamte Seite von der eigenen Übersetzungspipeline in 22 Sprachen gespiegelt — selbstgehostete Modelle, versionierte Translation Memory und ein harter Build-Fehler bei jedem unübersetzten String. Ausgeliefert wird ein vollstatischer Build an die Edge: Zur Laufzeit kann nichts abstürzen. Daneben lebt City Chat, wo jede Nachricht vor Veröffentlichung durch KI-Moderation geht — auf EU-Postgres mit Row-Level Security und DSGVO-konformer Aufbewahrung von Grund auf.",
+      "s1v": "50",
+      "s1l": "Länder im Datenkern",
+      "s2v": "33",
+      "s2l": "Rechner, alle clientseitig",
+      "s3v": "22",
+      "s3l": "Sprachen, eine Pipeline",
+      "s4v": "0",
+      "s4l": "Laufzeit-Server, die ausfallen könnten"
     }
   },
   "approach": {
@@ -79,7 +95,7 @@
     "i1t": "Ausfall ist Treibstoff",
     "i1b": "Wir planen Chaos, statt es zu fürchten. Circuit Breaker, Retries mit Gedächtnis und KI-Worker, die ihre eigenen Trümmer analysieren — jeder Vorfall macht das System schwerer totzukriegen.",
     "i2t": "Adversarial per Default",
-    "i2b": "Nichts erscheint auf Basis einer Meinung. Autoren-Agenten werden von Widerlegungs-Agenten beschattet; Fidelity-Gates laden jede Quelle neu; QA-Engines prüfen jedes Artefakt gegen Dutzende Regeln vor der Veröffentlichung.",
+    "i2b": "Nichts erscheint auf Basis einer einzigen Meinung. Autoren-Agenten werden von Widerlegungs-Agenten beschattet; Fidelity-Gates laden jede Quelle neu; QA-Engines prüfen jedes Artefakt gegen Dutzende Regeln vor der Veröffentlichung.",
     "i3t": "Belege statt Behauptungen",
     "i3b": "Jeder Fakt trägt Quelle und Datum. Append-only-Logs, Hash-Ketten, fälschungssichere Historie. Was wir nicht beweisen können, veröffentlichen wir nicht.",
     "i4t": "Kein Babysitting",
@@ -88,21 +104,30 @@
   "casepage": {
     "kicker": "Case — im Inneren des Systems",
     "map": "Systemkarte",
-    "hint": "Live-Simulation — Knoten anfahren, herumziehen.",
+    "hint": "Live-Simulation — Knoten anfassen und verschieben.",
     "inside": "Im Inneren des Systems",
-    "visit": "Besuchen",
+    "visit": "Website öffnen",
     "next": "Nächstes System",
-    "hireTitle": "So ein System für dich?",
-    "hireBody": "Dieser Case wurde vom Studio Ende-zu-Ende entworfen, gebaut und betrieben. Deiner kann der nächste sein — Festpreis, Produktion ab Woche eins.",
-    "hireCta": "Studio beauftragen"
+    "hireTitle": "So ein System für Sie?",
+    "hireBody": "Diesen Case hat das Studio Ende-zu-Ende entworfen, gebaut und betrieben. Ihrer kann der nächste sein — Festpreis, Produktion ab Woche eins.",
+    "hireCta": "Studio beauftragen",
+    "legend": {
+      "core": "Kern",
+      "ai": "KI",
+      "worker": "Worker",
+      "data": "Daten",
+      "edge": "Auslieferung",
+      "gate": "Schleusen",
+      "ui": "Oberfläche"
+    }
   },
   "hire": {
     "metaTitle": "Studio beauftragen",
     "metaDesc": "Wir bauen antifragile KI-Systeme auf Bestellung: Agenten, Pipelines, selbstheilende Plattformen. Festpreis, Produktion ab Woche eins, ab $4.000.",
     "kicker": "Studio beauftragen",
-    "headline": "Wir bauen Systeme, die sich selbst betreiben — für dich.",
+    "headline": "Wir bauen Systeme, die sich selbst betreiben — für Sie.",
     "sub": "Die vier Plattformen auf dieser Seite hat dieses Studio entworfen, gebaut und betrieben. Dieselbe Doktrin — chaos-getestet, adversarial verifiziert, Belege für alles — gibt es auf Bestellung.",
-    "cta": "Sag uns, was wir bauen sollen",
+    "cta": "In 48 Stunden zum Festpreis",
     "offersHeading": "Drei Wege der Zusammenarbeit",
     "offers": {
       "build": {
@@ -116,10 +141,10 @@
       "run": {
         "label": "Run",
         "title": "Wir halten es am Leben",
-        "desc": "Dein System, betrieben wie unsere eigenen: überwacht, selbstheilend, jeden Monat verbessert. Du liest einen Report — niemand hütet ein Dashboard.",
+        "desc": "Ihr System, betrieben wie unsere eigenen: überwacht, selbstheilend, jeden Monat verbessert. Sie lesen einen Report — niemand hütet ein Dashboard.",
         "b1": "Monitoring, Incident-Response und Recovery inklusive",
-        "b2": "Monatliches Verbesserungsbudget für deine Prioritäten",
-        "b3": "Monatlich kündbar — das System bleibt deins"
+        "b2": "Monatliches Verbesserungsbudget für Ihre Prioritäten",
+        "b3": "Monatlich kündbar — das System bleibt Ihres"
       },
       "rescue": {
         "label": "Rescue",
@@ -130,62 +155,80 @@
         "b3": "Vorher/Nachher-Belege — gemessen, nicht behauptet"
       }
     },
-    "offersNote": "Preise sind Startpunkte für den kleinsten nützlichen Scope. Das 48-Stunden-Scoping macht aus deinem Briefing einen Festpreis.",
+    "offersNote": "Preise sind Startpunkte für den kleinsten nützlichen Scope. Das 48-Stunden-Scoping macht aus Ihrem Briefing einen Festpreis.",
     "capsHeading": "Was wir übernehmen",
     "capsTitle": "Alles, was sich selbst betreiben soll.",
     "caps": {
-      "c1": { "t": "KI-Agenten & Multi-Agent-Plattformen", "b": "Autonome Agenten, die planen, Tools aufrufen und Jobs abschließen — mit Budget-Caps und Human-Gates genau dort, wo du sie haben willst." },
-      "c2": { "t": "Content- & Medien-Pipelines", "b": "Skript-zu-Video-Fabriken, Generierungs-Pipelines, Publishing-Automatisierung — ganze Produktionen, einen API-Call breit." },
-      "c3": { "t": "Selbstheilende Backends", "b": "Services, die Ausfälle erkennen, isolieren und sich selbst erholen — chaos-getestet, bevor es ernst wird." },
-      "c4": { "t": "Verifizierte Datenprodukte", "b": "Register und Datensätze, in denen jeder Fakt Quelle, Datum und eine fälschungssichere Historie trägt." },
-      "c5": { "t": "Mehrsprachige Datenplattformen", "b": "Open-Data-Produkte, von eigenen Pipelines in Dutzende Sprachen gespiegelt — statisch, schnell, ausfallsicher." },
-      "c6": { "t": "KI-Sicherheit & QA-Gates", "b": "Moderationsschichten, adversariale Verifikation, Regel-Engines, die jedes Artefakt vor Release bewerten." }
+      "c1": {
+        "t": "KI-Agenten & Multi-Agent-Plattformen",
+        "b": "Autonome Agenten, die planen, Tools aufrufen und Jobs abschließen — mit Budget-Caps und menschlichen Freigaben genau dort, wo Sie sie haben wollen."
+      },
+      "c2": {
+        "t": "Content- & Medien-Pipelines",
+        "b": "Skript-zu-Video-Fabriken, Generierungs-Pipelines, Publishing-Automatisierung — ganze Produktionen, einen API-Call breit."
+      },
+      "c3": {
+        "t": "Selbstheilende Backends",
+        "b": "Services, die Ausfälle erkennen, isolieren und sich selbst erholen — chaos-getestet, bevor es ernst wird."
+      },
+      "c4": {
+        "t": "Verifizierte Datenprodukte",
+        "b": "Register und Datensätze, in denen jeder Fakt Quelle, Datum und eine fälschungssichere Historie trägt."
+      },
+      "c5": {
+        "t": "Mehrsprachige Datenplattformen",
+        "b": "Open-Data-Produkte, von eigenen Pipelines in Dutzende Sprachen gespiegelt — statisch, schnell, ausfallsicher."
+      },
+      "c6": {
+        "t": "KI-Sicherheit & QA-Gates",
+        "b": "Moderationsschichten, adversariale Verifikation, Regel-Engines, die jedes Artefakt vor Release bewerten."
+      }
     },
     "proven": "bewährt in",
     "processHeading": "Der Prozess",
     "process": {
       "s1t": "Scope",
-      "s1b": "Du schickst das Briefing. Innerhalb von 48 Stunden bekommst du einen Festpreis, eine klare Grenze, was drin ist und was nicht, und die erste Architekturskizze.",
+      "s1b": "Sie schicken das Briefing. Innerhalb von 48 Stunden bekommen Sie einen Festpreis, eine klare Grenze, was drin ist und was nicht, und die erste Architekturskizze.",
       "s2t": "Build",
-      "s2b": "Kurze Wochenzyklen, jeder endet mit einer Demo auf Produktionsinfrastruktur. Du siehst das System lebendig werden — keine Folien.",
+      "s2b": "Kurze Wochenzyklen, jeder endet mit einer Demo auf Produktionsinfrastruktur. Sie sehen das System lebendig werden — keine Folien.",
       "s3t": "Härten",
       "s3b": "Vor der Übergabe greifen wir unsere eigene Arbeit an: Chaos-Läufe, adversariale QA, Ausfallübungen. Was überlebt, wird ausgeliefert.",
       "s4t": "Run oder Übergabe",
-      "s4b": "Nimm die Schlüssel — Doku, Tests und Belege inklusive — oder leg es auf einen Run-Retainer und denk nie wieder daran."
+      "s4b": "Nehmen Sie die Schlüssel — Doku, Tests und Belege inklusive — oder legen Sie es auf einen Run-Retainer und denken nie wieder daran."
     },
     "gHeading": "Garantien",
     "g1": "Festpreis vor dem Start — die Zahl bewegt sich nicht",
-    "g2": "Alles gehört dir: Code, IP, Infrastruktur, Daten",
+    "g2": "Alles gehört Ihnen: Code, IP, Infrastruktur, Daten",
     "g3": "Produktion ab Woche eins — keine Wegwerf-Prototypen",
     "g4": "Async-first, Klartext — Englisch oder Russisch",
     "faqHeading": "Häufige Fragen",
     "faq": {
-      "f1q": "Wie schnell liefert ihr?",
-      "f1a": "Ein funktionierender Prototyp typischerweise in 1–2 Wochen; ein Produktionssystem in 3–6, je nach Scope. Das 48-Stunden-Scoping liefert die echte Zahl, bevor du dich festlegst.",
+      "f1q": "Wie schnell liefern Sie?",
+      "f1a": "Ein funktionierender Prototyp typischerweise in 1–2 Wochen; ein Produktionssystem in 3–6, je nach Scope. Das 48-Stunden-Scoping liefert die echte Zahl, bevor Sie sich festlegen.",
       "f2q": "Welcher Stack?",
-      "f2a": "TypeScript, Go und Python — self-hosted oder in deiner Cloud. Bei Modellen und Providern sind wir vendor-neutral; Systeme sind so gebaut, dass Komponenten ohne Rewrite austauschbar sind.",
+      "f2a": "TypeScript, Go und Python — self-hosted oder in Ihrer Cloud. Bei Modellen und Providern sind wir vendor-neutral; Systeme sind so gebaut, dass Komponenten ohne Rewrite austauschbar sind.",
       "f3q": "Wem gehört das Ergebnis?",
-      "f3a": "Dir. Vollständige Übertragung von Code, Infrastruktur und IP mit der Schlusszahlung. Wir behalten nur das Recht, die Arbeit anonym als Case zu beschreiben.",
+      "f3a": "Ihnen. Vollständige Übertragung von Code, Infrastruktur und IP mit der Schlusszahlung. Wir behalten nur das Recht, die Arbeit anonym als Case zu beschreiben.",
       "f4q": "Was passiert nach der Übergabe?",
-      "f4a": "Jeder Build enthält ein 30-Tage-Fix-Fenster. Danach betreibt dein Team es mit unserer Doku — oder wir halten es auf einem Run-Retainer am Leben."
+      "f4a": "Jeder Build enthält ein 30-Tage-Fix-Fenster. Danach betreibt Ihr Team es mit unserer Doku — oder wir halten es auf einem Run-Retainer am Leben."
     },
     "form": {
-      "heading": "Sag uns, was sich selbst betreiben soll.",
+      "heading": "Sagen Sie uns, was sich selbst betreiben soll.",
       "sub": "Drei Sätze reichen. Wir antworten innerhalb von 24 Stunden — mit Fragen oder einem Scoping-Vorschlag.",
       "name": "Name",
       "company": "Firma (optional)",
-      "interest": "Was brauchst du?",
+      "interest": "Was brauchen Sie?",
       "budget": "Budget",
       "message": "Was sollen wir bauen?",
       "placeholder": "Was es tun soll, wer es nutzt, was heute existiert…",
       "submit": "Anfrage senden",
       "sending": "Senden…",
       "sentTitle": "Angekommen.",
-      "sentBody": "Deine Anfrage ist da. Wir antworten innerhalb von 24 Stunden — prüfe dein Postfach (und einmal den Spam).",
-      "err429": "Zu viele Anfragen aus diesem Netz — versuch es in einer Stunde oder schreib an",
-      "errGeneric": "Senden fehlgeschlagen — schreib uns direkt:",
+      "sentBody": "Ihre Anfrage ist da. Wir antworten innerhalb von 24 Stunden — prüfen Sie Ihr Postfach (und einmal den Spam-Ordner).",
+      "err429": "Zu viele Anfragen aus diesem Netz — versuchen Sie es in einer Stunde oder schreiben Sie an",
+      "errGeneric": "Senden fehlgeschlagen — schreiben Sie uns direkt:",
       "i_build": "Build — ein neues System",
-      "i_run": "Run — meins betreiben",
+      "i_run": "Run — meines betreiben",
       "i_rescue": "Rescue — Projekt reparieren",
       "i_other": "Etwas anderes",
       "b_unsure": "noch unklar"
@@ -204,27 +247,27 @@
   "tools": {
     "kicker": "Tools",
     "breadcrumb": "Tools",
-    "open": "Open the tool",
-    "read": "How it works",
-    "visit": "Visit",
-    "case": "Read the case",
-    "backToHub": "All tools",
-    "free": "Free · no account",
-    "opens": "Opens {host}",
+    "open": "Tool öffnen",
+    "read": "So funktioniert es",
+    "visit": "Ansehen",
+    "case": "Case lesen",
+    "backToHub": "Alle Tools",
+    "free": "Kostenlos · ohne Konto",
+    "opens": "Öffnet {host}",
     "strip": {
-      "kicker": "Free tools",
-      "heading": "We also build small things.",
-      "sub": "Three free browser tools: contracts read for traps, meetings that fit every time zone, and the costs nobody invoices.",
-      "cta": "See the tools"
+      "kicker": "Kostenlose Tools",
+      "heading": "Wir bauen auch die kleinen Dinge.",
+      "sub": "Drei kostenlose Browser-Tools: Verträge, die auf Fallstricke geprüft werden, Meetings, die in jede Zeitzone passen, und die Kosten, für die niemand eine Rechnung schickt.",
+      "cta": "Tools ansehen"
     }
   },
   "error": {
-    "kicker": "Error",
-    "title404": "This page does not exist.",
-    "body404": "The address you asked for is not part of this site — it may have moved, or the link may carry a typo. Everything the studio publishes is one click away below.",
-    "titleGeneric": "Something broke.",
-    "bodyGeneric": "An unexpected error stopped this page from rendering. That is on us — try again, or start from the home page.",
-    "home": "Back to Autofract",
-    "tools": "See the tools"
+    "kicker": "Fehler",
+    "title404": "Diese Seite gibt es nicht.",
+    "body404": "Die aufgerufene Adresse gehört nicht zu dieser Website — vielleicht wurde sie verschoben, vielleicht steckt im Link ein Tippfehler. Alles, was das Studio veröffentlicht, ist unten einen Klick entfernt.",
+    "titleGeneric": "Da ist etwas kaputtgegangen.",
+    "bodyGeneric": "Ein unerwarteter Fehler hat das Rendern dieser Seite gestoppt. Das liegt an uns — versuchen Sie es erneut oder starten Sie auf der Startseite.",
+    "home": "Zurück zu Autofract",
+    "tools": "Tools ansehen"
   }
 }
