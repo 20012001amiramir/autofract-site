@@ -22,6 +22,8 @@
     "systems": "sistemas",
     "pathcore": {
       "name": "PathCore",
+      "metaTitle": "PathCore: infraestructura que se cura sola",
+      "metaDesc": "PathCore es infraestructura que se cura sola: caos programado, cortacircuitos y agentes de IA que diagnostican cada fallo y lo reparan solos.",
       "tag": "Infraestructura que se repara sola",
       "blurb": "Una plataforma hexagonal que trata el fallo como señal de entrenamiento: caos programado, cortacircuitos, agentes de IA cognitivos y MindView, un mapa vivo de todo el organismo.",
       "headline": "El sistema que se cura solo.",
@@ -39,6 +41,8 @@
     },
     "videolinker": {
       "name": "VideoLinker",
+      "metaTitle": "VideoLinker: producción de vídeo autónoma",
+      "metaDesc": "VideoLinker convierte un guion en un episodio listo para emitir: una cadena de 11 pasos, un agente con 59 herramientas y un QA de 60 reglas.",
       "tag": "Producción de video autónoma",
       "blurb": "Entra un guion, sale un episodio listo para emitir. Una cadena de 11 pasos, más de 60 servicios y un agente autónomo que maneja 59 herramientas, con 60 reglas de control de calidad antes de publicar nada.",
       "headline": "Un equipo de rodaje hecho de servicios.",
@@ -56,6 +60,8 @@
     },
     "frontdesk": {
       "name": "FrontDesk",
+      "metaTitle": "FrontDesk: el precio de referencia",
+      "metaDesc": "FrontDesk es el precio de referencia público: agentes de IA recopilan, un verificador adversario refuta y una cadena SHA-256 sella la historia.",
       "tag": "El precio de referencia",
       "blurb": "Un registro público de lo que cuestan las cosas de verdad: los agentes redactores recopilan, un agente adversario refuta, una puerta de fidelidad vuelve a descargar cada fuente y un libro mayor SHA-256 impide reescribir la historia.",
       "headline": "Cada precio con su comprobante.",
@@ -73,6 +79,8 @@
     },
     "relocating": {
       "name": "Relocating",
+      "metaTitle": "Relocating: mudarse de país con datos",
+      "metaDesc": "Relocating convierte datos abiertos en un producto de mudanza: 33 calculadoras, corredores entre países y una comunidad moderada en 22 idiomas.",
       "tag": "La mudanza, convertida en datos",
       "blurb": "Datos abiertos destilados en 33 calculadoras, corredores entre países generados de forma programática y una comunidad en vivo moderada, replicada a 22 idiomas por su propia cadena de traducción.",
       "headline": "Cambiar de país sin adivinar nada.",
@@ -235,7 +243,7 @@
     }
   },
   "studio": {
-    "headline": "Un estudio independiente.",
+    "headline": "Un estudio inde­pen­diente.",
     "p1": "Autofract es un estudio de software independiente. Cuatro plataformas en producción comparten una misma doctrina de ingeniería: infraestructura que se repara sola, una fábrica de video autónoma, un registro de precios a prueba de manipulación y un centro de datos abiertos sobre mudanzas internacionales. Más de cien servicios, diseñados, construidos y operados de principio a fin.",
     "p2": "Sin capital de riesgo y sin contrataciones abiertas. Construimos despacio, a propósito, para el largo plazo."
   },

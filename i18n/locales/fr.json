@@ -22,6 +22,8 @@
     "systems": "systèmes",
     "pathcore": {
       "name": "PathCore",
+      "metaTitle": "PathCore : infrastructure qui se répare",
+      "metaDesc": "PathCore est une infrastructure qui se répare seule : chaos programmé, disjoncteurs et agents IA qui diagnostiquent chaque panne et la corrigent.",
       "tag": "Infrastructure auto-réparatrice",
       "blurb": "Une plateforme hexagonale pour qui la panne est un signal d'entraînement : chaos planifié, circuit breakers, workers IA cognitifs — et MindView, carte vivante de tout l'organisme.",
       "headline": "Le système qui se répare seul.",
@@ -39,6 +41,8 @@
     },
     "videolinker": {
       "name": "VideoLinker",
+      "metaTitle": "VideoLinker : production vidéo autonome",
+      "metaDesc": "VideoLinker transforme un script en épisode prêt à diffuser : une chaîne de 11 étapes, un agent doté de 59 outils et un filtre QA de 60 règles.",
       "tag": "Production vidéo autonome",
       "blurb": "Script en entrée, épisode prêt à diffuser en sortie. Un pipeline en 11 étapes, 60+ services et un agent autonome maniant 59 outils — avec un gate QA de 60 règles avant toute sortie.",
       "headline": "Une équipe de tournage faite de services.",
@@ -56,6 +60,8 @@
     },
     "frontdesk": {
       "name": "FrontDesk",
+      "metaTitle": "FrontDesk : le prix de référence",
+      "metaDesc": "FrontDesk est le prix de référence public : des agents IA compilent, un vérificateur adverse réfute, une chaîne SHA-256 scelle tout l’historique.",
       "tag": "Le prix de référence",
       "blurb": "Un registre public des vrais prix : des rédacteurs IA compilent, un agent adversarial réfute, un fidelity gate re-vérifie chaque source — et un ledger SHA-256 rend l'historique infalsifiable.",
       "headline": "Chaque prix a son reçu.",
@@ -73,6 +79,8 @@
     },
     "relocating": {
       "name": "Relocating",
+      "metaTitle": "Relocating : l’expatriation en données",
+      "metaDesc": "Relocating transforme des données ouvertes en produit d’expatriation : 33 calculateurs, des corridors entre pays et une communauté en 22 langues.",
       "tag": "L'expatriation en données",
       "blurb": "Des données ouvertes distillées en 33 calculateurs, des corridors pays programmatiques et une communauté live modérée — répliquée en 22 langues par son propre pipeline de traduction.",
       "headline": "Changer de pays, sans deviner.",
@@ -91,7 +99,7 @@
   },
   "approach": {
     "kicker": "La doctrine",
-    "heading": "Comment nous construisons.",
+    "heading": "Comment nous cons­truisons.",
     "i1t": "La panne est un carburant",
     "i1b": "Nous planifions le chaos au lieu de le craindre. Circuit breakers, retries avec mémoire, workers IA qui analysent leurs propres débris — chaque incident rend le système plus dur à tuer.",
     "i2t": "Adversarial par défaut",

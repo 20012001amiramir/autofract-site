@@ -22,6 +22,8 @@
     "systems": "sistemas",
     "pathcore": {
       "name": "PathCore",
+      "metaTitle": "PathCore: infraestrutura que se cura sozinha",
+      "metaDesc": "PathCore é uma infraestrutura que se cura sozinha: caos programado, disjuntores e agentes de IA que diagnosticam cada falha e a corrigem.",
       "tag": "Infraestrutura auto-recuperável",
       "blurb": "Uma plataforma hexagonal que trata a falha como sinal de treino: caos agendado, circuit breakers, workers cognitivos de IA — e o MindView, um mapa vivo do organismo inteiro.",
       "headline": "O sistema que se cura sozinho.",
@@ -39,6 +41,8 @@
     },
     "videolinker": {
       "name": "VideoLinker",
+      "metaTitle": "VideoLinker: produção de vídeo autônoma",
+      "metaDesc": "VideoLinker transforma um roteiro em episódio pronto para exibir: uma esteira de 11 etapas, um agente com 59 ferramentas e um QA de 60 regras.",
       "tag": "Produção de vídeo autônoma",
       "blurb": "Roteiro entra, episódio pronto para exibição sai. Um pipeline de 11 etapas, 60+ serviços e um agente autônomo que comanda 59 ferramentas — com um portão de QA de 60 regras antes de qualquer publicação.",
       "headline": "Uma equipe de filmagem feita de serviços.",
@@ -56,6 +60,8 @@
     },
     "frontdesk": {
       "name": "FrontDesk",
+      "metaTitle": "FrontDesk: o preço de referência",
+      "metaDesc": "FrontDesk é o preço de referência público: agentes de IA compilam, um verificador adversário refuta e uma cadeia SHA-256 sela todo o histórico.",
       "tag": "O preço de referência",
       "blurb": "Um registro público do que as coisas custam de verdade: redatores de IA compilam, um agente adversarial refuta, um portão de fidelidade busca cada fonte de novo — e um ledger SHA-256 torna a história impossível de reescrever.",
       "headline": "Todo preço tem um comprovante.",
@@ -73,6 +79,8 @@
     },
     "relocating": {
       "name": "Relocating",
+      "metaTitle": "Relocating: mudar de país com dados",
+      "metaDesc": "Relocating transforma dados abertos em um produto de mudança: 33 calculadoras, corredores entre países e uma comunidade moderada em 22 idiomas.",
       "tag": "Mudar de país, como dado",
       "blurb": "Dados abertos destilados em 33 calculadoras, corredores programáticos entre países e uma comunidade ao vivo moderada — espelhados em 22 idiomas pelo próprio pipeline de tradução.",
       "headline": "Mudar de país, sem achismo.",
@@ -235,7 +243,7 @@
     }
   },
   "studio": {
-    "headline": "Um estúdio independente.",
+    "headline": "Um estúdio inde­pen­dente.",
     "p1": "A Autofract é um estúdio de software independente. Quatro plataformas em produção compartilham uma só doutrina de engenharia: infraestrutura auto-recuperável, uma fábrica de vídeo autônoma, um registro de preços que denuncia adulteração e um hub de mudança internacional feito de dados abertos — mais de cem serviços, projetados, construídos e operados de ponta a ponta.",
     "p2": "Sem capital de risco e sem vagas abertas. Construímos devagar, de propósito, para o longo prazo."
   },

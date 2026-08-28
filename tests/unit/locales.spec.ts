@@ -11,6 +11,7 @@ import {
   alternates,
   type Locale,
 } from '~/data/locales'
+import { CASES } from '~/data/systems'
 import en from '~/i18n/locales/en.json'
 import ru from '~/i18n/locales/ru.json'
 import de from '~/i18n/locales/de.json'
@@ -103,7 +104,7 @@ describe('dictionaries', () => {
       const titles = [
         d.meta.title,
         d.hire.metaTitle,
-        ...Object.values(d.work).filter((v: any) => v && typeof v === 'object' && 'name' in v).map((v: any) => v.name),
+        ...CASES.map(s => d.work[s].metaTitle),
       ]
       for (const title of titles) {
         expect(`${title}${BRAND_SUFFIX}`.length, `${l}: ${title}`).toBeLessThanOrEqual(60)
@@ -111,9 +112,32 @@ describe('dictionaries', () => {
     }
   })
 
+  /**
+   * A case page used to title itself with the product name alone — one string,
+   * identical in all six locales, carrying no keyword. `metaTitle` leads with
+   * what the system is, in the reader's language.
+   */
+  it('gives every case a localized title that says more than the product name', () => {
+    for (const slug of CASES) {
+      const seen = new Set<string>()
+      for (const l of LOCALES) {
+        const entry = dicts[l].work[slug]
+        expect(entry.metaTitle, `${l} · work.${slug}.metaTitle`).toContain(entry.name)
+        expect(entry.metaTitle.length, `${l} · work.${slug}.metaTitle`).toBeGreaterThan(entry.name.length + 4)
+        seen.add(entry.metaTitle)
+      }
+      expect(seen.size, `work.${slug}.metaTitle repeats across locales`).toBe(LOCALES.length)
+    }
+  })
+
   it('meta descriptions are 120–155 characters', () => {
     for (const l of LOCALES) {
-      for (const [key, text] of [['meta.description', dicts[l].meta.description], ['hire.metaDesc', dicts[l].hire.metaDesc]] as const) {
+      const entries: Array<readonly [string, string]> = [
+        ['meta.description', dicts[l].meta.description],
+        ['hire.metaDesc', dicts[l].hire.metaDesc],
+        ...CASES.map(s => [`work.${s}.metaDesc`, dicts[l].work[s].metaDesc] as const),
+      ]
+      for (const [key, text] of entries) {
         expect(text.length, `${l} · ${key}: ${text.length} chars`).toBeGreaterThanOrEqual(120)
         expect(text.length, `${l} · ${key}: ${text.length} chars`).toBeLessThanOrEqual(155)
       }

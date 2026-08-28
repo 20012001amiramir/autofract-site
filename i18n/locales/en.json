@@ -22,6 +22,8 @@
     "systems": "systems",
     "pathcore": {
       "name": "PathCore",
+      "metaTitle": "PathCore: self-healing infrastructure",
+      "metaDesc": "PathCore is self-healing infrastructure: scheduled chaos, circuit breakers and cognitive AI workers that diagnose every failure and repair it.",
       "tag": "Self-healing infrastructure",
       "blurb": "A hexagonal platform that treats failure as a training signal: chaos on a schedule, circuit breakers, cognitive AI workers — and MindView, a living map of the whole organism.",
       "headline": "The system that heals itself.",
@@ -39,6 +41,8 @@
     },
     "videolinker": {
       "name": "VideoLinker",
+      "metaTitle": "VideoLinker: autonomous video production",
+      "metaDesc": "VideoLinker turns a script into a broadcast-ready episode: an 11-step autonomous video pipeline, 59 agent tools and a QA gate of 60+ rules.",
       "tag": "Autonomous video production",
       "blurb": "Script in, broadcast-ready episode out. An 11-step pipeline, 60+ services and an autonomous agent wielding 59 tools — with a 60-rule QA gate before anything ships.",
       "headline": "A film crew made of services.",
@@ -56,6 +60,8 @@
     },
     "frontdesk": {
       "name": "FrontDesk",
+      "metaTitle": "FrontDesk: the price of record",
+      "metaDesc": "FrontDesk is the public price of record: AI writers compile, an adversarial agent refutes, and a SHA-256 ledger keeps 4,400+ sourced prices honest.",
       "tag": "The price of record",
       "blurb": "A public record of what things actually cost: AI writers compile, an adversarial agent refutes, a fidelity gate re-fetches every source — and a SHA-256 ledger makes history unrewritable.",
       "headline": "Every price has a receipt.",
@@ -73,6 +79,8 @@
     },
     "relocating": {
       "name": "Relocating",
+      "metaTitle": "Relocating: relocation, as open data",
+      "metaDesc": "Relocating turns open data into a relocation platform: 33 calculators, country corridors and a moderated live community, in 22 languages.",
       "tag": "Relocation, as data",
       "blurb": "Open data distilled into 33 calculators, programmatic country corridors and a moderated live community — mirrored into 22 languages by its own translation pipeline.",
       "headline": "Moving countries, minus the guesswork.",

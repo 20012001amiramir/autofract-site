@@ -22,6 +22,8 @@
     "systems": "Systeme",
     "pathcore": {
       "name": "PathCore",
+      "metaTitle": "PathCore: selbstheilende Infrastruktur",
+      "metaDesc": "PathCore ist selbstheilende Infrastruktur: geplantes Chaos, Schutzschalter und KI-Worker, die jeden Ausfall selbst diagnostizieren und beheben.",
       "tag": "Selbstheilende Infrastruktur",
       "blurb": "Eine hexagonale Plattform, für die Ausfall ein Trainingssignal ist: Chaos nach Zeitplan, Circuit Breaker, kognitive KI-Worker — und MindView, eine lebende Karte des ganzen Organismus.",
       "headline": "Das System, das sich selbst heilt.",
@@ -39,6 +41,8 @@
     },
     "videolinker": {
       "name": "VideoLinker",
+      "metaTitle": "VideoLinker: autonome Videoproduktion",
+      "metaDesc": "VideoLinker macht aus einem Drehbuch eine sendefertige Episode: 11 Schritte, ein Agent mit 59 Werkzeugen und ein QA-Gate aus 60+ Regeln.",
       "tag": "Autonome Videoproduktion",
       "blurb": "Skript rein, sendefertige Episode raus. Eine 11-Schritte-Pipeline, 60+ Services und ein autonomer Agent mit 59 Tools — mit einem 60-Regeln-QA-Gate vor jedem Release.",
       "headline": "Ein Filmteam aus Services.",
@@ -56,6 +60,8 @@
     },
     "frontdesk": {
       "name": "FrontDesk",
+      "metaTitle": "FrontDesk: der Preis von Rang",
+      "metaDesc": "FrontDesk ist der öffentliche Preis von Rang: KI-Agenten sammeln, ein Gegen-Prüfer widerlegt, eine SHA-256-Kette macht die Historie unveränderbar.",
       "tag": "Das Preisregister",
       "blurb": "Ein öffentliches Register echter Preise: KI-Autoren sammeln, ein adversarialer Agent widerlegt, ein Fidelity-Gate prüft jede Quelle neu — und ein SHA-256-Ledger macht die Historie unveränderbar.",
       "headline": "Jeder Preis hat einen Beleg.",
@@ -73,6 +79,8 @@
     },
     "relocating": {
       "name": "Relocating",
+      "metaTitle": "Relocating: Auswandern nach Daten",
+      "metaDesc": "Relocating macht offene Daten zum Umzugsprodukt: 33 Rechner, Länderkorridore und eine moderierte Community — in 22 Sprachen, für 50 Länder.",
       "tag": "Relocation als Daten",
       "blurb": "Offene Daten, destilliert in 33 Rechner, programmatische Länder-Korridore und eine moderierte Live-Community — von der eigenen Übersetzungspipeline in 22 Sprachen gespiegelt.",
       "headline": "Auswandern, minus Rätselraten.",
@@ -265,7 +273,7 @@
     "kicker": "Fehler",
     "title404": "Diese Seite gibt es nicht.",
     "body404": "Die aufgerufene Adresse gehört nicht zu dieser Website — vielleicht wurde sie verschoben, vielleicht steckt im Link ein Tippfehler. Alles, was das Studio veröffentlicht, ist unten einen Klick entfernt.",
-    "titleGeneric": "Da ist etwas kaputtgegangen.",
+    "titleGeneric": "Da ist etwas kaputt­gegangen.",
     "bodyGeneric": "Ein unerwarteter Fehler hat das Rendern dieser Seite gestoppt. Das liegt an uns — versuchen Sie es erneut oder starten Sie auf der Startseite.",
     "home": "Zurück zu Autofract",
     "tools": "Tools ansehen"
