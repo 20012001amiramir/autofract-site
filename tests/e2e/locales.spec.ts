@@ -77,12 +77,123 @@ test('case pages read in the reader\'s language, head and body alike', async ({ 
   }
 })
 
-test('no page pushes a 320px screen sideways', async ({ page }) => {
-  await page.setViewportSize({ width: 320, height: 900 })
-  for (const path of ['/tools/overlap', '/de/tools/overlap', '/pt/tools/costof', '/de/tools/redline', '/es/work/relocating']) {
+/** Every route, in the widest-copy locales, at the three narrowest phone sizes. */
+const NARROW_PATHS = [
+  ...LOCALES.map(l => `${l.path === '/' ? '' : l.path}/tools/overlap`),
+  '/de/tools/redline', '/pt/tools/costof', '/pt/tools', '/es/tools',
+  '/es/work/relocating', '/de/work/frontdesk', '/fr/hire', '/es/hire', '/de',
+]
+
+test('no page pushes a narrow screen sideways', async ({ page }) => {
+  for (const width of [320, 360, 414]) {
+    await page.setViewportSize({ width, height: 900 })
+    for (const path of NARROW_PATHS) {
+      await page.goto(path)
+      const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
+      expect(over, `${path} at ${width}px overflows by ${over}px`).toBeLessThanOrEqual(0)
+    }
+  }
+})
+
+/**
+ * `overflow-wrap: break-word` is the guard that stops a long word pushing the
+ * page sideways, but on its own it chops a word bare — "Ferramenta / s". Words
+ * that long are meant to break at a hyphen instead: the browser's own for the
+ * languages it has a dictionary for, a soft hyphen in the copy for the rest.
+ *
+ * Which of the two happened is measured, not assumed. A Range rect per
+ * character gives the index each visual line starts at; the same measurement
+ * with `overflow-wrap: normal` gives the indices that survive without the
+ * guard. A break that only exists with the guard on, and that the source has no
+ * break opportunity at, is a bare chop.
+ */
+test('no display heading chops a word without a hyphen', async ({ page }) => {
+  for (const width of [320, 360, 414]) {
+    await page.setViewportSize({ width, height: 900 })
+    for (const path of NARROW_PATHS) {
+      await page.goto(path)
+      await page.evaluate(() => document.fonts.ready)
+      const chopped = await page.evaluate(() => {
+        const BREAKS = /[\s­‐–—/-]/
+        const lineStarts = (node: Text) => {
+          const text = node.textContent!
+          const starts: number[] = []
+          let top: number | null = null
+          for (let i = 0; i < text.length; i++) {
+            const r = document.createRange()
+            r.setStart(node, i)
+            r.setEnd(node, i + 1)
+            const rect = r.getBoundingClientRect()
+            if (rect.width === 0 && rect.height === 0) continue
+            const t = Math.round(rect.top)
+            if (top === null) top = t
+            else if (Math.abs(t - top) > 3) { starts.push(i); top = t }
+          }
+          return starts
+        }
+        /** True when the source itself offers a break at this index. */
+        const authored = (text: string, i: number) => {
+          let j = i
+          while (j > 0 && /\s/.test(text[j - 1])) j--
+          return j < i || BREAKS.test(text[i - 1] ?? '') || /\s/.test(text[i] ?? '')
+        }
+        const out: string[] = []
+        for (const el of document.querySelectorAll<HTMLElement>('.font-display')) {
+          if (el.querySelector('.font-display')) continue
+          const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT, {
+            acceptNode: n => (n.textContent!.trim() ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT),
+          })
+          const nodes: Text[] = []
+          let n: Node | null
+          while ((n = walker.nextNode())) nodes.push(n as Text)
+          if (!nodes.length) continue
+
+          const withGuard = nodes.map(lineStarts)
+          el.style.overflowWrap = 'normal'
+          el.style.wordBreak = 'normal'
+          void el.offsetHeight
+          const withoutGuard = nodes.map(lineStarts)
+          el.style.overflowWrap = ''
+          el.style.wordBreak = ''
+
+          nodes.forEach((node, k) => {
+            const text = node.textContent!
+            const survives = new Set(withoutGuard[k])
+            for (const i of withGuard[k]) {
+              if (authored(text, i) || survives.has(i)) continue
+              out.push(`<${el.tagName.toLowerCase()}> "${text.slice(Math.max(0, i - 12), i)}" / "${text.slice(i, i + 12)}"`)
+            }
+          })
+        }
+        return out
+      })
+      expect(chopped, `${path} at ${width}px`).toEqual([])
+    }
+  }
+})
+
+/**
+ * The three tier prices used to be literals in the page component, so every
+ * locale rendered "from $4,000". The amount is the same everywhere — the
+ * currency is USD — but the wording around it belongs to the dictionary.
+ */
+test('hire tiers quote their price in the reader\'s language', async ({ page }) => {
+  const expected = [
+    { path: '/hire', has: ['from $4,000', 'from $1,500/mo', 'from $2,000'] },
+    { path: '/ru/hire', has: ['от $4 000', 'от $1 500/мес', 'от $2 000'] },
+    { path: '/de/hire', has: ['ab 4.000 $', 'ab 1.500 $/Mon.', 'ab 2.000 $'] },
+    { path: '/es/hire', has: ['desde 4.000 $', 'desde 1.500 $/mes', 'desde 2.000 $'] },
+    { path: '/fr/hire', has: ['dès 4 000 $', 'dès 1 500 $/mois', 'dès 2 000 $'] },
+    { path: '/pt/hire', has: ['a partir de US$ 4.000', 'a partir de US$ 1.500/mês', 'a partir de US$ 2.000'] },
+  ]
+  for (const { path, has } of expected) {
     await page.goto(path)
-    const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)
-    expect(over, `${path} overflows by ${over}px`).toBeLessThanOrEqual(0)
+    for (const price of has) {
+      await expect(page.getByText(price, { exact: true }), `${path} · ${price}`).toBeVisible()
+    }
+    if (path !== '/hire') {
+      await expect(page.locator('main'), path).not.toContainText('from $4,000')
+    }
   }
 })
 
@@ -106,9 +217,22 @@ test('a tool page carries long-form copy, FAQ structured data and a deep link', 
   expect(ld).toContain('BreadcrumbList')
 })
 
-test('redline links at its English root for a language it does not serve', async ({ page }) => {
-  await page.goto('/de/tools/redline')
-  await expect(page.locator('a[href="https://redline.autofract.com/"]').first()).toBeVisible()
+/**
+ * A tool that serves the reader's language is deep-linked into it; English is
+ * the root. `data/tools.ts` decides which, so this walks the whole matrix — the
+ * pair drifted apart once already when Redline gained its five translations.
+ */
+test('every tool links into the language the reader is already in', async ({ page }) => {
+  for (const slug of ['redline', 'overlap', 'costof']) {
+    for (const l of LOCALES) {
+      const prefix = l.path === '/' ? '' : l.path
+      const expected = l.code === 'en'
+        ? `https://${slug}.autofract.com/`
+        : `https://${slug}.autofract.com/${l.code}/`
+      await page.goto(`${prefix}/tools/${slug}`)
+      await expect(page.locator(`a[href="${expected}"]`).first(), `${prefix}/tools/${slug}`).toBeVisible()
+    }
+  }
 })
 
 test('unknown slugs 404 with a noindex error page', async ({ page }) => {

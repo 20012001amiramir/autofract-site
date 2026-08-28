@@ -11,10 +11,12 @@ import { SITE_NAME, TWITTER_HANDLE } from '~/data/site'
 const { t, locale } = useI18n()
 const localePath = useLocalePath()
 
+// The number a tier starts at is structured data (USD, for schema.org); the way
+// it reads on the page is copy, and lives in hire.offers.<key>.price per locale.
 const OFFERS = [
-  { key: 'build', price: 'from $4,000', accent: '#5eead4', minPrice: 4000, recurring: false },
-  { key: 'run', price: 'from $1,500/mo', accent: '#ff6b35', minPrice: 1500, recurring: true },
-  { key: 'rescue', price: 'from $2,000', accent: '#f38ba8', minPrice: 2000, recurring: false },
+  { key: 'build', accent: '#5eead4', minPrice: 4000, recurring: false },
+  { key: 'run', accent: '#ff6b35', minPrice: 1500, recurring: true },
+  { key: 'rescue', accent: '#f38ba8', minPrice: 2000, recurring: false },
 ] as const
 
 const CAPS = [
@@ -171,7 +173,7 @@ useJsonLd('hire', [
               {{ t(`hire.offers.${o.key}.label`) }}
             </p>
             <h3 class="font-display font-black text-3xl text-ink">{{ t(`hire.offers.${o.key}.title`) }}</h3>
-            <p class="mt-2 font-display font-bold text-xl" :style="{ color: o.accent }">{{ o.price }}</p>
+            <p class="mt-2 font-display font-bold text-xl" :style="{ color: o.accent }">{{ t(`hire.offers.${o.key}.price`) }}</p>
             <p class="mt-5 text-ink/75 leading-relaxed">{{ t(`hire.offers.${o.key}.desc`) }}</p>
             <ul class="mt-6 space-y-2.5 text-sm text-ink/70">
               <li v-for="n in 3" :key="n" class="flex gap-2.5">
@@ -251,7 +253,7 @@ useJsonLd('hire', [
               <input v-model="name" type="text" name="name" required maxlength="120" class="field" autocomplete="name" />
             </label>
             <label class="block">
-              <span class="mb-2 block text-sm text-muted">Email *</span>
+              <span class="mb-2 block text-sm text-muted">{{ t('hire.form.email') }} *</span>
               <input v-model="email" type="email" name="email" required maxlength="200" class="field" autocomplete="email" />
             </label>
           </div>
