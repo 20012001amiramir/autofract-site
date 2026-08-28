@@ -198,13 +198,13 @@
     "proven": "prouvé dans",
     "processHeading": "Le processus",
     "process": {
-      "s1t": "Scope",
+      "s1t": "Cadrage",
       "s1b": "Vous envoyez le brief. Sous 48 heures, vous recevez un devis fixe, une ligne claire de ce qui est inclus ou non, et la première esquisse d'architecture.",
-      "s2t": "Build",
+      "s2t": "Construction",
       "s2b": "Des cycles hebdomadaires courts, chacun terminé par une démo sur infrastructure de production. Vous regardez le système prendre vie — pas des slides.",
       "s3t": "Durcissement",
       "s3b": "Avant la livraison, nous attaquons notre propre travail : runs de chaos, QA adversariale, exercices de panne. Ce qui survit est ce qui sort.",
-      "s4t": "Run ou livraison",
+      "s4t": "Exploitation ou passation",
       "s4b": "Prenez les clés — docs, tests et reçus inclus — ou mettez-le sous retainer Run et n'y pensez plus jamais."
     },
     "gHeading": "Garanties",

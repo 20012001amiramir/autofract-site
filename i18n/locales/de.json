@@ -198,13 +198,13 @@
     "proven": "bewährt in",
     "processHeading": "Der Prozess",
     "process": {
-      "s1t": "Scope",
+      "s1t": "Umfang",
       "s1b": "Sie schicken das Briefing. Innerhalb von 48 Stunden bekommen Sie einen Festpreis, eine klare Grenze, was drin ist und was nicht, und die erste Architekturskizze.",
-      "s2t": "Build",
+      "s2t": "Bauen",
       "s2b": "Kurze Wochenzyklen, jeder endet mit einer Demo auf Produktionsinfrastruktur. Sie sehen das System lebendig werden — keine Folien.",
       "s3t": "Härten",
       "s3b": "Vor der Übergabe greifen wir unsere eigene Arbeit an: Chaos-Läufe, adversariale QA, Ausfallübungen. Was überlebt, wird ausgeliefert.",
-      "s4t": "Run oder Übergabe",
+      "s4t": "Betreiben oder übergeben",
       "s4b": "Nehmen Sie die Schlüssel — Doku, Tests und Belege inklusive — oder legen Sie es auf einen Run-Retainer und denken nie wieder daran."
     },
     "gHeading": "Garantien",
