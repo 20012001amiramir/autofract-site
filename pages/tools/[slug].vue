@@ -98,13 +98,13 @@ useJsonLd('tool', [
         <div class="mt-10 flex flex-wrap items-center gap-6">
           <a
             :href="href"
-            class="inline-flex items-center gap-3 rounded border-2 px-6 py-3 text-lg font-medium text-ink transition-colors"
+            class="inline-flex max-w-full items-center gap-3 rounded border-2 px-5 sm:px-6 py-3 text-base sm:text-lg font-medium text-ink transition-colors"
             :style="{ borderColor: meta.accent }"
             rel="noopener"
           >
             {{ copy.cta.button }} <span aria-hidden="true">&nearr;</span>
           </a>
-          <span class="font-mono text-[12px] uppercase tracking-wider text-muted">
+          <span class="font-mono text-[12px] uppercase tracking-wider text-muted break-words">
             {{ t('tools.free') }} · {{ t('tools.opens', { host: meta.host }) }}
           </span>
         </div>
@@ -155,17 +155,20 @@ useJsonLd('tool', [
         </dl>
       </section>
 
-      <div class="mt-28 rounded-lg border px-8 py-12 md:px-12 max-w-6xl" :style="{ borderColor: `${meta.accent}40`, background: `${meta.accent}0d` }">
+      <div class="mt-28 rounded-lg border px-6 sm:px-8 py-12 md:px-12 max-w-6xl" :style="{ borderColor: `${meta.accent}40`, background: `${meta.accent}0d` }">
         <p class="font-display font-black text-3xl md:text-4xl text-ink mb-3">{{ copy.cta.title }}</p>
         <p class="text-ink/75 mb-8 max-w-xl">{{ copy.cta.body }}</p>
+        <!-- The host is its own line: as one inline run it is a single 21-character
+             token that cannot wrap, and it pushed a 320px screen sideways. -->
         <a
           :href="href"
-          class="inline-flex items-center gap-3 rounded border px-6 py-3 text-lg font-medium text-ink transition-colors hover:bg-ink/5"
+          class="inline-flex max-w-full items-center gap-3 rounded border px-5 sm:px-6 py-3 text-base sm:text-lg font-medium text-ink transition-colors hover:bg-ink/5"
           :style="{ borderColor: meta.accent }"
           rel="noopener"
         >
-          {{ copy.cta.button }} — {{ meta.host }} <span aria-hidden="true">&nearr;</span>
+          {{ copy.cta.button }} <span aria-hidden="true">&nearr;</span>
         </a>
+        <p class="mt-4 font-mono text-[12px] uppercase tracking-wider text-muted break-all">{{ meta.host }}</p>
       </div>
 
       <div class="mt-24 border-t border-ink/10 py-16 flex flex-wrap items-baseline justify-between gap-6">

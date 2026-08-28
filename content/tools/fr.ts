@@ -13,7 +13,7 @@ export const toolsFr: ToolsContent = {
       description: 'Trois outils en ligne gratuits du studio Autofract : analyse des clauses d\'un contrat, planificateur de réunion entre fuseaux et calcul des coûts cachés.',
     },
     kicker: 'Outils',
-    h1: 'De petits outils, faits correctement.',
+    h1: 'De petits outils, faits correc­tement.',
     lede: 'Le studio construit de grands systèmes pour ses clients. Voici les petits, ceux que nous construisons pour nous-mêmes — et que nous offrons ensuite, parce qu\'ils ne coûtent presque rien à faire tourner.',
     intro: [
       'Chaque outil ici est né d\'un agacement interne : un contrat que personne n\'avait le temps de lire, une réunion qui tombait toujours à 22 h pour quelqu\'un, un coût récurrent qui n\'apparaissait sur aucune facture. Nous avons construit la plus petite chose qui répondait à la question, puis nous l\'avons gardée.',

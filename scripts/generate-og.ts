@@ -23,6 +23,14 @@ function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
 }
 
+/**
+ * A soft hyphen is a line-break hint for the browser. A card wraps itself and
+ * some renderers would draw the character, so headlines are flattened first.
+ */
+function plain(s: string): string {
+  return s.replace(/\u00ad/g, '')
+}
+
 // Greedy word-wrap using an approximate glyph width for the chosen weight.
 function wrap(text: string, size: number, charRatio: number): string[] {
   const maxChars = Math.floor(MAX_W / (size * charRatio))
@@ -48,7 +56,9 @@ function layoutTitle(title: string): { size: number; lines: string[] } {
 }
 
 function card(opts: { title: string; subtitle: string; accent: string; kicker?: string }): string {
-  const { title, subtitle, accent, kicker = 'AUTOFRACT — A STUDIO' } = opts
+  const { accent, kicker = 'AUTOFRACT — A STUDIO' } = opts
+  const title = plain(opts.title)
+  const subtitle = plain(opts.subtitle)
   const { size, lines } = layoutTitle(title)
   const lh = size * 1.0
   // vertically center the title block around y≈330

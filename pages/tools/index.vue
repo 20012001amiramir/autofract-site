@@ -140,7 +140,7 @@ useJsonLd('tools', [
             </p>
             <a
               :href="c.href"
-              class="relative z-10 mt-3 inline-flex items-center gap-2 text-sm text-muted hover:text-ink transition-colors w-fit"
+              class="relative z-10 mt-3 inline-flex max-w-full items-center gap-2 text-sm text-muted hover:text-ink transition-colors w-fit break-words"
               rel="noopener"
             >
               {{ t('tools.open') }} — {{ c.meta.host }} <span aria-hidden="true">&nearr;</span>
@@ -170,7 +170,7 @@ useJsonLd('tools', [
             <div class="mt-8 flex flex-wrap gap-6 text-sm">
               <a
                 :href="p.meta.url"
-                class="inline-flex items-center gap-2 border-b border-ink/30 pb-0.5 font-medium text-ink hover:text-[var(--card-accent)] hover:border-[var(--card-accent)] transition-colors"
+                class="inline-flex max-w-full items-center gap-2 border-b border-ink/30 pb-0.5 font-medium text-ink hover:text-[var(--card-accent)] hover:border-[var(--card-accent)] transition-colors break-words"
                 rel="noopener"
               >
                 {{ p.meta.host }} <span aria-hidden="true">&nearr;</span>
@@ -193,7 +193,7 @@ useJsonLd('tools', [
         </dl>
       </section>
 
-      <div class="mt-28 rounded-lg border border-accent/25 bg-accent/5 px-8 py-12 md:px-12 max-w-6xl">
+      <div class="mt-28 rounded-lg border border-accent/25 bg-accent/5 px-6 sm:px-8 py-12 md:px-12 max-w-6xl">
         <p class="font-display font-black text-3xl md:text-4xl text-ink mb-3">{{ hub.cta.title }}</p>
         <p class="text-ink/75 mb-8 max-w-xl">{{ hub.cta.body }}</p>
         <NuxtLink

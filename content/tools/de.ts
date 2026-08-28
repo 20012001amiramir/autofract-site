@@ -77,7 +77,7 @@ export const toolsDe: ToolsContent = {
         title: 'Vertrag prüfen: das Kleingedruckte — Redline',
         description: 'Vertrag, Mietvertrag, Kredit oder AGB einfügen und eine sortierte Liste der Fallstricke bekommen — jeder an seiner Klausel verankert und doppelt geprüft.',
       },
-      h1: 'Das Kleingedruckte lesen, schnell.',
+      h1: 'Das Klein­gedruckte lesen, schnell.',
       lede: 'Redline liest einen Vertrag so, wie eine misstrauische Anwältin ihn lesen würde: Es sucht die Klauseln, die Sie später Geld kosten, zitiert jede davon wörtlich und erklärt in normaler Sprache, was sie tatsächlich mit Ihnen macht.',
       what: {
         h2: 'Was es tut',
@@ -88,7 +88,7 @@ export const toolsDe: ToolsContent = {
         ],
       },
       why: {
-        h2: 'Warum das Kleingedruckte immer gewinnt',
+        h2: 'Warum das Klein­gedruckte immer gewinnt',
         body: [
           'Niemand liest AGB, und alle wissen, dass niemand sie liest — genau deshalb stehen die teuren Klauseln dort. Ein Abo-Vertrag wird von Leuten geschrieben, die dafür bezahlt werden, eine Seite davon zu schützen, und Sie begegnen ihm im denkbar schlechtesten Moment: am Ende eines Bewerbungsprozesses, am Einzugstag, eine Stunde vor dem Launch.',
           'Überfliegen hilft nicht, weil die gefährlichen Klauseln nicht gefährlich aussehen. Sie sind grammatisch langweilig, in einem nummerierten Unterabschnitt vergraben und verweisen auf eine Definition vier Seiten früher. Den Schaden richtet „gemäß Ziffer 12.3“ an, nicht die Großbuchstaben.',
