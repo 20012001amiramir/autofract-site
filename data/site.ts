@@ -11,6 +11,12 @@ export const SITE_HOST = 'autofract.com'
 export const ORG_ID = `${SITE_URL}/#identity`
 export const WEBSITE_ID = `${SITE_URL}/#website`
 
+/**
+ * Graphite — the one background the site ever paints (--color-paper). The head
+ * meta and public/site.webmanifest have to agree on it; a unit test pins them.
+ */
+export const THEME_COLOR = '#0c0c10'
+
 export const TWITTER_HANDLE = '@autofract'
 export const CONTACT_EMAIL = 'info@autofract.com'
 

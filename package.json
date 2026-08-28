@@ -15,6 +15,7 @@
     "test:e2e": "playwright test",
     "typecheck": "nuxt typecheck",
     "generate:og": "tsx scripts/generate-og.ts",
+    "generate:icons": "tsx scripts/generate-icons.ts",
     "indexnow": "node scripts/indexnow-submit.mjs"
   },
   "dependencies": {

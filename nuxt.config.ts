@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { LOCALES, LOCALE_LABELS } from './data/locales'
-import { ANALYTICS_SRC, ANALYTICS_WEBSITE_ID, SITE_NAME, SITE_URL } from './data/site'
+import { ICON_LINKS } from './data/icons'
+import { ANALYTICS_SRC, ANALYTICS_WEBSITE_ID, SITE_NAME, SITE_URL, THEME_COLOR } from './data/site'
 import { TOOLS } from './data/tools'
 
 export default defineNuxtConfig({
@@ -81,11 +82,12 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         // Site is always dark graphite — one theme-color, no light variant.
-        { name: 'theme-color', content: '#0c0c10' },
+        { name: 'theme-color', content: THEME_COLOR },
       ],
-      link: [
-        { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
-      ],
+      // The SVG leads: it is the icon browsers prefer and the only one that
+      // stays sharp at any size. The raster ladder behind it is what a crawler
+      // takes — Google draws a favicon beside every result and ignores SVG.
+      link: ICON_LINKS,
       // Cookieless page views. Declared here so every SSR page carries it.
       script: [
         { src: ANALYTICS_SRC, defer: true, 'data-website-id': ANALYTICS_WEBSITE_ID },

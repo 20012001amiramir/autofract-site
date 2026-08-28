@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import { useJsonLd } from '~/composables/useJsonLd'
 import { CONTACT_EMAIL, ORG_ID, SITE_NAME, SITE_URL, WEBSITE_ID } from '~/data/site'
+import { iconPath } from '~/data/icons'
 import { LOCALES, OG_LOCALE, asLocale } from '~/data/locales'
 
 // i18n owns hreflang + self-canonical + og:locale for every route.
@@ -23,7 +24,8 @@ useJsonLd('identity', [
     url: SITE_URL,
     description: 'An independent studio building antifragile AI systems.',
     email: CONTACT_EMAIL,
-    logo: `${SITE_URL}/favicon.svg`,
+    // A bitmap, not the SVG — the logo property is only read from a raster.
+    logo: `${SITE_URL}${iconPath(512)}`,
     sameAs: ['https://x.com/autofract', 'https://t.me/autofract'],
   },
   {
