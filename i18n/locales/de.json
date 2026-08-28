@@ -83,7 +83,7 @@
       "metaDesc": "Relocating macht offene Daten zum Umzugsprodukt: 33 Rechner, Länderkorridore und eine moderierte Community — in 22 Sprachen, für 50 Länder.",
       "tag": "Relocation als Daten",
       "blurb": "Offene Daten, destilliert in 33 Rechner, programmatische Länder-Korridore und eine moderierte Live-Community — von der eigenen Übersetzungspipeline in 22 Sprachen gespiegelt.",
-      "headline": "Auswandern, minus Rätselraten.",
+      "headline": "Aus­wandern, minus Rätsel­raten.",
       "tagline": "Offene Daten, verwandelt in Rechner, Korridore und eine Live-Community — in 22 Sprachen.",
       "body1": "Relocating beginnt dort, wo die Unsicherheit beginnt: Was kostet es wirklich, welches Visum passt, wie lange bis zur Staatsbürgerschaft. Ein Build-Time-ETL normalisiert Weltbank-, Wetter- und Geodaten zu 30+ Datensätzen über 50 Länder hinweg; ein Quality-Gate lässt den gesamten Build scheitern, wenn ein einziger Datensatz inkonsistent ist. Aus diesem Rückgrat generiert eine Page-Engine Länder-Korridore, Vergleiche und Rankings — und 33 Rechner laufen vollständig clientseitig.",
       "body2": "Dann wird die gesamte Seite von der eigenen Übersetzungspipeline in 22 Sprachen gespiegelt — selbstgehostete Modelle, versionierte Translation Memory und ein harter Build-Fehler bei jedem unübersetzten String. Ausgeliefert wird ein vollstatischer Build an die Edge: Zur Laufzeit kann nichts abstürzen. Daneben lebt City Chat, wo jede Nachricht vor Veröffentlichung durch KI-Moderation geht — auf EU-Postgres mit Row-Level Security und DSGVO-konformer Aufbewahrung von Grund auf.",
@@ -139,24 +139,27 @@
     "offersHeading": "Drei Wege der Zusammenarbeit",
     "offers": {
       "build": {
-        "label": "Build",
+        "label": "Bauen",
         "title": "Ein System, Ende zu Ende",
+        "price": "ab 4.000 $",
         "desc": "Ein Festpreis-System, entworfen, gebaut und in Produktion gebracht: ein KI-Agent, eine autonome Pipeline, ein Datenprodukt — alles, was sich selbst betreiben soll.",
         "b1": "Festpreis nach 48-Stunden-Scoping — keine Überraschungen",
         "b2": "Wöchentliche Demos auf Produktionsinfrastruktur, keine Folien",
         "b3": "Übergabe mit Doku, Tests und 30-Tage-Fix-Fenster"
       },
       "run": {
-        "label": "Run",
+        "label": "Betreiben",
         "title": "Wir halten es am Leben",
+        "price": "ab 1.500 $/Mon.",
         "desc": "Ihr System, betrieben wie unsere eigenen: überwacht, selbstheilend, jeden Monat verbessert. Sie lesen einen Report — niemand hütet ein Dashboard.",
         "b1": "Monitoring, Incident-Response und Recovery inklusive",
         "b2": "Monatliches Verbesserungsbudget für Ihre Prioritäten",
         "b3": "Monatlich kündbar — das System bleibt Ihres"
       },
       "rescue": {
-        "label": "Rescue",
+        "label": "Retten",
         "title": "Reparieren, was ausfällt",
+        "price": "ab 2.000 $",
         "desc": "Ein KI-Projekt, das feststeckt, eine instabile Pipeline, ein Agent, der in Produktion Unsinn macht. Wir auditieren und härten auf antifragilen Standard.",
         "b1": "Schriftliches Audit mit nach Schweregrad sortierten Findings",
         "b2": "Härtung: Gates, Retries, Circuit Breaker, adversariale QA",
@@ -224,6 +227,7 @@
       "heading": "Sagen Sie uns, was sich selbst betreiben soll.",
       "sub": "Drei Sätze reichen. Wir antworten innerhalb von 24 Stunden — mit Fragen oder einem Scoping-Vorschlag.",
       "name": "Name",
+      "email": "E-Mail",
       "company": "Firma (optional)",
       "interest": "Was brauchen Sie?",
       "budget": "Budget",
@@ -235,9 +239,9 @@
       "sentBody": "Ihre Anfrage ist da. Wir antworten innerhalb von 24 Stunden — prüfen Sie Ihr Postfach (und einmal den Spam-Ordner).",
       "err429": "Zu viele Anfragen aus diesem Netz — versuchen Sie es in einer Stunde oder schreiben Sie an",
       "errGeneric": "Senden fehlgeschlagen — schreiben Sie uns direkt:",
-      "i_build": "Build — ein neues System",
-      "i_run": "Run — meines betreiben",
-      "i_rescue": "Rescue — Projekt reparieren",
+      "i_build": "Bauen — ein neues System",
+      "i_run": "Betreiben — mein System",
+      "i_rescue": "Retten — Projekt reparieren",
       "i_other": "Etwas anderes",
       "b_unsure": "noch unklar"
     }

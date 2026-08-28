@@ -14,7 +14,7 @@ export const toolsEs: ToolsContent = {
       description: 'Tres herramientas gratuitas del estudio Autofract: un revisor de contratos, un planificador de reuniones entre zonas horarias y calculadoras de costos.',
     },
     kicker: 'Herramientas',
-    h1: 'Herramientas pequeñas, hechas como se debe.',
+    h1: 'Herra­mientas pequeñas, hechas como se debe.',
     lede: 'El estudio construye sistemas grandes para sus clientes. Estas son las cosas pequeñas que construimos para nosotros mismos y luego regalamos, porque mantenerlas vivas no nos cuesta casi nada.',
     intro: [
       'Cada herramienta de aquí empezó siendo una molestia interna: un contrato que nadie tenía tiempo de leer, una reunión que a alguien le caía siempre a las 22:00, un costo recurrente que jamás aparecía en ninguna factura. Construimos la cosa más pequeña capaz de responder a la pregunta y después la conservamos.',

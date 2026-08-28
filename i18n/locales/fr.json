@@ -133,30 +133,33 @@
     "metaTitle": "Engager le studio",
     "metaDesc": "Systèmes d'IA antifragiles sur mesure : agents, pipelines, plateformes auto-réparatrices. Devis fixe, production dès la semaine un, à partir de 4 000 $.",
     "kicker": "Engager le studio",
-    "headline": "Nous construisons des systèmes qui fonctionnent seuls — pour vous.",
+    "headline": "Nous cons­trui­sons des systèmes qui fonc­tion­nent seuls — pour vous.",
     "sub": "Les quatre plateformes de ce site ont été conçues, construites et opérées par ce studio. La même doctrine — testée au chaos, vérifiée de façon adversariale, des reçus pour tout — est disponible sur commande.",
     "cta": "Un devis fixe sous 48 heures",
     "offersHeading": "Trois façons de travailler ensemble",
     "offers": {
       "build": {
-        "label": "Build",
+        "label": "Construire",
         "title": "Un système, de bout en bout",
+        "price": "dès 4 000 $",
         "desc": "Un système à périmètre fixe, conçu, construit et livré en production : un agent IA, un pipeline autonome, un produit data — tout ce qui doit fonctionner seul.",
         "b1": "Devis fixe après un scoping de 48 heures — zéro surprise",
         "b2": "Démos hebdomadaires sur infrastructure de production, pas des slides",
         "b3": "Livraison avec docs, tests et fenêtre de correctifs de 30 jours"
       },
       "run": {
-        "label": "Run",
+        "label": "Exploiter",
         "title": "Nous le gardons en vie",
+        "price": "dès 1 500 $/mois",
         "desc": "Votre système, opéré comme nous opérons les nôtres : surveillé, auto-réparateur, amélioré chaque mois. Vous lisez un rapport ; personne ne surveille un dashboard.",
         "b1": "Monitoring, réponse aux incidents et récupération inclus",
         "b2": "Un budget d'amélioration mensuel dépensé sur vos priorités",
         "b3": "Résiliable au mois — le système reste le vôtre"
       },
       "rescue": {
-        "label": "Rescue",
+        "label": "Sauver",
         "title": "Réparer ce qui casse",
+        "price": "dès 2 000 $",
         "desc": "Un projet IA au point mort, un pipeline instable, un agent qui déraille en production. Nous auditons, puis durcissons au standard antifragile.",
         "b1": "Audit écrit avec constats classés par gravité",
         "b2": "Durcissement : gates, retries, circuit breakers, QA adversariale",
@@ -224,6 +227,7 @@
       "heading": "Dites-nous ce qui doit fonctionner seul.",
       "sub": "Trois phrases suffisent. Nous répondons sous 24 heures — avec des questions ou une proposition de scoping.",
       "name": "Nom",
+      "email": "E-mail",
       "company": "Société (optionnel)",
       "interest": "De quoi avez-vous besoin ?",
       "budget": "Budget",
@@ -235,9 +239,9 @@
       "sentBody": "Votre brief est arrivé. Nous répondons sous 24 heures — vérifiez votre boîte (et les spams, une fois).",
       "err429": "Trop de requêtes depuis ce réseau — réessayez dans une heure ou écrivez à",
       "errGeneric": "Échec de l'envoi — écrivez-nous directement :",
-      "i_build": "Build — un nouveau système",
-      "i_run": "Run — opérer le mien",
-      "i_rescue": "Rescue — réparer un projet",
+      "i_build": "Construire — un nouveau système",
+      "i_run": "Exploiter — opérer le mien",
+      "i_rescue": "Sauver — réparer un projet",
       "i_other": "Autre chose",
       "b_unsure": "pas encore sûr"
     }

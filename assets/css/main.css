@@ -37,10 +37,13 @@ body {
 }
 
 /*
- * German and Iberian headlines carry words the English source never had
- * ("Kleingedruckte", "Construimos"). At display sizes one of them is wider
- * than the column, so let the browser hyphenate per <html lang> and, as a
- * last resort, break the word rather than push the page sideways.
+ * Headlines carry words the English source never had ("Kleingedruckte",
+ * "Construimos", "Ferramentas"). `hyphens: auto` breaks them politely only
+ * where Chromium has a dictionary — English and German — so the copy itself
+ * carries a soft hyphen (U+00AD) wherever a word is wider than its column, and
+ * tests/unit/typography.spec.ts measures that it always is. `break-word` stays
+ * as the last resort: it is what keeps a stray long word from pushing the page
+ * sideways, and nothing should ever reach it.
  */
 .font-display {
   overflow-wrap: break-word;

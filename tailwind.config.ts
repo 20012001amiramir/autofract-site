@@ -22,10 +22,15 @@ export default {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       fontSize: {
-        /* Floors sized so a long word still fits a 360px screen; the vw term and
-           the ceiling are unchanged, so desktop typography stays as designed. */
-        hero: ['clamp(48px, 14vw, 200px)', { lineHeight: '0.9', letterSpacing: '-0.02em' }],
-        chapter: ['clamp(36px, 7vw, 96px)', { lineHeight: '0.95', letterSpacing: '-0.01em' }],
+        /* Display type is sized so the longest word in any of the six languages
+           still fits its column — a word wider than the column has to break, and
+           outside English and German the browser has no hyphenation dictionary
+           to break it politely. The budget these sizes buy (column ÷ font-size)
+           is enforced by tests/unit/typography.spec.ts: 6.1em for hero, 7.2em
+           for chapter. Change a number here and that test tells you which
+           headline no longer fits. */
+        hero: ['clamp(44px, 13vw, 168px)', { lineHeight: '0.9', letterSpacing: '-0.02em' }],
+        chapter: ['clamp(34px, 6.5vw, 88px)', { lineHeight: '0.95', letterSpacing: '-0.01em' }],
         quote: ['clamp(28px, 4vw, 48px)', { lineHeight: '1.15' }],
       },
       transitionTimingFunction: {

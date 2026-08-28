@@ -13,7 +13,7 @@ export const toolsPt: ToolsContent = {
       description: 'Três ferramentas gratuitas de navegador do estúdio Autofract: leitor de letras miúdas de contrato, agendador entre fusos e calculadoras de custos ocultos.',
     },
     kicker: 'Ferramentas',
-    h1: 'Ferramentas pequenas, feitas direito.',
+    h1: 'Ferra­mentas pequenas, feitas direito.',
     lede: 'O estúdio constrói sistemas grandes para clientes. Estas são as coisas pequenas que construímos para nós mesmos — e depois damos de graça, porque custam quase nada para manter no ar.',
     intro: [
       'Toda ferramenta daqui começou como um incômodo interno: um contrato que ninguém tinha tempo de ler, uma reunião que sempre caía às 22:00 para alguém, um custo recorrente que nunca aparecia em nota nenhuma. Construímos a menor coisa capaz de responder à pergunta e ficamos com ela.',

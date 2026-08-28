@@ -64,7 +64,7 @@
       "metaDesc": "FrontDesk é o preço de referência público: agentes de IA compilam, um verificador adversário refuta e uma cadeia SHA-256 sela todo o histórico.",
       "tag": "O preço de referência",
       "blurb": "Um registro público do que as coisas custam de verdade: redatores de IA compilam, um agente adversarial refuta, um portão de fidelidade busca cada fonte de novo — e um ledger SHA-256 torna a história impossível de reescrever.",
-      "headline": "Todo preço tem um comprovante.",
+      "headline": "Todo preço tem um com­pro­vante.",
       "tagline": "Um registro público do que as coisas custam de verdade — com fonte, com data e denunciando qualquer adulteração.",
       "body1": "O FrontDesk é construído sobre a desconfiança institucional do próprio conteúdo. Agentes redatores compilam produtos e preços a partir de fontes publicadas; um segundo agente, adversarial, existe apenas para refutá-los. O que sobrevive encara o portão de fidelidade, que busca de novo cada página citada e se recusa a publicar qualquer número que não esteja literalmente lá. O resultado é um corpus de mais de 4.400 entidades em que cada fato carrega a URL da fonte e a data em que foi verificado.",
       "body2": "Uma varredura diária de preços, feita sem IA, escreve em um histórico que só aceita acréscimos, e um ledger encadeado por hash faz esse histórico denunciar qualquer adulteração — não dá para reescrever o mês passado. O corpus se abre em mais de 23.000 páginas citáveis, feeds de máquina feitos para leitores de IA, um servidor MCP com 19 ferramentas, um espelho aberto em CC-BY com DOI e uma extensão de navegador que sobrepõe o preço de referência na própria página da loja.",
@@ -133,7 +133,7 @@
     "metaTitle": "Contratar o estúdio",
     "metaDesc": "Criamos sistemas de IA antifrágeis sob medida: agentes, pipelines e plataformas auto-recuperáveis. Orçamento fechado, produção na 1ª semana, de US$ 4.000.",
     "kicker": "Contratar o estúdio",
-    "headline": "Construímos sistemas que rodam sozinhos — para você.",
+    "headline": "Cons­truí­mos sistemas que rodam sozinhos — para você.",
     "sub": "As quatro plataformas deste site foram projetadas, construídas e operadas por este estúdio. A mesma doutrina — testada no caos, verificada de forma adversarial, com comprovante para tudo — pode ser contratada.",
     "cta": "Receba um orçamento fechado em 48 horas",
     "offersHeading": "Três formas de trabalhar com a gente",
@@ -141,6 +141,7 @@
       "build": {
         "label": "Construir",
         "title": "Um sistema, de ponta a ponta",
+        "price": "a partir de US$ 4.000",
         "desc": "Um sistema de escopo fechado, projetado, construído e colocado em produção: um agente de IA, um pipeline autônomo, um produto de dados — qualquer coisa que deveria rodar sozinha.",
         "b1": "Orçamento fechado depois de uma rodada de escopo de 48 horas — sem surpresas",
         "b2": "Demos semanais em infraestrutura de produção, não em slides",
@@ -149,6 +150,7 @@
       "run": {
         "label": "Operar",
         "title": "Mantemos o sistema vivo",
+        "price": "a partir de US$ 1.500/mês",
         "desc": "Seu sistema, operado do jeito que operamos os nossos: monitorado, auto-recuperável, melhorado todo mês. Você lê um relatório; ninguém fica de babá de painel.",
         "b1": "Monitoramento, resposta a incidentes e recuperação inclusos",
         "b2": "Um orçamento mensal de melhorias gasto nas suas prioridades",
@@ -157,6 +159,7 @@
       "rescue": {
         "label": "Resgatar",
         "title": "Consertar o que está falhando",
+        "price": "a partir de US$ 2.000",
         "desc": "Um projeto de IA que travou, um pipeline instável, um agente que se comporta mal em produção. Auditamos e depois endurecemos até o padrão antifrágil.",
         "b1": "Auditoria escrita com os achados ordenados por severidade",
         "b2": "Endurecimento: portões, retentativas, circuit breakers, QA adversarial",
@@ -199,7 +202,7 @@
       "s1b": "Você manda o briefing. Em 48 horas recebe um orçamento fechado, uma linha clara do que entra e do que fica de fora, e o primeiro esboço de arquitetura.",
       "s2t": "Construção",
       "s2b": "Ciclos semanais curtos, cada um terminando em uma demo na infraestrutura de produção. Você vê o sistema ganhar vida — não um deck de slides.",
-      "s3t": "Endurecimento",
+      "s3t": "Endureci­mento",
       "s3b": "Antes da entrega, atacamos o nosso próprio trabalho: rodadas de caos, QA adversarial, simulações de falha. O que sobrevive é o que vai ao ar.",
       "s4t": "Operar ou entregar",
       "s4b": "Pegue as chaves — documentação, testes e comprovantes inclusos — ou deixe o sistema em um contrato de operação e nunca mais pense nele."
@@ -224,6 +227,7 @@
       "heading": "Conte o que deveria rodar sozinho.",
       "sub": "Três frases bastam. Respondemos em 24 horas com perguntas ou uma proposta de escopo.",
       "name": "Nome",
+      "email": "E-mail",
       "company": "Empresa (opcional)",
       "interest": "Do que você precisa?",
       "budget": "Orçamento",

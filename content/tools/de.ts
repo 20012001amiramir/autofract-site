@@ -62,7 +62,7 @@ export const toolsDe: ToolsContent = {
       ],
     },
     cta: {
-      title: 'Brauchen Sie so etwas in Ihrer Größenordnung?',
+      title: 'Brauchen Sie so etwas in Ihrer Größen­ordnung?',
       body: 'Dasselbe Studio baut die große Version: Agenten, Pipelines und Plattformen, die sich selbst betreiben. Festpreis nach einem 48-Stunden-Scoping.',
       button: 'Studio beauftragen',
     },
@@ -249,7 +249,7 @@ export const toolsDe: ToolsContent = {
             body: 'Finden Sie heraus, ob eine Stunde innerhalb aller Arbeitstage überhaupt existiert — und wenn nicht, wer dafür bezahlt, damit die Last rotieren kann, statt still bei der Person zu landen, die am wenigsten klagt.',
           },
           {
-            h3: 'Bewerbungsgespräche im Ausland',
+            h3: 'Bewerbungs­gespräche im Ausland',
             body: 'Die vorgeschlagene Uhrzeit wird als Signal über das Unternehmen gelesen. Setzen Sie die Stadt der Kandidatin, schauen Sie auf die grünen Spalten und verlangen Sie von niemandem Höchstleistung um 22:00 Uhr an einem Arbeitstag.',
           },
           {

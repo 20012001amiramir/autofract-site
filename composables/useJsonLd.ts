@@ -7,7 +7,12 @@
  * what crawlers read. `key` dedupes across hydration.
  */
 export function useJsonLd(key: string, graph: Record<string, unknown>[]): void {
-  const json = JSON.stringify({ '@context': 'https://schema.org', '@graph': graph })
+  const json = JSON.stringify(
+    { '@context': 'https://schema.org', '@graph': graph },
+    // Headlines carry soft hyphens so a phone can break a long word; they are
+    // a rendering hint, not part of the name a crawler should read back.
+    (_k, v) => (typeof v === 'string' ? v.replace(/­/g, '') : v),
+  )
     // prevent a stray "</script>" in data from closing the tag early
     .replace(/</g, '\\u003c')
   useHead({

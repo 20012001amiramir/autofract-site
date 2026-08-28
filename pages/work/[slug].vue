@@ -106,8 +106,13 @@ useJsonLd('case', [
       </header>
 
       <div class="mt-20 grid grid-cols-2 gap-y-10 md:grid-cols-4 border-y border-ink/10 py-10">
-        <div v-for="s in stats" :key="s.label" class="pr-6">
-          <p class="font-display font-black text-4xl md:text-5xl" :style="{ color: meta.accent }">{{ s.value }}</p>
+        <!-- Four columns from md, so the big size waits for lg: at 768 a stat
+             cell is 136px and a five-figure number does not fit 48px type. The
+             gutter narrows on the smallest phones for the same reason: at 320
+             a cell is 136px and "4,400+" needs 113 of them at text-3xl, which
+             pr-6 does not leave. -->
+        <div v-for="s in stats" :key="s.label" class="pr-4 sm:pr-6">
+          <p class="font-display font-black text-3xl sm:text-4xl lg:text-5xl" :style="{ color: meta.accent }">{{ s.value }}</p>
           <p class="mt-2 text-sm text-muted leading-snug">{{ s.label }}</p>
         </div>
       </div>

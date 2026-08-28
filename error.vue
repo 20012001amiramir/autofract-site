@@ -26,7 +26,7 @@ useSeoMeta({
       <p class="font-mono text-sm uppercase tracking-widest text-accent mb-6">
         {{ t('error.kicker') }} — {{ error?.statusCode ?? 500 }}
       </p>
-      <h1 class="font-display font-black text-hero text-ink max-w-4xl">{{ title }}</h1>
+      <h1 class="font-display font-black text-hero text-ink max-w-5xl">{{ title }}</h1>
       <p class="mt-8 max-w-xl text-xl text-muted leading-relaxed">{{ body }}</p>
 
       <div class="mt-12 flex flex-wrap gap-6 text-lg">

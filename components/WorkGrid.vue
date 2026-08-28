@@ -24,7 +24,7 @@ const cards = CASES.map((slug, i) => ({
         v-for="c in cards"
         :key="c.slug"
         :to="localePath(`/work/${c.slug}`)"
-        class="work-card group relative overflow-hidden rounded-lg border border-ink/10 p-8 md:p-10 transition-colors duration-300"
+        class="work-card group relative overflow-hidden rounded-lg border border-ink/10 p-8 lg:p-10 transition-colors duration-300"
         :style="{ '--card-accent': c.accent }"
       >
         <div class="flex items-baseline justify-between mb-10">
@@ -34,7 +34,7 @@ const cards = CASES.map((slug, i) => ({
           </span>
         </div>
         <h3
-          class="font-display font-black text-4xl md:text-5xl text-ink transition-colors duration-300 group-hover:text-[var(--card-accent)]"
+          class="font-display font-black text-3xl sm:text-4xl lg:text-5xl text-ink transition-colors duration-300 group-hover:text-[var(--card-accent)]"
         >
           {{ t(`work.${c.slug}.name`) }}
         </h3>

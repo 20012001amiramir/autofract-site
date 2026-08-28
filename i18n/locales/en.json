@@ -141,6 +141,7 @@
       "build": {
         "label": "Build",
         "title": "A system, end to end",
+        "price": "from $4,000",
         "desc": "A fixed-scope system designed, built and shipped to production: an AI agent, an autonomous pipeline, a data product — anything that should run itself.",
         "b1": "Fixed quote after a 48-hour scoping pass — no surprises",
         "b2": "Weekly demos on production infrastructure, not slides",
@@ -149,6 +150,7 @@
       "run": {
         "label": "Run",
         "title": "We keep it alive",
+        "price": "from $1,500/mo",
         "desc": "Your system, operated the way we run our own: monitored, self-healing, improved every month. You read a report; nobody babysits a dashboard.",
         "b1": "Monitoring, incident response and recovery included",
         "b2": "A monthly improvement budget spent on your priorities",
@@ -157,6 +159,7 @@
       "rescue": {
         "label": "Rescue",
         "title": "Fix what's failing",
+        "price": "from $2,000",
         "desc": "An AI project that stalled, an unstable pipeline, an agent that misbehaves in production. We audit it, then harden it to antifragile standards.",
         "b1": "Written audit with a severity-ranked findings list",
         "b2": "Hardening: gates, retries, circuit breakers, adversarial QA",
@@ -224,6 +227,7 @@
       "heading": "Tell us what should run itself.",
       "sub": "Three sentences are enough. We reply within 24 hours with questions or a scoping proposal.",
       "name": "Name",
+      "email": "Email",
       "company": "Company (optional)",
       "interest": "What do you need?",
       "budget": "Budget",
