@@ -1,16 +1,21 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
 import SystemGraph from '~/components/graph/SystemGraph.vue'
-import { STUDIO_MAP } from '~/data/systems'
+import { localizedStudioMap } from '~/content/systems'
 
+const { locale } = useI18n()
 const localePath = useLocalePath()
+
+const studioMap = computed(() => localizedStudioMap(locale.value))
 </script>
 
 <template>
   <section class="min-h-screen flex flex-col justify-center px-6 md:px-16 pt-24 pb-16 relative overflow-hidden">
-    <!-- живой граф студии за текстом -->
+    <!-- the studio's living graph, behind the text -->
     <ClientOnly>
       <div class="absolute inset-0 opacity-60 md:opacity-80" aria-hidden="true">
-        <SystemGraph :map="STUDIO_MAP" :height="0" ambient />
+        <SystemGraph :map="studioMap" :height="0" ambient />
       </div>
     </ClientOnly>
     <div class="pointer-events-none absolute inset-0 bg-gradient-to-r from-paper via-paper/70 to-paper/20" aria-hidden="true" />

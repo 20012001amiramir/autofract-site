@@ -1,13 +1,13 @@
 <script setup lang="ts">
 import { onMounted, onBeforeUnmount, ref } from 'vue'
-import type { SystemMap, SysNode } from '~/data/systems'
+import type { SystemMapView, SysNodeView } from '~/data/systems'
 import { TYPE_COLORS } from '~/data/systems'
 
 const props = withDefaults(defineProps<{
-  map: SystemMap
-  /** 0 = растянуться на высоту контейнера (ambient-фон) */
+  map: SystemMapView
+  /** 0 = stretch to the container height (ambient background) */
   height?: number
-  /** ambient = hero background: слабее glow, без tooltip'ов */
+  /** ambient = hero background: dimmer glow, no tooltips */
   ambient?: boolean
 }>(), {
   height: 560,
@@ -16,9 +16,9 @@ const props = withDefaults(defineProps<{
 
 const wrap = ref<HTMLDivElement | null>(null)
 const canvas = ref<HTMLCanvasElement | null>(null)
-const tooltip = ref<{ x: number; y: number; node: SysNode } | null>(null)
+const tooltip = ref<{ x: number; y: number; node: SysNodeView } | null>(null)
 
-interface SimNode extends SysNode {
+interface SimNode extends SysNodeView {
   x: number; y: number; vx: number; vy: number; radius: number
   fixed: boolean
 }
@@ -29,7 +29,7 @@ let raf = 0
 let ro: ResizeObserver | null = null
 let cleanupEvents: (() => void) | null = null
 
-/** deterministic pseudo-random — стабильная раскладка между рендерами */
+/** deterministic pseudo-random — a stable layout between renders */
 function mulberry(seed: number) {
   return () => {
     seed |= 0; seed = (seed + 0x6D2B79F5) | 0
@@ -84,7 +84,7 @@ onMounted(() => {
     for (let i = 0; i < nodes.length; i++) {
       const n = nodes[i]
       if (n.fixed) continue
-      // отталкивание
+      // repulsion
       for (let j = i + 1; j < nodes.length; j++) {
         const m = nodes[j]
         let dx = (n.x - m.x) * spread; let dy = (n.y - m.y) * spread
@@ -96,12 +96,12 @@ onMounted(() => {
         n.vx += dx * f * dt; n.vy += dy * f * dt
         if (!m.fixed) { m.vx -= dx * f * dt; m.vy -= dy * f * dt }
       }
-      // центрирование (core сильнее тянет к центру)
+      // centering (the core pulls harder toward the middle)
       const pull = n.type === 'core' ? 1.6 : 0.55
       n.vx += ((0.5 - n.x) * spread) * pull * 0.002 * dt
       n.vy += ((0.5 - n.y) * spread) * pull * 0.002 * dt
     }
-    // пружины
+    // springs
     for (const e of edges) {
       const rest = (e.a.type === 'core' || e.b.type === 'core') ? 150 : 105
       let dx = (e.b.x - e.a.x) * spread; let dy = (e.b.y - e.a.y) * spread
@@ -121,7 +121,7 @@ onMounted(() => {
     }
   }
 
-  function colorOf(n: SysNode): string {
+  function colorOf(n: SysNodeView): string {
     return n.type === 'core' ? props.map.accent : TYPE_COLORS[n.type]
   }
 
@@ -149,7 +149,7 @@ onMounted(() => {
       ctx.shadowBlur = 0
       ctx.globalAlpha = 1
 
-      // поток данных — частицы вдоль ребра
+      // data flow — particles travelling along the edge
       if (e.flow && !reduced) {
         if (Math.random() < 0.02) e.particles.push({ progress: 0 })
         e.particles = e.particles.filter(p => (p.progress += 0.006) < 1)
@@ -186,7 +186,7 @@ onMounted(() => {
       ctx.lineWidth = isFocus ? 2 : 1.4
       ctx.strokeStyle = color
       ctx.stroke()
-      // ядро узла
+      // node core
       ctx.beginPath()
       ctx.arc(x, y, Math.max(2.5, (n.radius + pulse) * 0.32), 0, Math.PI * 2)
       ctx.fillStyle = color
@@ -209,7 +209,7 @@ onMounted(() => {
     last = now
     if (!reduced || settled < 240) { step(dt); settled++ }
     draw(now)
-    if (reduced && settled >= 240 && !hovered && !dragged) { raf = 0; return } // статичный кадр — цикл усыпляем
+    if (reduced && settled >= 240 && !hovered && !dragged) { raf = 0; return } // static frame — put the loop to sleep
     raf = requestAnimationFrame(loop)
   }
 
@@ -270,7 +270,7 @@ onMounted(() => {
   ro = new ResizeObserver(() => resize())
   ro.observe(container)
   resize()
-  // прогрев раскладки до первого кадра
+  // warm the layout up before the first frame
   for (let i = 0; i < 220; i++) step(1)
   raf = requestAnimationFrame(loop)
 })

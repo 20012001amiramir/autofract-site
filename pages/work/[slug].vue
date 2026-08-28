@@ -4,7 +4,8 @@ import { useI18n } from 'vue-i18n'
 import SystemGraph from '~/components/graph/SystemGraph.vue'
 import GraphLegend from '~/components/graph/GraphLegend.vue'
 import SiteFooter from '~/components/SiteFooter.vue'
-import { CASES, CASE_META, SYSTEMS, TYPE_COLORS, type CaseSlug } from '~/data/systems'
+import { CASES, CASE_META, TYPE_COLORS, type CaseSlug } from '~/data/systems'
+import { localizedSystem } from '~/content/systems'
 import { useJsonLd, ORG_ID } from '~/composables/useJsonLd'
 import { breadcrumbList } from '~/composables/seo'
 import { asLocale } from '~/data/locales'
@@ -21,7 +22,8 @@ if (!CASES.includes(slug)) {
 }
 
 const meta = CASE_META[slug]
-const map = SYSTEMS[slug]
+// The topology is language-free; labels and tooltips come from the locale copy.
+const map = computed(() => localizedSystem(slug, locale.value))
 const nextSlug = CASES[(CASES.indexOf(slug) + 1) % CASES.length]
 
 function hexToTriplet(hex: string): string {
@@ -38,17 +40,19 @@ const stats = computed(() => (['s1', 's2', 's3', 's4'] as const).map(k => ({
   label: t(`work.${slug}.${k}l`),
 })))
 
-const detailNodes = computed(() => map.nodes.filter(n => n.desc))
+const detailNodes = computed(() => map.value.nodes.filter(n => n.desc))
 
 function nodeColor(type: string): string {
   return type === 'core' ? meta.accent : TYPE_COLORS[type as keyof typeof TYPE_COLORS]
 }
 
+// `metaTitle` leads with what the system is, not just its name: the product
+// name alone is identical in every language and carries no keyword.
 useSeoMeta({
-  title: () => `${t(`work.${slug}.name`)} — Autofract`,
-  description: () => t(`work.${slug}.tagline`),
-  ogTitle: () => `${t(`work.${slug}.name`)} — Autofract`,
-  ogDescription: () => t(`work.${slug}.tagline`),
+  title: () => `${t(`work.${slug}.metaTitle`)} — Autofract`,
+  description: () => t(`work.${slug}.metaDesc`),
+  ogTitle: () => `${t(`work.${slug}.metaTitle`)} — Autofract`,
+  ogDescription: () => t(`work.${slug}.metaDesc`),
   ogType: 'article',
   ogSiteName: SITE_NAME,
   ogImage: () => ({
@@ -60,8 +64,8 @@ useSeoMeta({
   }),
   twitterCard: 'summary_large_image',
   twitterSite: TWITTER_HANDLE,
-  twitterTitle: () => `${t(`work.${slug}.name`)} — Autofract`,
-  twitterDescription: () => t(`work.${slug}.tagline`),
+  twitterTitle: () => `${t(`work.${slug}.metaTitle`)} — Autofract`,
+  twitterDescription: () => t(`work.${slug}.metaDesc`),
 })
 
 useJsonLd('case', [
@@ -74,7 +78,7 @@ useJsonLd('case', [
     '@id': `${abs(localePath(`/work/${slug}`))}#case`,
     name: t(`work.${slug}.name`),
     headline: t(`work.${slug}.headline`),
-    description: t(`work.${slug}.tagline`),
+    description: t(`work.${slug}.metaDesc`),
     creator: { '@id': ORG_ID },
     ...(meta.link ? { about: { '@type': 'SoftwareApplication', name: t(`work.${slug}.name`), applicationCategory: 'BusinessApplication', url: meta.link } } : {}),
   },
@@ -155,7 +159,7 @@ useJsonLd('case', [
         </a>
       </div>
 
-      <div class="mt-28 rounded-lg border border-accent/25 bg-accent/5 px-8 py-12 md:px-12 max-w-6xl">
+      <div class="mt-28 rounded-lg border border-accent/25 bg-accent/5 px-6 sm:px-8 py-12 md:px-12 max-w-6xl">
         <p class="font-display font-black text-3xl md:text-4xl text-ink mb-3">{{ t('casepage.hireTitle') }}</p>
         <p class="text-ink/75 mb-8 max-w-xl">{{ t('casepage.hireBody') }}</p>
         <NuxtLink

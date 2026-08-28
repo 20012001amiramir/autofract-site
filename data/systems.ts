@@ -1,15 +1,23 @@
 /**
- * Curated system maps for the studio graphs.
- * Logical architecture only — no hosts, no vendors, no secrets.
+ * Curated system maps for the studio graphs — topology only.
+ * Logical architecture, no hosts, no vendors, no secrets.
+ *
+ * Deliberately wordless: every label and tooltip a reader sees lives in
+ * content/systems/<locale>.ts, keyed by node id, so a case page reads in the
+ * reader's language instead of falling back to English mid-page.
  */
 
 export type NodeType = 'ai' | 'worker' | 'data' | 'edge' | 'gate' | 'ui'
 
 export interface SysNode {
   id: string
-  label: string
   type: NodeType | 'core'
   r?: number
+}
+
+/** A node once the locale copy has been applied — this is what the UI renders. */
+export interface SysNodeView extends SysNode {
+  label: string
   desc?: string
 }
 
@@ -24,6 +32,10 @@ export interface SystemMap {
   accent: string
   nodes: SysNode[]
   edges: SysEdge[]
+}
+
+export interface SystemMapView extends SystemMap {
+  nodes: SysNodeView[]
 }
 
 export const TYPE_COLORS: Record<NodeType, string> = {
@@ -57,19 +69,19 @@ export const SYSTEMS: Record<CaseSlug, SystemMap> = {
   pathcore: {
     accent: '#5eead4',
     nodes: [
-      { id: 'core', label: 'PathCore', type: 'core', desc: 'Self-healing hexagonal engine — Core, Uncore, Un-uncore' },
-      { id: 'mindview', label: 'MindView', type: 'ui', desc: 'A living map of the whole system, streamed in real time' },
-      { id: 'cog', label: 'Cognitive Workers', type: 'ai', desc: 'AI workers that diagnose failures and propose fixes' },
-      { id: 'chaos', label: 'Chaos Engine', type: 'gate', desc: 'Injects failure on purpose so recovery stays trained' },
-      { id: 'breakers', label: 'Circuit Breakers', type: 'gate', desc: 'Isolate a failing path before it can spread' },
-      { id: 'deploy', label: 'Deploy Executor', type: 'worker', desc: 'Failure-aware deploys with automatic rollback' },
-      { id: 'mergeq', label: 'Merge Queue', type: 'worker', desc: 'Routes and lands changes in safe order' },
-      { id: 'jobs', label: 'Job Fleet', type: 'worker', desc: 'Background jobs with priority scheduling' },
-      { id: 'queue', label: 'Job Queue', type: 'data', desc: 'Durable queue layer keeping work replayable' },
-      { id: 'auth', label: 'Auth', type: 'gate', desc: 'Identity and access, one layer for every service' },
-      { id: 'storage', label: 'Storage', type: 'data', desc: 'Object and state storage shared by the fleet' },
-      { id: 'events', label: 'Event Stream', type: 'data', desc: 'Every state change published as a live event' },
-      { id: 'aigw', label: 'AI Gateway', type: 'ai', desc: 'One controlled door to language models' },
+      { id: 'core', type: 'core' },
+      { id: 'mindview', type: 'ui' },
+      { id: 'cog', type: 'ai' },
+      { id: 'chaos', type: 'gate' },
+      { id: 'breakers', type: 'gate' },
+      { id: 'deploy', type: 'worker' },
+      { id: 'mergeq', type: 'worker' },
+      { id: 'jobs', type: 'worker' },
+      { id: 'queue', type: 'data' },
+      { id: 'auth', type: 'gate' },
+      { id: 'storage', type: 'data' },
+      { id: 'events', type: 'data' },
+      { id: 'aigw', type: 'ai' },
     ],
     edges: [
       { from: 'core', to: 'mindview' },
@@ -93,22 +105,22 @@ export const SYSTEMS: Record<CaseSlug, SystemMap> = {
   videolinker: {
     accent: '#ff6b35',
     nodes: [
-      { id: 'core', label: 'VideoLinker', type: 'core', desc: 'AI-orchestrated video production platform' },
-      { id: 'canvas', label: 'Canvas App', type: 'ui', desc: 'Infinite-canvas studio with an AI intent bar' },
-      { id: 'api', label: 'Core API', type: 'worker', desc: '30 routers, multi-tenant, live progress streams' },
-      { id: 'fleet', label: 'Task Fleet', type: 'worker', desc: '38 background tasks: generate, render, publish' },
-      { id: 'pipeline', label: 'Pipeline', type: 'worker', desc: '11 ordered steps: series bible → final cut' },
-      { id: 'script', label: 'Script Engine', type: 'ai', desc: 'Series bible, episodes, scripts, shot decomposition' },
-      { id: 'qa', label: 'QA Engine', type: 'gate', desc: '60+ weighted rules score every episode 0–100' },
-      { id: 'keyframes', label: 'Keyframe Gen', type: 'ai', desc: 'Shot keyframes across multiple image models' },
-      { id: 'videogen', label: 'Video Gen', type: 'ai', desc: 'Image-to-video clips across providers' },
-      { id: 'tts', label: 'Voice & TTS', type: 'ai', desc: 'Narration with cloned voices and paced delivery' },
-      { id: 'captions', label: 'Captions', type: 'worker', desc: 'Word-level timings, styled burned-in subtitles' },
-      { id: 'compose', label: 'Composition', type: 'worker', desc: 'FFmpeg assembly: transitions, overlays, SFX mix' },
-      { id: 'gpu', label: 'GPU Upscaler', type: 'worker', desc: 'Dedicated GPU container for frame upscaling' },
-      { id: 'agent', label: 'Agent Loop', type: 'ai', desc: 'An autonomous agent plans and calls 59 tools' },
-      { id: 'tools', label: 'Tool Layer', type: 'data', desc: '12 tool servers speaking one agent protocol' },
-      { id: 'store', label: 'Artifact Store', type: 'data', desc: 'Content-addressed artifacts, deduped by hash' },
+      { id: 'core', type: 'core' },
+      { id: 'canvas', type: 'ui' },
+      { id: 'api', type: 'worker' },
+      { id: 'fleet', type: 'worker' },
+      { id: 'pipeline', type: 'worker' },
+      { id: 'script', type: 'ai' },
+      { id: 'qa', type: 'gate' },
+      { id: 'keyframes', type: 'ai' },
+      { id: 'videogen', type: 'ai' },
+      { id: 'tts', type: 'ai' },
+      { id: 'captions', type: 'worker' },
+      { id: 'compose', type: 'worker' },
+      { id: 'gpu', type: 'worker' },
+      { id: 'agent', type: 'ai' },
+      { id: 'tools', type: 'data' },
+      { id: 'store', type: 'data' },
     ],
     edges: [
       { from: 'core', to: 'canvas' },
@@ -136,23 +148,23 @@ export const SYSTEMS: Record<CaseSlug, SystemMap> = {
   frontdesk: {
     accent: '#3ecf8e',
     nodes: [
-      { id: 'core', label: 'FrontDesk', type: 'core', desc: 'The price of record — sourced, dated, verifiable' },
-      { id: 'radar', label: 'Discovery Radar', type: 'worker', desc: 'Detects genuinely new products and demand' },
-      { id: 'harvest', label: 'Harvest Agents', type: 'ai', desc: 'Writer agents compile facts from published sources' },
-      { id: 'verifier', label: 'Adversarial Verifier', type: 'gate', desc: 'A second agent tries to refute every claim' },
-      { id: 'fidelity', label: 'Fidelity Gate', type: 'gate', desc: 'Re-fetches every source; unproven numbers never ship' },
-      { id: 'corpus', label: 'Corpus', type: 'data', desc: '4,400+ entities; every price carries source + date' },
-      { id: 'truth', label: 'Truth Core', type: 'data', desc: 'Event-sourced database spine behind the corpus' },
-      { id: 'pricescan', label: 'Price Scan', type: 'worker', desc: 'Daily AI-free scrape with four commit guards' },
-      { id: 'history', label: 'Price History', type: 'data', desc: 'Append-only change-log with archival backfill' },
-      { id: 'ledger', label: 'Hash Ledger', type: 'gate', desc: 'SHA-256 chained log — history can’t be rewritten' },
-      { id: 'sitegen', label: 'Site Generator', type: 'worker', desc: '23,000+ citable static pages from the corpus' },
-      { id: 'index', label: 'Index Engine', type: 'edge', desc: 'Instant indexing, structured data, answer artifacts' },
-      { id: 'mcp', label: 'MCP Server', type: 'edge', desc: '19 tools serving AI agents the sourced record' },
-      { id: 'feeds', label: 'Machine Feeds', type: 'edge', desc: 'llms.txt, open dumps, verification receipts' },
-      { id: 'mirror', label: 'Open Mirror', type: 'edge', desc: 'CC-BY corpus mirrored to open datasets, with a DOI' },
-      { id: 'imgcdn', label: 'Image CDN', type: 'edge', desc: 'Licensed images from a private origin, edge-cached' },
-      { id: 'extension', label: 'Extension', type: 'ui', desc: 'The price of record overlaid on the store page' },
+      { id: 'core', type: 'core' },
+      { id: 'radar', type: 'worker' },
+      { id: 'harvest', type: 'ai' },
+      { id: 'verifier', type: 'gate' },
+      { id: 'fidelity', type: 'gate' },
+      { id: 'corpus', type: 'data' },
+      { id: 'truth', type: 'data' },
+      { id: 'pricescan', type: 'worker' },
+      { id: 'history', type: 'data' },
+      { id: 'ledger', type: 'gate' },
+      { id: 'sitegen', type: 'worker' },
+      { id: 'index', type: 'edge' },
+      { id: 'mcp', type: 'edge' },
+      { id: 'feeds', type: 'edge' },
+      { id: 'mirror', type: 'edge' },
+      { id: 'imgcdn', type: 'edge' },
+      { id: 'extension', type: 'ui' },
     ],
     edges: [
       { from: 'radar', to: 'harvest' },
@@ -179,22 +191,22 @@ export const SYSTEMS: Record<CaseSlug, SystemMap> = {
   relocating: {
     accent: '#7dd3fc',
     nodes: [
-      { id: 'core', label: 'Relocating', type: 'core', desc: 'Open data turned into a relocation product' },
-      { id: 'etl', label: 'Open-Data ETL', type: 'worker', desc: 'World Bank, weather, geo — normalized per country' },
-      { id: 'datasets', label: 'Dataset Core', type: 'data', desc: '30+ datasets covering 50 countries' },
-      { id: 'quality', label: 'Quality Gate', type: 'gate', desc: 'Bad data fails the build — literally' },
-      { id: 'pages', label: 'Page Engine', type: 'worker', desc: 'Programmatic corridor, compare and ranking pages' },
-      { id: 'tools', label: 'Tool Suite', type: 'ui', desc: '33 calculators, all running client-side' },
-      { id: 'build', label: 'Static Build', type: 'worker', desc: 'Fully prebuilt — no runtime servers to break' },
-      { id: 'i18n', label: 'i18n Pipeline', type: 'worker', desc: 'Mirrors the whole site into 22 languages' },
-      { id: 'tm', label: 'Translation Memory', type: 'data', desc: 'Versioned cache — deploys never call live MT' },
-      { id: 'mt', label: 'MT Engine', type: 'ai', desc: 'Self-hosted translation models, GPU passes' },
-      { id: 'discovery', label: 'AI Discovery', type: 'edge', desc: 'llms.txt, structured data — built to be cited' },
-      { id: 'edge', label: 'Edge Delivery', type: 'edge', desc: 'Static edge, auto-TLS, immutable caching' },
-      { id: 'chat', label: 'City Chat', type: 'ui', desc: 'Realtime rooms with presence, seeded by data' },
-      { id: 'mod', label: 'AI Moderation', type: 'ai', desc: 'Every message reviewed by a model before it’s public' },
-      { id: 'safety', label: 'Trust & Safety', type: 'gate', desc: 'Bans, audit log, rate limits, GDPR retention' },
-      { id: 'db', label: 'EU Postgres', type: 'data', desc: 'Row-level security everywhere, minimal PII' },
+      { id: 'core', type: 'core' },
+      { id: 'etl', type: 'worker' },
+      { id: 'datasets', type: 'data' },
+      { id: 'quality', type: 'gate' },
+      { id: 'pages', type: 'worker' },
+      { id: 'tools', type: 'ui' },
+      { id: 'build', type: 'worker' },
+      { id: 'i18n', type: 'worker' },
+      { id: 'tm', type: 'data' },
+      { id: 'mt', type: 'ai' },
+      { id: 'discovery', type: 'edge' },
+      { id: 'edge', type: 'edge' },
+      { id: 'chat', type: 'ui' },
+      { id: 'mod', type: 'ai' },
+      { id: 'safety', type: 'gate' },
+      { id: 'db', type: 'data' },
     ],
     edges: [
       { from: 'etl', to: 'datasets' },
@@ -225,17 +237,17 @@ export const SYSTEMS: Record<CaseSlug, SystemMap> = {
 export const STUDIO_MAP: SystemMap = {
   accent: '#5eead4',
   nodes: [
-    { id: 'core', label: 'Autofract', type: 'core' },
-    { id: 'pathcore', label: 'PathCore', type: 'data', r: 18 },
-    { id: 'videolinker', label: 'VideoLinker', type: 'worker', r: 18 },
-    { id: 'frontdesk', label: 'FrontDesk', type: 'edge', r: 18 },
-    { id: 'relocating', label: 'Relocating', type: 'ui', r: 18 },
-    { id: 'agents', label: 'AI Agents', type: 'ai' },
-    { id: 'gates', label: 'QA Gates', type: 'gate' },
-    { id: 'pipelines', label: 'Pipelines', type: 'worker' },
-    { id: 'edge', label: 'Edge', type: 'edge' },
-    { id: 'healing', label: 'Self-Healing', type: 'gate' },
-    { id: 'data', label: 'Open Data', type: 'data' },
+    { id: 'core', type: 'core' },
+    { id: 'pathcore', type: 'data', r: 18 },
+    { id: 'videolinker', type: 'worker', r: 18 },
+    { id: 'frontdesk', type: 'edge', r: 18 },
+    { id: 'relocating', type: 'ui', r: 18 },
+    { id: 'agents', type: 'ai' },
+    { id: 'gates', type: 'gate' },
+    { id: 'pipelines', type: 'worker' },
+    { id: 'edge', type: 'edge' },
+    { id: 'healing', type: 'gate' },
+    { id: 'data', type: 'data' },
   ],
   edges: [
     { from: 'core', to: 'pathcore' },
