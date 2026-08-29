@@ -11,17 +11,17 @@ export const toolsEs: ToolsContent = {
   hub: {
     meta: {
       title: 'Herramientas gratuitas — Autofract',
-      description: 'Tres herramientas gratuitas del estudio Autofract: un revisor de contratos, un planificador de reuniones entre zonas horarias y calculadoras de costos.',
+      description: 'Cuatro herramientas de Autofract: revisor de contratos, planificador entre zonas horarias, calculadoras de costos ocultos y lector de cartas oficiales.',
     },
     kicker: 'Herramientas',
     h1: 'Herra­mientas pequeñas, hechas como se debe.',
     lede: 'El estudio construye sistemas grandes para sus clientes. Estas son las cosas pequeñas que construimos para nosotros mismos y luego regalamos, porque mantenerlas vivas no nos cuesta casi nada.',
     intro: [
       'Cada herramienta de aquí empezó siendo una molestia interna: un contrato que nadie tenía tiempo de leer, una reunión que a alguien le caía siempre a las 22:00, un costo recurrente que jamás aparecía en ninguna factura. Construimos la cosa más pequeña capaz de responder a la pregunta y después la conservamos.',
-      'Ninguna te pide una cuenta. Ninguna te vende nada. Son gratuitas, se ejecutan en tu navegador o en nuestras máquinas y a nuestra costa, y están construidas con la misma doctrina que las plataformas de abajo: verifica antes de publicar, enseña tu trabajo, nunca inventes un dato que no puedas señalar con el dedo.',
+      'Ninguna te pide una cuenta. Tres no te venden nada; la cuarta te regala una lectura y luego pide cinco dólares por un pase, porque leer una carta como es debido nos cuesta dinero real. Se ejecutan en tu navegador o en nuestras máquinas, y están construidas con la misma doctrina que las plataformas de abajo: verifica antes de publicar, enseña tu trabajo, nunca inventes un dato que no puedas señalar con el dedo.',
     ],
     toolsHeading: 'Herramientas gratuitas',
-    toolsSub: 'Abre una, úsala, cierra la pestaña. Sin registro, sin prueba gratuita, sin venta añadida.',
+    toolsSub: 'Abre una, úsala, cierra la pestaña. Sin registro, sin prueba gratuita, sin anuncios.',
     productsHeading: 'Productos',
     productsSub: 'Sistemas más grandes que el estudio diseñó, construyó y sigue operando.',
     faq: {
@@ -29,7 +29,7 @@ export const toolsEs: ToolsContent = {
       items: [
         {
           q: '¿De verdad son gratuitas?',
-          a: 'Sí. Sin cuenta, sin prueba gratuita, sin tarjeta, sin límite de uso y sin anuncios. Dos de las tres hacen todo su trabajo dentro de tu navegador, así que servirlas no nos cuesta casi nada; la tercera corre en nuestras máquinas y la pagamos nosotros porque nos consigue más atención de la que nos daría un anuncio.',
+          a: 'Tres de las cuatro, sí: sin cuenta, sin prueba gratuita, sin tarjeta, sin límite de uso y sin anuncios. Dos hacen todo su trabajo dentro de tu navegador, así que servirlas no nos cuesta casi nada; Redline corre en nuestras máquinas y la pagamos nosotros porque nos consigue más atención de la que nos daría un anuncio. What\'s This Letter es la excepción: sus páginas de referencia y tu primera lectura son gratis, y las siguientes son un pase de 5 $, porque cada una nos cuesta dinero real.',
         },
         {
           q: '¿Necesito registrarme?',
@@ -37,7 +37,7 @@ export const toolsEs: ToolsContent = {
         },
         {
           q: '¿Qué pasa con lo que escribo?',
-          a: 'Overlap y Cost Of nunca envían tus datos a ninguna parte: el tablero y el recibo se codifican en la barra de direcciones y los calcula tu propio navegador. Redline sí tiene que leer tu documento en un servidor para analizarlo, así que trátalo como cualquier herramienta en línea y no pegues material que no tengas permitido compartir.',
+          a: 'Overlap y Cost Of nunca envían tus datos a ninguna parte: el tablero y el recibo se codifican en la barra de direcciones y los calcula tu propio navegador. Redline y What\'s This Letter sí tienen que leer tu documento en un servidor para analizarlo. Redline guarda tu informe detrás de su propio enlace; What\'s This Letter descarta la carta en el momento en que existe tu respuesta — nunca se guarda ni se usa para entrenar nada. En ambos casos, trátalas como cualquier herramienta en línea y no pegues material que no tengas permitido compartir.',
         },
         {
           q: '¿Me rastrean?',
@@ -45,7 +45,7 @@ export const toolsEs: ToolsContent = {
         },
         {
           q: '¿Puedo usarlas en el trabajo?',
-          a: 'Sí, también con fines comerciales. Hay equipos que usan el planificador de reuniones para sus reuniones diarias entre continentes y las calculadoras para defender un presupuesto. Redline es una primera lectura de un contrato, no asesoramiento legal, así que toma su resultado como una lista de control para tu abogado y no como un sustituto.',
+          a: 'Sí, también con fines comerciales. Hay equipos que usan el planificador de reuniones para sus reuniones diarias entre continentes y las calculadoras para defender un presupuesto. Redline es una primera lectura de un contrato y What\'s This Letter una explicación de una carta oficial: ninguna de las dos es asesoramiento legal o fiscal, así que toma su resultado como una lista de control para tu abogado y no como un sustituto.',
         },
         {
           q: '¿Por qué un estudio regala herramientas?',
@@ -424,6 +424,123 @@ export const toolsEs: ToolsContent = {
         title: 'Abrir Cost Of',
         body: 'Elige esa reunión que siempre termina sin una decisión. Se tarda alrededor de un minuto en saber lo que cuesta al año.',
         button: 'Usar una calculadora',
+      },
+    },
+
+    whatsthisletter: {
+      name: 'What\'s This Letter',
+      tagline: 'La carta oficial, explicada.',
+      category: 'Cartas',
+      meta: {
+        title: 'Entender una carta oficial — What\'s This Letter',
+        description: 'Sube la foto o el PDF de una carta de Hacienda, una multa o un juzgado en un idioma que apenas lees: qué es, quién la envía, el plazo exacto y qué pide.',
+      },
+      h1: 'Lo que dice la carta, en tu idioma.',
+      lede: 'Un sobre de Hacienda, de un juzgado o de una empresa de cobros, en un idioma que lees a medias. What\'s This Letter lo lee dos veces, te dice qué es, quién lo envía y hasta cuándo tienes que actuar, y cita los pasajes que importan — traducidos y comprobados contra la propia página.',
+      what: {
+        h2: 'Qué hace',
+        body: [
+          'Fotografías la carta o subes el PDF. El motor la lee una vez para extraer lo que afirma — remitente, tipo de documento, números de expediente, importes, fechas — y luego una segunda vez con otra tarea: comprobar cada una de esas afirmaciones contra el propio documento. Lo que la segunda pasada no encuentra en la página se descarta antes de que lo veas.',
+          'Lo que recibes es corto y está en tu idioma: qué clase de documento es, qué organismo o empresa lo envía, el plazo exacto como fecha de calendario y no como «en el plazo de 14 días desde la notificación», los pasajes clave en el original con la traducción al lado, y qué te pide el documento, en términos de trámite: paga esto, contesta antes de tal fecha, preséntate allí, envía tal formulario.',
+          'Junto al lector hay una biblioteca de referencia: unos noventa tipos de notificación oficial de Alemania, España, Estados Unidos, el Reino Unido y Rusia — qué es cada uno, quién lo envía, qué suele venir después. Cada página está comprobada contra la fuente oficial y lleva la fecha de su última verificación, para que veas lo actualizada que está.',
+        ],
+      },
+      why: {
+        h2: 'Por qué la carta parece peor de lo que es',
+        body: [
+          'Una carta oficial en el extranjero asusta dos veces. Una porque está en un idioma que lees a media velocidad, y otra porque está escrita en lenguaje administrativo — el registro que hasta los nativos temen, donde nadie escribe «pague antes del viernes» pudiendo escribir «el importe referido en el apartado 2 será exigible en el plazo estipulado en el artículo 3.1».',
+          'Una app de traducción arregla solo la primera mitad. Te da palabras, a menudo las palabras equivocadas para un término jurídico, y no sabe que un Mahnbescheid alemán no es una factura, que una «notice of assessment» no es una acusación, ni cuál de las cuatro fechas de la página es la que importa. Acabas con un párrafo fluido y el mismo nudo en el estómago.',
+          'El costo de no saber es real y asimétrico. La mayoría de estas cartas son rutina y piden algo pequeño y concreto para una fecha concreta; el problema empieza cuando la fecha pasa porque la carta se quedó sin leer pegada en el refrigerador. Saber qué es, hoy, suele ser toda la diferencia.',
+          'Hay una línea que no se cruza, y no se va a cruzar. What\'s This Letter explica lo que un documento dice y pide; nunca te dice qué hacer al respecto. Recurrir, pagar, apelar o llamar a un abogado es una decisión sobre tu situación, y eso ya es asesoramiento — algo que esta herramienta no da, en ningún idioma.',
+        ],
+      },
+      how: {
+        h2: 'Cómo funciona',
+        steps: [
+          {
+            h3: 'El documento se lee, no se adivina',
+            body: 'La foto de una hoja arrugada o un PDF escaneado se convierte primero en texto. Sellos, membretes, números de expediente y tablas se quedan en su sitio, porque un plazo en el pie de página o un importe en una tabla es justo lo que se pierde cuando se aplana una página en prosa.',
+          },
+          {
+            h3: 'Una primera pasada extrae lo que la carta afirma',
+            body: 'Remitente, tipo de documento, números de expediente, importes, fechas y exigencias pasan a un registro estructurado, cada uno emparejado con el pasaje del que sale. La pasada trabaja contra un catálogo de tipos de notificación conocidos, de modo que un requerimiento de la Agencia Tributaria o un Steuerbescheid alemán se reconoce en vez de describirse desde cero.',
+          },
+          {
+            h3: 'Una segunda pasada verifica cada afirmación contra la página',
+            body: 'Una lectura nueva del mismo documento toma el registro e intenta romperlo: ¿es de verdad ese el plazo?, ¿ese importe es el total o una línea?, ¿la carta exige un pago o solo comunica una resolución? Una afirmación que el verificador no puede anclar al documento se elimina o se marca como incierta — nunca se conserva en silencio.',
+          },
+          {
+            h3: 'Los plazos se convierten en fechas',
+            body: 'Las cartas cuentan en «días hábiles desde la notificación», «un mes a contar desde la recepción», «el plazo del artículo 70». El motor lo resuelve contra las fechas impresas en la carta y te dice qué ha supuesto — incluso cuando la suposición es una conjetura, para que sepas qué línea comprobar.',
+          },
+          {
+            h3: 'No se guarda nada',
+            body: 'La carta se procesa para producir tu lectura y se descarta en cuanto la respuesta está en tu pantalla. No se almacena, no se asocia a ninguna cuenta y nunca se usa para entrenar nada.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Cuándo usarla',
+        items: [
+          {
+            h3: 'Una carta de Hacienda en el país al que te mudaste',
+            body: 'La Agencia Tributaria, el Finanzamt, HMRC y el IRS escriben en un registro que nadie usaría al hablar. Averigua si esto es una liquidación, un requerimiento de documentación o un recordatorio — y cuál de las fechas es la de verdad.',
+          },
+          {
+            h3: 'Una multa o una sanción',
+            body: 'Estacionamiento, transporte público, radares, un registro presentado fuera de plazo. Suelen llevar una ventana corta en la que pagar sale más barato o todavía se puede recurrir; conocer la ventana vale más que conocer el importe.',
+          },
+          {
+            h3: 'Una carta de un juzgado o de una empresa de cobros',
+            body: 'El sobre que más asusta y aquel en el que la fecha más importa. Descubre si es una resolución judicial, un requerimiento de pago al que puedes oponerte o una reclamación de un cobrador, y qué dice exactamente el documento sobre lo que viene después.',
+          },
+          {
+            h3: 'Algo dirigido a un familiar que no lee el idioma',
+            body: 'Padres que se reunieron contigo en el extranjero, una pareja que todavía está aprendiendo. Léeselo en un minuto, en un idioma que tengan en común, y luego decidan juntos qué hacer con ella.',
+          },
+          {
+            h3: 'Saber qué es un tipo de notificación antes de que llegue',
+            body: 'Las páginas de referencia se sostienen solas. Consulta qué es un Bußgeldbescheid o una Section 8 notice británica, quién la envía y qué suele seguir, con la fuente oficial y la fecha de la última comprobación.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Preguntas que nos hacen',
+        items: [
+          {
+            q: '¿Es asesoramiento legal o fiscal?',
+            a: 'No, y no va a serlo. La herramienta explica lo que dice un documento, quién lo envía, hasta cuándo pide algo y qué es ese algo. Qué deberías hacer al respecto — pagar, recurrir, apelar, ignorar, llamar a alguien — depende de tus circunstancias y es exactamente la pregunta que no respondemos. Para eso están un abogado, un asesor fiscal o los servicios de orientación gratuitos que existen en la mayoría de los países.',
+          },
+          {
+            q: '¿En qué idiomas lee y responde?',
+            a: 'La carta puede estar en cualquiera de los idiomas que cubre la biblioteca de referencia; la respuesta llega en inglés, ruso, alemán, español, francés o portugués — elige el idioma en el que piensas. Cuando el motor no está seguro de un pasaje, lo dice en vez de disimularlo.',
+          },
+          {
+            q: '¿Se guarda mi carta?',
+            a: 'No. Se lee en un servidor para producir tu respuesta y se descarta en el momento en que la respuesta existe. No se guarda, no se asocia a una cuenta, nadie del estudio la ve y nunca se usa para entrenar un modelo. Cuando cierras la pestaña, de nuestro lado la carta ya no existe.',
+          },
+          {
+            q: '¿Cuánto cuesta?',
+            a: 'Las páginas de referencia son gratuitas y sin límite, y tu primera lectura también. Después, un pase de cartas cuesta 5 $ y cubre tres lecturas en treinta días — suficiente para la carta, la respuesta y la que viene detrás. Cada lectura supone dos pasadas completas en nuestras máquinas, y por eso no puede ser gratis para siempre.',
+          },
+          {
+            q: '¿Hasta qué punto es precisa?',
+            a: 'Cada afirmación que ves ha sobrevivido a una segunda lectura cuyo único trabajo era refutarla, y lo que no pudo anclarse a la página se ha eliminado o marcado. Eso la hace mucho más fiable que un resumen de una sola pasada, y aun así no es infalible: una foto borrosa, una segunda página que falta o un tipo de notificación poco común pueden dejar huecos. Cuando el motor está adivinando una fecha, lo dice.',
+          },
+          {
+            q: '¿Y si el plazo ya ha pasado?',
+            a: 'Te lo dirá sin rodeos, con la fecha que ha deducido y cómo la ha deducido, en vez de esconderlo. Qué significa un plazo vencido y qué se puede hacer todavía es una pregunta sobre tu situación, y ahí termina la herramienta y empieza un asesor humano.',
+          },
+          {
+            q: '¿Qué países cubre?',
+            a: 'La biblioteca de referencia cubre unos noventa tipos de notificación oficial de Alemania, España, Estados Unidos, el Reino Unido y Rusia, cada uno comprobado contra las publicaciones del propio organismo emisor y fechado. El lector funciona mejor con cartas de esos cinco países, porque la pasada de verificación tiene un tipo conocido contra el que comprobar.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Abrir What\'s This Letter',
+        body: 'Fotografía el sobre que llevas días evitando. En un minuto sabrás qué es y cuándo necesita una respuesta.',
+        button: 'Leer una carta',
       },
     },
   },

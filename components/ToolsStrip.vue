@@ -18,7 +18,7 @@ const copy = computed(() => toolsContentFor(asLocale(locale.value)).tools)
       <h2 class="font-display font-black text-chapter text-ink mb-6 max-w-4xl">{{ t('tools.strip.heading') }}</h2>
       <p class="text-lg md:text-xl text-muted max-w-2xl mb-14">{{ t('tools.strip.sub') }}</p>
 
-      <ul class="grid gap-4 md:grid-cols-3">
+      <ul class="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
         <li v-for="slug in TOOLS" :key="slug">
           <NuxtLink
             :to="localePath(`/tools/${slug}`)"

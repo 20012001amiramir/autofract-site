@@ -11,17 +11,17 @@ export const toolsDe: ToolsContent = {
   hub: {
     meta: {
       title: 'Kostenlose Online-Tools — Autofract',
-      description: 'Drei kostenlose Browser-Tools aus dem Studio Autofract: Verträge auf Fallstricke prüfen, Meetings über Zeitzonen planen, versteckte Kosten ausrechnen.',
+      description: 'Vier Tools vom Studio Autofract: Verträge auf Fallstricke prüfen, Meetings über Zeitzonen planen, versteckte Kosten ausrechnen, Behördenbriefe verstehen.',
     },
     kicker: 'Tools',
     h1: 'Kleine Tools, richtig gebaut.',
     lede: 'Das Studio baut große Systeme für Kunden. Das hier sind die kleinen, die wir für uns selbst gebaut haben — und dann verschenkt, weil ihr Betrieb fast nichts kostet.',
     intro: [
       'Jedes Tool hier begann als interner Ärger: ein Vertrag, für den niemand Zeit hatte, ein Meeting, das für irgendjemanden immer um 22:00 Uhr landete, laufende Kosten, die auf keiner Rechnung auftauchten. Wir haben jeweils das kleinste Ding gebaut, das die Frage beantwortet — und es dann behalten.',
-      'Keines davon verlangt ein Konto. Keines verkauft etwas. Sie sind kostenlos, laufen in Ihrem Browser oder auf unseren Servern auf unsere Rechnung, und sie folgen derselben Doktrin wie die Plattformen weiter unten: prüfen, bevor veröffentlicht wird, die Rechenschritte zeigen, niemals einen Fakt erfinden, auf den man nicht zeigen kann.',
+      'Keines davon verlangt ein Konto. Drei verkaufen gar nichts; das vierte schenkt Ihnen eine Auswertung und verlangt danach fünf Dollar für einen Pass, weil einen Brief gründlich zu lesen uns echtes Geld kostet. Sie laufen in Ihrem Browser oder auf unseren Servern, und sie folgen derselben Doktrin wie die Plattformen weiter unten: prüfen, bevor veröffentlicht wird, die Rechenschritte zeigen, niemals einen Fakt erfinden, auf den man nicht zeigen kann.',
     ],
     toolsHeading: 'Kostenlose Tools',
-    toolsSub: 'Öffnen, benutzen, Tab schließen. Keine Anmeldung, keine Testphase, kein Upsell.',
+    toolsSub: 'Öffnen, benutzen, Tab schließen. Keine Anmeldung, keine Testphase, keine Werbung.',
     productsHeading: 'Produkte',
     productsSub: 'Größere Systeme, die das Studio entworfen, gebaut hat und bis heute betreibt.',
     faq: {
@@ -29,7 +29,7 @@ export const toolsDe: ToolsContent = {
       items: [
         {
           q: 'Sind die Tools wirklich kostenlos?',
-          a: 'Ja. Kein Konto, keine Testphase, keine Kreditkarte, kein Nutzungslimit, keine Werbung. Zwei der drei erledigen ihre gesamte Arbeit in Ihrem Browser, ihr Betrieb kostet uns also fast nichts; das dritte läuft auf unseren Servern, und wir zahlen dafür, weil es uns mehr Aufmerksamkeit bringt als eine Anzeige.',
+          a: 'Drei der vier sind es: kein Konto, keine Testphase, keine Kreditkarte, kein Nutzungslimit, keine Werbung. Zwei erledigen ihre gesamte Arbeit in Ihrem Browser, ihr Betrieb kostet uns also fast nichts; Redline läuft auf unseren Servern, und wir zahlen dafür, weil es uns mehr Aufmerksamkeit bringt als eine Anzeige. What\'s This Letter ist die Ausnahme: Referenzseiten und erste Auswertung sind kostenlos, weitere Auswertungen ein Pass für 5 $, weil jede einzelne uns echtes Geld kostet.',
         },
         {
           q: 'Muss ich mich registrieren?',
@@ -37,7 +37,7 @@ export const toolsDe: ToolsContent = {
         },
         {
           q: 'Was passiert mit dem, was ich eingebe?',
-          a: 'Overlap und Cost Of schicken Ihre Eingaben nirgendwohin: Board und Beleg stecken in der Adresszeile und werden von Ihrem eigenen Browser berechnet. Redline muss Ihr Dokument zur Analyse auf einem Server lesen — behandeln Sie es wie jedes Online-Tool und fügen Sie nichts ein, was Sie nicht weitergeben dürfen.',
+          a: 'Overlap und Cost Of schicken Ihre Eingaben nirgendwohin: Board und Beleg stecken in der Adresszeile und werden von Ihrem eigenen Browser berechnet. Redline und What\'s This Letter müssen Ihr Dokument zur Analyse auf einem Server lesen. Redline bewahrt Ihren Bericht hinter seinem eigenen Link auf; What\'s This Letter löscht den Brief in dem Moment, in dem Ihre Antwort steht — er wird nie gespeichert und nie zum Training verwendet. Behandeln Sie beide wie jedes Online-Tool und fügen Sie nichts ein, was Sie nicht weitergeben dürfen.',
         },
         {
           q: 'Werde ich getrackt?',
@@ -45,7 +45,7 @@ export const toolsDe: ToolsContent = {
         },
         {
           q: 'Darf ich sie beruflich nutzen?',
-          a: 'Ja, auch kommerziell. Teams nutzen den Meeting-Planer für Standups über Kontinente hinweg und die Rechner, um ein Budget zu begründen. Redline ist eine erste Lesung eines Vertrags, keine Rechtsberatung — nehmen Sie das Ergebnis als Checkliste für Ihre Anwältin oder Ihren Anwalt, nicht als Ersatz dafür.',
+          a: 'Ja, auch kommerziell. Teams nutzen den Meeting-Planer für Standups über Kontinente hinweg und die Rechner, um ein Budget zu begründen. Redline ist eine erste Lesung eines Vertrags, What\'s This Letter eine Erklärung eines Behördenbriefs — beides ist keine Rechts- oder Steuerberatung, nehmen Sie das Ergebnis also als Checkliste für Ihre Anwältin oder Ihren Anwalt, nicht als Ersatz dafür.',
         },
         {
           q: 'Warum verschenkt ein Studio Tools?',
@@ -424,6 +424,123 @@ export const toolsDe: ToolsContent = {
         title: 'Cost Of öffnen',
         body: 'Nehmen Sie das Meeting, das immer ohne Entscheidung endet. Etwa eine Minute, um herauszufinden, was es pro Jahr kostet.',
         button: 'Rechner starten',
+      },
+    },
+
+    whatsthisletter: {
+      name: 'What\'s This Letter',
+      tagline: 'Der Behördenbrief, erklärt.',
+      category: 'Briefe',
+      meta: {
+        title: 'Behördenbrief im Ausland verstehen — What\'s This Letter',
+        description: 'Foto oder PDF von Steuerbescheid, Bußgeld oder Gerichtsbrief hochladen und erfahren, was es ist, wer es schickt, welche Frist gilt und was verlangt wird.',
+      },
+      h1: 'Was in dem Brief steht — in Ihrer Sprache.',
+      lede: 'Ein Umschlag vom Finanzamt, vom Gericht oder von einem Inkassobüro, in einer Sprache, die Sie nur halb lesen. What\'s This Letter liest ihn zweimal, sagt Ihnen, was es ist, wer ihn geschickt hat und bis wann Sie handeln müssen, und zitiert die Passagen, auf die es ankommt — übersetzt und am Dokument selbst geprüft.',
+      what: {
+        h2: 'Was es tut',
+        body: [
+          'Sie fotografieren den Brief oder laden das PDF hoch. Die Engine liest ihn einmal, um zu erfassen, was er behauptet — Absender, Dokumenttyp, Aktenzeichen, Beträge, Datumsangaben —, und dann ein zweites Mal mit einer anderen Aufgabe: jede dieser Behauptungen am Dokument selbst zu prüfen. Was der zweite Durchgang auf der Seite nicht findet, wird verworfen, bevor Sie es sehen.',
+          'Zurück kommt etwas Kurzes in Ihrer Sprache: um welche Art Dokument es sich handelt, welche Behörde oder Firma es geschickt hat, die genaue Frist als Kalenderdatum statt „innerhalb von 14 Tagen nach Zustellung“, die entscheidenden Passagen im Original mit der Übersetzung daneben, und was das Dokument von Ihnen verlangt — konkret, Schritt für Schritt. Das zahlen, bis dann antworten, dort erscheinen, jenes Formular schicken.',
+          'Neben der Auswertung gibt es ein Nachschlagewerk: rund neunzig Arten amtlicher Schreiben aus Deutschland, Spanien, den USA, Großbritannien und Russland — was jedes ist, wer es schickt, was üblicherweise folgt. Jede Seite ist gegen die amtliche Quelle geprüft und trägt das Datum der letzten Prüfung, damit Sie sehen, wie frisch sie ist.',
+        ],
+      },
+      why: {
+        h2: 'Warum der Brief schlimmer wirkt, als er ist',
+        body: [
+          'Ein Behördenbrief im Ausland macht zweimal Angst. Einmal, weil er in einer Sprache steht, die Sie mit halber Geschwindigkeit lesen, und noch einmal, weil er in Amtssprache verfasst ist — dem Register, das auch Muttersprachler fürchten und in dem niemand „zahlen Sie bis Freitag“ schreibt, wenn „der in Ziffer 2 genannte Betrag ist innerhalb der in §3 Abs. 1 bestimmten Frist fällig“ zur Verfügung steht.',
+          'Eine Übersetzungs-App löst nur die erste Hälfte. Sie liefert Wörter, bei Rechtsbegriffen oft die falschen, und sie weiß nicht, dass eine britische „notice of assessment“ keine Anklage ist, dass ein spanisches „requerimiento“ eine Aufforderung und noch keine Strafe ist, oder welches der vier Daten auf der Seite das entscheidende ist. Am Ende haben Sie einen flüssigen Absatz und denselben Knoten im Magen.',
+          'Die Kosten des Nichtwissens sind real und ungleich verteilt. Die meisten solcher Briefe sind Routine und wollen eine kleine, konkrete Sache bis zu einem konkreten Datum; der Ärger beginnt, wenn das Datum verstreicht, weil der Brief ungelesen am Kühlschrank hing. Heute zu wissen, was es ist, macht meist den ganzen Unterschied.',
+          'Es gibt eine harte Grenze, und sie bleibt hart. What\'s This Letter erklärt, was ein Dokument sagt und verlangt; es sagt Ihnen nie, was Sie deswegen tun sollen. Ob Sie widersprechen, zahlen, Einspruch einlegen oder eine Anwältin anrufen, ist eine Entscheidung über Ihre Lage — und damit Beratung, die dieses Tool in keiner Sprache gibt.',
+        ],
+      },
+      how: {
+        h2: 'So funktioniert es',
+        steps: [
+          {
+            h3: 'Das Dokument wird gelesen, nicht geraten',
+            body: 'Ein Foto der zerknitterten Seite oder ein gescanntes PDF wird zuerst zu Text. Stempel, Briefköpfe, Aktenzeichen und Tabellen bleiben an ihrem Platz, denn eine Frist in der Fußzeile oder ein Betrag in einer Tabelle ist genau das, was verloren geht, wenn man eine Seite zu Fließtext glattbügelt.',
+          },
+          {
+            h3: 'Ein erster Durchgang erfasst, was der Brief behauptet',
+            body: 'Absender, Dokumenttyp, Aktenzeichen, Beträge, Datumsangaben und Forderungen werden in einen strukturierten Datensatz gezogen, jeder Eintrag gepaart mit der Passage, aus der er stammt. Der Durchgang gleicht mit einem Katalog bekannter Schreiben ab, sodass ein deutscher Steuerbescheid oder ein spanisches requerimiento erkannt wird, statt von Grund auf beschrieben zu werden.',
+          },
+          {
+            h3: 'Ein zweiter Durchgang prüft jede Behauptung am Dokument',
+            body: 'Eine frische Lesung desselben Dokuments nimmt den Datensatz und versucht, ihn zu widerlegen: Ist das wirklich die Frist, ist der Betrag die Summe oder eine Zeile davon, verlangt der Brief tatsächlich Zahlung oder teilt er nur eine Entscheidung mit? Eine Behauptung, die der Prüfer nicht am Dokument verankern kann, wird entfernt oder als unsicher markiert — nie stillschweigend behalten.',
+          },
+          {
+            h3: 'Fristen werden zu Kalenderdaten',
+            body: 'Briefe rechnen in „Werktagen ab Zustellung“, „einem Monat nach Bekanntgabe“, „der Frist nach §70“. Die Engine rechnet das anhand der auf dem Brief gedruckten Datumsangaben um und sagt Ihnen, was sie angenommen hat — auch dann, wenn die Annahme eine Schätzung ist, damit Sie wissen, welche Zeile Sie nachprüfen sollten.',
+          },
+          {
+            h3: 'Nichts wird aufbewahrt',
+            body: 'Der Brief wird verarbeitet, um Ihre Auswertung zu erzeugen, und gelöscht, sobald die Antwort auf Ihrem Bildschirm ist. Er wird nicht gespeichert, hängt an keinem Konto und wird nie zum Training von irgendetwas verwendet.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Wann Sie es brauchen',
+        items: [
+          {
+            h3: 'Ein Brief vom Finanzamt in einem Land, in das Sie gezogen sind',
+            body: 'Finanzamt, Agencia Tributaria, HMRC und IRS schreiben alle in einem Register, das niemand sprechen würde. Finden Sie heraus, ob das ein Bescheid, eine Aufforderung zur Vorlage von Unterlagen oder eine Erinnerung ist — und welches Datum darauf das echte ist.',
+          },
+          {
+            h3: 'Ein Bußgeld- oder Strafbescheid',
+            body: 'Parken, Nahverkehr, Blitzer, eine versäumte Anmeldefrist. Solche Schreiben haben meist ein kurzes Fenster, in dem Zahlen billiger oder Einspruch noch möglich ist; das Fenster zu kennen ist mehr wert, als den Betrag zu kennen.',
+          },
+          {
+            h3: 'Ein Brief vom Gericht oder vom Inkasso',
+            body: 'Der gruseligste Umschlag, und der, bei dem das Datum am meisten zählt. Erfahren Sie, ob das ein Gerichtsbeschluss, ein Mahnbescheid, dem Sie widersprechen können, oder eine Inkassoforderung ist — und was laut Dokument als Nächstes passiert.',
+          },
+          {
+            h3: 'Post an Angehörige, die die Sprache nicht lesen',
+            body: 'Eltern, die zu Ihnen ins Ausland gezogen sind, ein Partner, der die Sprache noch lernt. Lesen Sie es in einer Minute für sie, in einer Sprache, die Sie beide teilen, und entscheiden Sie dann gemeinsam, was damit geschieht.',
+          },
+          {
+            h3: 'Nachschlagen, was eine Art Schreiben überhaupt ist, bevor eines kommt',
+            body: 'Die Referenzseiten stehen für sich. Schlagen Sie nach, was ein Bußgeldbescheid oder eine britische Section-8-Notice ist, wer sie schickt und was üblicherweise folgt — mit amtlicher Quelle und dem Datum der letzten Prüfung.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Häufige Fragen',
+        items: [
+          {
+            q: 'Ist das Rechts- oder Steuerberatung?',
+            a: 'Nein, und das wird es auch nicht. Das Tool erklärt, was ein Dokument sagt, wer es geschickt hat, bis wann es etwas verlangt und was genau. Was Sie deswegen tun sollten — zahlen, widersprechen, Einspruch einlegen, ignorieren, jemanden anrufen — hängt von Ihren Umständen ab und ist genau die Frage, die wir nicht beantworten. Dafür gibt es Anwältinnen, Steuerberater und die kostenlosen Beratungsstellen, die es in den meisten Ländern gibt.',
+          },
+          {
+            q: 'In welchen Sprachen liest und antwortet es?',
+            a: 'Der Brief kann in jeder Sprache sein, die das Nachschlagewerk abdeckt; die Antwort kommt auf Englisch, Russisch, Deutsch, Spanisch, Französisch oder Portugiesisch — wählen Sie die, in der Sie denken. Ist sich die Engine bei einer Passage unsicher, sagt sie es, statt es zu überspielen.',
+          },
+          {
+            q: 'Wird mein Brief gespeichert?',
+            a: 'Nein. Er wird auf einem Server gelesen, um Ihre Antwort zu erzeugen, und in dem Moment gelöscht, in dem die Antwort existiert. Er wird nicht gesichert, hängt an keinem Konto, wird niemandem im Studio gezeigt und nie zum Training eines Modells verwendet. Wenn Sie den Tab schließen, ist der Brief auf unserer Seite längst weg.',
+          },
+          {
+            q: 'Was kostet es?',
+            a: 'Die Referenzseiten sind kostenlos und unbegrenzt, Ihre erste Auswertung ebenfalls. Danach kostet ein Briefpass 5 $ und deckt drei Auswertungen in dreißig Tagen ab — genug für den Brief, die Antwort darauf und das Schreiben, das danach kommt. Jede Auswertung sind zwei vollständige Durchgänge auf unseren Maschinen, weshalb sie nicht auf Dauer kostenlos ist.',
+          },
+          {
+            q: 'Wie zuverlässig ist es?',
+            a: 'Jede Behauptung, die Sie sehen, hat eine zweite Lesung überstanden, deren einzige Aufgabe war, sie zu widerlegen; was sich nicht an der Seite verankern ließ, ist gestrichen oder markiert. Das ist deutlich verlässlicher als eine Zusammenfassung in einem Durchgang — und trotzdem nicht unfehlbar: ein unscharfes Foto, eine fehlende zweite Seite oder ein seltener Schreibentyp können Lücken lassen. Wo die Engine bei einem Datum rät, sagt sie es.',
+          },
+          {
+            q: 'Was, wenn die Frist schon abgelaufen ist?',
+            a: 'Dann sagt es das klar, mit dem abgeleiteten Datum und dem Weg dorthin, statt es zu verstecken. Was eine versäumte Frist bedeutet und was noch möglich ist, ist eine Frage zu Ihrer Situation — dort endet das Tool und beginnt eine menschliche Beratung.',
+          },
+          {
+            q: 'Welche Länder sind abgedeckt?',
+            a: 'Das Nachschlagewerk deckt rund neunzig Arten amtlicher Schreiben aus Deutschland, Spanien, den USA, Großbritannien und Russland ab, jede gegen die Veröffentlichungen der ausstellenden Behörde geprüft und datiert. Die Auswertung funktioniert am besten bei Briefen aus diesen fünf Ländern, weil der Prüfdurchgang dann einen bekannten Typ hat, an dem er sich messen kann.',
+          },
+        ],
+      },
+      cta: {
+        title: 'What\'s This Letter öffnen',
+        body: 'Fotografieren Sie den Umschlag, den Sie seit Tagen liegen lassen. In einer Minute wissen Sie, was es ist und bis wann es eine Antwort braucht.',
+        button: 'Brief auswerten',
       },
     },
   },

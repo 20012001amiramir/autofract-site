@@ -114,9 +114,9 @@ useJsonLd('tools', [
           <p class="mt-4 text-lg text-muted max-w-2xl">{{ hub.toolsSub }}</p>
         </div>
 
-        <!-- Three columns only from lg: at md a third of the page is narrower
-             than the tool name set in text-4xl. -->
-        <div class="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Two columns: four cards make an even 2x2, and a third of the page
+             is narrower than the tool name set in text-4xl. -->
+        <div class="mt-14 grid gap-6 md:grid-cols-2">
           <article
             v-for="c in toolCards"
             :key="c.slug"

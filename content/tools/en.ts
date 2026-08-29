@@ -7,17 +7,17 @@ export const toolsEn = {
   hub: {
     meta: {
       title: 'Free tools by Autofract',
-      description: 'Three free browser tools from the Autofract studio: a contract fine-print checker, a time zone meeting planner and calculators for costs nobody invoices.',
+      description: 'Four tools from the Autofract studio: a contract fine-print checker, a time zone meeting planner, hidden-cost calculators and an official-letter reader.',
     },
     kicker: 'Tools',
     h1: 'Small tools, done properly.',
     lede: 'The studio builds large systems for clients. These are the small ones we build for ourselves — and then give away, because they cost almost nothing to run.',
     intro: [
       'Every tool here started as an internal annoyance: a contract nobody had time to read, a meeting that kept landing at 22:00 for someone, a recurring cost that never appeared on any invoice. We built the smallest thing that answered the question, then kept it.',
-      'None of them ask for an account. None of them sell anything. They are free, they run in your browser or on our machines at our expense, and they are built to the same doctrine as the platforms below: verify before you publish, show your work, never invent a fact you cannot point at.',
+      'None of them ask for an account. Three of them sell nothing at all; the fourth gives you a free read and then asks five dollars for a pass, because reading a letter properly costs us real money. They run in your browser or on our machines, and they are built to the same doctrine as the platforms below: verify before you publish, show your work, never invent a fact you cannot point at.',
     ],
     toolsHeading: 'Free tools',
-    toolsSub: 'Open one, use it, close the tab. No signup, no trial, no upsell.',
+    toolsSub: 'Open one, use it, close the tab. No signup, no trial, no ads.',
     productsHeading: 'Products',
     productsSub: 'Larger systems the studio designed, built and still operates.',
     faq: {
@@ -25,7 +25,7 @@ export const toolsEn = {
       items: [
         {
           q: 'Are these really free?',
-          a: 'Yes. No account, no trial, no card, no usage limit, no ads. Two of the three do all their work inside your browser, so serving them costs us almost nothing; the third runs on our machines and we pay for it because it earns us more attention than an ad would.',
+          a: 'Three of the four are, with no account, no trial, no card, no usage limit and no ads. Two do all their work inside your browser, so serving them costs us almost nothing; Redline runs on our machines and we pay for it because it earns us more attention than an ad would. What\'s This Letter is the exception: its reference pages and your first read are free, further reads are a $5 pass, because each one costs us real money.',
         },
         {
           q: 'Do I need to sign up?',
@@ -33,7 +33,7 @@ export const toolsEn = {
         },
         {
           q: 'What happens to what I put in?',
-          a: 'Overlap and Cost Of never send your inputs anywhere: the board and the receipt are encoded in the address bar and computed by your own browser. Redline has to read your document on a server to analyse it, so treat it the way you would treat any online tool and do not paste material you are not allowed to share.',
+          a: 'Overlap and Cost Of never send your inputs anywhere: the board and the receipt are encoded in the address bar and computed by your own browser. Redline and What\'s This Letter have to read your document on a server to analyse it. Redline keeps your report behind its own link; What\'s This Letter discards the letter the moment your answer exists — it is never stored and never used for training. Either way, treat them the way you would treat any online tool and do not paste material you are not allowed to share.',
         },
         {
           q: 'Do you track me?',
@@ -41,7 +41,7 @@ export const toolsEn = {
         },
         {
           q: 'Can I use them at work?',
-          a: 'Yes, including commercially. Teams use the meeting planner for standups across continents and the calculators to argue a budget. Redline is a first read of a contract, not legal advice, so treat its output as a checklist for your lawyer rather than a substitute for one.',
+          a: 'Yes, including commercially. Teams use the meeting planner for standups across continents and the calculators to argue a budget. Redline is a first read of a contract and What\'s This Letter an explanation of an official letter — neither is legal or tax advice, so treat their output as a checklist for your lawyer rather than a substitute for one.',
         },
         {
           q: 'Why does a studio give tools away?',
@@ -420,6 +420,123 @@ export const toolsEn = {
         title: 'Open Cost Of',
         body: 'Pick the meeting that keeps ending without a decision. It takes about a minute to find out what it costs per year.',
         button: 'Run a calculator',
+      },
+    },
+
+    whatsthisletter: {
+      name: 'What\'s This Letter',
+      tagline: 'The official letter, explained.',
+      category: 'Letters',
+      meta: {
+        title: 'Official letters abroad, explained — What\'s This Letter',
+        description: 'Upload a photo or PDF of a tax notice, fine or court letter in a language you barely read: what it is, who sent it, the exact deadline and what it asks.',
+      },
+      h1: 'What the letter says, in your language.',
+      lede: 'A brown envelope from a tax office, a court or a debt collector, in a language you half read. What\'s This Letter reads it twice, tells you what it is, who sent it and by when you must act, and quotes the passages that matter — translated, and verified against the page.',
+      what: {
+        h2: 'What it does',
+        body: [
+          'You photograph the letter or upload the PDF. The engine reads it once to extract what it claims — sender, type of document, reference numbers, amounts, dates — and then reads it a second time with a different job: check every one of those claims against the document itself. Anything the second pass cannot find on the page is dropped before you see it.',
+          'What comes back is short and in your language: what kind of document this is, which authority or company sent it, the exact deadline as a calendar date rather than "within 14 days of service", the key passages quoted in the original with the translation beside them, and what the document asks of you — procedurally. Pay this, reply by that date, appear here, send that form.',
+          'Beside the reader sits a reference library: about ninety kinds of official notice across Germany, Spain, the United States, the United Kingdom and Russia — what each one is, who sends it, what usually follows. Every page is checked against the official source and carries the date it was last verified, so you can see how fresh it is.',
+        ],
+      },
+      why: {
+        h2: 'Why the letter feels worse than it is',
+        body: [
+          'An official letter abroad is frightening twice over. Once because it is in a language you read at half speed, and again because it is written in officialese — the register natives dread too, where nobody writes "pay by Friday" when "the amount referred to in section 2 is due within the period stipulated in §3(1)" is available.',
+          'A translation app fixes only the first half. It gives you words, often the wrong words for a legal term, and it does not know that a German Mahnbescheid is not a bill, that a "notice of assessment" is not an accusation, or which of the four dates on the page is the one that matters. You end up with a fluent paragraph and the same knot in your stomach.',
+          'The cost of not knowing is real and asymmetric. Most such letters are routine and want a small, specific thing by a specific date; the trouble starts when the date passes because the letter sat unread on the fridge. Knowing what it is, today, is usually the whole difference.',
+          'There is a hard line, and it stays hard. What\'s This Letter explains what a document says and asks; it never tells you what to do about it. Whether to object, pay, appeal or call a lawyer is a decision about your situation, and that is advice — which this tool does not give, in any language.',
+        ],
+      },
+      how: {
+        h2: 'How it works',
+        steps: [
+          {
+            h3: 'The document is read, not guessed at',
+            body: 'A photo of a crumpled page or a scanned PDF becomes text first. Stamps, letterheads, reference numbers and tables are kept in place, because a deadline in a footer or an amount in a table is exactly the kind of thing that gets lost when a page is flattened into prose.',
+          },
+          {
+            h3: 'A first pass extracts what the letter claims',
+            body: 'Sender, document type, reference numbers, amounts, dates and demands are pulled into a structured record, each one paired with the passage it came from. The pass works against a catalogue of known notice types, so a German Steuerbescheid or a Spanish requerimiento is recognised rather than described from scratch.',
+          },
+          {
+            h3: 'A second pass verifies every claim against the page',
+            body: 'A fresh read of the same document takes the record and tries to break it: is that really the deadline, is that amount the total or one line of it, does the letter actually demand payment or merely announce a decision. A claim the verifier cannot anchor to the document is removed or marked uncertain — never silently kept.',
+          },
+          {
+            h3: 'Deadlines are turned into dates',
+            body: 'Letters count in "working days from service", "one month after notification", "the period under §70". The engine resolves those against the dates printed on the letter and tells you what it assumed — including when the assumption is a guess, so that you know which line to check.',
+          },
+          {
+            h3: 'Nothing is kept',
+            body: 'The letter is processed to produce your read and discarded as soon as the answer is on your screen. It is not stored, it is not attached to an account, and it is never used to train anything.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'When to use it',
+        items: [
+          {
+            h3: 'A tax office letter in a country you moved to',
+            body: 'The Finanzamt, the Agencia Tributaria, HMRC and the IRS all write in a register nobody would use in speech. Find out whether this is an assessment, a request for documents or a reminder — and which date on it is the real one.',
+          },
+          {
+            h3: 'A fine or penalty notice',
+            body: 'Parking, transit, speed cameras, a missed registration deadline. These usually carry a short window in which paying is cheaper or objecting is still possible; knowing the window is worth more than knowing the amount.',
+          },
+          {
+            h3: 'A court or debt-collection letter',
+            body: 'The scariest envelope and the one where the date matters most. Learn whether this is a court order, a payment order you can object to, or a collector\'s demand, and exactly what the document says happens next.',
+          },
+          {
+            h3: 'Something addressed to a relative who does not read the language',
+            body: 'Parents who joined you abroad, a partner still learning. Read it for them in a minute, in a language you both share, then decide together what to do with it.',
+          },
+          {
+            h3: 'Checking what a notice type even is, before one arrives',
+            body: 'The reference pages stand on their own. Look up what a Bußgeldbescheid or a Section 8 notice is, who sends it and what usually follows, with the official source and the date the page was last checked.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Questions people ask',
+        items: [
+          {
+            q: 'Is this legal or tax advice?',
+            a: 'No, and it will not become that. The tool explains what a document says, who sent it, by when it asks for something and what that something is. What you should do about it — pay, object, appeal, ignore, call someone — depends on your circumstances and is exactly the question we do not answer. For that, see a lawyer, a tax adviser or the free advice services most countries run.',
+          },
+          {
+            q: 'Which languages does it read and answer in?',
+            a: 'The letter can be in any of the languages the reference library covers; the answer comes back in English, Russian, German, Spanish, French or Portuguese — pick the one you think in. When the engine is unsure of a passage it says so rather than smoothing over it.',
+          },
+          {
+            q: 'Is my letter stored?',
+            a: 'No. It is read on a server to produce your answer and discarded the moment the answer exists. It is not saved, not attached to an account, not shown to anyone at the studio and never used to train a model. By the time you close the tab, the letter is already gone from our side.',
+          },
+          {
+            q: 'What does it cost?',
+            a: 'The reference pages are free with no limit, and so is your first read. After that a letter pass costs $5 and covers three reads over thirty days — enough for the letter, the reply to it and the one that comes after. Each read is two full passes on our machines, which is why it is not free forever.',
+          },
+          {
+            q: 'How accurate is it?',
+            a: 'Every claim you see has survived a second reading whose only job was to refute it, and anything it could not anchor to the page has been dropped or flagged. That makes it far more reliable than a single-pass summary, and still not infallible: a blurry photo, a missing second page or an unusual notice type can leave gaps. When the engine is guessing at a date, it says so.',
+          },
+          {
+            q: 'What if the deadline has already passed?',
+            a: 'It will tell you that plainly, with the date it derived and how, rather than hiding it. What a missed deadline means and what can still be done is a question about your situation, and that is where the tool stops and a human adviser begins.',
+          },
+          {
+            q: 'Which countries are covered?',
+            a: 'The reference library covers around ninety official notice types from Germany, Spain, the United States, the United Kingdom and Russia, each checked against the issuing authority\'s own publications and dated. The reader works best on letters from those five countries, because the verification pass then has a known type to check against.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Open What\'s This Letter',
+        body: 'Photograph the envelope you have been avoiding. A minute from now you will know what it is and when it needs an answer.',
+        button: 'Read a letter',
       },
     },
   },

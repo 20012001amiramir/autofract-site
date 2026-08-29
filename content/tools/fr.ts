@@ -10,17 +10,17 @@ export const toolsFr: ToolsContent = {
   hub: {
     meta: {
       title: 'Outils en ligne gratuits — Autofract',
-      description: 'Trois outils en ligne gratuits du studio Autofract : analyse des clauses d\'un contrat, planificateur de réunion entre fuseaux et calcul des coûts cachés.',
+      description: 'Quatre outils du studio Autofract : les clauses d\'un contrat, les réunions entre fuseaux, les coûts cachés et les courriers officiels, expliqués.',
     },
     kicker: 'Outils',
     h1: 'De petits outils, faits correc­tement.',
     lede: 'Le studio construit de grands systèmes pour ses clients. Voici les petits, ceux que nous construisons pour nous-mêmes — et que nous offrons ensuite, parce qu\'ils ne coûtent presque rien à faire tourner.',
     intro: [
       'Chaque outil ici est né d\'un agacement interne : un contrat que personne n\'avait le temps de lire, une réunion qui tombait toujours à 22 h pour quelqu\'un, un coût récurrent qui n\'apparaissait sur aucune facture. Nous avons construit la plus petite chose qui répondait à la question, puis nous l\'avons gardée.',
-      'Aucun ne demande de compte. Aucun ne vend quoi que ce soit. Ils sont gratuits, ils tournent dans votre navigateur ou sur nos machines à nos frais, et ils sont construits selon la même doctrine que les plateformes plus bas : vérifier avant de publier, montrer son travail, ne jamais avancer un fait qu\'on ne peut pas montrer dans la source.',
+      'Aucun ne demande de compte. Trois ne vendent rien du tout ; le quatrième vous offre une lecture, puis demande cinq dollars pour un pass, parce que lire un courrier correctement nous coûte de l\'argent réel. Ils tournent dans votre navigateur ou sur nos machines, et ils sont construits selon la même doctrine que les plateformes plus bas : vérifier avant de publier, montrer son travail, ne jamais avancer un fait qu\'on ne peut pas montrer dans la source.',
     ],
     toolsHeading: 'Outils gratuits',
-    toolsSub: 'Ouvrez-en un, utilisez-le, fermez l\'onglet. Pas d\'inscription, pas d\'essai, pas de relance commerciale.',
+    toolsSub: 'Ouvrez-en un, utilisez-le, fermez l\'onglet. Pas d\'inscription, pas d\'essai, pas de publicité.',
     productsHeading: 'Produits',
     productsSub: 'Les systèmes plus grands que le studio a conçus, construits et opère toujours.',
     faq: {
@@ -28,7 +28,7 @@ export const toolsFr: ToolsContent = {
       items: [
         {
           q: 'C\'est vraiment gratuit ?',
-          a: 'Oui. Pas de compte, pas d\'essai, pas de carte, pas de quota, pas de publicité. Deux des trois font tout leur travail dans votre navigateur, donc les servir ne nous coûte presque rien ; le troisième tourne sur nos machines et nous le payons, parce qu\'il nous rapporte plus d\'attention qu\'une publicité.',
+          a: 'Trois des quatre, oui : pas de compte, pas d\'essai, pas de carte, pas de quota, pas de publicité. Deux font tout leur travail dans votre navigateur, donc les servir ne nous coûte presque rien ; Redline tourne sur nos machines et nous le payons, parce qu\'il nous rapporte plus d\'attention qu\'une publicité. What\'s This Letter est l\'exception : ses pages de référence et votre première lecture sont gratuites, les suivantes passent par un pass à 5 $, parce que chacune nous coûte de l\'argent réel.',
         },
         {
           q: 'Faut-il s\'inscrire ?',
@@ -36,7 +36,7 @@ export const toolsFr: ToolsContent = {
         },
         {
           q: 'Que devient ce que je saisis ?',
-          a: 'Overlap et Cost Of n\'envoient jamais vos saisies nulle part : le tableau et le reçu sont encodés dans la barre d\'adresse et calculés par votre propre navigateur. Redline, lui, doit lire votre document sur un serveur pour l\'analyser : traitez-le comme n\'importe quel outil en ligne et ne collez pas de contenu que vous n\'avez pas le droit de partager.',
+          a: 'Overlap et Cost Of n\'envoient jamais vos saisies nulle part : le tableau et le reçu sont encodés dans la barre d\'adresse et calculés par votre propre navigateur. Redline et What\'s This Letter doivent lire votre document sur un serveur pour l\'analyser. Redline garde votre rapport derrière son propre lien ; What\'s This Letter supprime le courrier à l\'instant où votre réponse existe — il n\'est jamais stocké ni utilisé pour entraîner quoi que ce soit. Dans les deux cas, traitez-les comme n\'importe quel outil en ligne et ne collez pas de contenu que vous n\'avez pas le droit de partager.',
         },
         {
           q: 'Nous suivez-vous à la trace ?',
@@ -44,7 +44,7 @@ export const toolsFr: ToolsContent = {
         },
         {
           q: 'Puis-je les utiliser au travail ?',
-          a: 'Oui, y compris à titre commercial. Des équipes se servent du planificateur pour des standups entre continents et des calculateurs pour défendre un budget. Redline est une première lecture d\'un contrat, pas un conseil juridique : voyez son résultat comme une check-list pour votre avocat, pas comme un remplacement.',
+          a: 'Oui, y compris à titre commercial. Des équipes se servent du planificateur pour des standups entre continents et des calculateurs pour défendre un budget. Redline est une première lecture d\'un contrat, What\'s This Letter une explication d\'un courrier officiel : ni l\'un ni l\'autre n\'est un conseil juridique ou fiscal, voyez donc leur résultat comme une check-list pour votre avocat, pas comme un remplacement.',
         },
         {
           q: 'Pourquoi un studio donne-t-il des outils ?',
@@ -423,6 +423,123 @@ export const toolsFr: ToolsContent = {
         title: 'Ouvrir Cost Of',
         body: 'Choisissez la réunion qui se termine toujours sans décision. Il faut environ une minute pour découvrir ce qu\'elle coûte par an.',
         button: 'Lancer un calculateur',
+      },
+    },
+
+    whatsthisletter: {
+      name: 'What\'s This Letter',
+      tagline: 'Le courrier officiel, expliqué.',
+      category: 'Courriers',
+      meta: {
+        title: 'Comprendre un courrier officiel — What\'s This Letter',
+        description: 'Photo ou PDF d\'un avis d\'imposition, d\'une amende ou d\'un tribunal dans une langue étrangère : ce que c\'est, qui l\'envoie, le délai et ce qu\'il demande.',
+      },
+      h1: 'Ce que dit le courrier, dans votre langue.',
+      lede: 'Une enveloppe du fisc, d\'un tribunal ou d\'une société de recouvrement, dans une langue que vous lisez à moitié. What\'s This Letter la lit deux fois, vous dit ce que c\'est, qui l\'envoie et avant quelle date vous devez agir, et cite les passages qui comptent — traduits, et confrontés à la page elle-même.',
+      what: {
+        h2: 'Ce qu\'il fait',
+        body: [
+          'Vous photographiez le courrier ou déposez le PDF. Le moteur le lit une première fois pour extraire ce qu\'il affirme — expéditeur, type de document, numéros de référence, montants, dates — puis une seconde fois avec une autre mission : confronter chacune de ces affirmations au document lui-même. Ce que la seconde passe ne retrouve pas sur la page est écarté avant même que vous ne le voyiez.',
+          'Ce qui revient est court et dans votre langue : de quel genre de document il s\'agit, quelle administration ou quelle entreprise l\'envoie, le délai exact sous forme de date, et non « dans les 14 jours suivant la notification » ; les passages clés dans l\'original avec la traduction à côté, et ce que le document vous demande — de façon procédurale. Payer ceci, répondre avant telle date, vous présenter là, envoyer tel formulaire.',
+          'À côté du lecteur, une bibliothèque de référence : environ quatre-vingt-dix types de courriers officiels d\'Allemagne, d\'Espagne, des États-Unis, du Royaume-Uni et de Russie — ce que c\'est, qui l\'envoie, ce qui suit d\'habitude. Chaque page est confrontée à la source officielle et porte la date de sa dernière vérification, pour que vous sachiez si elle est encore à jour.',
+        ],
+      },
+      why: {
+        h2: 'Pourquoi le courrier paraît pire qu\'il n\'est',
+        body: [
+          'Un courrier officiel à l\'étranger fait peur deux fois. Une fois parce qu\'il est dans une langue que vous lisez à demi-vitesse, et une seconde parce qu\'il est rédigé en langue administrative — ce registre que les natifs redoutent eux aussi, où personne n\'écrit « payez avant vendredi » quand on peut écrire « la somme visée à l\'article 2 est exigible dans le délai prévu au §3(1) ».',
+          'Une application de traduction ne règle que la première moitié. Elle donne des mots, souvent les mauvais pour un terme juridique, et elle ne sait pas qu\'un Mahnbescheid allemand n\'est pas une facture, qu\'une « notice of assessment » n\'est pas une accusation, ni laquelle des quatre dates de la page est celle qui compte. Vous vous retrouvez avec un paragraphe fluide et le même nœud à l\'estomac.',
+          'Ne pas savoir a un coût réel, et asymétrique. La plupart de ces courriers sont de la routine et demandent une petite chose précise avant une date précise ; les ennuis commencent quand la date passe parce que le courrier est resté sur le frigo, jamais ouvert. Savoir ce que c\'est, aujourd\'hui, fait en général toute la différence.',
+          'Il y a une limite nette, et elle ne bouge pas. What\'s This Letter explique ce qu\'un document dit et demande ; il ne vous dit jamais quoi en faire. Contester, payer, faire appel ou appeler un avocat est une décision qui dépend de votre situation, et cela s\'appelle un conseil — ce que cet outil ne donne pas, dans aucune langue.',
+        ],
+      },
+      how: {
+        h2: 'Comment ça marche',
+        steps: [
+          {
+            h3: 'Le document est lu, pas deviné',
+            body: 'La photo d\'une page froissée ou un PDF scanné devient d\'abord du texte. Tampons, en-têtes, numéros de référence et tableaux restent à leur place, parce qu\'un délai en pied de page ou un montant dans un tableau est exactement ce qui se perd quand on aplatit une page en prose.',
+          },
+          {
+            h3: 'Une première passe extrait ce que le courrier affirme',
+            body: 'Expéditeur, type de document, références, montants, dates et exigences sont rassemblés dans une fiche structurée, chacun apparié au passage dont il provient. La passe s\'appuie sur un catalogue de types de courriers connus, si bien qu\'un Steuerbescheid allemand ou un requerimiento espagnol est reconnu, et non décrit à partir de zéro.',
+          },
+          {
+            h3: 'Une seconde passe confronte chaque affirmation à la page',
+            body: 'Une lecture neuve du même document prend la fiche et tente de la mettre en défaut : est-ce vraiment le délai, ce montant est-il le total ou une seule ligne, le courrier exige-t-il un paiement ou annonce-t-il seulement une décision ? Une affirmation que le vérificateur ne peut pas ancrer dans le document est retirée ou marquée incertaine — jamais conservée en silence.',
+          },
+          {
+            h3: 'Les délais deviennent des dates',
+            body: 'Les courriers comptent en « jours ouvrés à compter de la signification », « un mois après la notification », « le délai prévu à l\'article 70 ». Le moteur les convertit à partir des dates imprimées sur le courrier et vous dit ce qu\'il a supposé — y compris quand cette hypothèse n\'est qu\'une estimation, pour que vous sachiez quelle ligne vérifier.',
+          },
+          {
+            h3: 'Rien n\'est conservé',
+            body: 'Le courrier est traité pour produire votre lecture, puis supprimé dès que la réponse est à l\'écran. Il n\'est pas stocké, n\'est rattaché à aucun compte et ne sert jamais à entraîner quoi que ce soit.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Quand l\'utiliser',
+        items: [
+          {
+            h3: 'Un courrier du fisc dans le pays où vous avez emménagé',
+            body: 'Le Finanzamt, l\'Agencia Tributaria, HMRC et l\'IRS écrivent tous dans un registre que personne n\'utiliserait à l\'oral. Sachez s\'il s\'agit d\'un avis d\'imposition, d\'une demande de pièces ou d\'un rappel — et laquelle des dates est celle qui compte.',
+          },
+          {
+            h3: 'Une amende ou un avis de sanction',
+            body: 'Stationnement, transports, radars, un délai d\'enregistrement manqué. Ces courriers portent en général une courte fenêtre où payer coûte moins cher ou contester est encore possible ; connaître la fenêtre vaut plus que connaître le montant.',
+          },
+          {
+            h3: 'Un courrier d\'un tribunal ou d\'une société de recouvrement',
+            body: 'L\'enveloppe la plus effrayante, et celle où la date compte le plus. Sachez s\'il s\'agit d\'une décision de justice, d\'une injonction de payer à laquelle vous pouvez vous opposer ou d\'une mise en demeure d\'une société de recouvrement, et ce que le document dit exactement de la suite.',
+          },
+          {
+            h3: 'Un courrier adressé à un proche qui ne lit pas la langue',
+            body: 'Des parents venus vous rejoindre à l\'étranger, un conjoint qui apprend encore. Lisez-le pour eux en une minute, dans une langue que vous partagez, puis décidez ensemble de ce que vous en faites.',
+          },
+          {
+            h3: 'Savoir ce qu\'est un type de courrier avant qu\'il n\'arrive',
+            body: 'Les pages de référence se suffisent à elles-mêmes. Cherchez ce qu\'est un Bußgeldbescheid ou une Section 8 notice britannique, qui l\'envoie et ce qui suit d\'habitude, avec la source officielle et la date de la dernière vérification.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Les questions qu\'on nous pose',
+        items: [
+          {
+            q: 'Est-ce un conseil juridique ou fiscal ?',
+            a: 'Non, et ça ne le deviendra pas. L\'outil explique ce qu\'un document dit, qui l\'envoie, pour quand il demande quelque chose et ce que c\'est. Ce que vous devriez faire — payer, contester, faire appel, ignorer, appeler quelqu\'un — dépend de votre situation et c\'est précisément la question à laquelle nous ne répondons pas. Pour cela, il y a un avocat, un conseiller fiscal ou les services de conseil gratuits que la plupart des pays proposent.',
+          },
+          {
+            q: 'Dans quelles langues lit-il et répond-il ?',
+            a: 'Le courrier peut être dans n\'importe quelle langue couverte par la bibliothèque de référence ; la réponse arrive en anglais, russe, allemand, espagnol, français ou portugais — choisissez celle dans laquelle vous pensez. Quand le moteur doute d\'un passage, il le dit, au lieu de lisser le doute.',
+          },
+          {
+            q: 'Mon courrier est-il conservé ?',
+            a: 'Non. Il est lu sur un serveur pour produire votre réponse et supprimé à l\'instant où la réponse existe. Il n\'est pas enregistré, n\'est rattaché à aucun compte, n\'est montré à personne au studio et ne sert jamais à entraîner un modèle. Quand vous fermez l\'onglet, le courrier a déjà disparu de notre côté.',
+          },
+          {
+            q: 'Combien ça coûte ?',
+            a: 'Les pages de référence sont gratuites et sans limite, et votre première lecture aussi. Ensuite, un pass courrier coûte 5 $ et couvre trois lectures sur trente jours — assez pour le courrier, la réponse et celui qui suit. Chaque lecture représente deux passes complètes sur nos machines, c\'est pourquoi elle n\'est pas gratuite indéfiniment.',
+          },
+          {
+            q: 'Quelle est sa fiabilité ?',
+            a: 'Chaque affirmation que vous voyez a survécu à une seconde lecture dont le seul rôle était de la réfuter, et ce qui n\'a pas pu être ancré dans la page a été retiré ou signalé. C\'est bien plus fiable qu\'un résumé en une passe, sans être infaillible : une photo floue, une deuxième page manquante ou un type de courrier rare peuvent laisser des lacunes. Quand le moteur devine une date, il le dit.',
+          },
+          {
+            q: 'Et si le délai est déjà passé ?',
+            a: 'Il vous le dira franchement, avec la date qu\'il a déduite et la manière dont il l\'a déduite, au lieu de le cacher. Ce que signifie un délai dépassé et ce qu\'il reste à faire est une question sur votre situation — c\'est là que l\'outil s\'arrête et qu\'un conseiller humain commence.',
+          },
+          {
+            q: 'Quels pays sont couverts ?',
+            a: 'La bibliothèque de référence couvre environ quatre-vingt-dix types de courriers officiels d\'Allemagne, d\'Espagne, des États-Unis, du Royaume-Uni et de Russie, chacun confronté aux publications de l\'administration émettrice et daté. Le lecteur fonctionne le mieux sur les courriers de ces cinq pays, parce que la passe de vérification dispose alors d\'un type connu à confronter.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Ouvrir What\'s This Letter',
+        body: 'Photographiez l\'enveloppe que vous évitez depuis des jours. Dans une minute, vous saurez ce que c\'est et pour quand il faut répondre.',
+        button: 'Lire un courrier',
       },
     },
   },

@@ -9,6 +9,14 @@ const LOCALES = [
   { path: '/pt', code: 'pt', hero: 'roda sozinho' },
 ]
 
+// Mirrors data/tools.ts — three subdomains and one tool on its own domain.
+const TOOL_HOSTS: Record<string, string> = {
+  redline: 'redline.autofract.com',
+  overlap: 'overlap.autofract.com',
+  costof: 'costof.autofract.com',
+  whatsthisletter: 'whatsthisletter.com',
+}
+
 for (const l of LOCALES) {
   const prefix = l.path === '/' ? '' : l.path
   test(`locale ${l.code} renders all sections`, async ({ page }) => {
@@ -18,7 +26,7 @@ for (const l of LOCALES) {
     for (const slug of ['pathcore', 'videolinker', 'frontdesk', 'relocating']) {
       await expect(page.locator(`a[href="${prefix}/work/${slug}"]`)).toBeVisible()
     }
-    for (const slug of ['redline', 'overlap', 'costof']) {
+    for (const slug of Object.keys(TOOL_HOSTS)) {
       await expect(page.locator(`a[href="${prefix}/tools/${slug}"]`)).toBeVisible()
     }
     await expect(page.getByRole('link', { name: 'info@autofract.com' })).toBeVisible()
@@ -200,7 +208,7 @@ test('hire tiers quote their price in the reader\'s language', async ({ page }) 
 test('tools hub lists every tool and product', async ({ page }) => {
   await page.goto('/tools')
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Small tools')
-  for (const host of ['redline.autofract.com', 'overlap.autofract.com', 'costof.autofract.com']) {
+  for (const host of Object.values(TOOL_HOSTS)) {
     await expect(page.locator(`a[href^="https://${host}"]`).first()).toBeVisible()
   }
   await expect(page.locator('a[href="https://relocating.app"]')).toBeVisible()
@@ -223,12 +231,12 @@ test('a tool page carries long-form copy, FAQ structured data and a deep link', 
  * pair drifted apart once already when Redline gained its five translations.
  */
 test('every tool links into the language the reader is already in', async ({ page }) => {
-  for (const slug of ['redline', 'overlap', 'costof']) {
+  for (const [slug, host] of Object.entries(TOOL_HOSTS)) {
     for (const l of LOCALES) {
       const prefix = l.path === '/' ? '' : l.path
       const expected = l.code === 'en'
-        ? `https://${slug}.autofract.com/`
-        : `https://${slug}.autofract.com/${l.code}/`
+        ? `https://${host}/`
+        : `https://${host}/${l.code}/`
       await page.goto(`${prefix}/tools/${slug}`)
       await expect(page.locator(`a[href="${expected}"]`).first(), `${prefix}/tools/${slug}`).toBeVisible()
     }

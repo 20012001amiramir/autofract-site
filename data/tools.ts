@@ -1,6 +1,7 @@
 /**
- * The studio's public surface: small free tools that live on their own
- * subdomains, and the two products with their own domains.
+ * The studio's public surface: small tools that live on their own
+ * subdomains (or, for What's This Letter, its own domain), and the two
+ * products with their own domains.
  *
  * Every promo page under /tools/<slug> is driven from here; long-form copy
  * lives in content/tools/<locale>.ts.
@@ -8,7 +9,7 @@
 
 import { DEFAULT_LOCALE, type Locale } from './locales'
 
-export const TOOLS = ['redline', 'overlap', 'costof'] as const
+export const TOOLS = ['redline', 'overlap', 'costof', 'whatsthisletter'] as const
 export type ToolSlug = typeof TOOLS[number]
 
 export interface ToolMeta {
@@ -49,6 +50,13 @@ export const TOOL_META: Record<ToolSlug, ToolMeta> = {
     host: 'costof.autofract.com',
     accent: '#f9e2af',
     category: 'FinanceApplication',
+    locales: ALL_LOCALES,
+  },
+  whatsthisletter: {
+    url: 'https://whatsthisletter.com',
+    host: 'whatsthisletter.com',
+    accent: '#8fbfa8',
+    category: 'UtilityApplication',
     locales: ALL_LOCALES,
   },
 }
