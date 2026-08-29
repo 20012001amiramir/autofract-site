@@ -3,6 +3,7 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import SystemGraph from '~/components/graph/SystemGraph.vue'
 import { localizedStudioMap } from '~/content/systems'
+import { trackHireClick } from '~/lib/track'
 
 const { locale } = useI18n()
 const localePath = useLocalePath()
@@ -41,6 +42,7 @@ const studioMap = computed(() => localizedStudioMap(locale.value))
         <NuxtLink
           :to="localePath('/hire')"
           class="inline-flex items-center gap-3 rounded border border-accent/60 px-6 py-3 text-lg font-medium text-ink hover:bg-accent/10 transition-colors"
+          @click="trackHireClick('home')"
         >
           {{ $t('hero.hireCta') }} <span aria-hidden="true">&rarr;</span>
         </NuxtLink>

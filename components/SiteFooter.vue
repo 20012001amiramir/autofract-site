@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import LangSwitcher from './LangSwitcher.vue'
+import { trackHireClick } from '~/lib/track'
 const { t } = useI18n()
 const localePath = useLocalePath()
 const year = new Date().getFullYear()
@@ -17,7 +18,7 @@ const year = new Date().getFullYear()
     </div>
     <div class="flex flex-wrap gap-4 text-sm md:justify-end items-center">
       <NuxtLink :to="localePath('/tools')" class="text-ink hover:text-accent transition-colors">{{ t('footer.tools') }}</NuxtLink>
-      <NuxtLink :to="localePath('/hire')" class="text-ink hover:text-accent transition-colors">{{ t('footer.hire') }}</NuxtLink>
+      <NuxtLink :to="localePath('/hire')" class="text-ink hover:text-accent transition-colors" @click="trackHireClick('footer')">{{ t('footer.hire') }}</NuxtLink>
       <a href="mailto:info@autofract.com" class="text-ink hover:text-accent transition-colors">info@autofract.com</a>
       <span class="text-muted">© {{ year }}</span>
     </div>

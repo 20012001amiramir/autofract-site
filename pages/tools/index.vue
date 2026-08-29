@@ -6,6 +6,7 @@ import { TOOLS, TOOL_META, PRODUCTS, PRODUCT_META, toolHref } from '~/data/tools
 import { toolsContentFor } from '~/content/tools'
 import { asLocale } from '~/data/locales'
 import { ogUrl } from '~/data/og'
+import { trackHireClick, trackProductClick, trackToolClick } from '~/lib/track'
 import { useJsonLd } from '~/composables/useJsonLd'
 import { breadcrumbList, faqPage, webApplication } from '~/composables/seo'
 import { ORG_ID, SITE_NAME, TWITTER_HANDLE, WEBSITE_ID, abs } from '~/data/site'
@@ -144,6 +145,7 @@ useJsonLd('tools', [
               :href="c.href"
               class="relative z-10 mt-3 inline-flex max-w-full items-center gap-2 text-sm text-muted hover:text-ink transition-colors w-fit break-words"
               rel="noopener"
+              @click="trackToolClick(c.slug, 'hub')"
             >
               {{ t('tools.open') }} — {{ c.meta.host }} <span aria-hidden="true">&nearr;</span>
             </a>
@@ -174,6 +176,7 @@ useJsonLd('tools', [
                 :href="p.meta.url"
                 class="inline-flex max-w-full items-center gap-2 border-b border-ink/30 pb-0.5 font-medium text-ink hover:text-[var(--card-accent)] hover:border-[var(--card-accent)] transition-colors break-words"
                 rel="noopener"
+                @click="trackProductClick(p.slug, 'hub')"
               >
                 {{ p.meta.host }} <span aria-hidden="true">&nearr;</span>
               </a>
@@ -201,6 +204,7 @@ useJsonLd('tools', [
         <NuxtLink
           :to="localePath('/hire')"
           class="inline-flex items-center gap-3 rounded border border-accent/60 px-6 py-3 text-lg font-medium text-ink hover:bg-accent/10 transition-colors"
+          @click="trackHireClick('hub')"
         >
           {{ hub.cta.button }} <span aria-hidden="true">&rarr;</span>
         </NuxtLink>

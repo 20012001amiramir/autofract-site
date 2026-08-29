@@ -6,6 +6,7 @@ import { TOOLS, TOOL_META, toolHref, type ToolSlug } from '~/data/tools'
 import { toolsContentFor } from '~/content/tools'
 import { asLocale } from '~/data/locales'
 import { ogUrl } from '~/data/og'
+import { trackToolClick } from '~/lib/track'
 import { useJsonLd } from '~/composables/useJsonLd'
 import { breadcrumbList, faqPage, webApplication } from '~/composables/seo'
 import { ORG_ID, SITE_NAME, TWITTER_HANDLE, abs } from '~/data/site'
@@ -101,6 +102,7 @@ useJsonLd('tool', [
             class="inline-flex max-w-full items-center gap-3 rounded border-2 px-5 sm:px-6 py-3 text-base sm:text-lg font-medium text-ink transition-colors"
             :style="{ borderColor: meta.accent }"
             rel="noopener"
+            @click="trackToolClick(slug, 'promo')"
           >
             {{ copy.cta.button }} <span aria-hidden="true">&nearr;</span>
           </a>
@@ -165,6 +167,7 @@ useJsonLd('tool', [
           class="inline-flex max-w-full items-center gap-3 rounded border px-5 sm:px-6 py-3 text-base sm:text-lg font-medium text-ink transition-colors hover:bg-ink/5"
           :style="{ borderColor: meta.accent }"
           rel="noopener"
+          @click="trackToolClick(slug, 'promo')"
         >
           {{ copy.cta.button }} <span aria-hidden="true">&nearr;</span>
         </a>

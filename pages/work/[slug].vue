@@ -10,6 +10,8 @@ import { useJsonLd, ORG_ID } from '~/composables/useJsonLd'
 import { breadcrumbList } from '~/composables/seo'
 import { asLocale } from '~/data/locales'
 import { ogUrl } from '~/data/og'
+import { PRODUCTS, type ProductSlug } from '~/data/tools'
+import { trackHireClick, trackProductClick } from '~/lib/track'
 import { SITE_NAME, TWITTER_HANDLE, abs } from '~/data/site'
 
 const route = useRoute()
@@ -22,6 +24,9 @@ if (!CASES.includes(slug)) {
 }
 
 const meta = CASE_META[slug]
+// Two of the four cases are shipped products with a live site; the other two are
+// client systems with nothing public to click, so they have no product event.
+const productSlug = (PRODUCTS as readonly string[]).includes(slug) ? slug as ProductSlug : null
 // The topology is language-free; labels and tooltips come from the locale copy.
 const map = computed(() => localizedSystem(slug, locale.value))
 const nextSlug = CASES[(CASES.indexOf(slug) + 1) % CASES.length]
@@ -158,6 +163,7 @@ useJsonLd('case', [
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-3 border-b-2 border-accent pb-1 text-lg font-medium text-ink hover:text-accent transition-colors"
+          @click="productSlug && trackProductClick(productSlug, 'case')"
         >
           {{ t('casepage.visit') }} — {{ meta.linkLabel }}
           <span aria-hidden="true">&nearr;</span>
@@ -170,6 +176,7 @@ useJsonLd('case', [
         <NuxtLink
           :to="localePath('/hire')"
           class="inline-flex items-center gap-3 rounded border border-accent/60 px-6 py-3 text-lg font-medium text-ink hover:bg-accent/10 transition-colors"
+          @click="trackHireClick('case')"
         >
           {{ t('casepage.hireCta') }} <span aria-hidden="true">&rarr;</span>
         </NuxtLink>
