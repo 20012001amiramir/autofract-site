@@ -9,7 +9,7 @@
 
 import { DEFAULT_LOCALE, type Locale } from './locales'
 
-export const TOOLS = ['redline', 'overlap', 'costof', 'whatsthisletter'] as const
+export const TOOLS = ['redline', 'overlap', 'costof', 'whatsthisletter', 'revive'] as const
 export type ToolSlug = typeof TOOLS[number]
 
 export interface ToolMeta {
@@ -19,7 +19,7 @@ export interface ToolMeta {
   host: string
   accent: string
   /** schema.org applicationCategory. */
-  category: 'BusinessApplication' | 'UtilityApplication' | 'FinanceApplication'
+  category: 'BusinessApplication' | 'UtilityApplication' | 'FinanceApplication' | 'MultimediaApplication'
   /**
    * Locales the tool itself serves. A language that is not listed gets the
    * tool's English root instead of a URL that would 404.
@@ -58,6 +58,14 @@ export const TOOL_META: Record<ToolSlug, ToolMeta> = {
     accent: '#8fbfa8',
     category: 'UtilityApplication',
     locales: ALL_LOCALES,
+  },
+  revive: {
+    url: 'https://revive.autofract.com',
+    host: 'revive.autofract.com',
+    accent: '#2f5be0',
+    category: 'MultimediaApplication',
+    // Ships in four languages; ru and fr readers get the English root.
+    locales: ['en', 'pt', 'es', 'de'],
   },
 }
 

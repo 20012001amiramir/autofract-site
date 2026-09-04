@@ -9,12 +9,18 @@ const LOCALES = [
   { path: '/pt', code: 'pt', hero: 'roda sozinho' },
 ]
 
-// Mirrors data/tools.ts — three subdomains and one tool on its own domain.
+// Mirrors data/tools.ts — four subdomains and one tool on its own domain.
 const TOOL_HOSTS: Record<string, string> = {
   redline: 'redline.autofract.com',
   overlap: 'overlap.autofract.com',
   costof: 'costof.autofract.com',
   whatsthisletter: 'whatsthisletter.com',
+  revive: 'revive.autofract.com',
+}
+
+// Locales a tool does not serve link to its English root (data/tools.ts `locales`).
+const TOOL_MISSING_LOCALES: Record<string, string[]> = {
+  revive: ['ru', 'fr'],
 }
 
 for (const l of LOCALES) {
@@ -234,7 +240,7 @@ test('every tool links into the language the reader is already in', async ({ pag
   for (const [slug, host] of Object.entries(TOOL_HOSTS)) {
     for (const l of LOCALES) {
       const prefix = l.path === '/' ? '' : l.path
-      const expected = l.code === 'en'
+      const expected = l.code === 'en' || TOOL_MISSING_LOCALES[slug]?.includes(l.code)
         ? `https://${host}/`
         : `https://${host}/${l.code}/`
       await page.goto(`${prefix}/tools/${slug}`)

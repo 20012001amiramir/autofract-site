@@ -11,14 +11,14 @@ export const toolsDe: ToolsContent = {
   hub: {
     meta: {
       title: 'Kostenlose Online-Tools — Autofract',
-      description: 'Vier Tools vom Studio Autofract: Verträge auf Fallstricke prüfen, Meetings über Zeitzonen planen, versteckte Kosten ausrechnen, Behördenbriefe verstehen.',
+      description: 'Fünf Tools vom Studio Autofract: Verträge auf Fallstricke prüfen, Meetings planen, versteckte Kosten ausrechnen, Behördenbriefe lesen, Fotos restaurieren.',
     },
     kicker: 'Tools',
     h1: 'Kleine Tools, richtig gebaut.',
     lede: 'Das Studio baut große Systeme für Kunden. Das hier sind die kleinen, die wir für uns selbst gebaut haben — und dann verschenkt, weil ihr Betrieb fast nichts kostet.',
     intro: [
       'Jedes Tool hier begann als interner Ärger: ein Vertrag, für den niemand Zeit hatte, ein Meeting, das für irgendjemanden immer um 22:00 Uhr landete, laufende Kosten, die auf keiner Rechnung auftauchten. Wir haben jeweils das kleinste Ding gebaut, das die Frage beantwortet — und es dann behalten.',
-      'Keines davon verlangt ein Konto. Drei verkaufen gar nichts; das vierte schenkt Ihnen eine Auswertung und verlangt danach fünf Dollar für einen Pass, weil einen Brief gründlich zu lesen uns echtes Geld kostet. Sie laufen in Ihrem Browser oder auf unseren Servern, und sie folgen derselben Doktrin wie die Plattformen weiter unten: prüfen, bevor veröffentlicht wird, die Rechenschritte zeigen, niemals einen Fakt erfinden, auf den man nicht zeigen kann.',
+      'Keines davon verlangt ein Konto. Drei verkaufen gar nichts; die beiden anderen — What\'s This Letter und Revive — schenken Ihnen einen ersten Durchgang und nehmen danach eine einmalige Zahlung, weil einen Brief gründlich zu lesen oder ein Foto sauber zu restaurieren uns echtes Geld kostet. Sie laufen in Ihrem Browser oder auf unseren Servern, und sie folgen derselben Doktrin wie die Plattformen weiter unten: prüfen, bevor veröffentlicht wird, die Rechenschritte zeigen, niemals einen Fakt erfinden, auf den man nicht zeigen kann.',
     ],
     toolsHeading: 'Kostenlose Tools',
     toolsSub: 'Öffnen, benutzen, Tab schließen. Keine Anmeldung, keine Testphase, keine Werbung.',
@@ -29,7 +29,7 @@ export const toolsDe: ToolsContent = {
       items: [
         {
           q: 'Sind die Tools wirklich kostenlos?',
-          a: 'Drei der vier sind es: kein Konto, keine Testphase, keine Kreditkarte, kein Nutzungslimit, keine Werbung. Zwei erledigen ihre gesamte Arbeit in Ihrem Browser, ihr Betrieb kostet uns also fast nichts; Redline läuft auf unseren Servern, und wir zahlen dafür, weil es uns mehr Aufmerksamkeit bringt als eine Anzeige. What\'s This Letter ist die Ausnahme: Referenzseiten und erste Auswertung sind kostenlos, weitere Auswertungen ein Pass für 5 $, weil jede einzelne uns echtes Geld kostet.',
+          a: 'Drei der fünf sind es: kein Konto, keine Testphase, keine Kreditkarte, kein Nutzungslimit, keine Werbung. Zwei erledigen ihre gesamte Arbeit in Ihrem Browser, ihr Betrieb kostet uns also fast nichts; Redline läuft auf unseren Servern, und wir zahlen dafür, weil es uns mehr Aufmerksamkeit bringt als eine Anzeige. What\'s This Letter und Revive sind die Ausnahmen: Referenzseiten und erste Auswertung beziehungsweise die kostenlose Vorschau Ihres ersten Fotos kosten nichts; danach kostet ein Briefpass 5 $ und ein Fotopaket ab 9 €, jeweils eine einmalige Zahlung, weil jeder Durchgang uns echtes Geld kostet.',
         },
         {
           q: 'Muss ich mich registrieren?',
@@ -37,7 +37,7 @@ export const toolsDe: ToolsContent = {
         },
         {
           q: 'Was passiert mit dem, was ich eingebe?',
-          a: 'Overlap und Cost Of schicken Ihre Eingaben nirgendwohin: Board und Beleg stecken in der Adresszeile und werden von Ihrem eigenen Browser berechnet. Redline und What\'s This Letter müssen Ihr Dokument zur Analyse auf einem Server lesen. Redline bewahrt Ihren Bericht hinter seinem eigenen Link auf; What\'s This Letter löscht den Brief in dem Moment, in dem Ihre Antwort steht — er wird nie gespeichert und nie zum Training verwendet. Behandeln Sie beide wie jedes Online-Tool und fügen Sie nichts ein, was Sie nicht weitergeben dürfen.',
+          a: 'Overlap und Cost Of schicken Ihre Eingaben nirgendwohin: Board und Beleg stecken in der Adresszeile und werden von Ihrem eigenen Browser berechnet. Redline, What\'s This Letter und Revive müssen das, was Sie hochladen, auf einem Server verarbeiten. Redline bewahrt Ihren Bericht hinter seinem eigenen Link auf; What\'s This Letter löscht den Brief in dem Moment, in dem Ihre Antwort steht — er wird nie gespeichert und nie zum Training verwendet; Revive behält Ihre Fotos bis zu 30 Tage nach dem Kauf, um das Paket und seine Neuberechnungen zu erzeugen, und löscht sie dann — auf Wunsch früher — und verwendet sie nie zum Training. Behandeln Sie alle drei wie jedes Online-Tool und fügen Sie nichts ein, was Sie nicht weitergeben dürfen.',
         },
         {
           q: 'Werde ich getrackt?',
@@ -541,6 +541,115 @@ export const toolsDe: ToolsContent = {
         title: 'What\'s This Letter öffnen',
         body: 'Fotografieren Sie den Umschlag, den Sie seit Tagen liegen lassen. In einer Minute wissen Sie, was es ist und bis wann es eine Antwort braucht.',
         button: 'Brief auswerten',
+      },
+    },
+
+    revive: {
+      name: 'Revive',
+      tagline: 'Alte Fotos, zurück.',
+      category: 'Fotos',
+      meta: {
+        title: 'Alte Familienfotos restaurieren und kolorieren — Revive',
+        description: 'Alte Familienfotos restauriert, koloriert und geschärft zurückbekommen, Gesichter unverändert, Druckdateien in 300 dpi. Erst die kostenlose Vorschau.',
+      },
+      h1: 'Die Familien­fotos, restauriert. Die Gesichter, unan­getastet.',
+      lede: 'Eine Kiste mit Scans und Handyfotos von Abzügen: geknickt, verblasst, an der Ecke eingerissen. Revive gibt sie repariert, koloriert und scharf zurück, jedes Gesicht genau so, wie es war, dazu Druckdateien in 300 dpi und eine Vorher-nachher-Karte für den Familienchat. Das erste Foto kommt als kostenlose Vorschau zurück, bevor Sie irgendetwas bezahlen.',
+      what: {
+        h2: 'Was es tut',
+        body: [
+          'Sie laden zwischen einem und zehn alten Fotos hoch — Flachbettscans oder ein Handyfoto eines Abzugs, unter die Lampe gehalten. Das Rendering-Modell repariert zuerst den physischen Schaden: Kratzer, Risse, Flecken, die Unschärfe eines langsamen Objektivs, das Verblassen, das aus einem Schwarz-Weiß-Abzug einen grauen macht. Dann koloriert es die Szene in natürlichen, gedeckten Tönen statt in den gesättigten, die eine Küche von 1962 wie eine Farbkarte aussehen lassen, und schärft, was Objektiv und Papier damals verloren haben.',
+          'Gesichter sind die Bedingung, um die die gesamte Pipeline gebaut ist. Sie werden restauriert, nie neu gezeichnet: keine geglättete Haut, keine umgeformte Kinnlinie, keine Zähne, die nicht da waren. Hatte Ihre Großmutter eine Lücke zwischen den Schneidezähnen, behält sie sie. Der Test, der zählt, ist, ob die Familie die Person auf dem Bildschirm sofort erkennt — und das ist der einzige Test, an dem das Ergebnis gemessen wird.',
+          'Jedes Paket kommt als Ordner zurück: die restaurierten Bilder, druckfertige Dateien in 300 dpi (30×40 cm im Paket Familienarchiv, 30×40 und 50×70 cm bei Erbstück) und eine Vorher-nachher-Karte im Format für den Familienchat. Das Familienarchiv enthält zusätzlich ein kurzes Vorher-nachher-Video zu jedem Foto; Erbstück eine vier Sekunden lange Animation eines Bildes Ihrer Wahl — eine leichte Drehung, ein Atemzug, mehr nicht.',
+        ],
+      },
+      why: {
+        h2: 'Warum die Preise so sind, wie sie sind',
+        body: [
+          'Die großen Apps dieser Kategorie sind für Leute gebaut, die jede Woche Fotos restaurieren, und entsprechend bepreist: ein Wochenabo oder ein Jahresplan für Ahnenforschung, verkauft an jemanden, der einmalig acht Fotos zum siebzigsten Geburtstag der Mutter richten will. Die meisten lassen zudem das Rückgaberecht in dem Moment erlöschen, in dem eine Datei heruntergeladen wird — der einzige Weg herauszufinden, ob das Ergebnis taugt, ist also, auf das Recht zu verzichten, das Gegenteil zu sagen.',
+          'Liest man, worüber sich Menschen tatsächlich beschweren, geht es nicht um Auflösung oder Farbe. Es geht um Ähnlichkeit. Eine Restaurierung, die einen sauberen, scharfen, gut aussehenden Fremden erzeugt, ist an dem einen Zweck gescheitert, für den sie da war, und kein 8K der Welt entschädigt für einen Großvater, der nicht ganz er selbst ist. Ähnlichkeit ist deshalb das, worauf Revive optimiert ist und worum die Garantie geschrieben wurde.',
+          'Die Preisstufen der Platzhirsche stammen zudem aus einer älteren Modellgeneration, als ein gutes Ergebnis eine Warteschlange brauchte und „Premium“ dreißig Minuten statt drei Tage bedeutete. Einzelbild-Modelle rendern heute in Sekunden; die Dreißig-Minuten-Premiumstufe ist eine Fiktion, und Revive verkauft keine. Sie zahlen für das, was im Paket steckt — Auflösung, Druckformate, die Animation —, nicht für das Privileg, nicht warten zu müssen.',
+          'Die Doktrin des Studios — prüfen, bevor veröffentlicht wird, die Rechenschritte zeigen — sieht in einem Verbrauchertool etwas anders aus als in einer Datenplattform, ist aber dieselbe Idee. Hier liegt die Prüfung bei Ihnen: eine kostenlose Vorschau Ihres eigenen ersten Fotos mit Wasserzeichen, bevor Geld fließt, ein Neu-Button, der vierzehn Tage lang kostenlos neu rendert, so oft es nötig ist, und ein Erstattungs-Button, der auch dann noch funktioniert, wenn Sie schon alles heruntergeladen haben. Das Produkt wird an der einzigen Instanz gemessen, die zählt: an Ihnen.',
+        ],
+      },
+      how: {
+        h2: 'So funktioniert es',
+        steps: [
+          {
+            h3: 'Die Kiste hochladen',
+            body: 'Ziehen Sie ein bis zehn Fotos hinein. Scans sind am besten, aber ein Handyfoto eines Abzugs auf dem Tisch funktioniert auch; die Pipeline richtet es aus, beschneidet es und entfernt Reflexe, bevor irgendetwas anderes passiert. Kein Konto und keine E-Mail-Adresse in diesem Schritt.',
+          },
+          {
+            h3: 'Eine kostenlose Vorschau in etwa einer Minute',
+            body: 'Das erste Foto wird sofort restauriert und koloriert und Ihnen mit Wasserzeichen neben dem Original gezeigt. Beurteilen Sie die Ähnlichkeit, bevor Sie irgendetwas entscheiden. Sind sie es nicht, schließen Sie den Tab: Es wurde nichts berechnet, und die Fotos werden auf Wunsch entfernt.',
+          },
+          {
+            h3: 'Paket wählen, einmal zahlen',
+            body: 'Mini restauriert drei Fotos für 9 €. Familienarchiv restauriert zehn für 19 €, mit 4K-Mastern, Druckdateien für 30×40 cm und dem Reveal-Video. Erbstück, für 39 €, restauriert zehn mit 8K-Mastern, Druckdateien für 30×40 und 50×70 cm und einer vier Sekunden langen Animation eines Bildes Ihrer Wahl. Eine Zahlung über den Zahlungsanbieter — in Euro in Deutschland und Spanien, in US-Dollar in Brasilien — und danach kein Abo, das gekündigt werden müsste.',
+          },
+          {
+            h3: 'Herunterladen, neu rendern oder erstatten lassen',
+            body: 'Das Paket wird in wenigen Minuten gerendert und als Ordner heruntergeladen. Jedes Foto trägt vierzehn Tage lang einen Neu-Button: Drücken Sie ihn, versucht es das Rendering-Modell noch einmal, kostenlos, so oft Sie möchten. Sieht es ihnen danach immer noch nicht ähnlich, gibt der Erstattungs-Button den vollen Betrag zurück — nach dem Download, nicht davor.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Wann Sie es brauchen',
+        items: [
+          {
+            h3: 'Ein runder Geburtstag oder ein Hochzeitstag',
+            body: 'Zehn Fotos aus dem Hochzeitsalbum, restauriert und in 30×40 cm gedruckt, sind ein Geschenk, das einen Abend Arbeit kostet und die meisten anderen überdauert. Das Reveal-Video geht noch am selben Abend in den Familienchat.',
+          },
+          {
+            h3: 'Muttertag und Vatertag',
+            body: 'Das Foto von ihnen als Kind, das seit zwanzig Jahren am Kühlschrank hängt und inzwischen mehr Knick als Bild ist. Restauriert, koloriert, scharf — und immer noch unverkennbar sie.',
+          },
+          {
+            h3: 'Weihnachten und ein voller Tisch',
+            body: 'Eine Serie Familienfotos über drei Generationen, gemeinsam restauriert, damit Farbe und Korn zusammenpassen, gedruckt und als eine Wand gerahmt. Die Vorher-nachher-Karte ist das, was nach dem Essen herumgereicht wird.',
+          },
+          {
+            h3: 'Hochzeiten und Geburten',
+            body: 'Das Hochzeitsfoto der Großeltern neben dem des neuen Paares; eine Urgroßmutter, koloriert, im ersten Album des Babys. Alte und neue Abzüge, die endlich aussehen, als gehörten sie in dasselbe Buch.',
+          },
+          {
+            h3: 'Eine Trauerfeier',
+            body: 'Das Foto für die Feier, vom einzigen Abzug, den irgendjemand hat, mit dem Riss über die Ecke repariert und dem Gesicht genau so, wie alle es in Erinnerung haben. Das ist der Fall, in dem Ähnlichkeit am meisten zählt — und in dem der Neu-Button am häufigsten gedrückt wird.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Häufige Fragen',
+        items: [
+          {
+            q: 'Sehen sie danach noch aus wie sie selbst?',
+            a: 'Das ist der ganze Sinn des Tools und der ganze Inhalt der Garantie. Gesichter werden repariert, nicht neu gezeichnet: keine Glättung, keine Umformung, kein erfundenes Detail. Sie sehen das erste Foto, bevor Sie zahlen, und können es selbst beurteilen. Sieht ein Foto im Paket der Person nicht ähnlich, drücken Sie auf Neu — kostenlos, so oft es nötig ist, vierzehn Tage lang. Hilft auch das nicht, nehmen Sie die Erstattung.',
+          },
+          {
+            q: 'Was deckt die Erstattung tatsächlich ab?',
+            a: 'Den vollen Betrag des Pakets, auch wenn Sie bereits jede Datei heruntergeladen haben. Der Erstattungs-Button funktioniert nach dem Download, weil das der einzige Moment ist, in dem Sie ehrlich sagen können, ob das Ergebnis stimmt. Die meisten Dienste dieser Kategorie tun das Gegenteil und lassen die Erstattung erlöschen, sobald eine Datei ihren Server verlässt.',
+          },
+          {
+            q: 'Gibt es ein Abo?',
+            a: 'Nein. Sie zahlen einmal für ein Paket — Mini, Familienarchiv oder Erbstück —, und das ist die ganze Transaktion. Es wird kein Konto angelegt, keine Karte für später gespeichert, und es gibt nichts zu kündigen. Wenn Sie nächstes Jahr eine weitere Kiste Fotos haben, kaufen Sie dann ein weiteres Paket.',
+          },
+          {
+            q: 'Was passiert mit meinen Fotos?',
+            a: 'Sie werden verwendet, um Ihr Paket zu erzeugen, und für nichts sonst: nie zum Training eines Modells, nie in einer Gesichtsdatenbank, nie jemandem im Studio gezeigt. Zwei externe Dienste sehen für die Sekunden, die es dauert, eine kleine Kopie — das Rendering-Modell und eine zweite Prüfung, die bestätigt, dass der Upload ein Familienfoto ist. Alles wird dreißig Tage nach dem Kauf gelöscht, oder sofort, wenn Sie darum bitten.',
+          },
+          {
+            q: 'Welche Vorlagen funktionieren?',
+            a: 'Flachbettscans in jeder Auflösung, Handyfotos von Abzügen, Fotos von Fotos in einem Album unter Glas. Schwarz-Weiß, Sepia und verblasste Farbe werden alle koloriert; Abzüge, die bereits in Farbe sind, werden restauriert und korrigiert, ohne neu eingefärbt zu werden. Sehr kleine oder sehr unscharfe Vorlagen lassen sich weniger gut restaurieren, und die Vorschau zeigt Ihnen das, bevor Sie zahlen.',
+          },
+          {
+            q: 'Welche Sprachen und Währungen?',
+            a: 'Revive gibt es auf Englisch, brasilianischem Portugiesisch, Spanisch und Deutsch; wer diese Seite auf Russisch oder Französisch liest, wird zur englischen Version geleitet. Die Preise stehen in Euro in Deutschland und Spanien und in US-Dollar in Brasilien, und der Zahlungsanbieter bedient die üblichen Zahlungsarten des jeweiligen Landes. Druckdateien sind in Zentimetern bemessen, in 300 dpi.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Revive öffnen',
+        body: 'Laden Sie das eine Foto hoch, das mehr Knick als Bild ist. In einer Minute sehen Sie es restauriert — und entscheiden von dort aus weiter.',
+        button: 'Foto restaurieren',
       },
     },
   },

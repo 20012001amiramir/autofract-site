@@ -11,14 +11,14 @@ export const toolsEs: ToolsContent = {
   hub: {
     meta: {
       title: 'Herramientas gratuitas — Autofract',
-      description: 'Cuatro herramientas de Autofract: revisor de contratos, planificador entre zonas horarias, calculadoras de costos ocultos y lector de cartas oficiales.',
+      description: 'Cinco herramientas de Autofract: revisor de contratos, planificador de reuniones, calculadoras de costos ocultos, lector de cartas y restaurador de fotos.',
     },
     kicker: 'Herramientas',
     h1: 'Herra­mientas pequeñas, hechas como se debe.',
     lede: 'El estudio construye sistemas grandes para sus clientes. Estas son las cosas pequeñas que construimos para nosotros mismos y luego regalamos, porque mantenerlas vivas no nos cuesta casi nada.',
     intro: [
       'Cada herramienta de aquí empezó siendo una molestia interna: un contrato que nadie tenía tiempo de leer, una reunión que a alguien le caía siempre a las 22:00, un costo recurrente que jamás aparecía en ninguna factura. Construimos la cosa más pequeña capaz de responder a la pregunta y después la conservamos.',
-      'Ninguna te pide una cuenta. Tres no te venden nada; la cuarta te regala una lectura y luego pide cinco dólares por un pase, porque leer una carta como es debido nos cuesta dinero real. Se ejecutan en tu navegador o en nuestras máquinas, y están construidas con la misma doctrina que las plataformas de abajo: verifica antes de publicar, enseña tu trabajo, nunca inventes un dato que no puedas señalar con el dedo.',
+      'Ninguna te pide una cuenta. Tres no te venden nada; las otras dos — What\'s This Letter y Revive — te regalan un primer intento y luego cobran un único pago, porque leer una carta o restaurar una fotografía como es debido nos cuesta dinero real. Se ejecutan en tu navegador o en nuestras máquinas, y están construidas con la misma doctrina que las plataformas de abajo: verifica antes de publicar, enseña tu trabajo, nunca inventes un dato que no puedas señalar con el dedo.',
     ],
     toolsHeading: 'Herramientas gratuitas',
     toolsSub: 'Abre una, úsala, cierra la pestaña. Sin registro, sin prueba gratuita, sin anuncios.',
@@ -29,7 +29,7 @@ export const toolsEs: ToolsContent = {
       items: [
         {
           q: '¿De verdad son gratuitas?',
-          a: 'Tres de las cuatro, sí: sin cuenta, sin prueba gratuita, sin tarjeta, sin límite de uso y sin anuncios. Dos hacen todo su trabajo dentro de tu navegador, así que servirlas no nos cuesta casi nada; Redline corre en nuestras máquinas y la pagamos nosotros porque nos consigue más atención de la que nos daría un anuncio. What\'s This Letter es la excepción: sus páginas de referencia y tu primera lectura son gratis, y las siguientes son un pase de 5 $, porque cada una nos cuesta dinero real.',
+          a: 'Tres de las cinco, sí: sin cuenta, sin prueba gratuita, sin tarjeta, sin límite de uso y sin anuncios. Dos hacen todo su trabajo dentro de tu navegador, así que servirlas no nos cuesta casi nada; Redline corre en nuestras máquinas y la pagamos nosotros porque nos consigue más atención de la que nos daría un anuncio. What\'s This Letter y Revive son las excepciones: las páginas de referencia y tu primera lectura, o la vista previa gratuita de tu primera foto, no cuestan nada; después, un pase de cartas son 5 $ y un pack de fotos empieza en 9 €, un único pago en cada caso, porque cada render nos cuesta dinero real.',
         },
         {
           q: '¿Necesito registrarme?',
@@ -37,7 +37,7 @@ export const toolsEs: ToolsContent = {
         },
         {
           q: '¿Qué pasa con lo que escribo?',
-          a: 'Overlap y Cost Of nunca envían tus datos a ninguna parte: el tablero y el recibo se codifican en la barra de direcciones y los calcula tu propio navegador. Redline y What\'s This Letter sí tienen que leer tu documento en un servidor para analizarlo. Redline guarda tu informe detrás de su propio enlace; What\'s This Letter descarta la carta en el momento en que existe tu respuesta — nunca se guarda ni se usa para entrenar nada. En ambos casos, trátalas como cualquier herramienta en línea y no pegues material que no tengas permitido compartir.',
+          a: 'Overlap y Cost Of nunca envían tus datos a ninguna parte: el tablero y el recibo se codifican en la barra de direcciones y los calcula tu propio navegador. Redline, What\'s This Letter y Revive sí tienen que trabajar con lo que subes en un servidor. Redline guarda tu informe detrás de su propio enlace; What\'s This Letter descarta la carta en el momento en que existe tu respuesta — nunca se guarda ni se usa para entrenar nada; Revive conserva tus fotos hasta 30 días después de la compra para producir el pack y sus repeticiones, y luego las borra — antes si lo pides — y nunca las usa para entrenar nada. En cualquier caso, trátalas como cualquier herramienta en línea y no pegues material que no tengas permitido compartir.',
         },
         {
           q: '¿Me rastrean?',
@@ -541,6 +541,115 @@ export const toolsEs: ToolsContent = {
         title: 'Abrir What\'s This Letter',
         body: 'Fotografía el sobre que llevas días evitando. En un minuto sabrás qué es y cuándo necesita una respuesta.',
         button: 'Leer una carta',
+      },
+    },
+
+    revive: {
+      name: 'Revive',
+      tagline: 'Las fotos antiguas, de vuelta.',
+      category: 'Fotos',
+      meta: {
+        title: 'Restaurar y colorear fotos familiares antiguas — Revive',
+        description: 'Sube hasta diez fotos familiares antiguas: vuelven restauradas, coloreadas y nítidas, con las caras intactas y archivos a 300 dpi. Vista previa gratis.',
+      },
+      h1: 'Las fotos de la familia, restau­radas. Las caras, intactas.',
+      lede: 'Una caja de escaneos y fotos de copias hechas con el teléfono: arrugadas, desvaídas, rotas por una esquina. Revive las devuelve reparadas, coloreadas y nítidas, con cada cara exactamente como era, más archivos de impresión a 300 dpi y una tarjeta de antes y después para el grupo de la familia. La primera foto vuelve como vista previa gratuita antes de que pagues nada.',
+      what: {
+        h2: 'Qué hace',
+        body: [
+          'Subes entre una y diez fotografías antiguas — escaneos de sobremesa o una foto hecha con el teléfono a una copia bajo una lámpara. El modelo de renderizado repara primero el daño físico: arañazos, roturas, manchas, el desenfoque de un objetivo lento, el desvaído que convierte una copia en blanco y negro en una gris. Después colorea la escena en tonos naturales y apagados, no en los saturados que hacen que una cocina de 1962 parezca un muestrario de pintura, y recupera la nitidez que perdieron el objetivo original y el papel.',
+          'Las caras son la restricción alrededor de la cual está construido todo el proceso. Se restauran, nunca se redibujan: nada de alisar la piel, nada de remodelar mandíbulas, nada de dientes que no estaban. Si tu abuela tenía un hueco entre las paletas, lo conserva. La prueba que importa es si la familia reconoce a la persona en la pantalla al instante, y esa es la única prueba contra la que se juzga el resultado.',
+          'Cada pack vuelve como una carpeta: las imágenes restauradas, archivos listos para imprimir a 300 dpi (30×40 cm en el pack Archivo familiar, 30×40 y 50×70 cm en Heirloom) y una tarjeta de antes y después con el tamaño justo para un chat familiar. El pack Archivo familiar añade un vídeo corto de antes y después para cada foto; Heirloom añade una animación de cuatro segundos de un fotograma que eliges tú — un leve giro, una respiración, nada más.',
+        ],
+      },
+      why: {
+        h2: 'Por qué tiene el precio que tiene',
+        body: [
+          'Las grandes apps de esta categoría están hechas para gente que restaura fotos cada semana, y cobran en consecuencia: una suscripción semanal o un plan anual de genealogía, vendidos a alguien que tiene ocho fotos que arreglar una sola vez para el setenta cumpleaños de su madre. La mayoría, además, anula el reembolso en el momento en que descargas un archivo — así que la única forma de saber si el resultado sirve es renunciar al derecho a decir que no.',
+          'Lee de qué se queja la gente de verdad y no es la resolución ni el color. Es el parecido. Una restauración que produce un desconocido limpio, nítido y apuesto ha fallado en lo único para lo que existía, y ningún 8K compensa un abuelo que no es del todo él. Por eso el parecido es lo que Revive optimiza y aquello alrededor de lo que está escrita la garantía.',
+          'Los niveles de los grandes también se diseñaron para una generación anterior de modelos, cuando un buen resultado exigía una cola y una espera, y «premium» significaba treinta minutos en lugar de tres días. Los modelos de una sola imagen renderizan hoy en segundos; el nivel premium de treinta minutos es una ficción, y Revive no lo vende. Pagas por lo que contiene el pack — resolución, tamaños de impresión, la animación —, no por el privilegio de no esperar.',
+          'La doctrina del estudio — verifica antes de publicar, enseña tu trabajo — se ve algo distinta en una herramienta de consumo que en una plataforma de datos, pero es la misma idea. Aquí la verificación es tuya: una vista previa gratuita con marca de agua de tu propia primera foto antes de que cambie de manos ningún dinero, un botón de repetir que vuelve a generar gratis, tantas veces como haga falta, durante catorce días, y un botón de reembolso que sigue funcionando después de haberlo descargado todo. El producto se comprueba contra el único juez que cuenta, que eres tú.',
+        ],
+      },
+      how: {
+        h2: 'Cómo funciona',
+        steps: [
+          {
+            h3: 'Sube la caja',
+            body: 'Arrastra de una a diez fotografías. Los escaneos son lo mejor, pero una foto hecha con el teléfono a una copia sobre la mesa funciona; el proceso la endereza, la recorta y le quita los reflejos antes que nada. Sin cuenta y sin dirección de correo en este paso.',
+          },
+          {
+            h3: 'Una vista previa gratuita en cosa de un minuto',
+            body: 'La primera foto se restaura y se colorea al momento y se te muestra con marca de agua, junto al original. Juzga el parecido antes de decidir nada. Si no son ellos, cierra la pestaña: no se ha cobrado nada y las fotos se eliminan si lo pides.',
+          },
+          {
+            h3: 'Elige un pack, paga una vez',
+            body: 'Mini restaura tres fotos por 9 €. Archivo familiar restaura diez por 19 €, con másteres en 4K, archivos de impresión a 30×40 cm y el vídeo de revelado. Heirloom, por 39 €, restaura diez con másteres en 8K, archivos de impresión a 30×40 y 50×70 cm y una animación de cuatro segundos del fotograma que elijas. Un único pago a través del proveedor de pagos — en euros en Alemania y España, en dólares estadounidenses en Brasil — y ninguna suscripción que cancelar después.',
+          },
+          {
+            h3: 'Descarga, repite o pide el reembolso',
+            body: 'El pack se renderiza en unos minutos y se descarga como una carpeta. Cada foto lleva un botón de repetir durante catorce días: lo pulsas y el modelo de renderizado lo intenta otra vez, gratis, tantas veces como quieras. Si sigue sin parecerse a ellos, el botón de reembolso devuelve el importe completo — después de haber descargado, no antes.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Cuándo usarla',
+        items: [
+          {
+            h3: 'El cumpleaños de tus padres o un aniversario',
+            body: 'Diez fotos del álbum de la boda, restauradas e impresas a 30×40 cm, es un regalo que se prepara en una tarde y dura más que casi cualquier otro. El vídeo de revelado va al grupo de la familia esa misma noche.',
+          },
+          {
+            h3: 'El Día de la Madre y el Día del Padre',
+            body: 'La foto de ellos de niños, la que lleva veinte años en el refrigerador y ya es más arruga que imagen. Restaurada, coloreada, nítida, y todavía inconfundiblemente ellos.',
+          },
+          {
+            h3: 'Navidad y una mesa llena',
+            body: 'Un conjunto de fotos de tres generaciones, restauradas juntas para que el color y el grano coincidan, impresas y enmarcadas como una sola pared. La tarjeta de antes y después es lo que circula de mano en mano después de la cena.',
+          },
+          {
+            h3: 'Bodas y nacimientos',
+            body: 'La foto de boda de los abuelos junto a la de la nueva pareja; una bisabuela, coloreada, en el primer álbum del bebé. Copias antiguas y nuevas que por fin parecen pertenecer al mismo libro.',
+          },
+          {
+            h3: 'Un funeral',
+            body: 'La foto para la ceremonia, sacada de la única copia que alguien conserva, con la rotura de la esquina reparada y la cara exactamente como todos la recuerdan. Es el caso en el que el parecido más importa y en el que más se usa el botón de repetir.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Preguntas que nos hacen',
+        items: [
+          {
+            q: '¿Seguirán pareciéndose a sí mismos?',
+            a: 'Ese es el sentido entero de la herramienta y de la garantía. Las caras se reparan, no se redibujan: sin alisados, sin remodelar, sin detalles inventados. Ves la primera foto antes de pagar, así que puedes juzgarla tú. Si una foto del pack no se parece a la persona, pulsa repetir — gratis, tantas veces como haga falta, durante catorce días. Si sigue sin parecerse, pide el reembolso.',
+          },
+          {
+            q: '¿Qué cubre exactamente el reembolso?',
+            a: 'El importe completo del pack, aunque ya hayas descargado todos los archivos. El botón de reembolso funciona después de la descarga, porque ese es el único momento en el que puedes decir con honestidad si el resultado está bien. La mayoría de los servicios de esta categoría hacen lo contrario y anulan el reembolso en cuanto un archivo sale de su servidor.',
+          },
+          {
+            q: '¿Hay suscripción?',
+            a: 'No. Pagas una vez por un pack — Mini, Archivo familiar o Heirloom — y esa es toda la transacción. No se crea ninguna cuenta, no se guarda ninguna tarjeta para más adelante y no hay nada que cancelar. Si el año que viene aparece otra caja de fotos, compras otro pack entonces.',
+          },
+          {
+            q: '¿Qué pasa con mis fotos?',
+            a: 'Se usan para producir tu pack y para nada más: nunca para entrenar un modelo, nunca se añaden a ninguna base de datos de caras, nunca las ve nadie del estudio. Dos servicios externos ven una copia pequeña durante los segundos que hacen falta — el modelo de renderizado y una segunda comprobación que confirma que lo subido es una fotografía familiar. Todo se borra treinta días después de la compra, o de inmediato si lo pides.',
+          },
+          {
+            q: '¿Qué tipo de originales funcionan?',
+            a: 'Escaneos de sobremesa a cualquier resolución, fotos de copias hechas con el teléfono, fotos de fotos en un álbum bajo cristal. El blanco y negro, el sepia y el color desvaído se colorean; las copias que ya están en color se restauran y corrigen sin recolorearlas. Los originales muy pequeños o muy borrosos se restauran peor, y la vista previa te lo enseñará antes de pagar.',
+          },
+          {
+            q: '¿En qué idiomas y monedas?',
+            a: 'Revive está en inglés, portugués de Brasil, español y alemán; a quien lee este sitio en ruso o francés se le envía a la versión en inglés. Los precios están en euros en Alemania y España y en dólares estadounidenses en Brasil, y el proveedor de pagos gestiona los métodos locales de cada país. Los archivos de impresión van en centímetros, a 300 dpi.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Abrir Revive',
+        body: 'Sube la foto que ya es más arruga que imagen. Dentro de un minuto la verás restaurada, y a partir de ahí decides tú.',
+        button: 'Restaurar una foto',
       },
     },
   },

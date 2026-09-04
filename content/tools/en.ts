@@ -7,14 +7,14 @@ export const toolsEn = {
   hub: {
     meta: {
       title: 'Free tools by Autofract',
-      description: 'Four tools from the Autofract studio: a contract fine-print checker, a time zone meeting planner, hidden-cost calculators and an official-letter reader.',
+      description: 'Five tools from the Autofract studio: a contract fine-print checker, a meeting planner, hidden-cost calculators, a letter reader and a photo restorer.',
     },
     kicker: 'Tools',
     h1: 'Small tools, done properly.',
     lede: 'The studio builds large systems for clients. These are the small ones we build for ourselves — and then give away, because they cost almost nothing to run.',
     intro: [
       'Every tool here started as an internal annoyance: a contract nobody had time to read, a meeting that kept landing at 22:00 for someone, a recurring cost that never appeared on any invoice. We built the smallest thing that answered the question, then kept it.',
-      'None of them ask for an account. Three of them sell nothing at all; the fourth gives you a free read and then asks five dollars for a pass, because reading a letter properly costs us real money. They run in your browser or on our machines, and they are built to the same doctrine as the platforms below: verify before you publish, show your work, never invent a fact you cannot point at.',
+      'None of them ask for an account. Three of them sell nothing at all; the other two — What\'s This Letter and Revive — give you a free first go and then take one payment, because reading a letter or restoring a photograph properly costs us real money. They run in your browser or on our machines, and they are built to the same doctrine as the platforms below: verify before you publish, show your work, never invent a fact you cannot point at.',
     ],
     toolsHeading: 'Free tools',
     toolsSub: 'Open one, use it, close the tab. No signup, no trial, no ads.',
@@ -25,7 +25,7 @@ export const toolsEn = {
       items: [
         {
           q: 'Are these really free?',
-          a: 'Three of the four are, with no account, no trial, no card, no usage limit and no ads. Two do all their work inside your browser, so serving them costs us almost nothing; Redline runs on our machines and we pay for it because it earns us more attention than an ad would. What\'s This Letter is the exception: its reference pages and your first read are free, further reads are a $5 pass, because each one costs us real money.',
+          a: 'Three of the five are, with no account, no trial, no card, no usage limit and no ads. Two do all their work inside your browser, so serving them costs us almost nothing; Redline runs on our machines and we pay for it because it earns us more attention than an ad would. What\'s This Letter and Revive are the exceptions: the reference pages and your first read, or the free preview of your first photo, cost nothing; after that a letter pass is $5 and a photo pack starts at $9, one payment each, because every render costs us real money.',
         },
         {
           q: 'Do I need to sign up?',
@@ -33,7 +33,7 @@ export const toolsEn = {
         },
         {
           q: 'What happens to what I put in?',
-          a: 'Overlap and Cost Of never send your inputs anywhere: the board and the receipt are encoded in the address bar and computed by your own browser. Redline and What\'s This Letter have to read your document on a server to analyse it. Redline keeps your report behind its own link; What\'s This Letter discards the letter the moment your answer exists — it is never stored and never used for training. Either way, treat them the way you would treat any online tool and do not paste material you are not allowed to share.',
+          a: 'Overlap and Cost Of never send your inputs anywhere: the board and the receipt are encoded in the address bar and computed by your own browser. Redline, What\'s This Letter and Revive have to work on what you upload on a server. Redline keeps your report behind its own link; What\'s This Letter discards the letter the moment your answer exists — it is never stored and never used for training; Revive keeps your photos for up to 30 days after purchase to make the pack and its redos, then deletes them — sooner if you ask — and never uses them for training. Either way, treat them the way you would treat any online tool and do not paste material you are not allowed to share.',
         },
         {
           q: 'Do you track me?',
@@ -537,6 +537,115 @@ export const toolsEn = {
         title: 'Open What\'s This Letter',
         body: 'Photograph the envelope you have been avoiding. A minute from now you will know what it is and when it needs an answer.',
         button: 'Read a letter',
+      },
+    },
+
+    revive: {
+      name: 'Revive',
+      tagline: 'Old photos, back.',
+      category: 'Photos',
+      meta: {
+        title: 'Restore and colourise old family photos — Revive',
+        description: 'Upload up to ten old family photos and get them back restored, colourised and sharpened, faces untouched, with 300 dpi print files. Free preview first.',
+      },
+      h1: 'The family photos, restored. The faces, untouched.',
+      lede: 'A box of scans and phone photos of prints: creased, faded, torn at the corner. Revive returns them repaired, colourised and sharp, with every face exactly as it was, plus print files at 300 dpi and a before-and-after card for the family chat. The first photo comes back as a free preview before you pay anything.',
+      what: {
+        h2: 'What it does',
+        body: [
+          'You upload between one and ten old photographs — flatbed scans, or a phone picture of a print held under a lamp. The rendering model repairs the physical damage first: scratches, tears, stains, the blur of a slow lens, the fade that turns a black-and-white print into a grey one. Then it colourises the scene in natural, muted tones rather than the saturated ones that make a 1962 kitchen look like a paint chart, and sharpens what the original lens and the paper lost.',
+          'Faces are the constraint the whole pipeline is built around. They are restored, never redrawn: no skin smoothing, no reshaped jawlines, no teeth that were not there. If your grandmother had a gap between her front teeth, she keeps it. The test that matters is whether the family recognises the person on the screen at once, and that is the only test the output is judged against.',
+          'Each pack comes back as a folder: the restored images, print-ready files at 300 dpi (30×40 cm on the Family archive pack, 30×40 and 50×70 cm on Heirloom), and a before-and-after card sized for a family chat. The Family archive pack adds a short before-and-after reveal video for each photo; Heirloom adds one four-second animation of a frame you choose — a slight turn, a breath, nothing more.',
+        ],
+      },
+      why: {
+        h2: 'Why it is priced the way it is',
+        body: [
+          'The large apps in this category are built for people who restore photos every week, and priced accordingly: a weekly subscription, or a yearly genealogy plan, sold to someone who has eight photos to fix once for a parent\'s seventieth birthday. Most of them also void the refund the moment a file is downloaded — so the only way to find out whether the result is any good is to give up the right to say it is not.',
+          'Read what people actually complain about and it is not resolution or colour. It is likeness. A restoration that produces a clean, sharp, handsome stranger has failed at the one thing it was for, and no amount of 8K makes up for a grandfather who is not quite him. So likeness is what Revive optimises for, and what the guarantee is written around.',
+          'The tiers of the incumbents were also built for an older generation of models, when a good result took a queue and a wait, and "premium" meant thirty minutes instead of three days. Single-image models now render in seconds; the thirty-minute premium tier is a fiction, and Revive does not sell one. You pay for what the pack contains — resolution, print sizes, the animation — not for the privilege of not waiting.',
+          'The studio\'s doctrine — verify before you publish, show your work — looks a little different in a consumer tool than in a data platform, but it is the same idea. Here the verification is yours: a free watermarked preview of your own first photo before any money changes hands, a redo button that regenerates for free, as many times as it takes, for fourteen days, and a refund button that still works after you have downloaded everything. The product is checked against the only judge that counts, which is you.',
+        ],
+      },
+      how: {
+        h2: 'How it works',
+        steps: [
+          {
+            h3: 'Upload the box',
+            body: 'Drag in one to ten photographs. Scans are best, but a phone photo of a print on a table works; the pipeline straightens, crops and de-glares it before anything else. No account and no e-mail address at this stage.',
+          },
+          {
+            h3: 'A free preview in about a minute',
+            body: 'The first photo is restored and colourised at once and shown back to you with a watermark, beside the original. Judge the likeness before you decide anything. If it is not them, close the tab: nothing has been charged, and the photos are removed on request.',
+          },
+          {
+            h3: 'Pick a pack, pay once',
+            body: 'Mini restores three photos for $9. Family archive restores ten for $19, with 4K masters, 30×40 cm print files and the reveal video. Heirloom, at $39, restores ten with 8K masters, 30×40 and 50×70 cm print files and one four-second animation of a frame you choose. One payment through the payment provider — in euros in Germany and Spain, in US dollars in Brazil — and no subscription to cancel afterwards.',
+          },
+          {
+            h3: 'Download, redo, or refund',
+            body: 'The pack renders in a few minutes and downloads as a folder. Every photo carries a redo button for fourteen days: press it and the rendering model tries again, free, as often as you like. If it still does not look like them, the refund button returns the full amount — after you have downloaded, not before.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'When to use it',
+        items: [
+          {
+            h3: 'A parent\'s birthday or an anniversary',
+            body: 'Ten photos from the wedding album, restored and printed at 30×40 cm, is a present that takes an evening to assemble and outlasts most others. The reveal video goes to the family chat the same night.',
+          },
+          {
+            h3: 'Mother\'s Day and Father\'s Day',
+            body: 'The photo of them as a child, the one that has been on the fridge for twenty years and is now more crease than picture. Restored, colourised, sharp, and still recognisably them.',
+          },
+          {
+            h3: 'Christmas and a full table',
+            body: 'A set of family photos across three generations, restored together so the colour and the grain match, printed and framed as one wall. The before-and-after card is what gets passed around after dinner.',
+          },
+          {
+            h3: 'Weddings and births',
+            body: 'The grandparents\' wedding photo beside the new couple\'s; a great-grandmother, colourised, in the baby\'s first album. Old and new prints that finally look as if they belong in the same book.',
+          },
+          {
+            h3: 'A memorial',
+            body: 'The photo for the service, from the only print anyone has, with the tear across the corner repaired and the face exactly as everyone remembers it. This is the case where likeness matters most, and where the redo button is used most.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Questions people ask',
+        items: [
+          {
+            q: 'Will they still look like themselves?',
+            a: 'That is the whole point of the tool and the whole of the guarantee. Faces are repaired, not redrawn: no smoothing, no reshaping, no invented detail. You see the first photo before you pay, so you can judge it yourself. If a photo in the pack does not look like the person, press redo — free, as many times as it takes, for fourteen days. If it still does not, take the refund.',
+          },
+          {
+            q: 'What does the refund actually cover?',
+            a: 'The full amount of the pack, even if you have already downloaded every file. The refund button works after download, because that is the only point at which you can honestly say whether the result is right. Most services in this category do the opposite and void the refund the moment a file leaves their server.',
+          },
+          {
+            q: 'Is there a subscription?',
+            a: 'No. You pay once for a pack — Mini, Family archive or Heirloom — and that is the whole transaction. No account is created, no card is stored for later, and there is nothing to cancel. If you have another box of photos next year, you buy another pack then.',
+          },
+          {
+            q: 'What happens to my photos?',
+            a: 'They are used to make your pack and for nothing else: never to train a model, never added to any face database, never shown to anyone at the studio. Two outside services see a small copy for the seconds it takes — the rendering model, and a second check that confirms the upload is a family photograph. Everything is deleted thirty days after purchase, or immediately if you ask.',
+          },
+          {
+            q: 'What kind of originals work?',
+            a: 'Flatbed scans at any resolution, phone photos of prints, photos of photos in an album under glass. Black-and-white, sepia and faded colour all colourise; prints that are already in colour are restored and corrected without being recoloured. Very small or very blurred originals restore less well, and the preview will show you that before you pay.',
+          },
+          {
+            q: 'Which languages and currencies?',
+            a: 'Revive is in English, Brazilian Portuguese, Spanish and German; a reader on this site in Russian or French is sent to the English version. Prices are in euros in Germany and Spain and in US dollars in Brazil, and the payment provider handles the local methods in each country. Print files are sized in centimetres, at 300 dpi.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Open Revive',
+        body: 'Upload the one photo that is more crease than picture. A minute from now you will see it restored, and you decide from there.',
+        button: 'Restore a photo',
       },
     },
   },
