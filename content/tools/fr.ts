@@ -10,14 +10,14 @@ export const toolsFr: ToolsContent = {
   hub: {
     meta: {
       title: 'Outils en ligne gratuits — Autofract',
-      description: 'Cinq outils du studio Autofract : les clauses d\'un contrat, les réunions entre fuseaux, les coûts cachés, les courriers officiels et les vieilles photos.',
+      description: 'Six outils du studio Autofract : contrats, réunions entre fuseaux, coûts cachés, courriers officiels, vieilles photos et le reçu d\'un rapport vérifié.',
     },
     kicker: 'Outils',
     h1: 'De petits outils, faits correc­tement.',
     lede: 'Le studio construit de grands systèmes pour ses clients. Voici les petits, ceux que nous construisons pour nous-mêmes — et que nous offrons ensuite, parce qu\'ils ne coûtent presque rien à faire tourner.',
     intro: [
       'Chaque outil ici est né d\'un agacement interne : un contrat que personne n\'avait le temps de lire, une réunion qui tombait toujours à 22 h pour quelqu\'un, un coût récurrent qui n\'apparaissait sur aucune facture. Nous avons construit la plus petite chose qui répondait à la question, puis nous l\'avons gardée.',
-      'Aucun ne demande de compte. Trois ne vendent rien du tout ; les deux autres — What\'s This Letter et Revive — vous offrent un premier essai, puis prennent un seul paiement, parce que lire un courrier ou restaurer une photographie correctement nous coûte de l\'argent réel. Ils tournent dans votre navigateur ou sur nos machines, et ils sont construits selon la même doctrine que les plateformes plus bas : vérifier avant de publier, montrer son travail, ne jamais avancer un fait qu\'on ne peut pas montrer dans la source.',
+      'Aucun ne demande de compte. Trois ne vendent rien du tout ; les trois autres — What\'s This Letter, Revive et EXHIBIT B — vous offrent un premier essai, puis prennent un seul paiement, parce que lire un courrier, restaurer une photographie ou sceller un reçu signé correctement nous coûte de l\'argent réel. Ils tournent dans votre navigateur ou sur nos machines, et ils sont construits selon la même doctrine que les plateformes plus bas : vérifier avant de publier, montrer son travail, ne jamais avancer un fait qu\'on ne peut pas montrer dans la source.',
     ],
     toolsHeading: 'Outils gratuits',
     toolsSub: 'Ouvrez-en un, utilisez-le, fermez l\'onglet. Pas d\'inscription, pas d\'essai, pas de publicité.',
@@ -28,7 +28,7 @@ export const toolsFr: ToolsContent = {
       items: [
         {
           q: 'C\'est vraiment gratuit ?',
-          a: 'Trois des cinq, oui : pas de compte, pas d\'essai, pas de carte, pas de quota, pas de publicité. Deux font tout leur travail dans votre navigateur, donc les servir ne nous coûte presque rien ; Redline tourne sur nos machines et nous le payons, parce qu\'il nous rapporte plus d\'attention qu\'une publicité. What\'s This Letter et Revive sont les exceptions : les pages de référence et votre première lecture, ou l\'aperçu gratuit de votre première photo, ne coûtent rien ; ensuite, un pass courrier coûte 5 $ et un pack photo démarre à 9 €, un seul paiement à chaque fois, parce que chaque rendu nous coûte de l\'argent réel.',
+          a: 'Trois des six, oui : pas de compte, pas d\'essai, pas de carte, pas de quota, pas de publicité. Deux font tout leur travail dans votre navigateur, donc les servir ne nous coûte presque rien ; Redline tourne sur nos machines et nous le payons, parce qu\'il nous rapporte plus d\'attention qu\'une publicité. What\'s This Letter, Revive et EXHIBIT B sont les exceptions : les pages de référence et votre première lecture, l\'aperçu gratuit de votre première photo, ou la vérification que chaque source d\'un rapport existe, ne coûtent rien ; ensuite, un pass courrier coûte 5 $, un pack photo démarre à 9 € et un reçu scellé coûte 9 $ par rapport, un seul paiement à chaque fois, parce que chaque rendu et chaque enregistrement signé nous coûtent de l\'argent réel.',
         },
         {
           q: 'Faut-il s\'inscrire ?',
@@ -36,7 +36,7 @@ export const toolsFr: ToolsContent = {
         },
         {
           q: 'Que devient ce que je saisis ?',
-          a: 'Overlap et Cost Of n\'envoient jamais vos saisies nulle part : le tableau et le reçu sont encodés dans la barre d\'adresse et calculés par votre propre navigateur. Redline, What\'s This Letter et Revive doivent travailler sur un serveur avec ce que vous leur envoyez. Redline garde votre rapport derrière son propre lien ; What\'s This Letter supprime le courrier à l\'instant où votre réponse existe — il n\'est jamais stocké ni utilisé pour entraîner quoi que ce soit ; Revive conserve vos photos jusqu\'à 30 jours après l\'achat, le temps de produire le pack et ses reprises, puis les supprime — plus tôt si vous le demandez — et ne s\'en sert jamais pour entraîner quoi que ce soit. Dans tous les cas, traitez-les comme n\'importe quel outil en ligne et ne collez pas de contenu que vous n\'avez pas le droit de partager.',
+          a: 'Overlap et Cost Of n\'envoient jamais vos saisies nulle part : le tableau et le reçu sont encodés dans la barre d\'adresse et calculés par votre propre navigateur. Redline, What\'s This Letter, Revive et EXHIBIT B doivent travailler sur un serveur avec ce que vous leur envoyez. Redline garde votre rapport derrière son propre lien ; What\'s This Letter supprime le courrier à l\'instant où votre réponse existe — il n\'est jamais stocké ni utilisé pour entraîner quoi que ce soit ; Revive conserve vos photos jusqu\'à 30 jours après l\'achat, le temps de produire le pack et ses reprises, puis les supprime — plus tôt si vous le demandez — et ne s\'en sert jamais pour entraîner quoi que ce soit ; EXHIBIT B supprime le rapport lui-même quelques secondes après l\'envoi et ne scelle que des hachages, des comptes et des heures — jamais le texte. Dans tous les cas, traitez-les comme n\'importe quel outil en ligne et ne collez pas de contenu que vous n\'avez pas le droit de partager.',
         },
         {
           q: 'Nous suivez-vous à la trace ?',
@@ -649,6 +649,122 @@ export const toolsFr: ToolsContent = {
         title: 'Ouvrir Revive',
         body: 'Envoyez la photo qui est désormais plus pli que photo. Dans une minute, vous la verrez restaurée, et vous déciderez à partir de là.',
         button: 'Restaurer une photo',
+      },
+    },
+    exhibitb: {
+      name: 'EXHIBIT B',
+      tagline: 'L\'annexe qui prouve que vous avez vérifié.',
+      category: 'Rapports',
+      meta: {
+        title: 'La preuve que votre rapport IA a été vérifié — EXHIBIT B',
+        description: 'Déposez un rapport rédigé avec l\'IA et recevez un reçu signé, chaîné par hachage : chaque source rechargée, hachée et horodatée avant votre signature.',
+      },
+      h1: 'Quand on vous demande comment vous avez vérifié, montrez ceci.',
+      lede: 'Un rapport rédigé avec l\'aide d\'un modèle part sous votre nom. EXHIBIT B recharge chaque source qu\'il cite, hache les octets, note l\'heure et scelle le résultat dans un reçu signé et chaîné par hachage — daté avant votre signature, vérifiable hors ligne par n\'importe qui, et sans une ligne du texte de votre client. Vérifier qu\'une source existe est gratuit et sans limite ; le reçu scellé coûte 9 $.',
+      what: {
+        h2: 'Ce qu\'il fait',
+        body: [
+          'Vous glissez le rapport — un DOCX ou un PDF jusqu\'à 15 Mo, ou du texte collé — et quelques secondes plus tard le document est supprimé, avant que quoi que ce soit d\'autre ne se passe ; un compteur sur la page vous donne la seconde où il a disparu. Ce qui reste, c\'est une liste d\'affirmations et des sources sur lesquelles elles s\'appuient. Chaque source est rechargée, depuis notre réseau et depuis un second point d\'observation dans un autre, ses octets sont hachés, on demande à une archive d\'en garder une copie, et l\'instant du chargement est consigné.',
+          'Trois niveaux, en termes simples. EXISTS : la source citée répond, nous l\'avons chargée et hachée. SAYS : la source contient les mots que vous lui attribuez, ancrés à des positions de caractères dans la copie chargée. HOLDS : une tentative contradictoire de réfuter l\'affirmation, jugée par un troisième modèle — il contredit souvent les experts, renvoie souvent et délibérément INSUFFICIENT_EVIDENCE, est désactivé par défaut et n\'entre jamais dans l\'enregistrement scellé. Les deux premiers sont quasi déterministes ; le troisième est une pré-vérification privée, pas un verdict.',
+          'Ce qui revient est un reçu d\'environ quatre kilo-octets : les hachages des affirmations, ceux des sources, les heures de chargement, les verdicts EXISTS et SAYS, une signature et une position dans une chaîne de hachage dont la racine quotidienne est publiée dans un dépôt public. Pas une phrase du rapport, pas une citation, pas un nom de client. Quiconque le reçoit peut le vérifier avec le vérificateur open source — dans un navigateur ou en ligne de commande — sans une seule requête vers nous.',
+        ],
+      },
+      why: {
+        h2: 'Pourquoi un reçu, et pas une capture d\'écran',
+        body: [
+          'Jusqu\'à récemment, « j\'ai tout vérifié moi-même » suffisait. Puis le processus derrière un rapport d\'expert est devenu communicable en justice, les assureurs se sont mis à demander un protocole de vérification écrit au renouvellement, et les clients ont appris à réclamer le remboursement. L\'auto-attestation est la seule forme de preuve qui s\'affaiblit au moment même où on la conteste. Une capture d\'écran est faite par vous, sans date au sens prouvable, et modifiée en trente secondes — ce que la personne qui vous contre-interroge ne manquera pas de souligner.',
+          'Un reçu d\'EXHIBIT B est d\'une autre nature. Les hachages ont été pris au moment du chargement, l\'enregistrement est lié dans une chaîne, signé avec une clé qui peut être la vôtre, et ancré dans une racine publique quotidienne. Il n\'a pas pu être produit après coup — et c\'est le fait qui compte lors d\'une déposition, d\'un renouvellement et face à un client qui veut récupérer son argent. Savoir si une citation est bonne est une autre question, et le premier écran le dit.',
+          'Le reçu n\'est délibérément pas un certificat de vos conclusions. EXISTS et SAYS portent sur des faits qui ne vous appartiennent pas et sur lesquels vous êtes tenu à la diligence : la source est là, la source dit ceci. HOLDS porte sur le jugement — ce pour quoi on vous paie —, et un enregistrement contradictoire permanent à son sujet serait un mauvais échange ; il est donc désactivé par défaut, activé à la main, et même alors tenu hors de l\'enregistrement scellé. Nous certifions que vous avez vérifié, et quand. C\'est la partie que personne ne peut reconstituer plus tard.',
+          'Vérifier ne coûte pas cher, et nous ne le facturons pas : EXISTS est gratuit, illimité, pour toujours, parce que charger une URL et hacher les octets n\'est pas un commerce. Ce que nous facturons, c\'est l\'enregistrement — sa signature, sa place dans la chaîne, sa conservation. Les outils de traçage facturent déjà deux fois plus cher 400 jours de conservation que 14 ; la conservation a toujours été le produit, et la grille tarifaire ici le dit tout haut.',
+        ],
+      },
+      how: {
+        h2: 'Comment ça marche',
+        steps: [
+          {
+            h3: 'Déposez le rapport',
+            body: 'Un DOCX, un PDF ou du texte collé. Les affirmations et leurs citations sont extraites, le document lui-même est supprimé en quelques secondes, et la page vous donne le moment où il a disparu. L\'aperçu qui reste — des extraits et des hachages, rien de plus — expire au bout de trente minutes, plus tôt si vous appuyez sur supprimer.',
+          },
+          {
+            h3: 'Chaque source est rechargée',
+            body: 'Chaque URL, DOI ou identifiant de registre cité est résolu depuis notre réseau et depuis un second point dans un autre ; les octets sont hachés, on demande à une archive d\'en garder une copie, et l\'heure du chargement est consignée. Pour SAYS, les mots cités sont localisés dans la copie chargée et ancrés à des positions de caractères, pour qu\'un lecteur ultérieur retrouve le passage — ou constate qu\'il a changé depuis.',
+          },
+          {
+            h3: 'Regardez la table se remplir',
+            body: 'Les lignes apparaissent à mesure que les vérifications se terminent : EXISTS, SAYS, heure de chargement, hachage du contenu, domaine de la source. Une affirmation que la vérification n\'a pas pu trancher est marquée comme telle plutôt que lissée. Avant de payer quoi que ce soit, un bac à sable vous laisse modifier un octet du reçu d\'aperçu et regarder le vérificateur le refuser, en nommant l\'octet.',
+          },
+          {
+            h3: 'Scellez-le, une fois',
+            body: 'Un rapport coûte 9 $ — pas de compte, pas de carte enregistrée — et le reçu est conservé quatre-vingt-dix jours. RECORD, à 39 $ par mois, garde dix rapports par mois dans une chaîne sans rupture pendant sept ans, avec une racine publique quotidienne et un code QR sur chaque reçu. PRACTICE, à 199 $, ajoute votre propre clé de signature, des reçus sur votre propre domaine, cinq sièges et HOLDS en option. Un remboursement est un bouton, pas une discussion, et l\'enregistrement reste dans tous les cas.',
+          },
+          {
+            h3: 'N\'importe qui le vérifie, hors ligne',
+            body: 'Le vérificateur est open source : un seul binaire, qui tourne aussi dans le navigateur. Déposez-y le reçu et chaque contrôle s\'exécute en local — schéma, hachage propre, signature, clé, champs de chaîne — et, avec l\'option de rechargement, si chaque source produit encore le même hachage aujourd\'hui. La page compte les requêtes qu\'elle nous a envoyées pendant la vérification ; le nombre est zéro, et vous pouvez le surveiller dans vos propres outils de développement.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Quand s\'en servir',
+        items: [
+          {
+            h3: 'Un rapport d\'expert qui entre dans un litige',
+            body: 'Une évaluation, un modèle de préjudice, un avis technique : rédigé plus vite avec un modèle, appuyé sur quarante sources que vous n\'avez pas pu relire le jour même. Scellez les citations avant de signer, et la question à la déposition devient « montrez-nous le reçu » plutôt que « comment savons-nous que vous avez vérifié ».',
+          },
+          {
+            h3: 'Un cabinet qui dépose chaque mois',
+            body: 'Constats d\'audit, mémos de due diligence, revues médicales et d\'ingénierie. Un reçu par rapport, lié dans une chaîne qui n\'a jamais de trou — parce qu\'une chaîne qui commence le jour où on vous la demande n\'est pas une preuve, et qu\'un trou en mars est une question qu\'on vous posera en octobre.',
+          },
+          {
+            h3: 'Le renouvellement de l\'assurance professionnelle',
+            body: 'Les assureurs demandent désormais quel est votre protocole de vérification quand un modèle a aidé à rédiger le travail. « Chaque source citée est rechargée et hachée avant signature, et voici les reçus » est une réponse écrite, datée, qui coûte neuf dollars par rapport.',
+          },
+          {
+            h3: 'Un client qui veut récupérer son argent',
+            body: 'À l\'accusation qu\'un rapport a été « simplement généré » répond un enregistrement daté de chaque source vérifiée : quand, et ce qui a été trouvé — sans remettre le rapport lui-même à qui que ce soit.',
+          },
+          {
+            h3: 'Un reçu que quelqu\'un vous a envoyé',
+            body: 'Donnez le fichier au vérificateur et lisez le résultat : scellé, signé, ancré, et si les sources disent encore aujourd\'hui ce qu\'elles disaient alors. Pas de compte, pas de requête vers nous, et aucun moyen pour nous de savoir que vous avez regardé.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Les questions qu\'on nous pose',
+        items: [
+          {
+            q: 'Le reçu révèle-t-il les documents de mon client ?',
+            a: 'Non, à aucun niveau, gratuit compris. Le reçu porte des hachages, des comptes, des horodatages, une signature et une position dans la chaîne. Le texte des affirmations, les citations et le document restent de votre côté ; le document lui-même est supprimé quelques secondes après l\'envoi, et la page vous montre la seconde où il a disparu. Un lecteur peut confirmer ce que vous avez vérifié et quand, et que l\'enregistrement est antérieur au rapport, sans en voir une ligne. La confidentialité n\'est pas une option payante.',
+          },
+          {
+            q: 'Est-ce la preuve que mes citations sont correctes ?',
+            a: 'Non, et le premier écran le dit. EXISTS prouve que la source a répondu et quels octets elle contenait à cet instant ; SAYS prouve que les mots que vous lui attribuez s\'y trouvaient, à ces positions. Ni l\'un ni l\'autre ne juge votre conclusion. Ce que le reçu prouve, c\'est qu\'une vérification documentée a eu lieu à une date que vous pouvez établir, et que l\'enregistrement n\'a pas pu être produit après coup.',
+          },
+          {
+            q: 'Qu\'est-ce que HOLDS, et pourquoi est-il désactivé ?',
+            a: 'Une tentative contradictoire de réfuter une affirmation, jugée par un troisième modèle. Il contredit souvent les experts, il renvoie souvent et délibérément INSUFFICIENT_EVIDENCE, et son verdict n\'entre jamais dans le reçu scellé. Il est disponible sur PRACTICE comme pré-vérification privée, activée à la main avec une confirmation distincte, parce qu\'un enregistrement contradictoire permanent de votre jugement professionnel n\'est pas quelque chose que nous vous vendrons par défaut.',
+          },
+          {
+            q: 'Combien ça coûte ?',
+            a: 'EXISTS est gratuit, illimité, sans compte — charger une URL et hacher les octets n\'est pas un commerce. Un reçu scellé avec EXISTS et SAYS, c\'est CHECK : 9 $ par rapport, conservé quatre-vingt-dix jours, pour l\'expert qui dépose trois rapports par an. RECORD coûte 39 $ par mois pour dix rapports dans une chaîne sans rupture, conservés sept ans, avec une racine publique quotidienne et un lien de vérification sur chacun. PRACTICE coûte 199 $ par mois pour cinquante, avec votre propre clé de signature, des reçus sur votre propre domaine, cinq sièges et un accord de traitement des données. Un remboursement est un bouton ; l\'enregistrement reste.',
+          },
+          {
+            q: 'Et si le studio disparaît ?',
+            a: 'C\'est l\'objection à laquelle répond l\'architecture, et non une promesse. Le vérificateur est open source, un seul binaire, fonctionne hors ligne et est répliqué sur un hébergeur de code public. Chaque reçu est un fichier autonome d\'environ quatre kilo-octets, et toute votre chaîne s\'exporte en une commande. Les racines quotidiennes sont publiées dans un dépôt public, pas seulement dans notre base de données. Si nous disparaissions demain, votre reçu se vérifierait toujours — et vous pouvez faire ce contrôle dès maintenant, avant de payer quoi que ce soit.',
+          },
+          {
+            q: 'Je ne pourrais pas construire ça en une soirée ?',
+            a: 'EXISTS, vous le construiriez en une soirée — et vous devriez, c\'est pourquoi il est gratuit pour toujours. Ce qu\'une soirée ne produit pas : une canonicalisation qui reste stable à l\'octet près d\'une version à l\'autre, une rotation de clés qui ne casse pas la vérification de l\'historique, une publication des racines à un endroit d\'où l\'on ne peut pas nous retirer discrètement, et surtout un enregistrement daté qui a commencé avant que vous n\'ayez besoin de la preuve. Une chaîne que vous commencez le jour où on vous la demande n\'est pas une preuve.',
+          },
+          {
+            q: 'Pour qui ce n\'est pas fait ?',
+            a: 'Les rédactions et les cellules de vérification, financées par des subventions et non par ceci. Les avocats plaidants qui vérifient la jurisprudence : ce corpus appartient aux acteurs en place, et les tribunaux ont refusé qu\'un modèle en vérifiant un autre vaille vérification — un reçu n\'y aidera pas. La gouvernance de l\'IA en grande entreprise et les programmes de conformité à l\'EU AI Act, qui exigent une revue fournisseur qu\'un outil en libre-service tenu par une seule personne ne peut pas offrir. La justification publicitaire. Et toute forme de badge public : un badge sur le rapport d\'un client dit au client que vous avez utilisé l\'IA et à son service achats votre score — nous n\'en construirons pas.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Ouvrir EXHIBIT B',
+        body: 'Déposez le rapport que vous êtes sur le point de signer. Vérifier que chaque source existe ne coûte rien ; sceller le reçu coûte neuf dollars, et personne ne voit jamais le texte.',
+        button: 'Vérifier un rapport',
       },
     },
   },

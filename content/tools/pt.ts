@@ -10,14 +10,14 @@ export const toolsPt: ToolsContent = {
   hub: {
     meta: {
       title: 'Ferramentas gratuitas online — Autofract',
-      description: 'Cinco ferramentas do estúdio Autofract: leitor de contrato, agendador entre fusos, calculadoras de custos, leitor de cartas e restaurador de fotos.',
+      description: 'Seis ferramentas da Autofract: contratos, agendador entre fusos, calculadoras de custos, leitor de cartas, restaurador de fotos e recibo de relatório.',
     },
     kicker: 'Ferramentas',
     h1: 'Ferra­mentas pequenas, feitas direito.',
     lede: 'O estúdio constrói sistemas grandes para clientes. Estas são as coisas pequenas que construímos para nós mesmos — e depois damos de graça, porque custam quase nada para manter no ar.',
     intro: [
       'Toda ferramenta daqui começou como um incômodo interno: um contrato que ninguém tinha tempo de ler, uma reunião que sempre caía às 22:00 para alguém, um custo recorrente que nunca aparecia em nota nenhuma. Construímos a menor coisa capaz de responder à pergunta e ficamos com ela.',
-      'Nenhuma delas pede cadastro. Três não vendem nada; as outras duas — What\'s This Letter e Revive — dão uma primeira vez de graça e depois cobram um pagamento único, porque ler uma carta ou restaurar uma fotografia direito nos custa dinheiro de verdade. Rodam no seu navegador ou nas nossas máquinas, e seguem a mesma doutrina das plataformas listadas abaixo: verifique antes de publicar, mostre a conta, nunca invente um fato que você não consegue apontar.',
+      'Nenhuma delas pede cadastro. Três não vendem nada; as outras três — What\'s This Letter, Revive e EXHIBIT B — dão uma primeira vez de graça e depois cobram um pagamento único, porque ler uma carta, restaurar uma fotografia ou selar um recibo assinado direito nos custa dinheiro real. Rodam no seu navegador ou nas nossas máquinas, e seguem a mesma doutrina das plataformas listadas abaixo: verifique antes de publicar, mostre a conta, nunca invente um fato que você não consegue apontar.',
     ],
     toolsHeading: 'Ferramentas gratuitas',
     toolsSub: 'Abra, use, feche a aba. Sem cadastro, sem período de teste, sem anúncios.',
@@ -28,7 +28,7 @@ export const toolsPt: ToolsContent = {
       items: [
         {
           q: 'Isso é gratuito mesmo?',
-          a: 'Três das cinco, sim: sem cadastro, sem período de teste, sem cartão, sem limite de uso, sem anúncios. Duas fazem todo o trabalho dentro do seu navegador, então servi-las não nos custa quase nada; o Redline roda nas nossas máquinas e pagamos por ele porque nos rende mais atenção do que um anúncio renderia. O What\'s This Letter e o Revive são as exceções: as páginas de referência e a sua primeira leitura, ou a prévia gratuita da sua primeira foto, não custam nada; depois disso, um passe de leitura custa US$ 5 e um pacote de fotos começa em US$ 9, um pagamento único em cada caso, porque cada renderização nos custa dinheiro de verdade.',
+          a: 'Três das seis, sim: sem cadastro, sem período de teste, sem cartão, sem limite de uso, sem anúncios. Duas fazem todo o trabalho dentro do seu navegador, então servi-las não nos custa quase nada; o Redline roda nas nossas máquinas e pagamos por ele porque nos rende mais atenção do que um anúncio renderia. O What\'s This Letter, o Revive e o EXHIBIT B são as exceções: as páginas de referência e a sua primeira leitura, a prévia gratuita da sua primeira foto, ou a checagem de que cada fonte de um relatório existe, não custam nada; depois disso, um passe de leitura custa US$ 5, um pacote de fotos começa em US$ 9 e um recibo selado custa US$ 9 por relatório, um pagamento único em cada caso, porque cada renderização e cada registro assinado nos custam dinheiro real.',
         },
         {
           q: 'Preciso me cadastrar?',
@@ -36,7 +36,7 @@ export const toolsPt: ToolsContent = {
         },
         {
           q: 'O que acontece com o que eu coloco ali?',
-          a: 'Overlap e Cost Of nunca enviam os seus dados para lugar nenhum: o quadro e o comprovante ficam codificados na barra de endereço e são calculados pelo seu próprio navegador. O Redline, o What\'s This Letter e o Revive precisam trabalhar com o que você envia em um servidor. O Redline guarda o seu relatório atrás do próprio link; o What\'s This Letter descarta a carta no momento em que a sua resposta existe — ela nunca é armazenada nem usada para treinar nada; o Revive guarda as suas fotos por até 30 dias depois da compra, para montar o pacote e refazê-lo, e então as apaga — antes, se você pedir — sem nunca usá-las para treinar coisa alguma. Nos dois casos, trate-os como qualquer ferramenta online e não cole material que você não tem permissão de compartilhar.',
+          a: 'Overlap e Cost Of nunca enviam os seus dados para lugar nenhum: o quadro e o comprovante ficam codificados na barra de endereço e são calculados pelo seu próprio navegador. O Redline, o What\'s This Letter, o Revive e o EXHIBIT B precisam trabalhar com o que você envia em um servidor. O Redline guarda o seu relatório atrás do próprio link; o What\'s This Letter descarta a carta no momento em que a sua resposta existe — ela nunca é armazenada nem usada para treinar nada; o Revive guarda as suas fotos por até 30 dias depois da compra, para montar o pacote e refazê-lo, e então as apaga — antes, se você pedir — sem nunca usá-las para treinar coisa alguma; o EXHIBIT B descarta o próprio relatório segundos depois do envio e sela apenas hashes, contagens e horários — nunca o texto. Nos dois casos, trate-os como qualquer ferramenta online e não cole material que você não tem permissão de compartilhar.',
         },
         {
           q: 'Vocês me rastreiam?',
@@ -649,6 +649,122 @@ export const toolsPt: ToolsContent = {
         title: 'Abrir o Revive',
         body: 'Envie aquela foto que já é mais vinco do que imagem. Daqui a um minuto você vai vê-la restaurada, e decide a partir daí.',
         button: 'Restaurar uma foto',
+      },
+    },
+    exhibitb: {
+      name: 'EXHIBIT B',
+      tagline: 'O anexo que prova que você checou.',
+      category: 'Relatórios',
+      meta: {
+        title: 'Prova de que você checou o relatório com IA — EXHIBIT B',
+        description: 'Envie um relatório escrito com IA, receba um recibo assinado e encadeado por hash: cada fonte baixada de novo, hasheada e datada antes de você assinar.',
+      },
+      h1: 'Quando pergun­tarem como você checou, mostre isto.',
+      lede: 'Um relatório escrito com a ajuda de um modelo sai com o seu nome. O EXHIBIT B baixa de novo cada fonte que ele cita, faz o hash dos bytes, registra a hora e sela o resultado em um recibo assinado e encadeado por hash — datado antes da sua assinatura, verificável offline por qualquer pessoa e sem uma linha do texto do seu cliente. Checar que uma fonte existe é grátis e sem limite; o recibo selado custa US$ 9.',
+      what: {
+        h2: 'O que ele faz',
+        body: [
+          'Você arrasta o relatório — um DOCX ou PDF de até 15 MB, ou texto colado — e alguns segundos depois o documento é descartado, antes de qualquer outra coisa acontecer; um contador na página diz o segundo em que ele sumiu. O que fica é uma lista de afirmações e das fontes em que elas se apoiam. Cada fonte é baixada de novo, da nossa rede e de um segundo ponto de observação em outra, os bytes recebem um hash, um arquivo é solicitado a guardar uma cópia, e o momento da busca é registrado.',
+          'Três níveis, em palavras simples. EXISTS: a fonte citada responde, nós a baixamos e fizemos o hash. SAYS: a fonte contém as palavras que você atribuiu a ela, ancoradas em posições de caractere na cópia baixada. HOLDS: uma tentativa adversarial de refutar a afirmação, julgada por um terceiro modelo — ele discorda de especialistas com frequência, devolve INSUFFICIENT_EVIDENCE com frequência e de propósito, fica desligado por padrão e nunca entra no registro selado. Os dois primeiros são quase determinísticos; o terceiro é uma pré-checagem privada, não um veredito.',
+          'O que volta é um recibo de uns quatro kilobytes: hashes das afirmações, hashes das fontes, horários de busca, os vereditos de EXISTS e SAYS, uma assinatura e uma posição em uma cadeia de hashes cuja raiz diária é publicada em um repositório público. Nem uma frase do relatório, nem uma citação, nem o nome de um cliente. Qualquer pessoa a quem você entregue pode verificá-lo com o verificador de código aberto — no navegador ou na linha de comando — sem uma única requisição para nós.',
+        ],
+      },
+      why: {
+        h2: 'Por que um recibo, e não uma captura de tela',
+        body: [
+          'Até pouco tempo atrás, "eu mesmo chequei tudo" bastava. Depois o processo por trás de um laudo passou a ser exigível em juízo, as seguradoras começaram a pedir um protocolo de verificação por escrito na renovação, e os clientes aprenderam a pedir o dinheiro de volta. A autoatestação é o único tipo de prova que enfraquece justamente quando é contestada. Uma captura de tela é feita por você, sem data em nenhum sentido demonstrável, e editada em trinta segundos — que é o que a pessoa que vai inquiri-lo vai apontar.',
+          'Um recibo do EXHIBIT B é de outra natureza. Os hashes foram tirados no momento da busca, o registro está ligado a uma cadeia, assinado com uma chave que pode ser a sua e ancorado em uma raiz pública diária. Ele não poderia ter sido produzido depois — e esse é o fato que importa em um depoimento, em uma renovação e diante de um cliente que quer o dinheiro de volta. Se uma citação é boa ou não é outra pergunta, e a primeira tela diz isso.',
+          'O recibo, de propósito, não é um certificado das suas conclusões. EXISTS e SAYS tratam de fatos que não pertencem a você e sobre os quais você é obrigado a ser diligente: a fonte está lá, a fonte diz isto. HOLDS trata do julgamento — aquilo pelo qual você é pago —, e um registro adversarial permanente sobre ele seria um mau negócio; por isso fica desligado por padrão, é ligado à mão e, mesmo assim, fica fora do registro selado. Nós certificamos que você checou, e quando. Essa é a parte que ninguém consegue reconstruir depois.',
+          'Checar é barato, e não cobramos por isso: EXISTS é grátis, ilimitado, para sempre, porque baixar uma URL e fazer o hash dos bytes não é um negócio. O que cobramos é o registro — a assinatura, o lugar na cadeia, a retenção. Ferramentas de rastreamento já cobram o dobro por 400 dias de retenção em relação a 14; a retenção sempre foi o produto, e a tabela de preços aqui diz isso em voz alta.',
+        ],
+      },
+      how: {
+        h2: 'Como funciona',
+        steps: [
+          {
+            h3: 'Solte o relatório',
+            body: 'Um DOCX, um PDF ou texto colado. As afirmações e suas citações são extraídas, o documento em si é descartado em segundos, e a página informa o momento em que ele sumiu. A prévia que fica — trechos e hashes, nada mais — expira em trinta minutos, antes se você apertar excluir.',
+          },
+          {
+            h3: 'Cada fonte é baixada de novo',
+            body: 'Cada URL, DOI ou identificador de registro citado é resolvido da nossa rede e de um segundo ponto em outra; os bytes recebem um hash, um arquivo é solicitado a guardar uma cópia, e o horário da busca é registrado. Para SAYS, as palavras citadas são localizadas na cópia baixada e ancoradas em posições de caractere, para que um leitor mais tarde encontre o trecho — ou veja que ele mudou desde então.',
+          },
+          {
+            h3: 'Veja a tabela se preencher',
+            body: 'As linhas aparecem conforme as checagens terminam: EXISTS, SAYS, horário da busca, hash do conteúdo, domínio da fonte. Uma afirmação que a checagem não conseguiu resolver é marcada como tal, em vez de disfarçada. Antes de pagar qualquer coisa, um campo de testes deixa você editar um byte do recibo de prévia e ver o verificador recusá-lo, nomeando o byte.',
+          },
+          {
+            h3: 'Sele, uma vez',
+            body: 'Um relatório custa US$ 9 — sem cadastro, sem cartão guardado — e o recibo fica guardado por noventa dias. O RECORD, por US$ 39 ao mês, mantém dez relatórios por mês em uma cadeia sem interrupções durante sete anos, com raiz pública diária e um código QR em cada recibo. O PRACTICE, por US$ 199, acrescenta a sua própria chave de assinatura, recibos no seu próprio domínio, cinco assentos e HOLDS como opção. Um reembolso é um botão, não uma discussão, e o registro permanece de qualquer jeito.',
+          },
+          {
+            h3: 'Qualquer pessoa verifica, offline',
+            body: 'O verificador é de código aberto: um único binário, que também roda no navegador. Solte o recibo nele e cada checagem roda localmente — esquema, hash próprio, assinatura, chave, campos da cadeia — e, com a opção de nova busca, se cada fonte ainda produz o mesmo hash hoje. A página conta as requisições que enviou para nós durante a verificação; o número é zero, e você pode acompanhar nas suas próprias ferramentas de desenvolvedor.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Quando usar',
+        items: [
+          {
+            h3: 'Um laudo que vai para uma disputa',
+            body: 'Uma avaliação, um modelo de danos, um parecer técnico: escrito mais rápido com um modelo, com quarenta fontes citadas que você não conseguiria reler no mesmo dia. Sele as citações antes de assinar, e a pergunta no depoimento vira "mostre o recibo" em vez de "como sabemos que você checou".',
+          },
+          {
+            h3: 'Um escritório que entrega todo mês',
+            body: 'Achados de auditoria, memorandos de due diligence, revisões médicas e de engenharia. Um recibo por relatório, ligado a uma cadeia que nunca tem uma lacuna — porque uma cadeia que começa no dia em que pedem por ela não é prova, e uma lacuna em março é uma pergunta que vão fazer a você em outubro.',
+          },
+          {
+            h3: 'Renovação do seguro de responsa­bilidade',
+            body: 'As seguradoras agora perguntam qual é o seu protocolo de verificação quando um modelo ajudou a escrever o trabalho. "Cada fonte citada é baixada de novo e hasheada antes da assinatura, e aqui estão os recibos" é uma resposta escrita, datada, que custa nove dólares por relatório.',
+          },
+          {
+            h3: 'Um cliente que quer o dinheiro de volta',
+            body: 'À acusação de que um relatório foi "só gerado", responde um registro datado de cada fonte checada: quando, e o que foi encontrado — sem entregar a ninguém o relatório em si.',
+          },
+          {
+            h3: 'Um recibo que alguém mandou para você',
+            body: 'Entregue o arquivo ao verificador e leia o resultado: selado, assinado, ancorado, e se as fontes ainda dizem hoje o que diziam então. Sem cadastro, sem requisição para nós, e sem jeito de sabermos que você olhou.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Perguntas que as pessoas fazem',
+        items: [
+          {
+            q: 'O recibo revela o material do meu cliente?',
+            a: 'Não, em nenhum nível, incluindo o gratuito. O recibo carrega hashes, contagens, carimbos de tempo, uma assinatura e uma posição na cadeia. O texto das afirmações, as citações e o documento ficam do seu lado; o documento em si é descartado segundos depois do envio, e a página mostra o segundo em que ele sumiu. Um leitor pode confirmar o que você checou e quando, e que o registro é anterior ao relatório, sem ver uma linha dele. Privacidade não é uma opção paga.',
+          },
+          {
+            q: 'Isso prova que as minhas citações estão corretas?',
+            a: 'Não, e a primeira tela diz isso. EXISTS prova que a fonte respondeu e quais bytes ela continha naquele momento; SAYS prova que as palavras que você atribuiu a ela estavam lá, naquelas posições. Nenhum dos dois julga a sua conclusão. O que o recibo prova é que uma checagem documentada foi feita em uma data que você consegue comprovar, e que o registro não poderia ter sido produzido depois.',
+          },
+          {
+            q: 'O que é HOLDS, e por que fica desligado?',
+            a: 'Uma tentativa adversarial de refutar uma afirmação, julgada por um terceiro modelo. Ele discorda de especialistas com frequência, devolve INSUFFICIENT_EVIDENCE com frequência e de propósito, e o veredito dele nunca entra no recibo selado. Está disponível no PRACTICE como pré-checagem privada, ligada à mão com uma confirmação separada, porque um registro adversarial permanente do seu julgamento profissional não é algo que vamos vender a você por padrão.',
+          },
+          {
+            q: 'Quanto custa?',
+            a: 'EXISTS é grátis, ilimitado e sem cadastro — baixar uma URL e fazer o hash dos bytes não é um negócio. Um recibo selado com EXISTS e SAYS é o CHECK: US$ 9 por relatório, guardado por noventa dias, para o perito que entrega três relatórios por ano. O RECORD custa US$ 39 ao mês por dez relatórios em uma cadeia sem interrupções, guardados por sete anos, com raiz pública diária e link de verificação em cada um. O PRACTICE custa US$ 199 ao mês por cinquenta, com a sua própria chave de assinatura, recibos no seu próprio domínio, cinco assentos e um acordo de tratamento de dados. Um reembolso é um botão; o registro permanece.',
+          },
+          {
+            q: 'E se o estúdio sumir?',
+            a: 'Essa é a objeção que a arquitetura responde, e não uma promessa. O verificador é de código aberto, um único binário, funciona offline e está espelhado em um serviço público de hospedagem de código. Cada recibo é um arquivo autônomo de uns quatro kilobytes, e toda a sua cadeia é exportada com um comando. As raízes diárias são publicadas em um repositório público, não só no nosso banco de dados. Se sumíssemos amanhã, o seu recibo continuaria verificando — e você pode fazer essa checagem agora mesmo, antes de pagar qualquer coisa.',
+          },
+          {
+            q: 'Eu não conseguiria construir isso em uma noite?',
+            a: 'EXISTS você construiria em uma noite — e deveria, por isso ele é grátis para sempre. O que uma noite não produz é uma canonicalização que se mantém estável byte a byte entre versões, uma rotação de chaves que não quebra a verificação do histórico, uma publicação de raízes em um lugar de onde não podemos ser removidos em silêncio e, acima de tudo, um registro datado que começou antes de você precisar da prova. Uma cadeia que você começa no dia em que pedem por ela não é prova.',
+          },
+          {
+            q: 'Para quem não é?',
+            a: 'Redações e equipes de checagem de notícias, que vivem de subvenções e não disto. Litigantes checando jurisprudência: esse corpus pertence aos de sempre, e os tribunais rejeitaram um modelo checando outro como verificação — um recibo não vai ajudar ali. Governança de IA em grandes empresas e programas de conformidade com o EU AI Act, que exigem uma revisão de fornecedor que uma ferramenta self-service tocada por uma pessoa não consegue dar. Substanciação publicitária. E qualquer tipo de selo público: um selo no relatório de um cliente diz ao cliente que você usou IA e à equipe de compras dele a sua nota, então não vamos construir um.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Abrir o EXHIBIT B',
+        body: 'Solte o relatório que você está prestes a assinar. Checar que cada fonte existe não custa nada; selar o recibo custa nove dólares, e ninguém nunca vê o texto.',
+        button: 'Checar um relatório',
       },
     },
   },

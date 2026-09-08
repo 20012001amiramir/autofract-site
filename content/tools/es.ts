@@ -11,14 +11,14 @@ export const toolsEs: ToolsContent = {
   hub: {
     meta: {
       title: 'Herramientas gratuitas — Autofract',
-      description: 'Cinco herramientas de Autofract: revisor de contratos, planificador de reuniones, calculadoras de costos ocultos, lector de cartas y restaurador de fotos.',
+      description: 'Seis herramientas de Autofract: contratos, planificador de reuniones, calculadoras de costos, lector de cartas, restaurador de fotos y recibo de informes.',
     },
     kicker: 'Herramientas',
     h1: 'Herra­mientas pequeñas, hechas como se debe.',
     lede: 'El estudio construye sistemas grandes para sus clientes. Estas son las cosas pequeñas que construimos para nosotros mismos y luego regalamos, porque mantenerlas vivas no nos cuesta casi nada.',
     intro: [
       'Cada herramienta de aquí empezó siendo una molestia interna: un contrato que nadie tenía tiempo de leer, una reunión que a alguien le caía siempre a las 22:00, un costo recurrente que jamás aparecía en ninguna factura. Construimos la cosa más pequeña capaz de responder a la pregunta y después la conservamos.',
-      'Ninguna te pide una cuenta. Tres no te venden nada; las otras dos — What\'s This Letter y Revive — te regalan un primer intento y luego cobran un único pago, porque leer una carta o restaurar una fotografía como es debido nos cuesta dinero real. Se ejecutan en tu navegador o en nuestras máquinas, y están construidas con la misma doctrina que las plataformas de abajo: verifica antes de publicar, enseña tu trabajo, nunca inventes un dato que no puedas señalar con el dedo.',
+      'Ninguna te pide una cuenta. Tres no te venden nada; las otras tres — What\'s This Letter, Revive y EXHIBIT B — te regalan un primer intento y luego cobran un único pago, porque leer una carta, restaurar una fotografía o sellar un recibo firmado como es debido nos cuesta dinero real. Se ejecutan en tu navegador o en nuestras máquinas, y están construidas con la misma doctrina que las plataformas de abajo: verifica antes de publicar, enseña tu trabajo, nunca inventes un dato que no puedas señalar con el dedo.',
     ],
     toolsHeading: 'Herramientas gratuitas',
     toolsSub: 'Abre una, úsala, cierra la pestaña. Sin registro, sin prueba gratuita, sin anuncios.',
@@ -29,7 +29,7 @@ export const toolsEs: ToolsContent = {
       items: [
         {
           q: '¿De verdad son gratuitas?',
-          a: 'Tres de las cinco, sí: sin cuenta, sin prueba gratuita, sin tarjeta, sin límite de uso y sin anuncios. Dos hacen todo su trabajo dentro de tu navegador, así que servirlas no nos cuesta casi nada; Redline corre en nuestras máquinas y la pagamos nosotros porque nos consigue más atención de la que nos daría un anuncio. What\'s This Letter y Revive son las excepciones: las páginas de referencia y tu primera lectura, o la vista previa gratuita de tu primera foto, no cuestan nada; después, un pase de cartas son 5 $ y un pack de fotos empieza en 9 €, un único pago en cada caso, porque cada render nos cuesta dinero real.',
+          a: 'Tres de las seis, sí: sin cuenta, sin prueba gratuita, sin tarjeta, sin límite de uso y sin anuncios. Dos hacen todo su trabajo dentro de tu navegador, así que servirlas no nos cuesta casi nada; Redline corre en nuestras máquinas y la pagamos nosotros porque nos consigue más atención de la que nos daría un anuncio. What\'s This Letter, Revive y EXHIBIT B son las excepciones: las páginas de referencia y tu primera lectura, la vista previa gratuita de tu primera foto, o comprobar que cada fuente de un informe existe, no cuestan nada; después, un pase de cartas son 5 $, un pack de fotos empieza en 9 € y un recibo sellado son 9 $ por informe, un único pago en cada caso, porque cada render y cada registro firmado nos cuestan dinero real.',
         },
         {
           q: '¿Necesito registrarme?',
@@ -37,7 +37,7 @@ export const toolsEs: ToolsContent = {
         },
         {
           q: '¿Qué pasa con lo que escribo?',
-          a: 'Overlap y Cost Of nunca envían tus datos a ninguna parte: el tablero y el recibo se codifican en la barra de direcciones y los calcula tu propio navegador. Redline, What\'s This Letter y Revive sí tienen que trabajar con lo que subes en un servidor. Redline guarda tu informe detrás de su propio enlace; What\'s This Letter descarta la carta en el momento en que existe tu respuesta — nunca se guarda ni se usa para entrenar nada; Revive conserva tus fotos hasta 30 días después de la compra para producir el pack y sus repeticiones, y luego las borra — antes si lo pides — y nunca las usa para entrenar nada. En cualquier caso, trátalas como cualquier herramienta en línea y no pegues material que no tengas permitido compartir.',
+          a: 'Overlap y Cost Of nunca envían tus datos a ninguna parte: el tablero y el recibo se codifican en la barra de direcciones y los calcula tu propio navegador. Redline, What\'s This Letter, Revive y EXHIBIT B sí tienen que trabajar con lo que subes en un servidor. Redline guarda tu informe detrás de su propio enlace; What\'s This Letter descarta la carta en el momento en que existe tu respuesta — nunca se guarda ni se usa para entrenar nada; Revive conserva tus fotos hasta 30 días después de la compra para producir el pack y sus repeticiones, y luego las borra — antes si lo pides — y nunca las usa para entrenar nada; EXHIBIT B descarta el informe en sí segundos después de subirlo y sella solo hashes, recuentos y horas — nunca el texto. En cualquier caso, trátalas como cualquier herramienta en línea y no pegues material que no tengas permitido compartir.',
         },
         {
           q: '¿Me rastrean?',
@@ -650,6 +650,122 @@ export const toolsEs: ToolsContent = {
         title: 'Abrir Revive',
         body: 'Sube la foto que ya es más arruga que imagen. Dentro de un minuto la verás restaurada, y a partir de ahí decides tú.',
         button: 'Restaurar una foto',
+      },
+    },
+    exhibitb: {
+      name: 'EXHIBIT B',
+      tagline: 'El anexo que demuestra que comprobaste.',
+      category: 'Informes',
+      meta: {
+        title: 'Prueba de que comprobaste tu informe con IA — EXHIBIT B',
+        description: 'Sube un informe redactado con IA y recibe un recibo firmado y encadenado por hash: cada fuente citada recuperada, hasheada y fechada antes de tu firma.',
+      },
+      h1: 'Cuando pregunten cómo compro­baste, enséñales esto.',
+      lede: 'Un informe redactado con ayuda de un modelo sale con tu nombre. EXHIBIT B vuelve a descargar cada fuente que cita, hashea los bytes, registra la hora y sella el resultado en un recibo firmado y encadenado por hash — fechado antes de tu firma, verificable sin conexión por cualquiera y sin una sola línea del texto de tu cliente. Comprobar que una fuente existe es gratis y sin límite; el recibo sellado cuesta 9 $.',
+      what: {
+        h2: 'Qué hace',
+        body: [
+          'Arrastras el informe — un DOCX o PDF de hasta 15 MB, o texto pegado — y unos segundos después el documento se descarta, antes de que ocurra cualquier otra cosa; un contador en la página te dice el segundo en que desapareció. Lo que queda es una lista de afirmaciones y de las fuentes en las que se apoyan. Cada fuente se descarga de nuevo, desde nuestra red y desde un segundo punto de observación en otra, sus bytes se hashean, se pide a un archivo que conserve una copia y se registra el momento de la descarga.',
+          'Tres niveles, en palabras llanas. EXISTS: la fuente citada responde, la descargamos y la hasheamos. SAYS: la fuente contiene las palabras que le atribuiste, ancladas a posiciones de carácter en la copia descargada. HOLDS: un intento adversario de refutar la afirmación, juzgado por un tercer modelo — discrepa de los expertos a menudo, devuelve INSUFFICIENT_EVIDENCE a menudo y a propósito, está desactivado por defecto y nunca entra en el registro sellado. Los dos primeros son casi deterministas; el tercero es una comprobación previa y privada, no un veredicto.',
+          'Lo que vuelve es un recibo de unos cuatro kilobytes: hashes de las afirmaciones, hashes de las fuentes, horas de descarga, los veredictos de EXISTS y SAYS, una firma y una posición en una cadena de hashes cuya raíz diaria se publica en un repositorio público. Ni una frase del informe, ni una cita, ni el nombre de un cliente. Cualquiera a quien se lo entregues puede verificarlo con el verificador de código abierto — en el navegador o desde la línea de comandos — sin una sola petición a nosotros.',
+        ],
+      },
+      why: {
+        h2: 'Por qué un recibo y no una captura de pantalla',
+        body: [
+          'Hasta hace poco bastaba con «lo comprobé todo yo mismo». Luego el proceso detrás de un informe pericial pasó a ser exigible en un litigio, las aseguradoras empezaron a pedir un protocolo de verificación por escrito al renovar, y los clientes aprendieron a pedir el reembolso. La autoatestación es el único tipo de prueba que se debilita justo cuando se cuestiona. Una captura la haces tú, no lleva fecha en ningún sentido demostrable y se edita en treinta segundos — que es lo que señalará quien te interrogue.',
+          'Un recibo de EXHIBIT B es de otra naturaleza. Los hashes se tomaron en el momento de la descarga, el registro está enlazado en una cadena, firmado con una clave que puede ser la tuya y anclado en una raíz pública diaria. No pudo fabricarse después, y ese es el hecho que importa en una declaración, en una renovación y ante un cliente que quiere su dinero. Si una cita es buena o no es otra pregunta, y la primera pantalla lo dice.',
+          'El recibo no es, a propósito, un certificado de tus conclusiones. EXISTS y SAYS tratan de hechos que no te pertenecen y sobre los que estás obligado a ser diligente: la fuente está ahí, la fuente dice esto. HOLDS trata del juicio, que es por lo que te pagan, y un registro adversario permanente sobre él es un mal negocio; por eso está desactivado por defecto, se activa a mano y aun así se queda fuera del registro sellado. Certificamos que comprobaste, y cuándo. Esa es la parte que nadie puede reconstruir después.',
+          'Comprobar es barato, y no lo cobramos: EXISTS es gratis, ilimitado, para siempre, porque descargar una URL y hashear los bytes no es un negocio. Lo que cobramos es el registro — su firma, su lugar en la cadena, su retención. Las herramientas de trazado ya cobran el doble por 400 días de retención que por 14; la retención siempre fue el producto, y la lista de precios de aquí lo dice en voz alta.',
+        ],
+      },
+      how: {
+        h2: 'Cómo funciona',
+        steps: [
+          {
+            h3: 'Suelta el informe',
+            body: 'Un DOCX, un PDF o texto pegado. Se extraen las afirmaciones y sus citas, el documento en sí se descarta en segundos y la página te dice el momento en que desapareció. La vista previa que queda — fragmentos y hashes, nada más — caduca en treinta minutos, antes si pulsas borrar.',
+          },
+          {
+            h3: 'Cada fuente se descarga de nuevo',
+            body: 'Cada URL, DOI o identificador de registro citado se resuelve desde nuestra red y desde un segundo punto en otra; los bytes se hashean, se pide a un archivo que conserve una copia y se registra la hora de descarga. Para SAYS, las palabras citadas se localizan en la copia descargada y se anclan a posiciones de carácter, para que un lector posterior encuentre el pasaje — o vea que ha cambiado desde entonces.',
+          },
+          {
+            h3: 'Mira cómo se llena la tabla',
+            body: 'Las filas aparecen a medida que terminan las comprobaciones: EXISTS, SAYS, hora de descarga, hash del contenido, dominio de la fuente. Una afirmación que la comprobación no pudo resolver se marca como tal en lugar de disimularse. Antes de pagar nada, un banco de pruebas te deja editar un byte del recibo de vista previa y ver cómo el verificador lo rechaza, nombrando el byte.',
+          },
+          {
+            h3: 'Séllalo, una vez',
+            body: 'Un informe cuesta 9 $ — sin cuenta, sin guardar tarjeta — y el recibo se conserva noventa días. RECORD, por 39 $ al mes, mantiene diez informes al mes en una cadena sin cortes durante siete años, con raíz pública diaria y un código QR en cada recibo. PRACTICE, por 199 $, añade tu propia clave de firma, recibos en tu propio dominio, cinco puestos y HOLDS como opción. Un reembolso es un botón, no una discusión, y el registro se mantiene en cualquier caso.',
+          },
+          {
+            h3: 'Cualquiera lo verifica, sin conexión',
+            body: 'El verificador es de código abierto: un único binario que también corre en el navegador. Suelta el recibo dentro y cada comprobación se ejecuta en local — esquema, hash propio, firma, clave, campos de la cadena — y, con la opción de redescarga, si cada fuente sigue dando hoy el mismo hash. La página cuenta las peticiones que nos envió durante la verificación; el número es cero, y puedes vigilarlo en tus propias herramientas de desarrollo.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Cuándo usarlo',
+        items: [
+          {
+            h3: 'Un informe pericial que va a un litigio',
+            body: 'Una valoración, un modelo de daños, un dictamen técnico: redactado más rápido con un modelo, con cuarenta fuentes citadas que no pudiste releer ese día. Sella las citas antes de firmar, y la pregunta en la declaración pasa de «¿cómo sabemos que comprobó?» a «enséñenos el recibo».',
+          },
+          {
+            h3: 'Un despacho que entrega cada mes',
+            body: 'Hallazgos de auditoría, memorandos de due diligence, revisiones médicas y de ingeniería. Un recibo por informe, enlazado en una cadena que nunca tiene un hueco — porque una cadena que empieza el día en que te la piden no es prueba, y un hueco en marzo es una pregunta que te harán en octubre.',
+          },
+          {
+            h3: 'Renovar el seguro de responsa­bilidad',
+            body: 'Las aseguradoras preguntan ahora cuál es tu protocolo de verificación cuando un modelo ayudó a redactar el trabajo. «Cada fuente citada se descarga de nuevo y se hashea antes de la firma, y aquí están los recibos» es una respuesta escrita, fechada, que cuesta nueve dólares por informe.',
+          },
+          {
+            h3: 'Un cliente que quiere su dinero',
+            body: 'A la acusación de que un informe «solo se generó» responde un registro fechado de cada fuente comprobada: cuándo y qué se encontró — sin entregarle a nadie el informe en sí.',
+          },
+          {
+            h3: 'Un recibo que te ha enviado alguien',
+            body: 'Dale el archivo al verificador y lee el resultado: sellado, firmado, anclado, y si las fuentes siguen diciendo hoy lo que decían entonces. Sin cuenta, sin petición a nosotros y sin manera de que sepamos que miraste.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Preguntas que nos hacen',
+        items: [
+          {
+            q: '¿El recibo revela el material de mi cliente?',
+            a: 'No, en ningún nivel, incluido el gratuito. El recibo lleva hashes, recuentos, marcas de tiempo, una firma y una posición en la cadena. El texto de las afirmaciones, las citas y el documento se quedan de tu lado; el documento en sí se descarta segundos después de subirlo, y la página te muestra el segundo en que desapareció. Un lector puede confirmar qué comprobaste y cuándo, y que el registro es anterior al informe, sin ver una línea de él. La privacidad no es una opción de pago.',
+          },
+          {
+            q: '¿Esto demuestra que mis citas son correctas?',
+            a: 'No, y la primera pantalla lo dice. EXISTS demuestra que la fuente respondió y qué bytes contenía en ese momento; SAYS demuestra que las palabras que le atribuiste estaban ahí, en esas posiciones. Ninguno de los dos juzga tu conclusión. Lo que el recibo demuestra es que se realizó una comprobación documentada en una fecha que puedes acreditar, y que el registro no pudo fabricarse después.',
+          },
+          {
+            q: '¿Qué es HOLDS y por qué está desactivado?',
+            a: 'Un intento adversario de refutar una afirmación, juzgado por un tercer modelo. Discrepa de los expertos a menudo, devuelve INSUFFICIENT_EVIDENCE a menudo y a propósito, y su veredicto nunca entra en el recibo sellado. Está disponible en PRACTICE como comprobación previa y privada, activada a mano con una confirmación aparte, porque un registro adversario permanente sobre tu juicio profesional no es algo que vayamos a venderte por defecto.',
+          },
+          {
+            q: '¿Cuánto cuesta?',
+            a: 'EXISTS es gratis, ilimitado y sin cuenta — descargar una URL y hashear los bytes no es un negocio. Un recibo sellado con EXISTS y SAYS es CHECK: 9 $ por informe, conservado noventa días, para el perito que entrega tres informes al año. RECORD son 39 $ al mes por diez informes en una cadena sin cortes, conservados siete años, con raíz pública diaria y enlace de verificación en cada uno. PRACTICE son 199 $ al mes por cincuenta, con tu propia clave de firma, recibos en tu propio dominio, cinco puestos y un acuerdo de tratamiento de datos. Un reembolso es un botón; el registro se mantiene.',
+          },
+          {
+            q: '¿Y si el estudio desaparece?',
+            a: 'Esta es la objeción que responde la arquitectura y no una promesa. El verificador es de código abierto, un único binario, funciona sin conexión y está replicado en un servicio público de alojamiento de código. Cada recibo es un archivo autónomo de unos cuatro kilobytes, y toda tu cadena se exporta con un comando. Las raíces diarias se publican en un repositorio público, no solo en nuestra base de datos. Si desapareciéramos mañana, tu recibo seguiría verificando — y esa comprobación puedes hacerla ahora mismo, antes de pagar nada.',
+          },
+          {
+            q: '¿No podría construir esto en una tarde?',
+            a: 'EXISTS lo construirías en una tarde — y deberías, por eso es gratis para siempre. Lo que una tarde no produce es una canonicalización que se mantenga estable byte a byte entre versiones, una rotación de claves que no rompa la verificación histórica, una publicación de raíces en un lugar del que no se nos pueda retirar en silencio y, sobre todo, un registro fechado que empezó antes de que necesitaras la prueba. Una cadena que empiezas el día en que te la piden no es prueba.',
+          },
+          {
+            q: '¿Para quién no es?',
+            a: 'Redacciones y equipos de verificación de noticias, que se financian con subvenciones y no con esto. Litigantes que comprueban jurisprudencia: ese corpus pertenece a los de siempre, y los tribunales han rechazado que un modelo compruebe a otro como verificación — un recibo no ayudará ahí. Gobernanza de IA en grandes empresas y programas de cumplimiento del EU AI Act, que necesitan una revisión de proveedor que una herramienta de autoservicio llevada por una persona no puede dar. Sustanciación publicitaria. Y cualquier tipo de insignia pública: una insignia en el informe de un cliente le dice al cliente que usaste IA y a su equipo de compras tu puntuación, así que no la construiremos.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Abrir EXHIBIT B',
+        body: 'Suelta el informe que estás a punto de firmar. Comprobar que cada fuente existe no cuesta nada; sellar el recibo cuesta nueve dólares, y nadie ve nunca el texto.',
+        button: 'Comprobar un informe',
       },
     },
   },

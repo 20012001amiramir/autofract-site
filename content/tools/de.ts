@@ -11,14 +11,14 @@ export const toolsDe: ToolsContent = {
   hub: {
     meta: {
       title: 'Kostenlose Online-Tools — Autofract',
-      description: 'Fünf Tools vom Studio Autofract: Verträge auf Fallstricke prüfen, Meetings planen, versteckte Kosten ausrechnen, Behördenbriefe lesen, Fotos restaurieren.',
+      description: 'Sechs Tools vom Studio Autofract: Verträge prüfen, Meetings planen, Kosten ausrechnen, Behördenbriefe lesen, Fotos restaurieren, Berichte belegen.',
     },
     kicker: 'Tools',
     h1: 'Kleine Tools, richtig gebaut.',
     lede: 'Das Studio baut große Systeme für Kunden. Das hier sind die kleinen, die wir für uns selbst gebaut haben — und dann verschenkt, weil ihr Betrieb fast nichts kostet.',
     intro: [
       'Jedes Tool hier begann als interner Ärger: ein Vertrag, für den niemand Zeit hatte, ein Meeting, das für irgendjemanden immer um 22:00 Uhr landete, laufende Kosten, die auf keiner Rechnung auftauchten. Wir haben jeweils das kleinste Ding gebaut, das die Frage beantwortet — und es dann behalten.',
-      'Keines davon verlangt ein Konto. Drei verkaufen gar nichts; die beiden anderen — What\'s This Letter und Revive — schenken Ihnen einen ersten Durchgang und nehmen danach eine einmalige Zahlung, weil einen Brief gründlich zu lesen oder ein Foto sauber zu restaurieren uns echtes Geld kostet. Sie laufen in Ihrem Browser oder auf unseren Servern, und sie folgen derselben Doktrin wie die Plattformen weiter unten: prüfen, bevor veröffentlicht wird, die Rechenschritte zeigen, niemals einen Fakt erfinden, auf den man nicht zeigen kann.',
+      'Keines davon verlangt ein Konto. Drei verkaufen gar nichts; die drei anderen — What\'s This Letter, Revive und EXHIBIT B — schenken Ihnen einen ersten Durchgang und nehmen danach eine einmalige Zahlung, weil einen Brief gründlich zu lesen, ein Foto sauber zu restaurieren oder einen signierten Beleg zu versiegeln uns echtes Geld kostet. Sie laufen in Ihrem Browser oder auf unseren Servern, und sie folgen derselben Doktrin wie die Plattformen weiter unten: prüfen, bevor veröffentlicht wird, die Rechenschritte zeigen, niemals einen Fakt erfinden, auf den man nicht zeigen kann.',
     ],
     toolsHeading: 'Kostenlose Tools',
     toolsSub: 'Öffnen, benutzen, Tab schließen. Keine Anmeldung, keine Testphase, keine Werbung.',
@@ -29,7 +29,7 @@ export const toolsDe: ToolsContent = {
       items: [
         {
           q: 'Sind die Tools wirklich kostenlos?',
-          a: 'Drei der fünf sind es: kein Konto, keine Testphase, keine Kreditkarte, kein Nutzungslimit, keine Werbung. Zwei erledigen ihre gesamte Arbeit in Ihrem Browser, ihr Betrieb kostet uns also fast nichts; Redline läuft auf unseren Servern, und wir zahlen dafür, weil es uns mehr Aufmerksamkeit bringt als eine Anzeige. What\'s This Letter und Revive sind die Ausnahmen: Referenzseiten und erste Auswertung beziehungsweise die kostenlose Vorschau Ihres ersten Fotos kosten nichts; danach kostet ein Briefpass 5 $ und ein Fotopaket ab 9 €, jeweils eine einmalige Zahlung, weil jeder Durchgang uns echtes Geld kostet.',
+          a: 'Drei der sechs sind es: kein Konto, keine Testphase, keine Kreditkarte, kein Nutzungslimit, keine Werbung. Zwei erledigen ihre gesamte Arbeit in Ihrem Browser, ihr Betrieb kostet uns also fast nichts; Redline läuft auf unseren Servern, und wir zahlen dafür, weil es uns mehr Aufmerksamkeit bringt als eine Anzeige. What\'s This Letter, Revive und EXHIBIT B sind die Ausnahmen: Referenzseiten und erste Auswertung, die kostenlose Vorschau Ihres ersten Fotos oder die Prüfung, ob jede Quelle eines Berichts existiert, kosten nichts; danach kostet ein Briefpass 5 $, ein Fotopaket ab 9 € und ein versiegelter Beleg 9 $ pro Bericht, jeweils eine einmalige Zahlung, weil jeder Durchgang und jeder signierte Eintrag uns echtes Geld kostet.',
         },
         {
           q: 'Muss ich mich registrieren?',
@@ -37,7 +37,7 @@ export const toolsDe: ToolsContent = {
         },
         {
           q: 'Was passiert mit dem, was ich eingebe?',
-          a: 'Overlap und Cost Of schicken Ihre Eingaben nirgendwohin: Board und Beleg stecken in der Adresszeile und werden von Ihrem eigenen Browser berechnet. Redline, What\'s This Letter und Revive müssen das, was Sie hochladen, auf einem Server verarbeiten. Redline bewahrt Ihren Bericht hinter seinem eigenen Link auf; What\'s This Letter löscht den Brief in dem Moment, in dem Ihre Antwort steht — er wird nie gespeichert und nie zum Training verwendet; Revive behält Ihre Fotos bis zu 30 Tage nach dem Kauf, um das Paket und seine Neuberechnungen zu erzeugen, und löscht sie dann — auf Wunsch früher — und verwendet sie nie zum Training. Behandeln Sie alle drei wie jedes Online-Tool und fügen Sie nichts ein, was Sie nicht weitergeben dürfen.',
+          a: 'Overlap und Cost Of schicken Ihre Eingaben nirgendwohin: Board und Beleg stecken in der Adresszeile und werden von Ihrem eigenen Browser berechnet. Redline, What\'s This Letter, Revive und EXHIBIT B müssen das, was Sie hochladen, auf einem Server verarbeiten. Redline bewahrt Ihren Bericht hinter seinem eigenen Link auf; What\'s This Letter löscht den Brief in dem Moment, in dem Ihre Antwort steht — er wird nie gespeichert und nie zum Training verwendet; Revive behält Ihre Fotos bis zu 30 Tage nach dem Kauf, um das Paket und seine Neuberechnungen zu erzeugen, und löscht sie dann — auf Wunsch früher — und verwendet sie nie zum Training; EXHIBIT B verwirft den Bericht selbst Sekunden nach dem Hochladen und versiegelt nur Hashes, Zähler und Zeiten — nie den Text. Behandeln Sie alle vier wie jedes Online-Tool und fügen Sie nichts ein, was Sie nicht weitergeben dürfen.',
         },
         {
           q: 'Werde ich getrackt?',
@@ -650,6 +650,122 @@ export const toolsDe: ToolsContent = {
         title: 'Revive öffnen',
         body: 'Laden Sie das eine Foto hoch, das mehr Knick als Bild ist. In einer Minute sehen Sie es restauriert — und entscheiden von dort aus weiter.',
         button: 'Foto restaurieren',
+      },
+    },
+    exhibitb: {
+      name: 'EXHIBIT B',
+      tagline: 'Der Anhang, der belegt, dass Sie geprüft haben.',
+      category: 'Berichte',
+      meta: {
+        title: 'Nachweis, dass Ihr KI-Bericht geprüft wurde — EXHIBIT B',
+        description: 'Bericht ablegen, signierten und hash-verketteten Beleg zurückbekommen: jede zitierte Quelle vor der Unterschrift neu geladen, gehasht und datiert.',
+      },
+      h1: 'Wenn man fragt, wie Sie geprüft haben: Zeigen Sie das hier.',
+      lede: 'Ein Bericht, der mit Hilfe eines Modells entstanden ist, geht unter Ihrem Namen hinaus. EXHIBIT B lädt jede darin zitierte Quelle erneut, hasht die Bytes, hält den Zeitpunkt fest und versiegelt das Ergebnis in einem signierten, hash-verketteten Beleg — datiert vor Ihrer Unterschrift, offline von jedem prüfbar, und ohne eine Zeile aus dem Text Ihres Mandanten. Zu prüfen, ob eine Quelle existiert, ist kostenlos und unbegrenzt; der versiegelte Beleg kostet 9 $.',
+      what: {
+        h2: 'Was es tut',
+        body: [
+          'Sie ziehen den Bericht hinein — DOCX oder PDF bis 15 MB, oder eingefügten Text — und wenige Sekunden später ist das Dokument verworfen, bevor irgendetwas anderes geschieht; ein Zähler auf der Seite nennt Ihnen die Sekunde, in der es verschwand. Was bleibt, ist eine Liste von Behauptungen und der Quellen, auf die sie sich stützen. Jede Quelle wird erneut geladen, aus unserem Netz und von einem zweiten Standpunkt in einem anderen, ihre Bytes werden gehasht, ein Archiv wird gebeten, eine Kopie zu behalten, und der Zeitpunkt des Abrufs wird festgehalten.',
+          'Drei Stufen, in einfachen Worten. EXISTS: Die zitierte Quelle ist erreichbar, wir haben sie geladen und gehasht. SAYS: Die Quelle enthält die Worte, die Sie ihr zuschreiben, verankert an Zeichenpositionen in der geladenen Kopie. HOLDS: ein adversarialer Versuch, die Behauptung zu widerlegen, beurteilt von einem dritten Modell — es widerspricht Fachleuten oft, liefert oft und absichtlich INSUFFICIENT_EVIDENCE, ist standardmäßig aus und gelangt nie in den versiegelten Eintrag. Die ersten beiden sind nahezu deterministisch; die dritte ist ein privater Vorab-Check, kein Urteil.',
+          'Zurück kommt ein Beleg von etwa vier Kilobyte: Hashes der Behauptungen, Hashes der Quellen, Abrufzeiten, die Urteile für EXISTS und SAYS, eine Signatur und eine Position in einer Hash-Kette, deren täglicher Root in einem öffentlichen Repository veröffentlicht wird. Kein Satz aus dem Bericht, kein Zitat, kein Mandantenname. Jeder, dem Sie ihn geben, kann ihn mit dem quelloffenen Verifizierer prüfen — im Browser oder auf der Kommandozeile — ohne eine einzige Anfrage an uns.',
+        ],
+      },
+      why: {
+        h2: 'Warum ein Beleg und kein Screenshot',
+        body: [
+          'Bis vor kurzem genügte „Ich habe alles selbst geprüft“. Dann wurde der Prozess hinter einem Gutachten offenlegungspflichtig, Versicherer begannen bei der Verlängerung nach einem schriftlichen Prüfprotokoll zu fragen, und Mandanten lernten, die Rückerstattung zu verlangen. Die eigene Zusicherung ist die eine Art von Beweis, die in dem Moment schwächer wird, in dem sie angezweifelt wird. Ein Screenshot stammt von Ihnen, ist in keinem beweisbaren Sinn datiert und in dreißig Sekunden bearbeitet — worauf die Person, die Sie ins Kreuzverhör nimmt, hinweisen wird.',
+          'Ein Beleg von EXHIBIT B ist etwas anderes. Die Hashes wurden zum Zeitpunkt des Abrufs genommen, der Eintrag ist in eine Kette eingehängt, mit einem Schlüssel signiert, der Ihr eigener sein kann, und in einem täglichen öffentlichen Root verankert. Er kann nicht nachträglich erzeugt worden sein — und das ist es, was bei der Vernehmung, bei der Verlängerung und gegenüber einem Mandanten zählt, der sein Geld zurückwill. Ob ein Zitat taugt, ist eine andere Frage, und das steht auf dem ersten Bildschirm.',
+          'Der Beleg ist absichtlich kein Zertifikat für Ihre Schlussfolgerungen. EXISTS und SAYS betreffen Tatsachen, die Ihnen nicht gehören und bei denen Sie zur Sorgfalt verpflichtet sind: Die Quelle ist da, die Quelle sagt dies. HOLDS betrifft das Urteil — das, wofür Sie bezahlt werden —, und ein dauerhafter adversarialer Eintrag darüber wäre ein schlechter Tausch; deshalb ist es standardmäßig aus, wird von Hand eingeschaltet und bleibt selbst dann aus dem versiegelten Eintrag heraus. Wir bescheinigen, dass Sie geprüft haben, und wann. Das ist der Teil, den später niemand rekonstruieren kann.',
+          'Prüfen ist billig, und wir berechnen es nicht: EXISTS ist kostenlos, unbegrenzt, für immer, denn eine URL zu laden und die Bytes zu hashen ist kein Geschäft. Was wir berechnen, ist der Eintrag — seine Signatur, sein Platz in der Kette, seine Aufbewahrung. Tracing-Werkzeuge verlangen für 400 Tage Aufbewahrung schon heute doppelt so viel wie für 14; die Aufbewahrung war immer das Produkt, und die Preisliste hier sagt das laut.',
+        ],
+      },
+      how: {
+        h2: 'So funktio­niert es',
+        steps: [
+          {
+            h3: 'Bericht ablegen',
+            body: 'DOCX, PDF oder eingefügter Text. Behauptungen und ihre Zitate werden extrahiert, das Dokument selbst wird binnen Sekunden verworfen, und die Seite nennt auf die Sekunde den Moment, in dem es verschwand. Die verbleibende Vorschau — Textstellen und Hashes, mehr nicht — verfällt nach dreißig Minuten, früher, wenn Sie auf Löschen drücken.',
+          },
+          {
+            h3: 'Jede Quelle wird neu geladen',
+            body: 'Jede zitierte URL, DOI oder Registerkennung wird aus unserem Netz und von einem zweiten Standpunkt in einem anderen aufgelöst; die Bytes werden gehasht, ein Archiv wird gebeten, eine Kopie zu behalten, und die Abrufzeit wird festgehalten. Für SAYS werden die zitierten Worte in der geladenen Kopie gesucht und an Zeichenpositionen verankert, damit ein späterer Leser die Stelle findet — oder sieht, dass sie sich seither geändert hat.',
+          },
+          {
+            h3: 'Zusehen, wie sich die Tabelle füllt',
+            body: 'Zeilen erscheinen, sobald Prüfungen abgeschlossen sind: EXISTS, SAYS, Abrufzeit, Inhalts-Hash, Quelldomain. Eine Behauptung, die die Prüfung nicht klären konnte, wird als solche markiert statt glattgebügelt. Noch bevor Sie etwas bezahlen, lässt Sie ein Manipulations-Spielplatz ein Byte des Vorschau-Belegs ändern und zusehen, wie der Verifizierer ihn zurückweist — und das Byte benennt.',
+          },
+          {
+            h3: 'Einmal versiegeln',
+            body: 'Ein Bericht kostet 9 $ — kein Konto, keine gespeicherte Karte —, und der Beleg wird neunzig Tage aufbewahrt. RECORD hält für 39 $ im Monat zehn Berichte monatlich in einer lückenlosen Kette sieben Jahre lang, mit täglichem öffentlichem Root und einem QR-Code auf jedem Beleg. PRACTICE fügt für 199 $ Ihren eigenen Signaturschlüssel, Belege auf Ihrer eigenen Domain, fünf Plätze und HOLDS als Opt-in hinzu. Eine Rückerstattung ist ein Knopf, kein Streit, und der Eintrag bleibt so oder so bestehen.',
+          },
+          {
+            h3: 'Jeder prüft ihn, offline',
+            body: 'Der Verifizierer ist quelloffen: eine einzelne Binärdatei, die auch im Browser läuft. Legen Sie den Beleg hinein, und jede Prüfung läuft lokal — Schema, Self-Hash, Signatur, Schlüssel, Kettenfelder — und mit der Neulade-Option, ob jede Quelle heute noch denselben Hash ergibt. Die Seite zählt die Anfragen, die sie während der Prüfung an uns geschickt hat; die Zahl ist null, und Sie können sie in Ihren eigenen Entwicklerwerkzeugen mitverfolgen.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'Wann Sie es brauchen',
+        items: [
+          {
+            h3: 'Ein Gutachten, das in einen Streit geht',
+            body: 'Eine Bewertung, ein Schadensmodell, eine technische Stellungnahme: schneller mit einem Modell geschrieben, mit vierzig Quellen belegt, die Sie am selben Tag nicht alle nachlesen konnten. Versiegeln Sie die Zitate vor der Unterschrift, und aus „Woher wissen wir, dass Sie geprüft haben?“ wird bei der Vernehmung „Zeigen Sie uns den Beleg“.',
+          },
+          {
+            h3: 'Eine Praxis, die jeden Monat einreicht',
+            body: 'Prüfungsfeststellungen, Due-Diligence-Memos, medizinische und technische Begutachtungen. Ein Beleg pro Bericht, eingehängt in eine Kette ohne eine einzige Lücke — denn eine Kette, die an dem Tag beginnt, an dem man Sie danach fragt, ist kein Beweis, und eine Lücke im März ist eine Frage, die man Ihnen im Oktober stellen wird.',
+          },
+          {
+            h3: 'Verlängerung der Berufs­haftpflicht',
+            body: 'Versicherer fragen inzwischen nach Ihrem Prüfprotokoll, wenn ein Modell beim Schreiben geholfen hat. „Jede zitierte Quelle wird vor der Unterschrift neu geladen und gehasht, und hier sind die Belege“ ist eine schriftliche, datierte Antwort, die neun Dollar pro Bericht kostet.',
+          },
+          {
+            h3: 'Ein Mandant, der sein Geld zurückwill',
+            body: 'Auf den Vorwurf, ein Bericht sei „einfach nur generiert“, antwortet ein datierter Eintrag über jede geprüfte Quelle: wann und mit welchem Ergebnis — ohne irgendjemandem den Bericht selbst auszuhändigen.',
+          },
+          {
+            h3: 'Ein Beleg, den Ihnen jemand geschickt hat',
+            body: 'Geben Sie die Datei dem Verifizierer und lesen Sie das Ergebnis: versiegelt, signiert, verankert, und ob die Quellen heute noch sagen, was sie damals sagten. Kein Konto, keine Anfrage an uns, und keine Möglichkeit für uns zu erfahren, dass Sie nachgesehen haben.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Häufige Fragen',
+        items: [
+          {
+            q: 'Verrät der Beleg Material meines Mandanten?',
+            a: 'Nein, auf keiner Stufe, die kostenlose eingeschlossen. Der Beleg trägt Hashes, Zähler, Zeitstempel, eine Signatur und eine Position in der Kette. Der Text der Behauptungen, die Zitate und das Dokument bleiben auf Ihrer Seite; das Dokument selbst wird Sekunden nach dem Hochladen verworfen, und die Seite zeigt Ihnen die Sekunde, in der es verschwand. Ein Leser kann bestätigen, was Sie wann geprüft haben und dass der Eintrag älter ist als der Bericht, ohne eine Zeile davon zu sehen. Vertraulichkeit ist keine kostenpflichtige Option.',
+          },
+          {
+            q: 'Ist das ein Beweis, dass meine Zitate stimmen?',
+            a: 'Nein, und das steht auf dem ersten Bildschirm. EXISTS beweist, dass die Quelle erreichbar war und welche Bytes sie in diesem Moment enthielt; SAYS beweist, dass die Worte, die Sie ihr zuschreiben, dort standen, an diesen Positionen. Keines von beiden beurteilt Ihre Schlussfolgerung. Was der Beleg beweist, ist, dass eine dokumentierte Prüfung an einem Datum stattfand, das Sie belegen können, und dass der Eintrag nicht nachträglich erzeugt worden sein kann.',
+          },
+          {
+            q: 'Was ist HOLDS, und warum ist es aus?',
+            a: 'Ein adversarialer Versuch, eine Behauptung zu widerlegen, beurteilt von einem dritten Modell. Es widerspricht Fachleuten oft, es liefert oft und absichtlich INSUFFICIENT_EVIDENCE, und sein Urteil gelangt nie in den versiegelten Beleg. Es steht auf PRACTICE als privater Vorab-Check zur Verfügung, von Hand eingeschaltet mit gesonderter Bestätigung, denn einen dauerhaften adversarialen Eintrag über Ihr fachliches Urteil verkaufen wir Ihnen nicht standardmäßig.',
+          },
+          {
+            q: 'Was kostet es?',
+            a: 'EXISTS ist kostenlos, unbegrenzt, ohne Konto — eine URL zu laden und die Bytes zu hashen ist kein Geschäft. Ein versiegelter Beleg mit EXISTS und SAYS ist CHECK: 9 $ pro Bericht, neunzig Tage aufbewahrt, für den Sachverständigen, der drei Berichte im Jahr einreicht. RECORD kostet 39 $ im Monat für zehn Berichte in einer lückenlosen Kette, sieben Jahre aufbewahrt, mit täglichem öffentlichem Root und Prüf-Link auf jedem. PRACTICE kostet 199 $ im Monat für fünfzig, mit eigenem Signaturschlüssel, Belegen auf Ihrer eigenen Domain, fünf Plätzen und einem Auftragsverarbeitungsvertrag. Eine Rückerstattung ist ein Knopf; der Eintrag bleibt.',
+          },
+          {
+            q: 'Was, wenn das Studio verschwindet?',
+            a: 'Das ist der Einwand, den die Architektur beantwortet und nicht ein Versprechen. Der Verifizierer ist quelloffen, eine einzelne Binärdatei, läuft offline und ist auf einem öffentlichen Code-Host gespiegelt. Jeder Beleg ist eine in sich geschlossene Datei von etwa vier Kilobyte, und Ihre gesamte Kette lässt sich mit einem Befehl exportieren. Tägliche Roots werden in einem öffentlichen Repository veröffentlicht, nicht nur in unserer Datenbank. Wären wir morgen weg, würde Ihr Beleg immer noch verifizieren — und diese Prüfung können Sie jetzt sofort ausführen, bevor Sie irgendetwas bezahlen.',
+          },
+          {
+            q: 'Könnte ich das nicht an einem Abend bauen?',
+            a: 'EXISTS könnten Sie an einem Abend bauen — und sollten es, weshalb es für immer kostenlos ist. Was ein Abend nicht hervorbringt: eine Kanonisierung, die über Versionen hinweg byte-stabil bleibt, eine Schlüsselrotation, die alte Prüfungen nicht bricht, eine Root-Veröffentlichung an einem Ort, von dem man uns nicht still entfernen kann, und vor allem ein datierter Eintrag, der begann, bevor Sie den Beweis brauchten. Eine Kette, die Sie an dem Tag beginnen, an dem man Sie danach fragt, ist kein Beweis.',
+          },
+          {
+            q: 'Für wen ist es nichts?',
+            a: 'Für Redaktionen und ihre Verifikationsteams, die von Förderungen leben und nicht davon. Für Prozessanwälte, die Rechtsprechung prüfen: Dieser Korpus gehört den Etablierten, und Gerichte haben es abgelehnt, ein Modell, das ein anderes prüft, als Verifikation gelten zu lassen — ein Beleg hilft dort nicht. Für KI-Governance in Konzernen und Compliance-Programme zum EU AI Act, die eine Lieferantenprüfung brauchen, die ein Self-Service-Werkzeug einer einzelnen Person nicht leisten kann. Für Werbe-Substantiierung. Und für jede Art öffentliches Abzeichen: Ein Abzeichen auf einem Mandantenbericht sagt dem Mandanten, dass Sie KI benutzt haben, und seiner Einkaufsabteilung Ihren Score — also bauen wir keines.',
+          },
+        ],
+      },
+      cta: {
+        title: 'EXHIBIT B öffnen',
+        body: 'Legen Sie den Bericht ab, den Sie gleich unterschreiben. Zu prüfen, ob jede Quelle existiert, kostet nichts; den Beleg zu versiegeln kostet neun Dollar, und den Text bekommt nie jemand zu sehen.',
+        button: 'Bericht prüfen',
       },
     },
   },

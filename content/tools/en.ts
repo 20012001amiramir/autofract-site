@@ -7,14 +7,14 @@ export const toolsEn = {
   hub: {
     meta: {
       title: 'Free tools by Autofract',
-      description: 'Five tools from the Autofract studio: a contract fine-print checker, a meeting planner, hidden-cost calculators, a letter reader and a photo restorer.',
+      description: 'Six tools from the Autofract studio: a contract checker, a meeting planner, cost calculators, a letter reader, a photo restorer and a report receipt.',
     },
     kicker: 'Tools',
     h1: 'Small tools, done properly.',
     lede: 'The studio builds large systems for clients. These are the small ones we build for ourselves — and then give away, because they cost almost nothing to run.',
     intro: [
       'Every tool here started as an internal annoyance: a contract nobody had time to read, a meeting that kept landing at 22:00 for someone, a recurring cost that never appeared on any invoice. We built the smallest thing that answered the question, then kept it.',
-      'None of them ask for an account. Three of them sell nothing at all; the other two — What\'s This Letter and Revive — give you a free first go and then take one payment, because reading a letter or restoring a photograph properly costs us real money. They run in your browser or on our machines, and they are built to the same doctrine as the platforms below: verify before you publish, show your work, never invent a fact you cannot point at.',
+      'None of them ask for an account. Three of them sell nothing at all; the other three — What\'s This Letter, Revive and EXHIBIT B — give you a free first go and then take one payment, because reading a letter, restoring a photograph or sealing a signed receipt properly costs us real money. They run in your browser or on our machines, and they are built to the same doctrine as the platforms below: verify before you publish, show your work, never invent a fact you cannot point at.',
     ],
     toolsHeading: 'Free tools',
     toolsSub: 'Open one, use it, close the tab. No signup, no trial, no ads.',
@@ -25,7 +25,7 @@ export const toolsEn = {
       items: [
         {
           q: 'Are these really free?',
-          a: 'Three of the five are, with no account, no trial, no card, no usage limit and no ads. Two do all their work inside your browser, so serving them costs us almost nothing; Redline runs on our machines and we pay for it because it earns us more attention than an ad would. What\'s This Letter and Revive are the exceptions: the reference pages and your first read, or the free preview of your first photo, cost nothing; after that a letter pass is $5 and a photo pack starts at $9, one payment each, because every render costs us real money.',
+          a: 'Three of the six are, with no account, no trial, no card, no usage limit and no ads. Two do all their work inside your browser, so serving them costs us almost nothing; Redline runs on our machines and we pay for it because it earns us more attention than an ad would. What\'s This Letter, Revive and EXHIBIT B are the exceptions: the reference pages and your first read, the free preview of your first photo, or checking that every source in a report exists, cost nothing; after that a letter pass is $5, a photo pack starts at $9 and a sealed receipt is $9 a report, one payment each, because every render and every signed record costs us real money.',
         },
         {
           q: 'Do I need to sign up?',
@@ -33,7 +33,7 @@ export const toolsEn = {
         },
         {
           q: 'What happens to what I put in?',
-          a: 'Overlap and Cost Of never send your inputs anywhere: the board and the receipt are encoded in the address bar and computed by your own browser. Redline, What\'s This Letter and Revive have to work on what you upload on a server. Redline keeps your report behind its own link; What\'s This Letter discards the letter the moment your answer exists — it is never stored and never used for training; Revive keeps your photos for up to 30 days after purchase to make the pack and its redos, then deletes them — sooner if you ask — and never uses them for training. Either way, treat them the way you would treat any online tool and do not paste material you are not allowed to share.',
+          a: 'Overlap and Cost Of never send your inputs anywhere: the board and the receipt are encoded in the address bar and computed by your own browser. Redline, What\'s This Letter, Revive and EXHIBIT B have to work on what you upload on a server. Redline keeps your report behind its own link; What\'s This Letter discards the letter the moment your answer exists — it is never stored and never used for training; Revive keeps your photos for up to 30 days after purchase to make the pack and its redos, then deletes them — sooner if you ask — and never uses them for training; EXHIBIT B discards the report itself seconds after upload and seals only hashes, counts and times — never the text. Either way, treat them the way you would treat any online tool and do not paste material you are not allowed to share.',
         },
         {
           q: 'Do you track me?',
@@ -646,6 +646,122 @@ export const toolsEn = {
         title: 'Open Revive',
         body: 'Upload the one photo that is more crease than picture. A minute from now you will see it restored, and you decide from there.',
         button: 'Restore a photo',
+      },
+    },
+    exhibitb: {
+      name: 'EXHIBIT B',
+      tagline: 'The appendix that proves you checked.',
+      category: 'Reports',
+      meta: {
+        title: 'Proof you checked your AI-assisted report — EXHIBIT B',
+        description: 'Drop an AI-assisted report and get back a signed, hash-chained receipt: every cited source re-fetched, hashed and timestamped before you signed it.',
+      },
+      h1: 'When they ask how you checked, hand them this.',
+      lede: 'A report drafted with a model\'s help is going out under your name. EXHIBIT B fetches every source it cites again, hashes the bytes, records the time and seals the result into a signed, hash-chained receipt — dated before your signature, verifiable offline by anyone, and containing none of your client\'s text. Checking that a source exists is free without limit; the sealed receipt is $9.',
+      what: {
+        h2: 'What it does',
+        body: [
+          'You drag in the report — a DOCX or PDF up to 15 MB, or pasted text — and the document is discarded a few seconds later, before anything else happens; a timer on the page tells you the second it went. What remains is a list of claims and the sources they lean on. Each source is fetched again, from our network and from a second vantage point in another one, its bytes are hashed, an archive is asked to keep a copy, and the moment of the fetch is recorded.',
+          'Three levels, in plain words. EXISTS: the cited source resolves, we fetched it and hashed it. SAYS: the source contains the words you attributed to it, anchored to character offsets in the fetched copy. HOLDS: an adversarial attempt to refute the claim, judged by a third model — it disagrees with experts often, returns INSUFFICIENT_EVIDENCE often and on purpose, is off by default, and never enters the sealed record. The first two are near-deterministic; the third is a private pre-flight, not a verdict.',
+          'What comes back is a receipt of about four kilobytes: claim hashes, source hashes, fetch times, the EXISTS and SAYS verdicts, a signature, and a position in a hash chain whose daily root is published to a public repository. Not a sentence of the report, not a quote, not a client\'s name. Anyone you hand it to can verify it with the open-source verifier — in a browser or from the command line — without a single request to us.',
+        ],
+      },
+      why: {
+        h2: 'Why a receipt, and not a screenshot',
+        body: [
+          'Until recently, "I checked everything myself" was enough. Then the process behind an expert\'s report became discoverable, insurers began asking for a written verification protocol at renewal, and clients learned to ask for the refund. Self-attestation is the one kind of evidence that weakens exactly when it is challenged. A screenshot is made by you, undated in any provable sense, and edited in thirty seconds — which is what the person cross-examining you will point out.',
+          'A receipt from EXHIBIT B is different in kind. The hashes were taken at fetch time, the record is linked into a chain, signed with a key that can be your own, and anchored in a daily public root. It could not have been produced afterwards, and that is the fact that matters at deposition, at renewal and with a client who wants their money back. Whether a citation is any good is a different question, and the first screen says so.',
+          'The receipt is deliberately not a certificate of your conclusions. EXISTS and SAYS concern facts that do not belong to you and on which you are obliged to be diligent — the source is there, the source says this. HOLDS concerns judgement, which is what you are paid for, and a permanent adversarial record of it is a bad trade; so it is off by default, switched on by hand, and kept out of the sealed record even then. We certify that you checked, and when. That is the part nobody can reconstruct later.',
+          'Checking is cheap, and we do not charge for it: EXISTS is free, unlimited, forever, because fetching a URL and hashing the bytes is not a business. What we charge for is the record — its signature, its place in the chain, its retention. Tracing tools already charge twice as much for 400-day retention as for 14-day; the retention was always the product, and the price list here says so out loud.',
+        ],
+      },
+      how: {
+        h2: 'How it works',
+        steps: [
+          {
+            h3: 'Drop the report',
+            body: 'A DOCX, a PDF or pasted text. Claims and their citations are extracted, the document itself is discarded within seconds, and the page tells you the exact moment it went. The preview that remains — spans and hashes, nothing more — expires in thirty minutes, sooner if you press delete.',
+          },
+          {
+            h3: 'Every source is fetched again',
+            body: 'Each cited URL, DOI or registry identifier is resolved from our network and from a second vantage in another one; the bytes are hashed, an archive is asked to keep a copy, and the fetch time is recorded. For SAYS, the quoted words are located in the fetched copy and anchored to character offsets, so a later reader can find the exact passage — or see that it has changed since.',
+          },
+          {
+            h3: 'Watch the table fill',
+            body: 'Rows appear as checks complete: EXISTS, SAYS, fetch time, content hash, source domain. A claim the check could not settle is marked as such rather than smoothed over. Before you pay anything, a tamper playground lets you edit one byte of the preview receipt and watch the verifier refuse it, naming the byte.',
+          },
+          {
+            h3: 'Seal it, once',
+            body: 'One report is $9 — no account, no card stored — and the receipt is kept for ninety days. RECORD, at $39 a month, keeps ten reports a month in an unbroken chain for seven years, with a daily public root and a QR code on each receipt. PRACTICE, at $199, adds your own signing key, receipts on your own domain, five seats and HOLDS as an opt-in. A refund is a button, not an argument, and the record stands either way.',
+          },
+          {
+            h3: 'Anyone verifies it, offline',
+            body: 'The verifier is open source: a single binary that also runs in the browser. Drop the receipt into it and every check runs locally — schema, self-hash, signature, key, chain fields — and, with the re-fetch option, whether each source still hashes the same today. The page counts the requests it sent us during verification; the number is zero, and you can watch it in your own developer tools.',
+          },
+        ],
+      },
+      useCases: {
+        h2: 'When to use it',
+        items: [
+          {
+            h3: 'An expert report going into a dispute',
+            body: 'A valuation, a damages model, a technical opinion: drafted faster with a model, cited to forty sources you could not re-read on the day. Seal the citations before you sign, and the question at deposition becomes "show us the receipt" rather than "how do we know you checked".',
+          },
+          {
+            h3: 'A practice that files every month',
+            body: 'Audit findings, due-diligence memos, medical and engineering reviews. One receipt per report, linked into a chain that never has a gap — because a chain that starts the day you are asked for it is not evidence, and a gap in March is a question you will be asked in October.',
+          },
+          {
+            h3: 'Professional-indemnity renewal',
+            body: 'Insurers now ask what your verification protocol is when a model helped draft the work. "Every cited source is re-fetched and hashed before signature, and here are the receipts" is a written answer, dated, that costs nine dollars a report.',
+          },
+          {
+            h3: 'A client who wants their money back',
+            body: 'The accusation that a report was "just generated" is answered by a dated record of every source that was checked, when, and what was found — without handing anyone the report itself.',
+          },
+          {
+            h3: 'A receipt someone sent you',
+            body: 'Hand the file to the verifier and read the result: sealed, signed, anchored, and whether the sources still say today what they said then. No account, no request to us, and no way for us to know you looked.',
+          },
+        ],
+      },
+      faq: {
+        h2: 'Questions people ask',
+        items: [
+          {
+            q: 'Does the receipt reveal my client\'s material?',
+            a: 'No, on every tier including the free one. The receipt carries hashes, counts, timestamps, a signature and a position in the chain. The claim text, the quotes and the document stay on your side; the document itself is discarded seconds after upload, and the page shows you the second it went. A reader can confirm what you checked and when, and that the record predates the report, without seeing a line of it. Privacy is not a paid option.',
+          },
+          {
+            q: 'Is this proof that my citations are correct?',
+            a: 'No, and the first screen says so. EXISTS proves that the source resolved and what bytes it held at that moment; SAYS proves that the words you attributed to it were there, at those offsets. Neither is a judgement of your conclusion. What the receipt proves is that a documented check was performed on a date you can substantiate, and that the record could not have been produced afterwards.',
+          },
+          {
+            q: 'What is HOLDS, and why is it off?',
+            a: 'An adversarial attempt to refute a claim, judged by a third model. It disagrees with experts often, it returns INSUFFICIENT_EVIDENCE often and on purpose, and its verdict never enters the sealed receipt. It is available on PRACTICE as a private pre-flight, switched on by hand with a separate confirmation, because a permanent adversarial record of your professional judgement is not something we will sell you by default.',
+          },
+          {
+            q: 'What does it cost?',
+            a: 'EXISTS is free, unlimited, with no account — fetching a URL and hashing the bytes is not a business. A sealed receipt with EXISTS and SAYS is CHECK: $9 per report, kept ninety days, for the expert who files three reports a year. RECORD is $39 a month for ten reports in an unbroken chain, kept seven years, with a daily public root and a verify link on each. PRACTICE is $199 a month for fifty, with your own signing key, receipts on your own domain, five seats and a data-processing agreement. A refund is a button; the record stands.',
+          },
+          {
+            q: 'What if the studio disappears?',
+            a: 'This is the objection answered by architecture rather than by promise. The verifier is open source, a single binary, works offline and is mirrored on a public code host. Each receipt is a self-contained file of about four kilobytes, and your whole chain exports with one command. Daily roots are published to a public repository, not only to our database. If we vanished tomorrow, your receipt would still verify — and you can run that check right now, before paying anything.',
+          },
+          {
+            q: 'Could I not build this in an evening?',
+            a: 'You could build EXISTS in an evening — and should, which is why it is free forever. What an evening does not produce is canonicalisation that stays byte-stable across versions, key rotation that does not break historical verification, root publication to a place we cannot be quietly removed from, and above all a dated record that began before you needed the proof. A chain you start on the day you are asked is not evidence.',
+          },
+          {
+            q: 'Who is it not for?',
+            a: 'Newsrooms and their verification desks, which are funded by grants rather than by this. Litigators checking case law: that corpus belongs to the incumbents, and courts have rejected one model checking another as verification — a receipt will not help there. Enterprise AI governance and EU AI Act compliance programmes, which need a vendor review that a self-serve tool run by one person cannot give. Advertising substantiation. And any kind of public badge: a badge on a client report tells the client you used AI and tells their procurement team your score, so we will not build one.',
+          },
+        ],
+      },
+      cta: {
+        title: 'Open EXHIBIT B',
+        body: 'Drop the report you are about to sign. Checking that every source exists costs nothing; sealing the receipt costs nine dollars, and nobody ever sees the text.',
+        button: 'Check a report',
       },
     },
   },

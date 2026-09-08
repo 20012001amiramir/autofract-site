@@ -9,18 +9,20 @@ const LOCALES = [
   { path: '/pt', code: 'pt', hero: 'roda sozinho' },
 ]
 
-// Mirrors data/tools.ts — four subdomains and one tool on its own domain.
+// Mirrors data/tools.ts — five subdomains and one tool on its own domain.
 const TOOL_HOSTS: Record<string, string> = {
   redline: 'redline.autofract.com',
   overlap: 'overlap.autofract.com',
   costof: 'costof.autofract.com',
   whatsthisletter: 'whatsthisletter.com',
   revive: 'revive.autofract.com',
+  exhibitb: 'exhibitb.autofract.com',
 }
 
 // Locales a tool does not serve link to its English root (data/tools.ts `locales`).
 const TOOL_MISSING_LOCALES: Record<string, string[]> = {
   revive: ['ru', 'fr'],
+  exhibitb: ['ru', 'de', 'es', 'fr', 'pt'],
 }
 
 for (const l of LOCALES) {

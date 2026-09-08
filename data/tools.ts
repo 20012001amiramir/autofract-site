@@ -9,7 +9,7 @@
 
 import { DEFAULT_LOCALE, type Locale } from './locales'
 
-export const TOOLS = ['redline', 'overlap', 'costof', 'whatsthisletter', 'revive'] as const
+export const TOOLS = ['redline', 'overlap', 'costof', 'whatsthisletter', 'revive', 'exhibitb'] as const
 export type ToolSlug = typeof TOOLS[number]
 
 export interface ToolMeta {
@@ -66,6 +66,16 @@ export const TOOL_META: Record<ToolSlug, ToolMeta> = {
     category: 'MultimediaApplication',
     // Ships in four languages; ru and fr readers get the English root.
     locales: ['en', 'pt', 'es', 'de'],
+  },
+  exhibitb: {
+    url: 'https://exhibitb.autofract.com',
+    host: 'exhibitb.autofract.com',
+    // The product's notary blue as it resolves on a graphite ground — the
+    // light-theme value would sit at 2:1 against this site's background.
+    accent: '#79b0e8',
+    category: 'BusinessApplication',
+    // English only for now; every other reader gets the English root.
+    locales: ['en'],
   },
 }
 
