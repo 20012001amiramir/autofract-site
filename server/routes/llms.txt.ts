@@ -11,7 +11,8 @@ export default defineEventHandler((event) => {
 
   const tools = TOOLS.map((slug) => {
     const m = TOOL_META[slug]
-    return `- ${slug}: ${m.url} — ${m.locales.length} languages`
+    const n = m.locales.length
+    return `- ${slug}: ${m.url} — ${n} language${n === 1 ? '' : 's'}`
   }).join('\n')
 
   const platforms = CASES.map((slug) => {
@@ -38,6 +39,7 @@ ${platforms}
 - Contract clause taxonomy — https://redline.autofract.com/data/traps.json — clause types with enforceability by jurisdiction, the phrases that signal each one, and the cases that tested them.
 - Official notice corpus — https://whatsthisletter.com/data/notices.json — notice types across five countries with issuer, statutory deadline rule, filing channels and official sources.
 - Statutory employer costs — https://costof.autofract.com/data/employer.json — employer contributions by country with rates, qualifiers and the publication each was read from.
+- Cities and working-hour zones — https://overlap.autofract.com/data/hubs.json — hub cities with their IANA zone and the verified form of each name in six languages.
 - Price of record — https://frontdeskreview.com/llms.txt — a sourced, dated price index with its own MCP server and an open corpus.
 - Relocation data — https://relocating.app/llms.txt — cost of living, taxes, visas and citizenship timelines across 50 countries in 21 languages.
 
