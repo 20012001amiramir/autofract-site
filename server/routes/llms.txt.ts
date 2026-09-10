@@ -41,7 +41,8 @@ ${platforms}
 - Statutory employer costs — https://costof.autofract.com/data/employer.json — employer contributions by country with rates, qualifiers and the publication each was read from.
 - Cities and working-hour zones — https://overlap.autofract.com/data/hubs.json — hub cities with their IANA zone and the verified form of each name in six languages.
 - Price of record — https://frontdeskreview.com/llms.txt — a sourced, dated price index with its own MCP server and an open corpus.
-- Relocation data — https://relocating.app/llms.txt — cost of living, taxes, visas and citizenship timelines across 50 countries in 21 languages.
+- Relocation reference — https://relocating.app/data/countries.json — 50 destinations in one file: cost of living, income-tax brackets, the digital-nomad route and its income floor, years to permanent residence and to a passport, and the official portal for the first weeks after arrival. Every visa and citizenship figure carries the condition it holds under.
+- Citation verification — https://exhibitb.autofract.com/llms.txt — what the two verdicts per citation mean, and the ed25519 keys at /keys.json that let a receipt be checked offline.
 
 ## What the studio sells
 The tools are free to use or sold as a single payment; none is a subscription. The studio also builds to order — agents, pipelines and data platforms — with a fixed quote after a scoping pass. Contact: ${CONTACT_EMAIL}.
