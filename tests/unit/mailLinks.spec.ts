@@ -7,6 +7,11 @@ describe('mail links', () => {
     expect(mailLinkTarget('record/r/7b3e10c4a92f')).toBe('https://weatherreceipt.com/r/7b3e10c4a92f')
   })
 
+  it('keeps a trailing slash, which the products route on', () => {
+    expect(mailLinkTarget('/record/check/')).toBe('https://weatherreceipt.com/check/')
+    expect(mailLinkTarget('/letter/')).toBe('https://whatsthisletter.com/')
+  })
+
   it('carries the query along', () => {
     expect(mailLinkTarget('record/check/', 'a=Berlin&d=2026-08-15')).toBe('https://weatherreceipt.com/check/?a=Berlin&d=2026-08-15')
     expect(mailLinkTarget('letter/pass/abc', '?lang=de')).toBe('https://whatsthisletter.com/pass/abc?lang=de')
